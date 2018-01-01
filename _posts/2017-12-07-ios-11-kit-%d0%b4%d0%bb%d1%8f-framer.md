@@ -21,9 +21,11 @@ tags:
 ### Стили
 
   * Colors.framer
-  * Fonts.framer<figure>
+  * Fonts.framer
 
-![](http://42point.com/wp-content/uploads/2017/12/framer-ios11-styles-.png)</figure> 
+
+{% include image.html path="uploads/2017/12/framer-ios11-styles-.png" path-detail="uploads/2017/12/framer-ios11-styles-.png" alt="" %}
+
 
 ### Элементы
 
@@ -31,6 +33,8 @@ tags:
   * Bars.framer
   * Controls.framer
   * Views.framer
-  * Keyboards.framer<figure>
+  * Keyboards.framer
 
-![](http://42point.com/wp-content/uploads/2017/12/navbar-ios-11-framer.png)</figure>
+
+
+{% include image.html path="uploads/2017/12/navbar-ios-11-framer.png" path-detail="uploads/2017/12/navbar-ios-11-framer.png" alt="" %}

@@ -19,9 +19,11 @@ format: aside
 Часто при работе дома, транслирую музыку из iTunes на внешнюю колонку [Bowers & Wilkins Z2](https://market.yandex.ru/product/9334841?track=tabs). В свое время я специально искал устройство с поддержкой AirPlay. Самое большое неудобство — невозможность регулировать звук на внешнем устройстве через медиа-клавиши Macbook, <!--more-->так как они отвечают исключительно за системный звук Mac, а значит что бы отрегулировать звук нужно:
 
   * переключиться в iTunes
-  * курсором найти ползунок и изменить звук (либо ⌘↑/↓)<figure>
+  * курсором найти ползунок и изменить звук (либо `⌘↑/↓`)
 
-![](http://42point.com/wp-content/uploads/2017/12/itunes-and-z2.png)</figure> 
+
+{% include image.html path="uploads/2017/12/itunes-and-z2.png" path-detail="uploads/2017/12/itunes-and-z2.png" alt="" %}  
+
 
 Варианта назначить штатными средствами глобальные сочетания клавиш не нашел а поиск по сети подсказал несколько достаточно старых приложений ставить которые желания не было.
 
@@ -31,8 +33,16 @@ format: aside
 
   1. Создаем новый workflow
   2. Добавляем триггер на основе горячих клавиш (hotkey)<figure>
+{% include image.html path="uploads/2017/12/trigger.png" path-detail="uploads/2017/12/trigger.png" alt="" %} 
 
-![](http://42point.com/wp-content/uploads/2017/12/trigger.png)</figure> <figure>3. Назначаем интересующее сочетание клавиш.</figure> <figure>![](http://42point.com/wp-content/uploads/2017/12/hotkey.png)</figure> <figure>4. Добавляем action — iTunes Command и выбираем Volume Up/Down</figure> <figure>![](http://42point.com/wp-content/uploads/2017/12/action.png)</figure> 
+
+3. Назначаем интересующее сочетание клавиш.
+{% include image.html path="uploads/2017/12/hotkey.png" path-detail="uploads/2017/12/hotkey.png" alt="" %}
+
+4. Добавляем action — iTunes Command и выбираем Volume Up/Down
+
+{% include image.html path="uploads/2017/12/action.png" path-detail="uploads/2017/12/action.png" alt="" %}
+
 
 Готово!
 
