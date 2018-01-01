@@ -91,3 +91,8 @@ tags:
 Для просмотра на устройсве можно использовать браузер, но в отличии от Invision мне не удалось скрыть на устройстве адресную строку, либо официальное приложение [Framer Preview on the App Store](https://itunes.apple.com/us/app/framer-preview/id1124920547?mt=8). Но я рекомендую поставить [Frames: Mirror and Gallery for Framer Prototypes](https://itunes.apple.com/us/app/frames-mirror-and-gallery-for-framer-prototypes/id1016029345?mt=8), позволяет просматривать онлайн прототипы в Fullscreen режиме.
 
 **PS**. Отличный доклад для введения в прототипирование
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/ll2raex7_CI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+</div>

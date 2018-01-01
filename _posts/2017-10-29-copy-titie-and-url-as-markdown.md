@@ -17,6 +17,8 @@ tags:
 <div class="gist-oembed" data-gist="42point/594e728fad23353eaaee774b33cc21a7.json">
 </div>
 
+{% gist 594e728fad23353eaaee774b33cc21a7 %}
+
     
     
 
