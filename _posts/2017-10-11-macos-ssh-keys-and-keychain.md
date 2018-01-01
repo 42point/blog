@@ -49,14 +49,17 @@ tags:
 &lt;/plist&gt;
 </code></pre>
 
-  7. Если не хотим каждый раз вводить пароль — в настройках “связки ключей” снимаем галочку об автоматической блокировке.<figure>
+  7. Если не хотим каждый раз вводить пароль — в настройках “связки ключей” снимаем галочку об автоматической блокировке.
 
-![](http://42point.com/wp-content/uploads/2017/10/Screen-Shot-2017-10-11-at-10.51.12-1.png)</figure> 
+{% include image.html path="uploads/2017/10/Screen-Shot-2017-10-11-at-10.51.12-1.png" path-detail="uploads/2017/10/Screen-Shot-2017-10-11-at-10.51.12-1.png" alt="" %}
+
 
 <li id="fn1-28018">
   <a href="https://developer.apple.com/library/content/technotes/tn2449/_index.html">Technical Note TN2449OpenSSH updates in macOS 10.12.2</a> <a class="reversefootnote" title="return to article" href="#fnr1-28018">↩︎</a>
 </li>
 <li id="fn2-28018">
-  <a href="http://macdaily.me/howto/startup-applications-in-mac-os-x-launchagents-and-launchdaemons/">Методы автозагрузки приложений в Mac OS X. LaunchAgents и LaunchDaemons.</a> <a class="reversefootnote" title="return to article" href="#fnr2-28018">↩︎</a>
+  <a href="http://macdaily.me/howto/startup-applications-in-mac-os-x-launchagents-and-launchdaemons/">Методы автозагрузки приложений в Mac OS X. LaunchAgents и LaunchDaemons.</a> 
+  <a class="reversefootnote" title="return to article" href="#fnr2-28018">↩︎</a>
 </li>
-  * <a href="https://github.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain" target="_blank" rel="noopener">https://github.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain </a></fn></footnotes>
+  * <a href="https://github.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain" target="_blank" rel="noopener">https://github.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain </a>
+</fn></footnotes>
