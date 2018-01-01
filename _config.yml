@@ -22,7 +22,7 @@ email: lexx@42point.com
 description: >- # this means to ignore newlines until "baseurl:"
   Немного мыслей об IT, продуктивности и технологиях
 url: 
-  http://42point.pr0t0.com # the base hostname & protocol for your site, e.g. http://example.com
+  https://42point.github.io # the base hostname & protocol for your site, e.g. http://example.com
 
 blog_theme: light # Or use dark
 name: RUkovodstvo
