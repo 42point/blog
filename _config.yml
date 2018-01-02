@@ -26,8 +26,7 @@ url:
 
 blog_theme: light # Or use dark
 name: RUkovodstvo
-excerpt_separator: 
-  - <!--more-->
+excerpt_separator: <!--more-->
 paginate: 25
 
 # Build settings
