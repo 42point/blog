@@ -1,14 +1,9 @@
 ---
-id: 50
 title: Хинт про работу с ключами SSH на mac os x
 date: 2017-10-11T13:21:22+00:00
 author: Alexey S
 layout: post
-guid: http://42point.com/?p=50
-permalink: /macos-ssh-keys-and-keychain/
-image: /wp-content/uploads/2017/10/Screen-Shot-2017-10-11-at-10.51.12-1-520x300.png
-categories:
-  - Без рубрики
+image: uploads/2017/10/Screen-Shot-2017-10-11-at-10.51.12-1-520x300.png
 tags:
   - macOS
   - manuel
@@ -32,22 +27,23 @@ tags:
         
 
   6. другой через файл загрузки в `~/Library/LaunchAgents/`<sup><a id="fnr2-28018" class="footnote" title="see footnote" href="#fn2-28018">2</a></sup>. Содержание файла с расширением .plist: 
-    <pre><code class="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;
-&lt;plist version="1.0"&gt;
-&lt;dict&gt;
-&lt;key&gt;Label&lt;/key&gt;
-&lt;string&gt;ssh-add-a&lt;/string&gt;
-&lt;key&gt;ProgramArguments&lt;/key&gt;
-&lt;array&gt;
-    &lt;string&gt;ssh-add&lt;/string&gt;
-    &lt;string&gt;-A&lt;/string&gt;
-&lt;/array&gt;
-&lt;key&gt;RunAtLoad&lt;/key&gt;
-&lt;true/&gt;
-&lt;/dict&gt;
-&lt;/plist&gt;
-</code></pre>
+{% highlight xml %}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>Label</key>
+<string>ssh-add-a</string>
+<key>ProgramArguments</key>
+<array>
+    <string>ssh-add</string>
+    <string>-A</string>
+</array>
+<key>RunAtLoad</key>
+<true/>
+</dict>
+</plist>
+{% endhighlight %}
 
   7. Если не хотим каждый раз вводить пароль — в настройках “связки ключей” снимаем галочку об автоматической блокировке.
 
