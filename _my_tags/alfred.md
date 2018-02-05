@@ -1,0 +1,4 @@
+---
+slug: alfred
+name: Alfred
+---
