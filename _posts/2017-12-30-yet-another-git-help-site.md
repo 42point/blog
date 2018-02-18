@@ -6,6 +6,7 @@ author: Alexey S
 layout: post
 guid: http://42point.com/?p=114
 permalink: /yet-another-git-help-site/
+thumb_image: "uploads/2017/12/IMAGE-2017-12-30-084115-207x300.jpg"
 categories:
   - Tools
 format: link

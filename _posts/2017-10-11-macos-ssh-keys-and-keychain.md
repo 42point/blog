@@ -5,7 +5,7 @@ author: Alexey S
 layout: post
 image: uploads/2017/10/Screen-Shot-2017-10-11-at-10.51.12-1-520x300.png
 tags:
-  - macOS
+  - macos
   - manuel
   - ssh
 ---
