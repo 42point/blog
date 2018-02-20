@@ -1,4 +1,4 @@
 ---
 slug: alfred
-name: Alfred
+name: alfred
 ---

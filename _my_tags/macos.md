@@ -1,4 +1,4 @@
 ---
 slug: macos
-name: Macos
+name: macos
 ---
