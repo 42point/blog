@@ -4,7 +4,6 @@ title: "Как отобразить скрытые файлы в Finder"
 description: ""
 date: 2018-02-20T12:34:38+03:00
 author: Alexey S
-permalink: /hidden-files-in-finder/
 tags: [macos]
 ---
 Внезапное открытие после 8 лет использования Macbook --  

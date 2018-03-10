@@ -5,7 +5,6 @@ date: 2017-12-22T00:04:19+00:00
 author: Alexey S
 layout: post
 guid: http://42point.com/?p=100
-permalink: /itunes-airplay-and-airplay/
 categories:
   - lifehack
 tags:

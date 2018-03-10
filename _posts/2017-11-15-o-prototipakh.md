@@ -5,7 +5,6 @@ date: 2017-11-15T13:21:53+00:00
 author: Alexey S
 layout: post
 guid: http://42point.com/?p=73
-permalink: /o-prototipakh/
 image: /wp-content/uploads/2017/11/Screen-Shot-2017-11-15-at-13.00.56-520x309.png
 categories:
   - О прототипах

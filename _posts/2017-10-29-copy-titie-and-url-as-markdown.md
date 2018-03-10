@@ -3,7 +3,6 @@ layout: post
 title: "Копируем заголовок и адрес WEB-страницы в формате Markdown"
 date: 2017-10-29 1:17:24 00:00
 author: Alexey S
-permalink: /copy-titie-and-url-as-markdown/
 tags: [macOS, productivity]
 
 ---

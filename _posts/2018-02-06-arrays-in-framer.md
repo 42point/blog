@@ -3,7 +3,6 @@ title: "Как эффективно использовать массивы во
 date: 2018-02-06T23:04:49+03:00
 author: Alexey S
 layout: post
-permalink: /arrays-in-framer/
 description: "Самое полезное видео про работу с массивами во Framer"
 categories:
   - 

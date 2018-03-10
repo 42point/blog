@@ -4,7 +4,6 @@ title: "Медиа-клавиши в iTunes."
 description: "\"It’s not a bug; it’s a feature. (c)\" У Apple есть потрясающая способность принимать решения в дизайне продуктов вопреки здравому смыслу и логике."
 date: 2018-02-05T14:40:39+03:00
 author: Alexey S
-permalink: /itunes-and-media-buttons/
 tags:
   - apple
   - itunes
