@@ -27,7 +27,8 @@ url:
 blog_theme: light # Or use dark
 name: RUkovodstvo
 excerpt_separator: <!--more-->
-paginate: 25
+paginate: 10
+include: ['.htaccess']
 
 # Build settings
 markdown: kramdown
@@ -98,6 +99,11 @@ assets:
     - _assets/javascripts
     - _assets/stylesheets
     - _assets/yarn
+  caching:
+    path: ".jekyll-cache/assets"
+    type: file # Possible values: memory, file
+    enabled: false
+
 collections:
   my_tags:
     output: true
