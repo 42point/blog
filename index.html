@@ -1,51 +1,510 @@
----
-layout: default
-title: "Немного мыслей об IT, продуктивности и технологиях"
-description: "Последние записи которые занимают"
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>RUkovodstvo | Немного мыслей об IT, продуктивности и технологиях</title>
+  <meta name="description" content="Последние записи которые занимают">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<ul class="article-list">
-  {% for post in paginator.posts %}
-    <li class="article-list-item {% if site.scrollappear_enabled %}scrollappear{% endif %}">
-      <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
+  <meta property="og:title" content="Немного мыслей об IT, продуктивности и технологиях">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://42point.com/">
+  <meta property="og:description" content="Последние записи которые занимают">
+  <meta property="og:site_name" content="RUkovodstvo">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="http://42point.com/">
+  <meta name="twitter:title" content="Немного мыслей об IT, продуктивности и технологиях">
+  <meta name="twitter:description" content="Последние записи которые занимают">
+
+  
+    <meta property="og:image" content="http://42point.com/assets/og-image-c58356c98bc2337aa38251e0953f1a7cca1461e1e341b7dbc5240e6380338f7f.jpg">
+    <meta name="twitter:image" content="http://42point.com/assets/og-image-c58356c98bc2337aa38251e0953f1a7cca1461e1e341b7dbc5240e6380338f7f.jpg">
+  
+
+  <link href="http://42point.com/feed.xml" type="application/rss+xml" rel="alternate" title="RUkovodstvo Last 10 blog posts" />
+
+  
+
+  
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-light-bc0d309bd2c4825cdcf569e7327ce165fc79694a36a0f0428d8010aa01129444.ico">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon-light-b2a1c5538dea70b820e6e1d221683e498bc567b2eb2cacbeb672f4f102a73409.png">
+    <link rel="stylesheet" type="text/css" href="/assets/light-39258aa6bcda6259a509150987398425969f85562df2541ddf79f2d70bbee3bd.css">
+  
+</head>
+
+<body>
+  <main>
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <nav class="header-nav scrollappear">
+  <a href="/" class="header-logo" title="RUkovodstvo">RUkovodstvo</a>
+  <ul class="header-links">
+    
+      <li>
+        <a href="/about" title="About me">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-about">
+  <use href="/assets/about-ecf154b571ab8034ae00aeed91a3b7ad68db80b46d958753ad6216c919486e88.svg#icon-about" xlink:href="/assets/about-ecf154b571ab8034ae00aeed91a3b7ad68db80b46d958753ad6216c919486e88.svg#icon-about"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+      <li>
+        <a href="https://www.facebook.com/d0.n0.evil" rel="noreferrer noopener" target="_blank" title="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-facebook">
+  <use href="/assets/facebook-72c99b26d37bee65607720abb23d26b44ef30cca1187f98b0d9305be1230b1bf.svg#icon-facebook" xlink:href="/assets/facebook-72c99b26d37bee65607720abb23d26b44ef30cca1187f98b0d9305be1230b1bf.svg#icon-facebook"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <li>
+        <a href="https://instagram.com/d0_n0_evil" rel="noreferrer noopener" target="_blank" title="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-instagram">
+  <use href="/assets/instagram-37f85bc75b43ecc4c114d9a46f846327fe13c5893787c6afbcfef9d30d58bd9e.svg#icon-instagram" xlink:href="/assets/instagram-37f85bc75b43ecc4c114d9a46f846327fe13c5893787c6afbcfef9d30d58bd9e.svg#icon-instagram"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <li>
+        <a href="mailto:lexx@42point.com" title="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-email">
+  <use href="/assets/email-782473193bf750036fdb90e8daa075508a20509d01854c09f3237c144a3f0601.svg#icon-email" xlink:href="/assets/email-782473193bf750036fdb90e8daa075508a20509d01854c09f3237c144a3f0601.svg#icon-email"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="/feed.xml" rel="noreferrer noopener" target="_blank" title="RSS">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-rss">
+  <use href="/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss" xlink:href="/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss"></use>
+</svg>
+
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+        <ul class="article-list">
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/about-things" title="Как я использую Things">
         <h5>
-          {{ post.title }}
-          {% include svg-icon.html icon="arrow-right" %}
+          Как я использую Things
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
         </h5>
       </a>
-      <p>{{ post.description }}</p>
+      <p>Немного о лучшем менеджере задач</p>
       
 
       <div class="article-list-footer">
         <span class="article-list-date">
-          {{ post.date | date: "%B %-d, %Y" }}
+          March 9, 2018
         </span>
         <span class="article-list-divider">-</span>
         <span class="article-list-minutes">
-          {% capture words %}
-            {{ post.content | number_of_words }}
-          {% endcapture %}
-          {% unless words contains "-" %}
-            {{ words | plus: 250 | divided_by: 250 | append: " minute read" }}
-          {% endunless %}
+          
+          
+            3 minute read
+          
         </span>
         <span class="article-list-divider">-</span>
         <div class="article-list-tags">
-          {% for tag in post.tags %}
-            <a href="{{ 'tag/' | relative_url }}{{ tag }}">{{ tag }}</a>
-          {% endfor %}
+          
+            <a href="/tag/productivity">productivity</a>
+          
         </div>
       </div>
     </li>
-  {% endfor %}
-  {% if paginator.total_pages > 1 %}
-    <li class="article-pagination {% if site.settings.scrollappear_enabled %}scrollappear{% endif %}">
-      {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" class="article-pagination-left">{% include svg-icon.html icon="arrow-left" %} Older posts</a>
-      {% endif %}
-      {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}" class="article-pagination-right">Newer posts {% include svg-icon.html icon="arrow-right" %}</a>
-      {% endif %}
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/hidden-files-finder" title="Как отобразить скрытые файлы в Finder">
+        <h5>
+          Как отобразить скрытые файлы в Finder
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p></p>
+      
+
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          February 20, 2018
+        </span>
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+            <a href="/tag/macos">macos</a>
+          
+        </div>
+      </div>
     </li>
-  {% endif %}
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/terminal-energy-and-display" title="Как временно отключить заставку и сон вашего Macbook">
+        <h5>
+          Как временно отключить заставку и сон вашего Macbook
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>Управляем питанием и отключением дисплея macOS через terminal</p>
+      
+
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          February 18, 2018
+        </span>
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+            <a href="/tag/macos">macos</a>
+          
+            <a href="/tag/terminal">terminal</a>
+          
+        </div>
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/arrays-in-framer" title="Как эффективно использовать массивы во Framer">
+        <h5>
+          Как эффективно использовать массивы во Framer
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>Самое полезное видео про работу с массивами во Framer</p>
+      
+
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          February 6, 2018
+        </span>
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+            <a href="/tag/framer">framer</a>
+          
+        </div>
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/itunes-and-media-buttons" title="Медиа-клавиши в iTunes.">
+        <h5>
+          Медиа-клавиши в iTunes.
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>"It’s not a bug; it’s a feature. (c)" У Apple есть потрясающая способность принимать решения в дизайне продуктов вопреки здравому смыслу и логике.</p>
+      
+
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          February 5, 2018
+        </span>
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+            <a href="/tag/apple">apple</a>
+          
+            <a href="/tag/itunes">itunes</a>
+          
+        </div>
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/yet-another-git-help-site" title="Yet another GIT help site">
+        <h5>
+          Yet another GIT help site
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p></p>
+      
+
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          December 30, 2017
+        </span>
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+        </div>
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/itunes-airplay-and-airplay" title="iTunes и внешняя колонка (AirPlay/BlueTooth)">
+        <h5>
+          iTunes и внешняя колонка (AirPlay/BlueTooth)
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p></p>
+      
+
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          December 22, 2017
+        </span>
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+            <a href="/tag/airplay">airplay</a>
+          
+            <a href="/tag/alfred">alfred</a>
+          
+            <a href="/tag/apple">apple</a>
+          
+            <a href="/tag/itunes">itunes</a>
+          
+            <a href="/tag/soft">soft</a>
+          
+        </div>
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/ios-11-kit-for-framer" title="iOS 11 kit для Framer">
+        <h5>
+          iOS 11 kit для Framer
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p></p>
+      
+
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          December 7, 2017
+        </span>
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+            <a href="/tag/framer">framer</a>
+          
+        </div>
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/o-prototipakh" title="Немного о прототипах">
+        <h5>
+          Немного о прототипах
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p></p>
+      
+
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          November 15, 2017
+        </span>
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            4 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+            <a href="/tag/framer">framer</a>
+          
+            <a href="/tag/origami">origami</a>
+          
+            <a href="/tag/опыт">опыт</a>
+          
+            <a href="/tag/прототипы">прототипы</a>
+          
+        </div>
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/copy-titie-and-url-as-markdown" title="Копируем заголовок и адрес WEB-страницы в формате Markdown">
+        <h5>
+          Копируем заголовок и адрес WEB-страницы в формате Markdown
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p></p>
+      
+
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          October 29, 2017
+        </span>
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+            <a href="/tag/macOS">macOS</a>
+          
+            <a href="/tag/productivity">productivity</a>
+          
+        </div>
+      </div>
+    </li>
+  
+  
+    <li class="article-pagination ">
+      
+        <a href="/posts/page/2/" class="article-pagination-left"><svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-left">
+  <use href="/assets/arrow-left-3fbaf3633c5b37e961028aa1ab5a308806edebadcfc1f9f0b30bcf35c3a4fb8c.svg#icon-arrow-left" xlink:href="/assets/arrow-left-3fbaf3633c5b37e961028aa1ab5a308806edebadcfc1f9f0b30bcf35c3a4fb8c.svg#icon-arrow-left"></use>
+</svg>
+ Older posts</a>
+      
+      
+    </li>
+  
 </ul>
+
+        <footer class="footer scrollappear">
+  <p>
+    Немного мыслей об IT, продуктивности и технологиях. Made with <a href="https://github.com/nielsenramon/chalk" rel="noreferrer noopener" target="_blank" title="Download Chalk">"Chalk" by Nielsen Ramon</a>.
+  </p>
+</footer>
+
+      </div>
+    </div>
+  </main>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17407767-9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-17407767-9');
+  </script>
+
+
+<script type="text/javascript" src="/assets/vendor-268c7ae814c16b5b0e479d3d34c0d1ff58337e15696af4994e19dd21d116eaa5.js"></script>
+
+
+  <script type="text/javascript" src="/assets/webfonts-e3010885de8c083c4b2935d463b1649e8796191a66a1b43bb87ef04bbcce420d.js"></script>
+
+
+
+  <script type="text/javascript" src="/assets/scrollappear-e2da8ea567e418637e31266cc5302126eaa79f62a2273739086358b589a89ee6.js"></script>
+
+
+<script type="text/javascript" src="/assets/application-cd43a7f9bd8a08997bb19229cd040e7129ede0a1adf77c693b5835c9f8c2a4b1.js"></script>
+
+</body>
+</html>

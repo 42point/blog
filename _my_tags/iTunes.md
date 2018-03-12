@@ -1,4 +1,0 @@
----
-slug: itunes
-name: iTunes
----

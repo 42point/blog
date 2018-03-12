@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://42point.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://42point.com/" rel="alternate" type="text/html" /><updated>2018-03-12T03:07:18+03:00</updated><id>http://42point.com/</id><title type="html">RUkovodstvo</title><subtitle>Немного мыслей об IT, продуктивности и технологиях</subtitle><entry><title type="html">Как я использую Things</title><link href="http://42point.com/posts/about-things" rel="alternate" type="text/html" title="Как я использую Things" /><published>2018-03-09T15:17:10+03:00</published><updated>2018-03-09T15:17:10+03:00</updated><id>http://42point.com/posts/about-things</id><content type="html" xml:base="http://42point.com/posts/about-things">&lt;p&gt;Популярность приложений для управления персональными задачами может посоревноваться с популярностью приложениями для прогноза погоды. Различные технологии, подходы и методологии к ведению дел имеют своих фаворитов — Omnifocus, Evernote, MS Outlook. Некоторые разработчики стараются создать максимально функциональные программы, другие наоборот, ограничиваются самым минимум. Весьма сложно найти золотую середину для себя. &lt;br /&gt;
+При выборе таск-менеджера я всегда обращал внимание на наличие stand alone приложения и возможности синхронизации между устройствами. Вероятно, поэтому долгое время использовал Apple Reminders как основной список дел, его вполне хватало до момента пока на распродаже в App Store мне не попался &lt;strong&gt;&lt;a href=&quot;https://culturedcode.com/&quot;&gt;Things&lt;/a&gt;&lt;/strong&gt;. &lt;br /&gt;
+Я был очарован: простой, лаконичный интерфейс, понятная логика работы без нагромождения функционала, синхронизация между устройствами все располагало к себе. Универсальный экран &lt;strong&gt;Today&lt;/strong&gt; и сортировка задач по проектам () и сферам деятельности показались очень удобными.
+Прошлогоднее обновление до версии 3 заслуженно получило премию &lt;a href=&quot;https://culturedcode.com/things/blog/2017/06/back-from-wwdc/&quot;&gt;Apple Design Awards 2017&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/uploads/2018/03/things-app-051e099b324628021f318f7d7ec6d617b6fe9e7cf474fa35a10b2e6672935e55.png&quot; data-rjs=&quot;/assets/uploads/2018/03/things-app-051e099b324628021f318f7d7ec6d617b6fe9e7cf474fa35a10b2e6672935e55.png&quot; class=&quot;fluidbox-trigger&quot;&gt;
+  &lt;img src=&quot;/assets/uploads/2018/03/things-app-051e099b324628021f318f7d7ec6d617b6fe9e7cf474fa35a10b2e6672935e55.png&quot; alt=&quot;Things&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;В новой версии, помимо обновленного интерфейса, разработчики внедрили несколько интересных решений:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Magic Plus button для iPhone&lt;/strong&gt;: инновационный, универсальных контрол для создания новых задач, проектов.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;container__video&quot;&gt;
+	&lt;video width=&quot;300px&quot; loop=&quot;loop&quot; autoplay=&quot;autoplay&quot;&gt;
+	&lt;source src=&quot;/assets/uploads/6-magicplus-1-e638cbb316765609a29207e31adf2d32828042886cddccbfcbf8f2ebc8952d5c.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;&lt;/div&gt;
+
+&lt;ol start=&quot;2&quot;&gt;
+  &lt;li&gt;&lt;strong&gt;Quick find&lt;/strong&gt;: простое но удобное решение для поиска&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Natural Date Input&lt;/strong&gt;: благодаря встроенному распознанию письменной речи, достаточно начать печатать что бы приложение догадалось что вы хотите “Зав&lt;mark&gt;тра&lt;/mark&gt;”, “Суб&lt;mark&gt;бота&lt;/mark&gt;”, “через че&lt;mark&gt;тыре дня&lt;/mark&gt;”, “Авг&lt;mark&gt;уст 1&lt;/mark&gt;”. Русский язык поддерживается.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+	&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/2R6o5t0VK_A?rel=0&amp;amp;controls=0&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;теги&quot;&gt;Теги&lt;/h3&gt;
+&lt;p&gt;Я стараюсь уменьшить количество тегов, и периодически удаляю уже существующие но неактуальные. По какой-то причине разработчик отказывается добавить поиск при добавлении тегов на мобильном что весьма затрудняет работу с ними. Большинство тегов после последнего ревью стали вложенными и более контекстным. В свою очередь большинство задач распределены по “проектам” и “сферам”
+Для самых частых и важных тегов я назначил сочетания клавиш, например &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl + b&lt;/code&gt; для задач связанных с книгами.&lt;/p&gt;
+&lt;h3 id=&quot;создание-задач&quot;&gt;Создание задач&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Killer feature&lt;/em&gt; для меня в оказалась возможность создавать задачи в любом приложении на mac c контекстом. При этом в задачу автоматически будет добавлен не только заголовок документа (web-страницы или email) но и ссылка на этот документ.&lt;br /&gt;
+Так, например, вы легко сможете поставить задачу на письмо в почтовой программе (Apple Mail, например), отправить его в архив, а открыть по ссылке когда доберетесь до самой задачи.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/uploads/2018/03/things_quick_task_with_context-48dd6a45c9f34a2508019d51fbad515281bc0c759354121bad049fcdd13cb1c6.png&quot; alt=&quot;Создание задачи с контекстом&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Таким же способом, в специальном проекте, сохраняю ссылки на интересующие статьи и WEB-странички, так что Things быстро заменил мне сборщик статей на Pocket или Readitlater. Функционал активируется после уставки специального &lt;a href=&quot;https://support.culturedcode.com/customer/portal/articles/2803569#adding-new-to-dos-with-links-and-text&quot;&gt;helper’а&lt;/a&gt; и сочетания клавиш &lt;code class=&quot;highlighter-rouge&quot;&gt;⇧+⌥+Space&lt;/code&gt; . &lt;br /&gt;
+На iPhone чаще создаю задачи через функционал Share на iOS. Сообщения в мессенджерах, WEB-страницы, ссылки в приложения, email’ы сообщение в ваш любимый месседжер, страница в Safari или Chrome легко может быть превращена в задачу.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/uploads/2018/03/share-to-things-20e4fa52b19b2af282fa48ec0b917ab64011df1493a3c8b70db74bf0b85d41d2.png&quot; alt=&quot;Добавить задачу на iPhone&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;экран-today&quot;&gt;Экран &lt;strong&gt;Today&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Экран для отображения задач на сегодня. Я отключил группировку задач по проектам на экране &lt;strong&gt;Today&lt;/strong&gt;. Опыт показал что для меня общий список намного удобнее, обычно у меня на этом экране от 10 до 20 задач, периодически я на него смотрю и редактирую содержание и приоритеты. Сочетание &lt;code class=&quot;highlighter-rouge&quot;&gt;⌘+E&lt;/code&gt; отправляет часть задач (скорее личных) на вечер, что очень удобно если не нет необходимости заниматься ими прям сейчас.&lt;/p&gt;
+&lt;h3 id=&quot;повторяющиеся-задачи&quot;&gt;Повторяющиеся задачи&lt;/h3&gt;
+&lt;p&gt;У меня созданы несколько задач с различной периодичность которые напоминают про регулярные события: оплата счетов, снятие показаний счетчиков и прочее.&lt;br /&gt;
+Очень выручает возможность автоматически создавать копию задачи с заданым сроком после её выполнения.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/uploads/2018/03/repeated-tasks-157c95630080463bdbe55765710bcaa7cd4df6b2ba56f73e9a68a4232b808705.png&quot; alt=&quot;Создание повторяющейся задачи&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;сочетания-клавиш&quot;&gt;Сочетания клавиш.&lt;/h3&gt;
+&lt;p&gt;Как и в любом другом приложении на mac я активно использую сочетания клавиш. Например, &lt;code class=&quot;highlighter-rouge&quot;&gt;⌘ + ⇧ + M&lt;/code&gt;  помогает переместить новую задачу в нужный проект. 
+Для назначения сроков использую &lt;code class=&quot;highlighter-rouge&quot;&gt;⌘ + S&lt;/code&gt; для вызова диалога указания даты и &lt;code class=&quot;highlighter-rouge&quot;&gt;⌘ + R&lt;/code&gt; отмены всех дат. &lt;code class=&quot;highlighter-rouge&quot;&gt;⌘ + T&lt;/code&gt; сразу отправляет задачу на экран &lt;strong&gt;Today&lt;/strong&gt;
+Переместить задачу в списке вверх или вниз можно через &lt;code class=&quot;highlighter-rouge&quot;&gt;⌘+ ↑/↓&lt;/code&gt;, а &lt;code class=&quot;highlighter-rouge&quot;&gt;⌥+⌘+↑&lt;/code&gt; или &lt;code class=&quot;highlighter-rouge&quot;&gt;⌥+⌘+↓&lt;/code&gt; отправляет таск в самый вверх/низ списка соответственно.&lt;/p&gt;
+
+&lt;p&gt;Для меня Things стал ежедневным и необходимым приложением на каждый день, разработчики не останавливаются, и добавляют новый функционал который может быть важным для некоторых адептов GTD. Например, недавно добавлена &lt;a href=&quot;https://culturedcode.com/things/blog/2017/12/mail-to-things/&quot;&gt;функция отправки email&lt;/a&gt; на специальный адрес для создания новой задачи.&lt;/p&gt;</content><author><name>Alexey S</name></author><category term="productivity" /><summary type="html">Популярность приложений для управления персональными задачами может посоревноваться с популярностью приложениями для прогноза погоды. Различные технологии, подходы и методологии к ведению дел имеют своих фаворитов — Omnifocus, Evernote, MS Outlook. Некоторые разработчики стараются создать максимально функциональные программы, другие наоборот, ограничиваются самым минимум. Весьма сложно найти золотую середину для себя. При выборе таск-менеджера я всегда обращал внимание на наличие stand alone приложения и возможности синхронизации между устройствами. Вероятно, поэтому долгое время использовал Apple Reminders как основной список дел, его вполне хватало до момента пока на распродаже в App Store мне не попался Things. Я был очарован: простой, лаконичный интерфейс, понятная логика работы без нагромождения функционала, синхронизация между устройствами все располагало к себе. Универсальный экран Today и сортировка задач по проектам () и сферам деятельности показались очень удобными. Прошлогоднее обновление до версии 3 заслуженно получило премию Apple Design Awards 2017 В новой версии, помимо обновленного интерфейса, разработчики внедрили несколько интересных решений: Magic Plus button для iPhone: инновационный, универсальных контрол для создания новых задач, проектов. Quick find: простое но удобное решение для поиска Natural Date Input: благодаря встроенному распознанию письменной речи, достаточно начать печатать что бы приложение догадалось что вы хотите “Завтра”, “Суббота”, “через четыре дня”, “Август 1”. Русский язык поддерживается. Теги Я стараюсь уменьшить количество тегов, и периодически удаляю уже существующие но неактуальные. По какой-то причине разработчик отказывается добавить поиск при добавлении тегов на мобильном что весьма затрудняет работу с ними. Большинство тегов после последнего ревью стали вложенными и более контекстным. В свою очередь большинство задач распределены по “проектам” и “сферам” Для самых частых и важных тегов я назначил сочетания клавиш, например Ctrl + b для задач связанных с книгами. Создание задач Killer feature для меня в оказалась возможность создавать задачи в любом приложении на mac c контекстом. При этом в задачу автоматически будет добавлен не только заголовок документа (web-страницы или email) но и ссылка на этот документ. Так, например, вы легко сможете поставить задачу на письмо в почтовой программе (Apple Mail, например), отправить его в архив, а открыть по ссылке когда доберетесь до самой задачи. Таким же способом, в специальном проекте, сохраняю ссылки на интересующие статьи и WEB-странички, так что Things быстро заменил мне сборщик статей на Pocket или Readitlater. Функционал активируется после уставки специального helper’а и сочетания клавиш ⇧+⌥+Space . На iPhone чаще создаю задачи через функционал Share на iOS. Сообщения в мессенджерах, WEB-страницы, ссылки в приложения, email’ы сообщение в ваш любимый месседжер, страница в Safari или Chrome легко может быть превращена в задачу. Экран Today Экран для отображения задач на сегодня. Я отключил группировку задач по проектам на экране Today. Опыт показал что для меня общий список намного удобнее, обычно у меня на этом экране от 10 до 20 задач, периодически я на него смотрю и редактирую содержание и приоритеты. Сочетание ⌘+E отправляет часть задач (скорее личных) на вечер, что очень удобно если не нет необходимости заниматься ими прям сейчас. Повторяющиеся задачи У меня созданы несколько задач с различной периодичность которые напоминают про регулярные события: оплата счетов, снятие показаний счетчиков и прочее. Очень выручает возможность автоматически создавать копию задачи с заданым сроком после её выполнения. Сочетания клавиш. Как и в любом другом приложении на mac я активно использую сочетания клавиш. Например, ⌘ + ⇧ + M помогает переместить новую задачу в нужный проект. Для назначения сроков использую ⌘ + S для вызова диалога указания даты и ⌘ + R отмены всех дат. ⌘ + T сразу отправляет задачу на экран Today Переместить задачу в списке вверх или вниз можно через ⌘+ ↑/↓, а ⌥+⌘+↑ или ⌥+⌘+↓ отправляет таск в самый вверх/низ списка соответственно. Для меня Things стал ежедневным и необходимым приложением на каждый день, разработчики не останавливаются, и добавляют новый функционал который может быть важным для некоторых адептов GTD. Например, недавно добавлена функция отправки email на специальный адрес для создания новой задачи.</summary></entry><entry><title type="html">Как отобразить скрытые файлы в Finder</title><link href="http://42point.com/posts/hidden-files-finder" rel="alternate" type="text/html" title="Как отобразить скрытые файлы в Finder" /><published>2018-02-20T12:34:38+03:00</published><updated>2018-02-20T12:34:38+03:00</updated><id>http://42point.com/posts/hidden-files-finder</id><content type="html" xml:base="http://42point.com/posts/hidden-files-finder">&lt;p&gt;Внезапное открытие после 8 лет использования Macbook –&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;⌘+⇧+.&lt;/code&gt; отображает скрытые файлы в Finder.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/uploads/2018/02/hidden-files-in-finder-ec8985f828212f688d01c9fd3970d1f1462aa7a869485bc3d536ad2f0c59321b.gif&quot; data-rjs=&quot;/assets/uploads/2018/02/hidden-files-in-finder-ec8985f828212f688d01c9fd3970d1f1462aa7a869485bc3d536ad2f0c59321b.gif&quot; class=&quot;fluidbox-trigger&quot;&gt;
+  &lt;img src=&quot;/assets/uploads/2018/02/hidden-files-in-finder-ec8985f828212f688d01c9fd3970d1f1462aa7a869485bc3d536ad2f0c59321b.gif&quot; alt=&quot;Скрытые файлы в Finder&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;</content><author><name>Alexey S</name></author><category term="macos" /><summary type="html">Внезапное открытие после 8 лет использования Macbook – ⌘+⇧+. отображает скрытые файлы в Finder.</summary></entry><entry><title type="html">Как временно отключить заставку и сон вашего Macbook</title><link href="http://42point.com/posts/terminal-energy-and-display" rel="alternate" type="text/html" title="Как временно отключить заставку и сон вашего Macbook" /><published>2018-02-18T08:39:18+03:00</published><updated>2018-02-18T08:39:18+03:00</updated><id>http://42point.com/posts/terminal-energy-and-display</id><content type="html" xml:base="http://42point.com/posts/terminal-energy-and-display">&lt;p&gt;Представим, у вас важная презентация и нужно запретить mac’у отключать дисплей, или вы смотрите новую серию Игры престолов и не хочется все время дергать курсор, дабы дисплей не погас.  Или выполняетсяважный расчет который остановиться если Macbook  заснет. Может помочь маленькое бесплатное приложение &lt;a href=&quot;http://lightheadsw.com/caffeine/&quot;&gt;Caffeine&lt;/a&gt; или можно воспользоваться стандартной командой &lt;code class=&quot;highlighter-rouge&quot;&gt;caffeinate&lt;/code&gt; в терминале, которая делает тоже самое но предоставляет больше гибкости.
+Как у любой терминальной команды, у &lt;code class=&quot;highlighter-rouge&quot;&gt;caffeinate&lt;/code&gt; свои ключи:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# таймер в секундах&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# не отключать дисплей&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# не уводить в ситему в сон &lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# запрет уводить диски в сон&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# запрет машине уходить в сон когда &lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# имитирует дейтсвия текущего пользователя&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Как можно использовать?&lt;/p&gt;
+
+&lt;h4 id=&quot;запретить-уходить-в-сон-в-течении-часа&quot;&gt;Запретить уходить в сон в течении часа&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;caffeinate -t 3600 &amp;amp;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Амперсанд &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt; позволит выполнить команду в фоне и освободить командную строку для дальнейшего использования.
+Параметр &lt;code class=&quot;highlighter-rouge&quot;&gt;-t 3600&lt;/code&gt;  задает таймаут в 3600 секунд что равно 1-му часу.&lt;/p&gt;
+
+&lt;h4 id=&quot;не-отключать-дисплей-и-не-запускать-заставку&quot;&gt;Не отключать дисплей и не запускать заставку&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;caffeinate -d&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;не-засыпать-пока-выполняется-скрипт-или-процесс&quot;&gt;Не засыпать пока выполняется скрипт или процесс&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;caffeinate -i long_running_script.sh&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://mac-how-to.gadgethacks.com/how-to/take-control-your-macs-sleep-functions-with-these-commands-0168109/&quot;&gt;Take Control of Your Mac’s Sleep Functions with These Commands « Mac Tips :: Gadget Hacks&lt;/a&gt;
+&lt;a href=&quot;http://blog.macoptimizerpro.com/2016/05/24/all-about-energy-saver-idle-and-sleep-modes-in-mac-osx/&quot;&gt;All about Energy Saver idle and sleep modes in Mac OSX&lt;/a&gt;&lt;/p&gt;</content><author><name>Alexey S</name></author><category term="macos" /><category term="terminal" /><summary type="html">Представим, у вас важная презентация и нужно запретить mac’у отключать дисплей, или вы смотрите новую серию Игры престолов и не хочется все время дергать курсор, дабы дисплей не погас. Или выполняетсяважный расчет который остановиться если Macbook заснет. Может помочь маленькое бесплатное приложение Caffeine или можно воспользоваться стандартной командой caffeinate в терминале, которая делает тоже самое но предоставляет больше гибкости. Как у любой терминальной команды, у caffeinate свои ключи: -t # таймер в секундах -d # не отключать дисплей -i # не уводить в ситему в сон -m # запрет уводить диски в сон -s # запрет машине уходить в сон когда -u # имитирует дейтсвия текущего пользователя Как можно использовать? Запретить уходить в сон в течении часа caffeinate -t 3600 &amp;amp; Амперсанд &amp;amp; позволит выполнить команду в фоне и освободить командную строку для дальнейшего использования. Параметр -t 3600 задает таймаут в 3600 секунд что равно 1-му часу. Не отключать дисплей и не запускать заставку caffeinate -d Не засыпать пока выполняется скрипт или процесс caffeinate -i long_running_script.sh Take Control of Your Mac’s Sleep Functions with These Commands « Mac Tips :: Gadget Hacks All about Energy Saver idle and sleep modes in Mac OSX</summary></entry><entry><title type="html">Как эффективно использовать массивы во Framer</title><link href="http://42point.com/posts/arrays-in-framer" rel="alternate" type="text/html" title="Как эффективно использовать массивы во Framer" /><published>2018-02-06T23:04:49+03:00</published><updated>2018-02-06T23:04:49+03:00</updated><id>http://42point.com/posts/arrays-in-framer</id><content type="html" xml:base="http://42point.com/posts/arrays-in-framer">&lt;p&gt;К сожалению, только на английском языке, но чуть позже вынесу сюда самые полезные приемы которые помогут в разработке прототипа.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;как добавить слои из Sketch в массив&lt;/li&gt;
+  &lt;li&gt;как правильно применить одно и тоже событие к нескольким одинаковым объектам&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+	&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/kJYI4oYrHik?rel=0&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;полезные-ссылки&quot;&gt;Полезные ссылки&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.framer.com/code-less-achieve-more-with-arrays-in-framer-c43594d13d59&quot;&gt;Code Less &amp;amp; Achieve More with Arrays in Framer – Framer&lt;/a&gt;&lt;/p&gt;</content><author><name>Alexey S</name></author><category term="framer" /><summary type="html">К сожалению, только на английском языке, но чуть позже вынесу сюда самые полезные приемы которые помогут в разработке прототипа. как добавить слои из Sketch в массив как правильно применить одно и тоже событие к нескольким одинаковым объектам Полезные ссылки Code Less &amp;amp; Achieve More with Arrays in Framer – Framer</summary></entry><entry><title type="html">Медиа-клавиши в iTunes.</title><link href="http://42point.com/posts/itunes-and-media-buttons" rel="alternate" type="text/html" title="Медиа-клавиши в iTunes." /><published>2018-02-05T14:40:39+03:00</published><updated>2018-02-05T14:40:39+03:00</updated><id>http://42point.com/posts/itunes-and-media-buttons</id><content type="html" xml:base="http://42point.com/posts/itunes-and-media-buttons">&lt;p&gt;iTunes это вероятно один из самых невидимых миром монстров который по идее должен делать только одну работу, но при этом оброс кучей других возможностей, при этом несколько последних апдейтов сделали его еще менее осмысленным. Что бесит лично меня:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Больше нельзя с помощью iTunes удаленно установить/купить приложение на iOS устройство (через браузер тоже, привет Google Play!).&lt;/li&gt;
+  &lt;li&gt;Медиа-клавиши Macbook больше не управляют iTunes по-умолчанию!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Подробнее о второй проблеме которую можно решить.
+Начиная с macOS 10.13  Apple изменили поведение медиа-клавиш, теперь они контролируют любое приложение для воспроизведения медиа в системе, например, видео-проигрыватель или youtube в браузере. Но в реальности, это всегда не то что нужно.
+Поиск и короткая (почему-то) &lt;a href=&quot;https://forums.developer.apple.com/thread/86221&quot;&gt;ветка&lt;/a&gt; обсуждения привели к нескольким решениям:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Попытка перезагрузиться в безопасном режиме - не работает, в какой-то момент кнопки ломаются опять.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://bekirserifoglu.wordpress.com/2017/10/01/solutionworkaround-for-mac-os-high-sierra-unified-media-buttons-playpause-next-and-previous-track-problem/&quot;&gt;Настройки с помощью Better Touch Tools&lt;/a&gt; — дорого и сложно, на мой взгляд.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://milgra.com/high-sierra-media-key-enabler.html&quot;&gt;Утилита &lt;strong&gt;highsierramediakeyenabler&lt;/strong&gt;&lt;/a&gt; которая возвращает поведение медиа-клавиш по-умолчанию.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Третий вариант оказался самым простым.&lt;/p&gt;</content><author><name>Alexey S</name></author><category term="apple" /><category term="itunes" /><summary type="html">iTunes это вероятно один из самых невидимых миром монстров который по идее должен делать только одну работу, но при этом оброс кучей других возможностей, при этом несколько последних апдейтов сделали его еще менее осмысленным. Что бесит лично меня: Больше нельзя с помощью iTunes удаленно установить/купить приложение на iOS устройство (через браузер тоже, привет Google Play!). Медиа-клавиши Macbook больше не управляют iTunes по-умолчанию! Подробнее о второй проблеме которую можно решить. Начиная с macOS 10.13 Apple изменили поведение медиа-клавиш, теперь они контролируют любое приложение для воспроизведения медиа в системе, например, видео-проигрыватель или youtube в браузере. Но в реальности, это всегда не то что нужно. Поиск и короткая (почему-то) ветка обсуждения привели к нескольким решениям: Попытка перезагрузиться в безопасном режиме - не работает, в какой-то момент кнопки ломаются опять. Настройки с помощью Better Touch Tools — дорого и сложно, на мой взгляд. Утилита highsierramediakeyenabler которая возвращает поведение медиа-клавиш по-умолчанию. Третий вариант оказался самым простым.</summary></entry><entry><title type="html">Yet another GIT help site</title><link href="http://42point.com/posts/yet-another-git-help-site" rel="alternate" type="text/html" title="Yet another GIT help site" /><published>2017-12-30T11:43:41+03:00</published><updated>2017-12-30T11:43:41+03:00</updated><id>http://42point.com/posts/yet-another-git-help-site</id><content type="html" xml:base="http://42point.com/posts/yet-another-git-help-site">&lt;p&gt;&lt;a href=&quot;http://ohshitgit.com&quot;&gt;http://ohshitgit.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/uploads/2017/12/IMAGE-2017-12-30-084115-520x752-a6bcd06b4c46e90199002a00d261377a83ad44b8e0843bba2fdc83dd0983303f.jpg&quot; data-rjs=&quot;/assets/uploads/2017/12/IMAGE-2017-12-30-084115-520x752-a6bcd06b4c46e90199002a00d261377a83ad44b8e0843bba2fdc83dd0983303f.jpg&quot; class=&quot;fluidbox-trigger&quot;&gt;
+  &lt;img src=&quot;/assets/uploads/2017/12/IMAGE-2017-12-30-084115-207x300-61f5e30cb4f304afe17fa0934e6b2b2f09645af11f61415c6cc40c74e88dbac1.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://t.me/ctodaily/448&quot;&gt;via&lt;/a&gt;&lt;/p&gt;</content><author><name>Alexey S</name></author><summary type="html">http://ohshitgit.com via</summary></entry><entry><title type="html">iTunes и внешняя колонка (AirPlay/BlueTooth)</title><link href="http://42point.com/posts/itunes-airplay-and-airplay" rel="alternate" type="text/html" title="iTunes и внешняя колонка (AirPlay/BlueTooth)" /><published>2017-12-22T03:04:19+03:00</published><updated>2017-12-22T03:04:19+03:00</updated><id>http://42point.com/posts/itunes-airplay-and-airplay</id><content type="html" xml:base="http://42point.com/posts/itunes-airplay-and-airplay">&lt;p&gt;Часто при работе дома, транслирую музыку из iTunes на внешнюю колонку &lt;a href=&quot;https://market.yandex.ru/product/9334841?track=tabs&quot;&gt;Bowers &amp;amp; Wilkins Z2&lt;/a&gt;. В свое время я специально искал устройство с поддержкой AirPlay. Самое большое неудобство — невозможность регулировать звук на внешнем устройстве через медиа-клавиши Macbook, &lt;!--more--&gt;так как они отвечают исключительно за системный звук Mac, а значит что бы отрегулировать звук нужно:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;переключиться в iTunes&lt;/li&gt;
+  &lt;li&gt;курсором найти ползунок и изменить звук (либо &lt;code class=&quot;highlighter-rouge&quot;&gt;⌘↑/↓&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/uploads/2017/12/itunes-and-z2-808fb5aa06f34b77cd71e8760d0689c3c5e46867dd4db2f51416cb5ca449929d.png&quot; data-rjs=&quot;/assets/uploads/2017/12/itunes-and-z2-808fb5aa06f34b77cd71e8760d0689c3c5e46867dd4db2f51416cb5ca449929d.png&quot; class=&quot;fluidbox-trigger&quot;&gt;
+  &lt;img src=&quot;/assets/uploads/2017/12/itunes-and-z2-808fb5aa06f34b77cd71e8760d0689c3c5e46867dd4db2f51416cb5ca449929d.png&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Варианта назначить штатными средствами глобальные сочетания клавиш не нашел а поиск по сети подсказал несколько достаточно старых приложений ставить которые желания не было.&lt;/p&gt;
+
+&lt;h2 id=&quot;на-помощь-пришел-alfred&quot;&gt;На помощь пришел Alfred.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.alfredapp.com/&quot;&gt;Alfred&lt;/a&gt;, как известно, универсальный инструмент для разных задач. Одна из функций которая в очередной раз выручила — workflows.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Создаем новый workflow&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Добавляем триггер на основе горячих клавиш (hotkey)&lt;figure&gt;
+&lt;a href=&quot;/assets/uploads/2017/12/trigger-085035f029cfb4b777b24911d766f0385748ff5bfe29d064863031da04c03d1d.png&quot; data-rjs=&quot;/assets/uploads/2017/12/trigger-085035f029cfb4b777b24911d766f0385748ff5bfe29d064863031da04c03d1d.png&quot; class=&quot;fluidbox-trigger&quot;&gt;
+  &lt;img src=&quot;/assets/uploads/2017/12/trigger-085035f029cfb4b777b24911d766f0385748ff5bfe29d064863031da04c03d1d.png&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/figure&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Назначаем интересующее сочетание клавиш.
+&lt;a href=&quot;/assets/uploads/2017/12/hotkey-0ba7ff2198eaa09ebe0fe157dd7f87a9c5c5934af05aa9136195b86d0b7708ac.png&quot; data-rjs=&quot;/assets/uploads/2017/12/hotkey-0ba7ff2198eaa09ebe0fe157dd7f87a9c5c5934af05aa9136195b86d0b7708ac.png&quot; class=&quot;fluidbox-trigger&quot;&gt;
+  &lt;img src=&quot;/assets/uploads/2017/12/hotkey-0ba7ff2198eaa09ebe0fe157dd7f87a9c5c5934af05aa9136195b86d0b7708ac.png&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Добавляем action — iTunes Command и выбираем Volume Up/Down&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/uploads/2017/12/action-12c662c0c5838fe17bf367485cd73cf16c29b5d0111ac3e7d499596199535c06.png&quot; data-rjs=&quot;/assets/uploads/2017/12/action-12c662c0c5838fe17bf367485cd73cf16c29b5d0111ac3e7d499596199535c06.png&quot; class=&quot;fluidbox-trigger&quot;&gt;
+  &lt;img src=&quot;/assets/uploads/2017/12/action-12c662c0c5838fe17bf367485cd73cf16c29b5d0111ac3e7d499596199535c06.png&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Готово!&lt;/p&gt;
+
+&lt;p&gt;PS. вот &lt;a href=&quot;https://s3.eu-central-1.amazonaws.com/com.42/Hotkeys_iTunes.alfredworkflow.zip&quot;&gt;ссылка&lt;/a&gt; на мой файл с Workflow который можно импортировать&lt;/p&gt;</content><author><name>Alexey S</name></author><category term="airplay" /><category term="alfred" /><category term="apple" /><category term="itunes" /><category term="soft" /><summary type="html">Часто при работе дома, транслирую музыку из iTunes на внешнюю колонку Bowers &amp;amp; Wilkins Z2. В свое время я специально искал устройство с поддержкой AirPlay. Самое большое неудобство — невозможность регулировать звук на внешнем устройстве через медиа-клавиши Macbook,</summary></entry><entry><title type="html">iOS 11 kit для Framer</title><link href="http://42point.com/posts/ios-11-kit-for-framer" rel="alternate" type="text/html" title="iOS 11 kit для Framer" /><published>2017-12-07T17:03:21+03:00</published><updated>2017-12-07T17:03:21+03:00</updated><id>http://42point.com/posts/ios-11-kit-for-framer</id><content type="html" xml:base="http://42point.com/posts/ios-11-kit-for-framer">&lt;p&gt;Неленивый человек &lt;a href=&quot;https://dribbble.com/brentcas/&quot;&gt;Brent Caswell&lt;/a&gt; подготовил визуальный фрейморк со стилями основных элементов iOS 11.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Для нормальной работы нужно скачать сами файлы с &lt;a href=&quot;https://brentcas.com/thoughts/2017/10/25/ios-11-design-system-for-framer&quot;&gt;сайта автора&lt;/a&gt; или &lt;a href=&quot;https://github.com/brentcas/iOS-11-Framer/&quot;&gt;Github&lt;/a&gt; и установить шрифт &lt;a href=&quot;https://developer.apple.com/fonts/&quot;&gt;San Francisco&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;стили&quot;&gt;Стили&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Colors.framer&lt;/li&gt;
+  &lt;li&gt;Fonts.framer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/uploads/2017/12/framer-ios11-styles--3fb26c2175eeb10870c1453a85ac4f216ff1241b95b0ed2c93ce4fde5343f9b8.png&quot; data-rjs=&quot;/assets/uploads/2017/12/framer-ios11-styles--3fb26c2175eeb10870c1453a85ac4f216ff1241b95b0ed2c93ce4fde5343f9b8.png&quot; class=&quot;fluidbox-trigger&quot;&gt;
+  &lt;img src=&quot;/assets/uploads/2017/12/framer-ios11-styles--3fb26c2175eeb10870c1453a85ac4f216ff1241b95b0ed2c93ce4fde5343f9b8.png&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;элементы&quot;&gt;Элементы&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;System.framer&lt;/li&gt;
+  &lt;li&gt;Bars.framer&lt;/li&gt;
+  &lt;li&gt;Controls.framer&lt;/li&gt;
+  &lt;li&gt;Views.framer&lt;/li&gt;
+  &lt;li&gt;Keyboards.framer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/uploads/2017/12/navbar-ios-11-framer-b2d4a222da7b51afd1c6ea5374228656c1f6de1fd453d274447d52485d820278.png&quot; data-rjs=&quot;/assets/uploads/2017/12/navbar-ios-11-framer-b2d4a222da7b51afd1c6ea5374228656c1f6de1fd453d274447d52485d820278.png&quot; class=&quot;fluidbox-trigger&quot;&gt;
+  &lt;img src=&quot;/assets/uploads/2017/12/navbar-ios-11-framer-b2d4a222da7b51afd1c6ea5374228656c1f6de1fd453d274447d52485d820278.png&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;</content><author><name>Alexey S</name></author><category term="framer" /><summary type="html">Неленивый человек Brent Caswell подготовил визуальный фрейморк со стилями основных элементов iOS 11.</summary></entry><entry><title type="html">Немного о прототипах</title><link href="http://42point.com/posts/o-prototipakh" rel="alternate" type="text/html" title="Немного о прототипах" /><published>2017-11-15T16:21:53+03:00</published><updated>2017-11-15T16:21:53+03:00</updated><id>http://42point.com/posts/o-prototipakh</id><content type="html" xml:base="http://42point.com/posts/o-prototipakh">&lt;p&gt;На прошлой неделе пришлось плотно повозиться с одним прототипом приложения, чего, надо признаться я не делал достаточно долго. Отличный повод посмотреть что есть из инструментов на рынке! — подумал я, и по очереди установил несколько. Конечно в сети полно статей типа «5/10/13 лучших инструментов прототипирования для дизайнера/менеджера/садовника в этом году», которые в принципе несут одинаковый смысл и содержание. Среди подобных заметок больше всего понравилась &lt;a href=&quot;https://medium.com/%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%8B-%D0%BF%D0%BE-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D0%BE%D0%B2/%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-5-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D1%82%D0%B8%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9-3cdeb5c726a7&quot;&gt;Сравнение: 5 инструментов для прототипирования приложений&lt;/a&gt;. &lt;!--more--&gt;Тут есть любопытное видео того как будут работать 5 прототипов одного и того же кейса сделанных с разными инструментами, описание плюсов и минусов каждого, подходы к работе и информация о возможности поделиться своим прототипом, а также попытка классифицировать программы по типу работы: Слои против Страниц.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/uploads/2017/11/1NCql4R4wLG24UoyG-YUy3w-b7fb50b2be1fe9353ddb9af99b4b512149b32718b08480b3f865406959765ce9.png&quot; data-rjs=&quot;/assets/uploads/2017/11/1NCql4R4wLG24UoyG-YUy3w-b7fb50b2be1fe9353ddb9af99b4b512149b32718b08480b3f865406959765ce9.png&quot; class=&quot;fluidbox-trigger&quot;&gt;
+  &lt;img src=&quot;/assets/uploads/2017/11/1NCql4R4wLG24UoyG-YUy3w-b7fb50b2be1fe9353ddb9af99b4b512149b32718b08480b3f865406959765ce9.png&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;По-честному, эта статья все что вам нужно, а ниже заметки с мои опытом.&lt;/p&gt;
+
+&lt;h2 id=&quot;axure&quot;&gt;Axure.&lt;/h2&gt;
+
+&lt;p&gt;Старый добрый Axure дожил до 8 версии, но на первый взгляд мало чем отличается от 5 или 6. Тот же интерфейс, тот же workflow и инструменты. Если кто не знает: Axure это WYSISWYG-конструктор из стандартных HTML контролов, с возможностью менять их свойства и внешний вид и поведение.&lt;/p&gt;
+
+&lt;p&gt;Из кардинально нового — доступ по подписке от $29 в месяц, что намного приятнее чем разовая покупка почти за $500. Да, на главной странице обещают адаптивные макеты, и анимации. В стандартных библиотеках добавились Icons.&lt;/p&gt;
+
+&lt;p&gt;Когда может пригодится? Наверно я бы использовал в случаях Когда нужно строить сложные условия на ввод и проверку данных, либо необходимо показать логику кнопки. В текущем случае я не рискнул уходить в него.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/uploads/2017/11/Screen-Shot-2017-11-15-at-12.49.34-4e213443bc6cd713fa07ccd6a3ac9781e23f772aae7e055fb49ac5824453d432.png&quot; data-rjs=&quot;/assets/uploads/2017/11/Screen-Shot-2017-11-15-at-12.49.34-4e213443bc6cd713fa07ccd6a3ac9781e23f772aae7e055fb49ac5824453d432.png&quot; class=&quot;fluidbox-trigger&quot;&gt;
+  &lt;img src=&quot;/assets/uploads/2017/11/Screen-Shot-2017-11-15-at-12.49.34-4e213443bc6cd713fa07ccd6a3ac9781e23f772aae7e055fb49ac5824453d432.png&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;origami-studio&quot;&gt;Origami Studio&lt;/h2&gt;
+
+&lt;p&gt;Давно хотел найти повод поиграться с этим инструментом, последний раз когда запускал Origami он как-то был завязан на запуск Quartz Composer, сейчас же это standalone приложение. Порог входа достаточно высок, но возможность увидеть максимально близкие к реальности анимации на устройстве или в редакторе располагает.&lt;/p&gt;
+
+&lt;p&gt;Навыков програмирования не требуется, все решается через&lt;/p&gt;
+
+&lt;p&gt;Интерфейсможно создать в самом редакторе, либо просто скопировать нужные слои из Sketch.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/uploads/2017/11/Screen-Shot-2017-11-11-at-11.38.51-9f41827679c444d95e2d730044a89b7d3ea8ebd92844c8d1f71840fc6f054f95.png&quot; data-rjs=&quot;/assets/uploads/2017/11/Screen-Shot-2017-11-11-at-11.38.51-9f41827679c444d95e2d730044a89b7d3ea8ebd92844c8d1f71840fc6f054f95.png&quot; class=&quot;fluidbox-trigger&quot;&gt;
+  &lt;img src=&quot;/assets/uploads/2017/11/Screen-Shot-2017-11-11-at-11.38.51-9f41827679c444d95e2d730044a89b7d3ea8ebd92844c8d1f71840fc6f054f95.png&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Из главных минусов :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;очень своеобразная логика работы с патчами и слоями когда нужно привязать множественные действия и условия к одному слою&lt;/li&gt;
+  &lt;li&gt;периодически mac пытался взлететь, после того как Origami разгонял CPU до 100%&lt;/li&gt;
+  &lt;li&gt;высокий порог вхождения, правда, для других серьезных инструментов так же&lt;/li&gt;
+  &lt;li&gt;в сети не так много ресурсов и рецептов по решению отдельных кейсов, вполне возможна ситуация что никто не выложил готовое решение по твоей задаче, и нужно потрать серьезное время&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Область применения мне показалась ограниченной, достаточно легко сделать прототип отдельного кейса но при попытке сделать что-то из 4-5 экранов, есть риск получить безумную лапшу из патчей и конекторов, в которой разобраться будет проблемно.&lt;/p&gt;
+
+&lt;p&gt;Если все же есть желание попробовать, на youtube есть &lt;a href=&quot;https://www.youtube.com/playlist?list=PLLYN7c0uuE9RdWLbqU7gEPRor3knRkFkN&quot;&gt;запись&lt;/a&gt; с мастер-класса Антона Карташова который он провел в Avito. Начиная с основ, и к более сложным вещам на русском языке, крайне рекомендую.&lt;/p&gt;
+
+&lt;h2 id=&quot;invision--craft&quot;&gt;Invision / Craft&lt;/h2&gt;
+
+&lt;p&gt;Инструмент больше для дизайнеров. Подкупил возможностью строить прототипы прям в интерфейсе Sketch’а, достаточно просто соединяются отдельные элементы.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/uploads/2017/11/sketch-prototype-4-964b95256a3da2cb2c8edd55ac0623aab51dd5089e302b2600bf263b890aa408.gif&quot; data-rjs=&quot;/assets/uploads/2017/11/sketch-prototype-4-964b95256a3da2cb2c8edd55ac0623aab51dd5089e302b2600bf263b890aa408.gif&quot; class=&quot;fluidbox-trigger&quot;&gt;
+  &lt;img src=&quot;/assets/uploads/2017/11/sketch-prototype-4-964b95256a3da2cb2c8edd55ac0623aab51dd5089e302b2600bf263b890aa408.gif&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.invisionapp.com/blog/build-interactive-prototype-sketch/&quot;&gt;How to build an interactive prototype in Sketch in minutes&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Есть подобие Но при этом все получается какое-то кривое и не аккуратное, либо же у меня руки оказались не подходящими.&lt;/p&gt;
+
+&lt;p&gt;Из плюсов — есть некое подобие канбан доски для идей и концептов.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/uploads/2017/11/mockup-workflow-87e0e27846d5f39c82d6cd65fc36fdf3f095f200d3327506b7dfadf74ed45229.png&quot; data-rjs=&quot;/assets/uploads/2017/11/mockup-workflow-87e0e27846d5f39c82d6cd65fc36fdf3f095f200d3327506b7dfadf74ed45229.png&quot; class=&quot;fluidbox-trigger&quot;&gt;
+  &lt;img src=&quot;/assets/uploads/2017/11/mockup-workflow-87e0e27846d5f39c82d6cd65fc36fdf3f095f200d3327506b7dfadf74ed45229.png&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;form&quot;&gt;Form&lt;/h2&gt;
+
+&lt;p&gt;Честно, даже не пробовал, увидел что последнее обновление в 2016 году да и подход ala Origami c noodle soup из патчей и коннекторов, и решил отложить.&lt;/p&gt;
+
+&lt;h2 id=&quot;framer&quot;&gt;Framer&lt;/h2&gt;
+
+&lt;p&gt;Фреймер меня очаровал, не сразу, потребовалось выучить несколько основных компонентов, и немного разобраться с CoffeeScript.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;очень лаконичный интерфейс, нет ничего лишнего но всего достаточно&lt;/li&gt;
+  &lt;li&gt;все что возможно с JavaScript возможно и в прототипе! Например &lt;a href=&quot;https://www.mapbox.com/help/mobile-framer/&quot;&gt;подключить реальные интерактивные карты&lt;/a&gt; с несколькими строчками кода&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/uploads/2017/11/comp_1_5-2-65dce1fe5fff05474ff731039a3525c6bf402183f604ef377448959704a2057b.gif&quot; data-rjs=&quot;/assets/uploads/2017/11/comp_1_5-2-65dce1fe5fff05474ff731039a3525c6bf402183f604ef377448959704a2057b.gif&quot; class=&quot;fluidbox-trigger&quot;&gt;
+  &lt;img src=&quot;/assets/uploads/2017/11/comp_1_5-2-65dce1fe5fff05474ff731039a3525c6bf402183f604ef377448959704a2057b.gif&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p style=&quot;text-align: center;&quot;&gt;
+  &lt;a href=&quot;https://dribbble.com/shots/3450593-Framer-Mapbox&quot;&gt;Framer Mapbox by Bryant Jow &amp;#8212; Dribbble&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;доступен по подписке при этом есть 2 недели для оценки использования, за это время можно более чем выучить&lt;/li&gt;
+  &lt;li&gt;минус — высокий порог входа и знание основ программирования на JS.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Самый главное что может расстроить — сходу очень сложно сделать прототип полного приложения с большим количеством экранов. Очень много кода и некоторые компоненты не работают как ожидается. Framer больше подходит для реализации атомарных кейсов с детальной проработкой необходимой анимации, например — как будет работать анимация загрузки списка карточек чего-либо после поиска. Но, если стоит задача получить наиболее приближенный к реальному приложению на устройстве — то Framer лучший выбор.&lt;/p&gt;
+
+&lt;p&gt;Для просмотра на устройсве можно использовать браузер, но в отличии от Invision мне не удалось скрыть на устройстве адресную строку, либо официальное приложение &lt;a href=&quot;https://itunes.apple.com/us/app/framer-preview/id1124920547?mt=8&quot;&gt;Framer Preview on the App Store&lt;/a&gt;. Но я рекомендую поставить &lt;a href=&quot;https://itunes.apple.com/us/app/frames-mirror-and-gallery-for-framer-prototypes/id1016029345?mt=8&quot;&gt;Frames: Mirror and Gallery for Framer Prototypes&lt;/a&gt;, позволяет просматривать онлайн прототипы в Fullscreen режиме.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;PS&lt;/strong&gt;. Отличный доклад для введения в прототипирование&lt;/p&gt;
+
+&lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+  &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ll2raex7_CI&quot; frameborder=&quot;0&quot; gesture=&quot;media&quot; allow=&quot;encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;/div&gt;</content><author><name>Alexey S</name></author><category term="framer" /><category term="origami" /><category term="опыт" /><category term="прототипы" /><summary type="html">На прошлой неделе пришлось плотно повозиться с одним прототипом приложения, чего, надо признаться я не делал достаточно долго. Отличный повод посмотреть что есть из инструментов на рынке! — подумал я, и по очереди установил несколько. Конечно в сети полно статей типа «5/10/13 лучших инструментов прототипирования для дизайнера/менеджера/садовника в этом году», которые в принципе несут одинаковый смысл и содержание. Среди подобных заметок больше всего понравилась Сравнение: 5 инструментов для прототипирования приложений.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://42point.com/wp-content/uploads/2017/11/Screen-Shot-2017-11-15-at-13.00.56-520x309.png" /></entry><entry><title type="html">Копируем заголовок и адрес WEB-страницы в формате Markdown</title><link href="http://42point.com/posts/copy-titie-and-url-as-markdown" rel="alternate" type="text/html" title="Копируем заголовок и адрес WEB-страницы в формате Markdown" /><published>2017-10-29T01:17:24+03:00</published><updated>2017-10-29T01:17:24+03:00</updated><id>http://42point.com/posts/copy-titie-and-url-as-markdown</id><content type="html" xml:base="http://42point.com/posts/copy-titie-and-url-as-markdown">&lt;p&gt;Простейший скрипт для копирования заголовка и URL’а страницы в Safari в формате Markdown:&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;div class=&quot;gist-oembed&quot; data-gist=&quot;42point/594e728fad23353eaaee774b33cc21a7.json&quot;&gt;
+&lt;/div&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/594e728fad23353eaaee774b33cc21a7.js&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;У меня скрипт висит в Alfred на сочетание клавиш &lt;code class=&quot;highlighter-rouge&quot;&gt;⌥+C&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;</content><author><name>Alexey S</name></author><category term="macOS" /><category term="productivity" /><summary type="html">Простейший скрипт для копирования заголовка и URL’а страницы в Safari в формате Markdown:</summary></entry></feed>

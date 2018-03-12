@@ -1,4 +1,0 @@
----
-slug: airplay
-name: Airplay
----
