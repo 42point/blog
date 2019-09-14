@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Как работать с мета-данными в apple store"
-description:
+title: "Как работать с мета-данными в appstore connect"
+description: "Немного магии на каждый день"
 date: 2019-09-14T22:52:54+03:00
 categories:
 tags: [apple, appstore]
