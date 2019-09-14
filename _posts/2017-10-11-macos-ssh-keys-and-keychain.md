@@ -51,6 +51,8 @@ ssh-add -A 2>/dev/null;
 
 {% include image.html path="uploads/2017/10/Screen-Shot-2017-10-11-at-10.51.12-1.png" path-detail="uploads/2017/10/Screen-Shot-2017-10-11-at-10.51.12-1.png" alt="" %}
 
+8. PS для того что бы посмотреть текущие ключи в в агенте `ssh-add -l`
+
 
 [^1]: [Technical Note TN2449OpenSSH updates in macOS 10.12.2](https://developer.apple.com/library/content/technotes/tn2449/_index.html)
 [^2]: [Методы автозагрузки приложений в Mac OS X. LaunchAgents и LaunchDaemons.](http://macdaily.me/howto/startup-applications-in-mac-os-x-launchagents-and-launchdaemons/)
