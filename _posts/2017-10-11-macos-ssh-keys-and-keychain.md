@@ -47,14 +47,10 @@ ssh-add -A 2>/dev/null;
 </plist>
 {% endhighlight %} 
 {:start="7"} 
-7. Если не хотим каждый раз вводить пароль — в настройках “связки ключей” снимаем галочку об автоматической блокировке.
+7. Если не хотим каждый раз вводить пароль — в настройках “связки ключей” снимаем галочку об автоматической блокировке.{% include image.html path="uploads/2017/10/Screen-Shot-2017-10-11-at-10.51.12-1.png" path-detail="uploads/2017/10/Screen-Shot-2017-10-11-at-10.51.12-1.png" alt="" %}
+8. PS для того что бы посмотреть текущие ключи в в агенте `ssh-add -l`.
 
-{% include image.html path="uploads/2017/10/Screen-Shot-2017-10-11-at-10.51.12-1.png" path-detail="uploads/2017/10/Screen-Shot-2017-10-11-at-10.51.12-1.png" alt="" %}
-
-8. PS для того что бы посмотреть текущие ключи в в агенте `ssh-add -l`
-
-
+[Saving SSH keys in macOS Sierra keychain](https://github.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain)
 [^1]: [Technical Note TN2449OpenSSH updates in macOS 10.12.2](https://developer.apple.com/library/content/technotes/tn2449/_index.html)
-[^2]: [Методы автозагрузки приложений в Mac OS X. LaunchAgents и LaunchDaemons.](http://macdaily.me/howto/startup-applications-in-mac-os-x-launchagents-and-launchdaemons/)
 
-  [Saving SSH keys in macOS Sierra keychain](https://github.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain)
+[^2]: [Методы автозагрузки приложений в Mac OS X. LaunchAgents и LaunchDaemons.](http://macdaily.me/howto/startup-applications-in-mac-os-x-launchagents-and-launchdaemons/)
