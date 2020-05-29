@@ -1,22 +1,66 @@
 ---
 layout: default
-title: "Дизайн и разработка мобильного WEB и приложений"
-description: ""
+title: "Дизайн и разработка мобильных и WEB приложений"
+description: "Портфолио Мобильных и WEB приложений"
 ---
-
 <div class="about {% if site.scrollappear_enabled %}scrollappear{% endif %}">
-  <img src="{% asset 'about.jpg' @path %}" alt="Алексей Серпухoвитов" />
-  <h1>Привет!</h1>
-  <p>
-    Я менеджер проектов, продуктов, digital-продюсер =) Работаю с WEB-сервисам. сайтами, CRM-системами и мобильные приложениями с 2008 года. 
+	<img src="{% asset 'about.jpg' @path %}" alt="Алексей Серпухoвитов" />
+	<h2 class="otstup">Привет!</h2>
 
-Мне посчастливилось работать над рекламными проектами с дополненной реальностью (Augmented Reality) и крупнейшими агентствами и клиентами на рынкам FMCG и телеком.
+<p>Меня зовут Алексей, я профессионально занимаюсь разработкой и запуском digital-продуктов. Если вам требуется</p>
+<ul>
+	<li> мобильное приложение которое будет приносить деньги,</li>
+<li>аналитическая система которая подружит данные вашей CRM и статистику рекламных кабинетов</li>
+<li>интернет-магазин, или даже маркетплейс для вас и ваших клиентов</li></ul>
 
-Ранее работал над новыми продуктами и услугами в сотовых компаниях (НТК, МТС), позже в студии мобильной разработки Redmadrobot, а совсем недавно руководил продуктами в Mail.Ru Group (ICQ). 
+<p>Мы с командой специалистов разработаем дизайн, архитектуру и воплотим задумку в жизнь в рамках вашего бюджета и разумных сроков. Поможем отладить in-house разработку так что продукт будет приносить выгоду стейкхолдерам и а процесс разработчикам.</p>
+<p>Мне посчастливилось работать с талантливыми креаторами, предпринимателями и программистами над проектами с использованием как привычных технологий так и с совершенно новыми разработками.</p>
+	<h2 class="otstup">Достойные упоминания проекты, запуски</h2>
 
-Вместе со мной над проектами работает команда дизайнеров, мобильных, backend и frontend разработчиков.
 
-Для нас важна продуктовая составляющая проектов, эффективность и KPI, обратная связь, статистика и аналитика.
-Если у вас появились вопросы по мобильному приложению, новому проекту или возникло желание сотрудничать, не стесняйтесь, свяжитесь со мной.
-  </p>
-</div>
+	{% for item in site.data.projects.list %} <!-- start period-->
+	<!-- begin project -->
+	<div class="period">
+		<!-- begin header -->
+		<div class="period_header article-list-footer">
+			<span class="project_date">{{item.dates}}</span>
+			<span class="article-list-divider">-</span>
+			<span class="project_client">{{item.client}}</span>
+		</div>
+		<!-- end header -->
+		
+		<!-- begin description -->
+		
+		{% for entry in item.projects %} <!-- begin project -->
+		<div class="project inside effect1">
+			<div class="project_description ">
+				<img class="imageIcon" src="{{ entry.iconUrl }}" alt="{{ book.title }}" />
+				<h4> {{ entry.project}} </h4>
+				<p>{{ entry.description | markdownify }}</p>
+				<!-- begin project_footer -->
+				<div class="project_footer">
+					<!-- begin tags -->
+					{% for tag in entry.tags %}
+					  {% if tag == 'iOS' %}
+					     <span class="project_tags"><a href="{{ entry.iosUrl }}">{{ tag }}</a></span>
+					  {% elsif tag =='Android' %}
+					  	<span class="project_tags"><a href="{{ entry.androidUrl }}">{{ tag }}</a></span>
+					  {% else %}
+					    <span class="project_tags"> <a href="">{{ tag }}</a></span>
+					  {% endif %}
+					{% endfor %}
+					<!-- end tags -->
+					<span class="project_tags"> {{ tag }}</span>
+					
+
+				</div>
+				<!-- end project_footer -->
+			</div>
+		</div>
+					{% endfor %}<!-- / project -->
+	</div>
+		
+		{% endfor %} <!-- / period-->
+		<!-- end description -->
+		<!-- end project -->
+	<!-- </div> -->

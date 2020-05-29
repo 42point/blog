@@ -99,6 +99,7 @@ assets:
     - _assets/javascripts
     - _assets/stylesheets
     - _assets/yarn
+    = _assets/images
   caching:
     path: ".jekyll-cache/assets"
     type: file # Possible values: memory, file
@@ -115,6 +116,10 @@ defaults:
       type: my_tags
     values:
       layout: articles_by_tag
+  - scope: 
+      path: "assets/images"
+    values:
+      image: true  
 exclude:
   - .travis.yml
   - bin/*
@@ -130,7 +135,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
-  - jekyll-feed
+  # - jekyll-feed
   - jekyll-gist
 paginate_path: /posts/page/:num/
 permalink: posts/:slug
