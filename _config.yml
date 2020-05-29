@@ -99,7 +99,6 @@ assets:
     - _assets/javascripts
     - _assets/stylesheets
     - _assets/yarn
-    = _assets/images
   caching:
     path: ".jekyll-cache/assets"
     type: file # Possible values: memory, file
