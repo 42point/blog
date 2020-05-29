@@ -1,0 +1,53 @@
+// =============================================================================
+// Articles
+// =============================================================================
+
+.line-header {
+  border-bottom: dotted 1px;
+  padding-top: 1rem;
+  h2 {
+    display: inline;
+  }
+  span {
+    padding-left: 0.5rem;
+  }
+
+}
+
+.book-list {
+  margin-top: 2rem;
+  margin-left: 0;
+  list-style-type: none;
+  display: block;
+  padding-left: 0;
+}
+
+.book-item {
+  display: table;
+  width: 100%;
+  margin-bottom: 2rem;
+  clear: left;
+
+}
+
+.cover {
+  float: left;
+  width: 150px;
+  padding: 0 1.5rem 1rem 0;
+
+}
+// Responsive
+// =============================================================================
+
+@include breakpoint(small) {
+  .article-list-footer {
+    display: block;
+  }
+  .article-list-divider:last-of-type {
+    display: none;
+  }
+  .article-list-tags {
+    display: block;
+    margin-top: -7px;
+  }
+}

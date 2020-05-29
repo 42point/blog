@@ -1,0 +1,52 @@
+
+list: 
+  - dates: 2018-2020
+    client: В рамках акселератора Key Group
+    projects:
+      - project: GetTransfer.com Passenger App
+        description: "**[GetTransfer.com](http://gtr.com)** - сервис бронированию трансферов и аренды автомобилей с водителем. 
+          Приложения позволяют заказать трансфер, получить предложения и оплатить в любой стране."
+        fullDescription: "**[GetTransfer.com](http://gtr.com)** - сервис бронированию трансферов и аренды автомобилей с водителем. 
+          Приложения позволяют заказать трансфер в любом регионе мира даже если клиент находится в другом,
+           для этого активно используются картографические сервисы Google Maps (прямой и обратный геокодинг). 
+           В ответ на заказ клиент получает список индивидуальных предложений от локальных перевозчиков. 
+           Пассажир может выбрать самое привлекательное для себя предложение и оплатить его с помощью банковской
+           карты, счета PayPal, виртуального счета или Apple / Google Pay в зависимости от платформы."
+        androidUrl: https://play.google.com/store/apps/details?id=com.gettransfer
+        iosUrl: https://apps.apple.com/us/app/gettransfer-com/id1150570978
+        imageUrl:
+        projectUrl:
+        iconUrl: https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/4f/40/a6/4f40a62c-29fb-98c1-3134-278f8c87bf05/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/230x0w.png
+        readmore:
+        tags: [mobile, iOS, Android]
+      - project: GetTransport.com App
+        description: Приложение для перевозчиков и водителей GetTransfer Driver для Android и Apple iOS 
+          для организации работы автопарков и обеспечения выполнения заказов на трансферы со стороны водителей партнеров.
+        androidUrl: https://play.google.com/store/apps/details?id=com.gettransportnew
+        iosUrl: https://apps.apple.com/ru/app/gettransport-com/id1308038813
+        iconUrl: https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/0d/f1/0d/0df10dd9-e011-0851-439c-5a5f6f119668/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/230x0w.png
+        tags: [iOS, Android]
+      - project: GetTransfer Driver App
+        description: "Приложение для перевозчиков и водителей GetTransfer Driver для Android и Apple iOS для организации работы автопарков и обеспечения выполнения заказов на трансферы со стороны водителей партнеров."
+        fullDescription:
+        androidUrl: https://play.google.com/store/apps/details?id=com.kg.gettransferdriver
+        iosUrl: 
+        imageUrl:
+        projectUrl:
+        iconUrl: https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/e3/f6/bb/e3f6bb03-d615-2743-8cbb-689eee998273/AppIcon-1x_U007emarketing-0-8-0-0-85-220.png/230x0w.png
+        tags: [mobile, iOS, Android]
+      - project: GetRentaCar App
+        description: "**GetRentaCar.com** - сервис проката автомобилей и мотоциклов."
+        fullDescription:
+        androidUrl: 
+        iosUrl: 
+        imageUrl:
+        projectUrl:
+        iconUrl: assets/img/grac.png
+        tags: [прототип, iOS]
+
+
+  # - dates: давно
+  #   projects:
+  #   - project: icq
+  #     description: всемирно известный

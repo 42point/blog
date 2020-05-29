@@ -1,0 +1,125 @@
+// =============================================================================
+// Articles
+// =============================================================================
+
+
+.project {
+  border-radius: 5px;
+}
+
+.inside {
+  padding: 8px;
+
+}
+
+.project_description {
+  // margin-bottom: 2rem;
+  border-radius: 5px;
+  // width: 500px;
+  margin: 1rem auto;
+  // border: 1px solid;
+}
+
+.effect1{
+  // box-shadow:
+  // 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  // 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  // 0 12.5px 10px rgba(0, 0, 0, 0.06),
+  // 0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  // 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  // 0 100px 80px rgba(0, 0, 0, 0.12)
+  //   // border: 1px solid;
+  // box-shadow: 0 1px 6px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+
+}
+
+.imageIcon {
+  float: left;
+  width: 100px;
+  margin: 1rem 1rem 1rem 1rem;
+  border-radius: 22.5%;
+
+}
+
+
+.project_date {
+  font-size: $base-font-size;
+
+}
+
+
+.project_client {
+  
+}
+
+.project_footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+  border-top: 1px solid #ebeaea;
+}
+
+.project_tags {
+  margin-right: 0.5rem;
+  padding: 5px;
+  border-radius: 10%;
+  // border: 1px solid;
+}
+
+.otstup {
+  margin-top: 1.5rem;
+}
+
+
+
+// .line-header {
+//   border-bottom: dotted 1px;
+//   padding-top: 1rem;
+//   h2 {
+//     display: inline;
+//   }
+//   span {
+//     padding-left: 0.5rem;
+//   }
+
+// }
+
+// .book-list {
+//   margin-top: 2rem;
+//   margin-left: 0;
+//   list-style-type: none;
+//   display: block;
+//   padding-left: 0;
+// }
+
+// .book-item {
+//   display: table;
+//   width: 100%;
+//   margin-bottom: 2rem;
+//   clear: left;
+
+// }
+
+// .cover {
+//   float: left;
+//   width: 150px;
+//   padding: 0 1.5rem 1rem 0;
+
+// }
+// Responsive
+// =============================================================================
+
+@include breakpoint(small) {
+  .article-list-footer {
+    display: block;
+  }
+  .article-list-divider:last-of-type {
+    display: none;
+  }
+  .article-list-tags {
+    display: block;
+    margin-top: -7px;
+  }
+}
