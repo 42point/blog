@@ -33,15 +33,17 @@ permalink: /books/
         {% for book in entry.books %}
         <li>
           <div class="book-item">
-            <a href="{{ book.link }}"><img class="cover" src="{{ book.image }}" alt="{{ book.title }}" /> </a>
+            <a href="{{ book.link }}">
+            	<img class="cover" src="{{ book.image }}" alt="{{ book.title }}" /> 
+            </a>
             <div class="book-info">
               <h4><a class="book-title" href="{{ book.link }}">{{ book.title }}</a></h4>
               <p class="book-author">{{ book.author }}</p>
-              <p>{{ book.description }}</p>
-              <p class="post-meta">Date completed:
+              <p>{{ book.description | markdownify }}</p>
+              <p class="post-meta">Статус:
                 {% if book.completed == 'Читаю' %}
                   <span style="color: #EB002B">📖 {{ book.completed }}</span>
-                {% elsif book.completed == 'Abandoned' %}
+                {% elsif book.completed == 'Забросил' %}
                     <span style="color: #EB002B">{{ book.completed }} ¯\_(ツ)_/¯ </span>
                 {% elsif book.completed == 'Надо перечитать' %}
                     <span style="color: #EB002B">📚{{ book.completed }}  </span>
