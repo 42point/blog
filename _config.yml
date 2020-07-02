@@ -17,15 +17,15 @@
 # Mandatory settings
 
 
-title: RUkovodstvo
+title: 42point
 email: lexx@42point.com
 description: >- # this means to ignore newlines until "baseurl:"
   Немного мыслей об IT, продуктивности и технологиях
-url: 
-  http://42point.com # the base hostname & protocol for your site, e.g. http://example.com
+url:
+  https://42point.com # the base hostname & protocol for your site, e.g. http://example.com
 
 blog_theme: light # Or use dark
-name: RUkovodstvo
+name: 42point
 excerpt_separator: <!--more-->
 paginate: 10
 include: ['.htaccess']
@@ -115,10 +115,10 @@ defaults:
       type: my_tags
     values:
       layout: articles_by_tag
-  - scope: 
+  - scope:
       path: "assets/images"
     values:
-      image: true  
+      image: true
 exclude:
   - .travis.yml
   - bin/*
@@ -134,7 +134,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
-  # - jekyll-feed
+  - jekyll-feed
   - jekyll-gist
 paginate_path: /posts/page/:num/
 permalink: posts/:slug
