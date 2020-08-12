@@ -2,6 +2,13 @@ list:
 
   - year: 2020
     books:
+      - title: "Проект «Феникс». Роман о том, как DevOps меняет бизнес к лучшему"
+        author: Джин Ким
+        link: https://www.litres.ru/dzhin-kim/proekt-feniks-roman-o-tom-kak-devops-menyaet-biznes-k-luchshemu/
+        image: https://cv9.litres.ru/pub/c/elektronnaya-kniga/cover_415/11083697-dzhin-kim-proekt-feniks-roman-o-tom-kak-devops-menyaet-biznes-k-luchshemu.jpg
+        description: "В легком и развлекательном стиле авторы рассказывают историю, которая знакома всем, кто когда-либо работал в IT. Читатели не только узнают, как использовать методологию DevOps в своих компаниях, они уже никогда не посмотрят на IT прежними глазами. Стоящая чтения книга. Ревью сделаю позже,"
+        genre: [management, business]
+        completed: Читаю
       - title: "Дизайн привычных вещей"
         author: Дональд Норман
         link: https://www.litres.ru/donald-norman/dizayn-privychnyh-veschey-2/
