@@ -48,7 +48,7 @@ permalink: /books/
                 {% elsif book.completed == 'Надо перечитать' %}
                     <span style="color: #EB002B">📚{{ book.completed }}  </span>
                 {% else %}
-                  {{ book.completed | date: "%B %-d, %Y" }}
+                  <span>📗 {{ book.completed | date: "%F" }}</span>
                 {% endif %}
                 {% if book.audiobook == true %} 
                   <span> 🎧</span>

@@ -50,3 +50,10 @@ list:
         description: "Книга состоит из восемнадцати эссе-рассуждений принадлежащих перу двадцати философов, описывающих определенные аспекты деятельности и мировоззрения Грегори Хауса."
         genre: 
         completed: Надо перечитать
+      - title: "Кровь, пот и пиксели. Обратная сторона индустрии видеоигр"
+        author: Джейсон Шрейер
+        link: https://www.litres.ru/dzheyson-shreyer/krov-pot-i-pikseli-obratnaya-storona-industrii-videoigr/
+        image: https://cv4.litres.ru/pub/c/elektronnaya-kniga/cover_330/35245440-dzheyson-shreyer-krov-pot-i-pikseli-obratnaya-storona-industrii-videoigr.jpg
+        description: "Лучшая книга об игровой индустрии от известного американского журналиста Джейсона Шрейера."
+        genre: 
+        completed: 2018-09-30
