@@ -6,7 +6,7 @@ layout: post
 image: uploads/2017/10/Screen-Shot-2017-10-11-at-10.51.12-1-520x300.png
 tags:
   - macos
-  - manuel
+  - manual
   - ssh
 ---
 Что такое SSH и для чего они нужны лучше чем уже [сказано на Хабре](https://habrahabr.ru/post/122445/) рассказать не смогу. Потому лишь добавлю что внезапно а в версии 10.12.2 macOS обновилась библиотека OpenSSH [^1] и логика работы с ключами. Что конечно же все сломало — ssh-ключи не загружаются после загрузки системы. Что очень неудобно при работе Sourcetree, Github, хостингами да и вообще. Так что подготовил инструкцию больше для себя как исправить включая все шаги.
@@ -51,6 +51,6 @@ ssh-add -A 2>/dev/null;
 8. PS для того что бы посмотреть текущие ключи в в агенте `ssh-add -l`.
 
 [Saving SSH keys in macOS Sierra keychain](https://github.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain)
-[^1]: [Technical Note TN2449OpenSSH updates in macOS 10.12.2](https://developer.apple.com/library/content/technotes/tn2449/_index.html)
 
+[^1]: [Technical Note TN2449OpenSSH updates in macOS 10.12.2](https://developer.apple.com/library/content/technotes/tn2449/_index.html)
 [^2]: [Методы автозагрузки приложений в Mac OS X. LaunchAgents и LaunchDaemons.](http://macdaily.me/howto/startup-applications-in-mac-os-x-launchagents-and-launchdaemons/)

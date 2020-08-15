@@ -14,3 +14,6 @@ gem "sass"
 gem "sprockets", "4.0.0.beta6"
 gem "uglifier"
 gem "jekyll-gist"
+gem "liquid-tag-parser"
+gem "kramdown-parser-gfm"
+
