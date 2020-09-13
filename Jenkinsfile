@@ -2,7 +2,10 @@ pipeline {
     agent any
     stages {
         stage(`Checkout`) {
-            echo 'Checkout..'
+            steps {
+                echo 'Checkout..'
+                checkout scm    
+            }
         }
         stage('Deploy') {
             steps {
