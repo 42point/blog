@@ -1,0 +1,23 @@
+---
+title: Инструменты
+date: 2020-09-12T23:43:21+00:00
+layout: post
+---
+Иногда меня спрашивают какой софт использую для тех или  ных задач. У меня есть странная предрасположенность к нативным приложениям, и в моем списке наверняка будут те что можно заменить оналйновыми инструементами. Возможно что-то покажется вам интересным и полезным.
+
+
+
+{% for item in site.data.tools.list %} 
+	<!-- start type-->
+
+	<div class="">
+		<h3> {{ item.type }}</h3>
+
+		{% for tool in item.tool %}
+			<h4> <a href="{{ tool.link }} ">{{ tool.title }}</a> <span id= {{ tool.title }}>#</span> </h4>
+			<p>{{ tool.desc | markdownify }}</p>
+		{% endfor %}
+
+	</div>
+	<!-- end header -->
+{% endfor %} 

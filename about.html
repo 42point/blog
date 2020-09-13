@@ -15,6 +15,7 @@ description: "Портфолио Мобильных и WEB приложений"
 
 <p>Мы с командой специалистов разработаем дизайн, архитектуру и воплотим задумку в жизнь в рамках вашего бюджета и разумных сроков. Поможем отладить in-house разработку так что продукт будет приносить выгоду стейкхолдерам и а процесс разработчикам.</p>
 <p>Мне посчастливилось работать с талантливыми креаторами, предпринимателями и программистами над проектами с использованием как привычных технологий так и с совершенно новыми разработками.</p>
+<p>Не стесняйтесь <span id="myBtn">связаться со мной<span></p>
 
 <!-- <div>
 	<form
@@ -81,7 +82,36 @@ description: "Портфолио Мобильных и WEB приложений"
 					{% endfor %}<!-- / project -->
 	</div>
 		
-		{% endfor %} <!-- / period-->
-		<!-- end description -->
-		<!-- end project -->
-	<!-- </div> -->
+		{% endfor %} 
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+<form action="https://getform.io/f/a2a1f2ea-d98d-4283-b740-4f43ccaeb385" method="POST">
+	<p>Ваше имя </br>
+  <input type="text" name="name">
+</p>
+<p>оставьте email</br>
+  <input type="email" name="email">
+</p>
+<p>А теперь сообщение</br> 
+  <input type="text" name="message" rows="3">
+  </br>
+  <button type="submit">Send</button>
+</p>
+
+</form>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>

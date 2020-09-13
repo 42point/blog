@@ -86,6 +86,10 @@ social:
   stackoverflow: # Add your Stack Overflow ID number
   steam: # Add your Steam handle
 
+algolia:
+  application_id: 'XSQ0SZ38PH'
+  index_name: 42point
+
 
 # Important settings (change at own risk)
 
