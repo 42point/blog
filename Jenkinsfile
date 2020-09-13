@@ -10,6 +10,9 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Building..'
+                nodejs('NodeJS-14.10') {
+                    sh 'yarn install'
+                }
                 sh 'sh bin/deploy'
             }
         }
