@@ -18,7 +18,7 @@ pipeline {
                     sh 'yarn install --modules-folder ./_assets/yarn'
                 }
                 sh 'bundle exec jekyll build'
-                sh 'find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \\;'
+                sh "find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \\;"
                 sh 'mv _site/* .'
                 sh 'rm -R _site/'
                 echo 'Deploy..'
