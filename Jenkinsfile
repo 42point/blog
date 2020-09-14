@@ -17,6 +17,7 @@ pipeline {
                 nodejs('NodeJS-14.10') {
                     sh 'yarn install --modules-folder ./_assets/yarn'
                 }
+                echo 'jekyll build'
                 sh 'bundle exec jekyll build'
                 sh "find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \\;"
                 sh 'mv _site/* .'
