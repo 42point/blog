@@ -12,8 +12,6 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Yarn..'
-                sh 'yarn install'
                 echo 'node'
                 nodejs('NodeJS-14.10') {
                     sh 'yarn install'
