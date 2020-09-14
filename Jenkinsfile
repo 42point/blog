@@ -12,8 +12,9 @@ pipeline {
         }
         stage('Deploy') {
             steps {
+                echo 'Switch to gh-pages…'
                 sh 'if [ `git branch | grep gh-pages` ] then git branch -D gh-pages fi git checkout -b gh-pages'
-                echo 'node'
+                echo 'Yarn install'
                 nodejs('NodeJS-14.10') {
                     sh 'yarn install --modules-folder ./_assets/yarn'
                 }
