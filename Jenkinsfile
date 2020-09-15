@@ -18,7 +18,7 @@ pipeline {
         }
 
         
-        stage('Deploy') {
+        stage('Build') {
             steps {
                 nodejs('NodeJS-14.10') {
 
@@ -36,7 +36,7 @@ pipeline {
                         echo "install modules"
                         yarn install --modules-folder ./_assets/yarn
                     """)
-                        echo 'Deploy…'
+                        echo 'Build…'
                     sh  ("""
                         set -e
 
@@ -64,6 +64,18 @@ pipeline {
                     """)
                 }
                 echo 'Done'
+            }
+        }
+        stage('Publish') {
+            steps {
+                withCredentials([sshUserPrivateKey(credentialsId: '70b1cba3-b5b8-4470-b05d-9811ae10db1a', keyFileVariable: '', passphraseVariable: '', usernameVariable: '')]) {
+
+                sh ("""
+                git add -fA
+                git commit --allow-empty -m "$(git log -1 --pretty=%B) [ci skip]"
+                git push -f -q origin gh-pages
+                """)
+}
             }
         }
     }
