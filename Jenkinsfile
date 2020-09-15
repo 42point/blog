@@ -72,7 +72,7 @@ pipeline {
 
                 sh ("""
                 git add -fA
-                git commit --allow-empty -m "$(git log -1 --pretty=%B) [ci skip]"
+                git commit --allow-empty -m "\$(git log -1 --pretty=%B) [ci skip]"
                 git push -f -q origin gh-pages
                 """)
 }
