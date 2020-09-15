@@ -1,8 +1,6 @@
 pipeline {
     agent any
-    environment {
-        PATH="/usr/local/opt/ruby/bin:$PATH"
-    }
+
     stages {
         stage('Checkout') {
             steps {
