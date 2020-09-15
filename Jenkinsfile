@@ -67,6 +67,7 @@ pipeline {
                 sh ("""
                 git add -fA
                 git commit --allow-empty -m "\$(git log -1 --pretty=%B) [ci skip]"
+                GIT_SSH_COMMAND = "ssh -i $SSH_KEY"
                 git push -f -q origin gh-pages
                 """)
 }
