@@ -13,17 +13,15 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Checkout..'
-                checkout scm    
+                checkout scm
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Switch to gh-pages…'
-                echo 'Yarn install'
-                echo 'Jekyll install'
-                sh 'gem install jekyll bundler --user-install'
-                sh 'bundle install'
                 nodejs('NodeJS-14.10') {
+                    echo 'Setup…'
+                    sh 'bin/setup'
+                    echo 'Deploy…'
                     sh 'bin/deploy'
                 }
                 echo 'Done'
