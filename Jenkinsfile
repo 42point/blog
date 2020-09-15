@@ -3,7 +3,7 @@ pipeline {
     environment {
         RUBY_HOME="/usr/local/opt/ruby/bin"
         GEM_PATH="/usr/local/opt/ruby/lib/ruby/gems/2.7.0"
-        EM_HOME="$GEM_PATH"
+        GEM_HOME="$GEM_PATH"
         PATH="$RUBY_HOME:$GEM_HOME/bin:$PATH"
     }
     stages {
