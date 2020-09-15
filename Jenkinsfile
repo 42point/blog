@@ -16,13 +16,27 @@ pipeline {
                 checkout scm
             }
         }
+
+        
         stage('Deploy') {
             steps {
                 nodejs('NodeJS-14.10') {
+
                     echo 'Setup…'
-                    sh 'bin/setup'
-                    echo 'Deploy…'
-                    sh 'bin/deploy'
+
+                    sh ("""
+                        set -e
+                        # Set up Ruby dependencies via Bundler.
+                        gem install bundler --conservative
+                        bundle check || bundle install
+                        bundle update
+                        echo "Install yarn"
+                        # Set up JS dependencies via Yarn.
+                        npm install -g yarn
+                        echo "install modules"
+                        yarn install --modules-folder ./_assets/yarn
+                    """)
+                        echo 'Deploy…'
                 }
                 echo 'Done'
             }
