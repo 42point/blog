@@ -18,7 +18,8 @@ pipeline {
                 echo 'Switch to gh-pages…'
                 echo 'Yarn install'
                 echo 'Jekyll install'
-                sh 'gem install jekyll --user-install'
+                sh 'gem install jekyll bundler --user-install'
+                sh 'bundle install'
                 nodejs('NodeJS-14.10') {
                     sh 'bin/deploy'
                 }
