@@ -4,5 +4,4 @@ _site
 .jekyll-cache
 .jekyll-cache/*
 .DS_Store
-_assets/yarn/
 node_modules/
