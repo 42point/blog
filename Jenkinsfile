@@ -5,6 +5,9 @@ pipeline {
         GEM_PATH="/usr/local/opt/ruby/lib/ruby/gems/2.7.0"
         GEM_HOME="$GEM_PATH"
         PATH="$RUBY_HOME:$GEM_HOME/bin:$PATH"
+        LC_ALL = 'en_US.UTF-8'
+        LANG    = 'en_US.UTF-8'
+        LANGUAGE = 'en_US.UTF-8'
     }
     stages {
         stage('Checkout') {
