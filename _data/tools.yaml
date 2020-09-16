@@ -2,7 +2,7 @@ list:
   - type: WEB
     tool:
       - title: Airtable
-        desc: Сложно рассказать насколько может полезным оказаться этот сервис для создания своих баз данных. 
+        desc: Сложно рассказать насколько может полезным оказаться этот сервис для создания своих баз данных.
         link: https://airtable.com/
         image:
       - title: feedbin
@@ -19,15 +19,15 @@ list:
         link: https://www.alfredapp.com/
         image:
       - title: Sublime
-        desc: "Лучшие текстовый редактор"
+        desc: "Лучший текстовый редактор"
         link: https://www.sublimetext.com/
         image:
       - title: Devonthink
-        desc: замена Evernote без подписки и с возможностью интеллектуально сортировать 
+        desc: замена Evernote без подписки и с возможностью интеллектуально сортировать
         link: https://www.devontechnologies.com/apps/devonthink
         image:
       - title: Pixave
-        desc: хранение моих moodboard
+        desc: хранение моих moodboard'ов
         link: http://www.littlehj.com/mac/
         image:
       - title: Forklift
@@ -36,7 +36,7 @@ list:
         image:
       - title: mail.app
         desc: Мой стандартный mail-клиент, самый стабильный и удобный.
-        link: 
+        link:
         image:
       - title: Obsidian
         desc: Совершенно фантастическое приложения для заметок. App который авторы разработали во время канатина 2020 года. Second brain for you forever. Достойное отдельного обзора.
@@ -60,16 +60,16 @@ list:
         desc: Самый красивый агрегатор RSS для мобильного. Я его использую в связке с [Feedbin](#feedbin).
         link: https://reederapp.com/
         image:
-  - type: Забытые или близкие к тому 
+  - type: Забытые или близкие к тому
     tool:
       - title: Bear
-        desc: 
+        desc:
         link: https://bear.app/
         image:
-      - title: Coda 2 
+      - title: Coda 2
         link: https://panic.com/coda/
         desc: К сожалению, этот классный редактор устарел уже много лет назад, но… Ребята из Panic обявили о релизе приемника [Nova](https://nova.app) уже 16 сентября.
       - title: Dropbox
-        desc: Дропбокс перестал быть для меня удобным место для хранения и обмена файлами. Единственное что удерживает меня его удалить — множество интеграций со сторонними сервисами, иногда весьма полезными.
+        desc: Дропбокс перестал быть для меня удобным местом для хранения и обмена файлами. Единственное что удерживает меня его удалить — множество интеграций со сторонними сервисами, иногда весьма полезными.
       - title: Evernote
         desc: Evernote всегда был некой черной дырой в которую падало все но никогда невозможно было использовать. Ну а главная причина, они так и не смогли занести стили заголовков в свой продукт, с чем успешно справляется любой редактор Markdown.
