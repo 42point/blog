@@ -11,7 +11,7 @@ list:
   - type: Desktop
     tool:
       - title: Omnigraffle
-        desc: 
+        desc: Редактор диаграм
         link: https://www.omnigroup.com/omnigraffle
         image:
       - title: Alfred
@@ -48,6 +48,8 @@ list:
       - title: Magnet
         desc: Утилита для организации програмных окон.
         link: https://magnet.crowdcafe.com/index.html
+      - title: Hazel
+        desc: Утилита для автоматизации работы на Mac
   - type: Hardware
     tool:
       - title: Macbook Pro 15 i7 512GB 16

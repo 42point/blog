@@ -1,7 +1,9 @@
 _site
+.yarn
 .sass-cache
 .jekyll-metadata
 .jekyll-cache
 .jekyll-cache/*
 .DS_Store
 node_modules/
+_assets/yarn/

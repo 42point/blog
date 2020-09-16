@@ -1,4 +1,13 @@
-# работа с данными в Jekyll
+---
+layout: post
+title: "работа с данными в Jekyll"
+description: " "
+date: 2020-05-30T22:00:00+03:00
+categories:
+tags:[test, ]
+---
+
+# 
 
 ## DATA file
 ### Циклы
