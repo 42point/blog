@@ -53,6 +53,8 @@ pipeline {
                         find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \\;
                         mv _site/* .
                         rm -R _site/
+                        git add -fA
+                        git commit --allow-empty -m "\$(git log -1 --pretty=%B) [ci skip]"
                         echo "Deployed Successfully!"
                         exit 0
                     """)
@@ -62,15 +64,11 @@ pipeline {
         }
         stage('Publish') {
             steps {
-                withCredentials([sshUserPrivateKey(credentialsId: '70b1cba3-b5b8-4470-b05d-9811ae10db1a', keyFileVariable: 'SSH_KEY', passphraseVariable: '', usernameVariable: 'Leroy')]) {
-
-                sh ("""
-                git add -fA
-                git commit --allow-empty -m "\$(git log -1 --pretty=%B) [ci skip]"
-                GIT_SSH_COMMAND = "ssh -i $SSH_KEY"
-                git push -f -q origin gh-pages
-                """)
-}
+                withCredentials([sshUserPrivateKey(credentialsId: '70b1cba3-b5b8-4470-b05d-9811ae10db1a', keyFileVariable: 'SSH_KEY', passphraseVariable: '', usernameVariable: 'SSH_USER')]) {
+                    withEnv(["GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=no -o User=${SSH_USER} -i ${SSH_KEY}"]) {
+                        sh 'git push -f -q origin gh-pages'
+                    }
+                }
             }
         }
     }
