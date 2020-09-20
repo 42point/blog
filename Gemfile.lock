@@ -11,10 +11,10 @@ GEM
     algolia_html_extractor (2.6.2)
       json (~> 2.0)
       nokogiri (~> 1.10.4)
-    algoliasearch (1.27.3)
+    algoliasearch (1.27.4)
       httpclient (~> 2.8, >= 2.8.3)
       json (>= 1.5.1)
-    autoprefixer-rails (9.8.6.4)
+    autoprefixer-rails (10.0.0.1)
       execjs
     colorator (1.1.0)
     concurrent-ruby (1.1.7)
@@ -186,7 +186,6 @@ DEPENDENCIES
   jekyll-sitemap
   jemoji
   kramdown-parser-gfm
-  liquid-tag-parser
   mini_magick
   rake
   sass

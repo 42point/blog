@@ -7,7 +7,6 @@ group :jekyll_plugins do
     gem "jekyll-feed"
     gem "jekyll-assets"
     gem "jekyll-gist"
-    gem "liquid-tag-parser"
 end
 
 gem "autoprefixer-rails"
