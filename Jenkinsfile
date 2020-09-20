@@ -1,5 +1,6 @@
 pipeline {
     agent any
+    
     environment {
         RUBY_HOME="/usr/local/opt/ruby/bin"
         GEM_PATH="/usr/local/opt/ruby/lib/ruby/gems/2.7.0"
@@ -9,7 +10,9 @@ pipeline {
         LANG    = 'en_US.UTF-8'
         LANGUAGE = 'en_US.UTF-8'
     }
+    
     stages {
+        
         stage('Checkout') {
             steps {
                 echo 'Checkout..'
@@ -86,3 +89,4 @@ pipeline {
             }
         }
     }
+}    
