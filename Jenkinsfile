@@ -16,10 +16,9 @@ pipeline {
                 checkout scm
             }
         }
-
         
-        stage('Build') {
-            steps {
+        stage('D/l depenedencies') {
+            steps [
                 nodejs('NodeJS-14.10') {
 
                     echo 'Setup…'
@@ -36,7 +35,16 @@ pipeline {
                         echo "install modules"
                         yarn install --modules-folder ./_assets/yarn
                     """)
+            }
+        ]
+
+        
+        stage('Build') {
+            steps {
                         echo 'Build…'
+                        
+                    nodejs('NodeJS-14.10') {
+
                     sh  ("""
                         set -e
                         echo "Started deploying"
@@ -55,7 +63,6 @@ pipeline {
                         rm -R _site/
                         git add -fA
                         git commit --allow-empty -m "\$(git log -1 --pretty=%B) [ci skip]"
-                        echo "Deployed Successfully!"
                         exit 0
                     """)
                 }
@@ -70,6 +77,7 @@ pipeline {
                     withEnv(['GIT_SSH=./local_ssh.sh']){
                         sh 'git push -f -q origin gh-pages'
                     }
+                    echo "Deployed Successfully!"
                 }
             }
         }
