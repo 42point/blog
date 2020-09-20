@@ -18,7 +18,7 @@ pipeline {
         }
         
         stage('D/l depenedencies') {
-            steps [
+            steps {
                 nodejs('NodeJS-14.10') {
 
                     echo 'Setup…'
@@ -35,13 +35,14 @@ pipeline {
                         echo "install modules"
                         yarn install --modules-folder ./_assets/yarn
                     """)
+                }
             }
-        ]
+        }
 
         
         stage('Build') {
             steps {
-                        echo 'Build…'
+                    echo 'Build…'
                         
                     nodejs('NodeJS-14.10') {
 
@@ -65,8 +66,8 @@ pipeline {
                         git commit --allow-empty -m "\$(git log -1 --pretty=%B) [ci skip]"
                         exit 0
                     """)
-                }
-                echo 'Done'
+                    }
+            echo 'Done'
             }
         }
         stage('Publish') {
