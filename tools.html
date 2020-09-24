@@ -10,7 +10,7 @@ layout: post
 интересным и полезным. {% for item in site.data.tools.list %}
 <!-- start type-->
 
-<div class="">
+<div class="{% if site.scrollappear_enabled %}scrollappear{% endif %}">
   <h3>{{ item.type }}</h3>
 
   {% for tool in item.tool %}
