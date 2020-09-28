@@ -10,9 +10,11 @@ categories:
   - Tools
 format: link
 ---
+
 <http://ohshitgit.com>
 
-{% include image.html path="uploads/2017/12/IMAGE-2017-12-30-084115-207x300.jpg" path-detail="uploads/2017/12/IMAGE-2017-12-30-084115-520x752.jpg" alt="" %}
-  
+{% include image.html path="uploads/2017/12/IMAGE-2017-12-30-084115-207x300.jpg"
+                      path-detail="uploads/2017/12/IMAGE-2017-12-30-084115-520x752.jpg"
+                      alt="Git" %}
 
 [via](https://t.me/ctodaily/448)
