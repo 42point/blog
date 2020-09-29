@@ -63,8 +63,8 @@ list:
     client: Mail.Ru
     projects:
       - project: Мессенджеры "Агент Mail.ru" и ICQ
-        description: "В подразделении Месенджеров Mail.Ru развивал продукты Агент Mail.Ru и ICQ для iOS и Mac OS."
-        iconUrl: assets/img/grac.png
+        description: "В рамках подразделений Mail.ru Group разрабатываются мессенджеры которые помогают оставаться на связи с близкими все время: ICQ, Mail.ru Agent (первый мессенджер mail.ru)"
+        iconUrl: assets/img/icq.png
         tags: [iOS, MacOS]
   - dates: 2011-2012
     client: Совместно с RedMadRobot
