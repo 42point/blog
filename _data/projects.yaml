@@ -62,7 +62,7 @@ list:
   - dates: 2012-2015
     client: Mail.Ru
     projects:
-      - project: Мессенджеры "Агент Mail.ru" и ICQ
+      - project: 'Мессенджеры \"Агент Mail.ru\" и ICQ'
         description: "В рамках подразделений Mail.ru Group разрабатываются мессенджеры которые помогают оставаться на связи с близкими все время: ICQ, Mail.ru Agent (первый мессенджер mail.ru)"
         iconUrl: assets/img/icq.png
         tags: [iOS, MacOS]
@@ -90,6 +90,6 @@ list:
     client: Мобильные Инновации
     projects:
       - project: Мобильные виджеты iDea Widgets
-        description: "Мобильный виджет - это мини-программа по технологии j2me, предоставляющая онлайн доступ к информационному или развлекательному сервису в простом, удобном графическом виде на [feature-фонах](https://ru.wikipedia.org/Фичерфон)"
+        description: "Мобильный виджет - это мини-программа по технологии j2me, предоставляющая онлайн доступ к информационному или развлекательному сервису в простом, удобном графическом виде на [feature-фонах](https://ru.wikipedia.org/wiki/Фичерфон)"
         iconUrl: assets/img/idea.jpg
         tags: [j2me]

@@ -14,9 +14,9 @@ layout: post
   <h3>{{ item.type }}</h3>
 
   {% for tool in item.tool %}
-  <h4 id="{{ tool.title }}">
+  <h4 id="{{ tool.title | slugify }}">
     <a href="{{ tool.link }}">{{ tool.title }}</a>
-    <a href="{{ tools | relative_url }}#{{ tool.title }}">#</a>
+    <a href="{{ tools | relative_url }}#{{ tool.title | slugify }}">#</a>
   </h4>
   <p>{{ tool.desc | markdownify }}</p>
   {% endfor %}

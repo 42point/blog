@@ -78,7 +78,7 @@ description: "Портфолио Мобильных и WEB приложений"
         <img
           class="imageIcon"
           src="{{ entry.iconUrl }}"
-          alt="{{ book.title }}"
+          alt="{{ entry.project | smartify}}"
         />
         <h4>
           <a href="{{ entry.pageUrl | relative_url}} ">{{ entry.project }}</a>

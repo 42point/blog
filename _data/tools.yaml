@@ -52,8 +52,8 @@ list:
         desc: Утилита для автоматизации работы с файлами на Macos
   - type: Hardware
     tool:
-      - title: Macbook Pro 15" i7 512GB 16
-      - title: iPhone 11 Pro Max
+      - title: 'Macbook Pro 15" i7 512GB 16'
+      - title: "iPhone 11 Pro Max"
       - title: Synology DS220+
         desc: Сложно вспомнить как пользуюсь сетевым хранилищем [NAS](https://www.synology.com/ru-ru/solution/what_is_nas) от Synology.
         link: https://www.synology.com/ru-ru/products/DS220+
