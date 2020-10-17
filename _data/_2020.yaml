@@ -1,0 +1,104 @@
+list:
+  - type: films
+    titles:
+      - title: Founder
+        desc: "Отличный фильм про менеджемент предприни мательство и возраст."
+        star: "5"
+        URL: dkno
+      - title: Freaks
+        desc: необычный взгляд на привы
+        star: "4"
+        URL: cx;kjbkfj
+      - title: Nightcrawler
+        desc: про переговоры и следование к цели
+        star: 5
+      - title: Wailing
+        desc: наверно хорошее кино которое не смог оценить и просомтрел на перемотке
+      - title: The Killing of a Sacred Deer
+      - title: The Invisible Man
+        star: 3
+      - title: vivarium
+        star: 2
+        desc: вряд ли стоит пересмтривать
+      - title: Elle
+        star: 4
+      - title: Demolition
+        star: 4
+      - title: As The God Will
+        star: 4
+      - title: Spiderman
+        star: 5
+        desc: наконец посомтрел это чудо
+      - title: The Guest
+        star: 3
+      - title: The Lodge
+        star: 3
+        desc: "посмотреть на раз"
+      - title: Alita
+        star: 4
+      - title: Tenet
+        star: 5
+      - title: Underwater
+        star: 3
+        desc: так себе ужастик на один раз в стиле чужого и левиафана
+      - title: Time Renegades
+        star: 5
+        desc: отличный фильм
+      - title: The Lighthouse
+        desc: Очень классный но непонятный, и красивый
+      - title: Snowpiercer
+        star: 3
+        desc: так себе, сериал лучше
+      - title: Текст
+        star: 4
+      - title: Night Hunter
+        star: 3
+      - title: 7 Reasons to Run Away (from society)
+        desc: претензия на смысл но не зашло
+        star: 2
+      - title: The Gentlemen
+        star: 5
+        desc: Гай Ричи вернулся
+      - title: Color Out of Space
+        desc: Немного безумия с Николасом Кейджем
+        star: 3
+      - title: Coherence
+        desc: Простой фильм но с очень крутой идеей
+        star: 5
+      - title: Папа, сдохни (Why Don't You Just Die!)
+        desc: люблю такое безумие
+        star: 4
+      - title: It chapter two
+        desc: нет желания пересматривать, а некоторые сцены просто смешны и нелепы
+        star: 3
+      - title: The Predator
+        desc: на один раз
+        star: 3
+        URL:
+      - title: The Witch
+        star: 4
+      - title: sgklbnofgo
+      - title: The Infiltrator
+      - title: Carriers
+  - type: films
+    titles:
+      - title:
+      - title: the hunt
+      - title: No One Lives
+      - title: Dark Phoenix
+      - title: Red Sparrow
+      - title: Knives Out
+      - title: Gone Baby Gone
+      - title: Scary Stories to Tell in
+      - title: "John Wick: Chapter 3 "
+      - title: Ready or Not
+      - title: The Hole in the Ground
+      - title: Dark
+      - title: Ted Lasso
+      - title: The Boys
+      - title: Utopia (UK)
+      - title: The Killing of a Sacred
+      - title: Outsider
+      - title: Devs
+      - title: Watchmen сериал
+      - title: mandalorian
