@@ -1,16 +1,12 @@
 ---
-id: 86
 title: iOS 11 kit для Framer
 date: 2017-12-07T14:03:21+00:00
 author: Alexey S
-layout: post
-guid: http://42point.com/?p=86
-categories:
-  - Без рубрики
+layout: single
 tags:
   - framer
 ---
-Неленивый человек [Brent Caswell](https://dribbble.com/brentcas/) подготовил визуальный фрейморк со стилями основных элементов iOS 11.
+Неленивый человек [Brent Caswell](https://dribbble.com/brentcas/) подготовил визуальный фреймворк со стилями основных элементов iOS 11.
 
 <!--more-->
 
@@ -22,7 +18,7 @@ tags:
   * Fonts.framer
 
 
-{% include image.html path="uploads/2017/12/framer-ios11-styles-.png" path-detail="uploads/2017/12/framer-ios11-styles-.png" alt="" %}
+![](/assets/images/uploads/2017/12/framer-ios11-styles-.png)
 
 
 ### Элементы
@@ -35,4 +31,4 @@ tags:
 
 
 
-{% include image.html path="uploads/2017/12/navbar-ios-11-framer.png" path-detail="uploads/2017/12/navbar-ios-11-framer.png" alt="" %}
+![](/assets/images/uploads/2017/12/navbar-ios-11-framer.png)
