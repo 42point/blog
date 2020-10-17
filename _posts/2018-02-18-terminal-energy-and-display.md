@@ -9,7 +9,7 @@ categories:
 tags: [macos, terminal]
 ---
 
-Представим, у вас важная презентация и нужно запретить mac’у отключать дисплей, или вы смотрите новую серию Игры престолов и не хочется все время дергать курсор, дабы дисплей не погас.  Или выполняется важный расчет который остановиться если Macbook  заснет. Может помочь маленькое бесплатное приложение [Caffeine](http://lightheadsw.com/caffeine/) или можно воспользоваться стандартной командой `caffeinate` в терминале, которая делает тоже самое но предоставляет больше гибкости.
+Представим, у вас важная презентация и нужно запретить mac’у отключать дисплей, или вы смотрите новую серию Игры престолов и не хочется все время дергать курсор, дабы дисплей не погас.  Или выполняется важный расчет который остановиться если Macbook  заснет. Может помочь маленькое бесплатное приложение [Caffeine](https://intelliscapesolutions.com/apps/caffeine) или можно воспользоваться стандартной командой `caffeinate` в терминале, которая делает тоже самое но предоставляет больше гибкости.
 
 <!--more-->
 
@@ -42,5 +42,5 @@ tags: [macos, terminal]
 
 
 [Take Control of Your Mac's Sleep Functions with These Commands « Mac Tips :: Gadget Hacks](https://mac-how-to.gadgethacks.com/how-to/take-control-your-macs-sleep-functions-with-these-commands-0168109/)
-[All about Energy Saver idle and sleep modes in Mac OSX](http://blog.macoptimizerpro.com/2016/05/24/all-about-energy-saver-idle-and-sleep-modes-in-mac-osx/)
+
 

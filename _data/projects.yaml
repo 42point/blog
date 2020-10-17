@@ -46,11 +46,11 @@ list:
         projectUrl:
         iconUrl: assets/img/grac.png
         tags: [прототип, iOS]
-  - dates: 2016-2017
-    client: Совместно с CityAds и Adviator
-    projects:
-      - project: Beeline
-        description:
+  #  - dates: 2016-2017
+  #    client: Совместно с CityAds и Adviator
+  # projects:
+  #   - project: Beeline
+  #     description:
   - dates: 2015-2016
     client:
     projects:
