@@ -85,6 +85,28 @@ analytics:
   google:
     tracking_id: GTM-WVR78RR
     anonymize_ip: # true, false (default)
+
+# Site Footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: http://twitter.com/d0_n0_evil
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: http://facebook.com/d0.n0.evil
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: http://instagram.com/d0_n0_evil/
+    # - label: "GitHub"
+    #   icon: "fab fa-fw fa-github"
+    #   # url:
+    # - label: "GitLab"
+    #   icon: "fab fa-fw fa-gitlab"
+    #   # url:
+    # - label: "Bitbucket"
+    #   icon: "fab fa-fw fa-bitbucket"
+    #   # url:
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
