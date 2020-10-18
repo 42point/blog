@@ -78,6 +78,13 @@ author:
   location: "Где-то в Москве"
 
 permalink: posts/:slug
+
+# Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: GTM-WVR78RR
+    anonymize_ip: # true, false (default)
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
