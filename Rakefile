@@ -23,3 +23,9 @@ task :local do
   HTMLProofer.check_directory("./_site", options).run 
 end
 
+
+task :prod do
+  sh "JEKYLL_ENV=production jekyll serve --livereload"
+  options = { :assume_extension => true }
+  HTMLProofer.check_directory("./_site", options).run 
+end

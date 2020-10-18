@@ -60,7 +60,7 @@ pipeline {
                         git checkout -b gh-pages
                         # Build site.
                         yarn install --modules-folder ./_assets/yarn
-                        bundle exec jekyll build
+                        JEKYLL_ENV=production bundle exec jekyll build
                         # Delete and move files.
                         find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \\;
                         mv _site/* .

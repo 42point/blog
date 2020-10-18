@@ -81,9 +81,9 @@ permalink: posts/:slug
 
 # Analytics
 analytics:
-  provider: "google-gtag"
-  google-gtag:
-    tracking_id: GTM-WVR78RR
+  provider: "google-gtag" # "google" "google-gtag"
+  google:
+    tracking_id: GTM-WVR78RR #UA-17407767-9
     anonymize_ip: # true, false (default)
 
 # Site Footer
