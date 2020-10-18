@@ -82,7 +82,7 @@ permalink: posts/:slug
 # Analytics
 analytics:
   provider: "google-gtag"
-  google:
+  google-gtag:
     tracking_id: GTM-WVR78RR
     anonymize_ip: # true, false (default)
 
