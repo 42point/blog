@@ -86,6 +86,7 @@ pipeline {
                     
                 }
                 echo "Deployed Successfully!"
+                telegramSend 'Deployed Successfully!'
             }
         }
     }
