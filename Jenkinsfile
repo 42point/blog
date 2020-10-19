@@ -75,7 +75,7 @@ pipeline {
         }
         stage('Publish') {
             steps {
-                // withCredentials([sshUserPrivateKey(credentialsId: '70b1cba3-b5b8-4470-b05d-9811ae10db1a', keyFileVariable: 'SSH_KEY', passphraseVariable: '', usernameVariable: 'SSH_USER')]) {
+                withCredentials([sshUserPrivateKey(credentialsId: '70b1cba3-b5b8-4470-b05d-9811ae10db1a', keyFileVariable: 'SSH_KEY', passphraseVariable: '', usernameVariable: 'SSH_USER')]) {
                     
                     sh 'echo ssh -i $SSH_KEY -l git -o StrictHostKeyChecking=no \\"\\$@\\" > local_ssh.sh'
                     sh 'chmod +x local_ssh.sh'
@@ -89,5 +89,31 @@ pipeline {
                 telegramSend 'Deployed Successfully!'
             }
         }
+        post {
+            success {
+               withCredentials([string(credentialsId: ‘botSecret’, variable: ‘TOKEN’), string(credentialsId: ‘chatId’, variable: ‘CHAT_ID’)]) {
+               sh  ("""
+                   curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d parse_mode=”HTML” -d text=”<b>${env.JOB_NAME}</b> : POC \
+                   <b>Branch</b>: ${env.BRANCH_NAME} \
+                   <b>Build </b> : OK \
+                   <b>Published</b> = YES ”
+               """)
+            
+        }
+            aborted {
+            
+        }
+           failure {
+               withCredentials([string(credentialsId: ‘botSecret’, variable: ‘TOKEN’), string(credentialsId: ‘chatId’, variable: ‘CHAT_ID’)]) {
+               sh  ("""
+                   curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d parse_mode=”HTML” -d text=”<b>${env.JOB_NAME}</b> : POC \
+                   <b>Branch</b>: ${env.BRANCH_NAME} \
+                   <b>Build </b> : `not OK` \
+                   <b>Published</b> = `no`”
+               """)
+            
+            }
+        }
+    }
     }
 }    
