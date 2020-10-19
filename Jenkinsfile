@@ -89,6 +89,8 @@ pipeline {
                 telegramSend 'Deployed Successfully!'
             }
         }
+    }
+}    
         post {
             success {
                withCredentials([string(credentialsId: ‘botSecret’, variable: ‘TOKEN’), string(credentialsId: ‘chatId’, variable: ‘CHAT_ID’)]) {
@@ -114,5 +116,3 @@ pipeline {
                }
             }
        }
-    }
-}    
