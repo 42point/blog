@@ -93,7 +93,7 @@ pipeline {
             success {
                withCredentials([string(credentialsId: 'botSecret', variable: 'TOKEN'), string(credentialsId: 'chatId', variable: 'CHAT_ID')]) {
                sh  ("""
-                   curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d parse_mode=”HTML” -d text=”<b>${env.JOB_NAME}</b> : POC \
+                   curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d "parse_mode='HTML'" -d text=”<b>${env.JOB_NAME}</b> : POC \
                    <b>Branch</b>: ${env.BRANCH_NAME} \
                    <b>Build </b> : OK \
                    <b>Published</b> = YES ”
@@ -103,7 +103,7 @@ pipeline {
             aborted {
                withCredentials([string(credentialsId: 'botSecret', variable: 'TOKEN'), string(credentialsId: 'chatId', variable: 'CHAT_ID')]) {
                sh  ("""
-                   curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d parse_mode=”HTML” -d text=”<b>${env.JOB_NAME}</b> : POC \
+                   curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d "parse_mode='HTML'" -d text=”<b>${env.JOB_NAME}</b> : POC \
                    <b>Branch</b>: ${env.BRANCH_NAME} \
                    <b>Build </b> : `Aborted` \
                    <b>Published</b> = `Aborted`”
