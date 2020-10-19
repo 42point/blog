@@ -7,8 +7,9 @@ author_profile: false
 position: 40
 header:
   teaser: /assets/images/uploads/2020/grac_teaser.png
-  overlay_image:  /assets/images/uploads/2020/grac_art.png
-  overlay_filter: rgba(0, 0, 0, 0.3)
+  image: /assets/images/projects/gtrdriver/samuele-errico-piccarini-FMbWFDiVRPs-unsplash.jpg
+  # overlay_filter: rgba(0, 0, 0, 0.3)
+  caption: "Photo credit: [**Samuele Errico Piccarini**](https://unsplash.com/@samuele_piccarini)"
 gallery:
   - url: /assets/images/uploads/2020/start.png
     image_path: /assets/images/uploads/2020/start.png

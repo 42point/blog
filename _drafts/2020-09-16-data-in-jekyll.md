@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "работа с данными в Jekyll"
 description: "uiyfiyuiuiiy "
 date: 2020-09-16T22:00:00+03:00

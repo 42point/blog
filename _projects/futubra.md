@@ -4,8 +4,7 @@ excerpt: "Приложение Futubra.Ru — соц. сервиса от Mail.R
 description: "Приложение для аренды авто и мотоциклов у частных лиц"
 permalink: /futubra-app/
 author_profile: false
-position: 
-110
+position: 110
 header:
   teaser: assets/images/futubra.png
   # overlay_image:  /assets/images/uploads/2020/grac_art.png
@@ -35,3 +34,6 @@ sidebar:
 
 
 Платформа для микроблогинга Futubra.Ru выделялась своими богатими мультимедийными возможностями. Посетители делились свои фотографиями, видео, мыслями и любимыми цитатами.
+
+
+{ include image.html  }

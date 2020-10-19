@@ -6,7 +6,7 @@ permalink: /get-rent-a-car-app/
 author_profile: false
 position: 10
 header:
-  teaser: /assets/images/uploads/2020/grac_teaser.png
+  teaser: /assets/images/projects/grac/grac_teaser.png
   overlay_image:  /assets/images/uploads/2020/grac_art.png
   overlay_filter: rgba(0, 0, 0, 0.3)
 gallery:
