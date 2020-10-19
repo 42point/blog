@@ -93,14 +93,14 @@ pipeline {
             success {
                withCredentials([string(credentialsId: 'botSecret', variable: 'TOKEN'), string(credentialsId: 'chatId', variable: 'CHAT_ID')]) {
                sh  ("""
-                   curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d "parse_mode='HTML'" -d text=”<b>${env.JOB_NAME}</b> : POC <b>Branch</b>: ${env.BRANCH_NAME} <b>Build </b> : OK <b>Published</b> = YES ”
+                   curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d parse_mode=markdown -d text=”*${env.JOB_NAME}* : POC *Branch*: ${env.BRANCH_NAME} *Build* : OK *Published* = YES ”
                """)
             }
             }
             aborted {
                withCredentials([string(credentialsId: 'botSecret', variable: 'TOKEN'), string(credentialsId: 'chatId', variable: 'CHAT_ID')]) {
                sh  ("""
-                   curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d "parse_mode='HTML'" -d text=”<b>${env.JOB_NAME}</b> : POC <b>Branch</b>: ${env.BRANCH_NAME} <b>Build </b> : `Aborted` <b>Published</b> = `Aborted`”
+                   curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d parse_mode=markdown -d text=”*${env.JOB_NAME}* : POC *Branch*: ${env.BRANCH_NAME} *Build* : `Aborted` *Published* = `Aborted`”
                """)
                }
             
@@ -108,7 +108,7 @@ pipeline {
             failure {
                withCredentials([string(credentialsId: 'botSecret', variable: 'TOKEN'), string(credentialsId: 'chatId', variable: 'CHAT_ID')]) {
                sh  ("""
-                   curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d "parse_mode='HTML'" -d text=”<b>${env.JOB_NAME}</b> : POC  <b>Branch</b>: ${env.BRANCH_NAME} <b>Build </b> : `not OK` <b>Published</b> = `no`”
+                   curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d parse_mode=markdown -d text=”*${env.JOB_NAME}* : POC  *Branch*: ${env.BRANCH_NAME} *Build* : `not OK` *Published* = `no`”
                """)
                }
             }
