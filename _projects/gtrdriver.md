@@ -4,7 +4,7 @@ excerpt: "Приложение для аренды авто и мотоцикл�
 description: "Приложение для аренды авто и мотоциклов у частных лиц"
 permalink: /gtr-driver/
 author_profile: false
-position: 10
+position: 40
 header:
   teaser: /assets/images/uploads/2020/grac_teaser.png
   overlay_image:  /assets/images/uploads/2020/grac_art.png

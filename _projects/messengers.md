@@ -4,7 +4,7 @@ excerpt: "ICQ и Agent Mail.Ru для iOS и Mac OS X"
 description: "ICQ и Agent Mail.Ru для iOS и Mac OS X"
 permalink: /messengers/
 author_profile: false
-position: 10
+position: 100
 header:
   teaser: /assets/images/icq.png
   # overlay_image:  /assets/images/uploads/2020/grac_art.png

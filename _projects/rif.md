@@ -4,7 +4,6 @@ description: "Приложение для мероприятия"
 vimeoId: 141989484
 permalink: /rif-kib-app/
 position: 100
-
 excerpt: "Приложение для мероприятия"
 author_profile: false
 position: 10
@@ -34,7 +33,6 @@ sidebar:
     text: 
 ---
 
----
 
 ## {{ page.description }}
 

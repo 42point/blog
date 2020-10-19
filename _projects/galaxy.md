@@ -4,7 +4,7 @@ excerpt: ""
 description: ""
 permalink: /galaxy/
 author_profile: false
-position: 10
+position: 900
 header:
   teaser: /assets/images/samsung_gtab_cinema_05.jpeg
   # overlay_image:  /assets/images/uploads/2020/grac_art.png

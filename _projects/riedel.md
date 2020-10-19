@@ -4,7 +4,7 @@ excerpt: "Приложение для аренды авто и мотоцикл�
 description: "Приложение для аренды авто и мотоциклов у частных лиц"
 permalink: /riedel/
 author_profile: false
-position: 10
+position: 100
 header:
   teaser: /assets/images/riedel.jpg
   overlay_image:  /assets/images/uploads/2020/grac_art.png
