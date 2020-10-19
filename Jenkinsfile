@@ -75,7 +75,7 @@ pipeline {
         }
         stage('Publish') {
             steps {
-                withCredentials([sshUserPrivateKey(credentialsId: '70b1cba3-b5b8-4470-b05d-9811ae10db1a', keyFileVariable: 'SSH_KEY', passphraseVariable: '', usernameVariable: 'SSH_USER')]) {
+                // withCredentials([sshUserPrivateKey(credentialsId: '70b1cba3-b5b8-4470-b05d-9811ae10db1a', keyFileVariable: 'SSH_KEY', passphraseVariable: '', usernameVariable: 'SSH_USER')]) {
                     
                     sh 'echo ssh -i $SSH_KEY -l git -o StrictHostKeyChecking=no \\"\\$@\\" > local_ssh.sh'
                     sh 'chmod +x local_ssh.sh'
