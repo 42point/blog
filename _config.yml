@@ -85,6 +85,7 @@ analytics:
   google:
     tracking_id: GTM-WVR78RR #UA-17407767-9
     anonymize_ip: # true, false (default)
+  provider: custom
 
 # Site Footer
 footer:
