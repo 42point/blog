@@ -81,10 +81,10 @@ permalink: posts/:slug
 
 # Analytics
 analytics:
-  provider: "google-gtag" # "google" "google-gtag"
-  google:
-    tracking_id: GTM-WVR78RR #UA-17407767-9
-    anonymize_ip: # true, false (default)
+  # provider: "google-gtag" # "google" "google-gtag"
+  # google:
+  #   tracking_id: GTM-WVR78RR #UA-17407767-9
+  #   anonymize_ip: # true, false (default)
   provider: custom
 
 # Site Footer
@@ -117,6 +117,22 @@ algolia:
   search_only_api_key: 603d97debe9ccf4d9bc95d2ef012cbca # YOUR_SEARCH_ONLY_API_KEY
   powered_by: # true (default), false
 
+category_archive:
+  type: jekyll-archives
+  path: /categories/
+tag_archive:
+  type: jekyll-archives
+  path: /tags/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
