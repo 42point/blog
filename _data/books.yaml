@@ -1,14 +1,28 @@
+# title: 
+# author:
+# link: 
+# image:
+# description:
+# genre:
+# completed: 
+      
 list:
-
   - year: 2020
     books:
+      - title: "Agile Product Management with Scrum: Creating Products that Customers Love"
+        author: "Roman Pichler"
+        link: https://www.litres.ru/roman-pihler/upravlenie-produktom-v-scrum/
+        image: https://images-na.ssl-images-amazon.com/images/I/41NCrarVPVL._SX328_BO1,204,203,200_.jpg
+        description: Толковый рассказ о роли владельцаа продукта в гибкой команде разработки.
+        genre: [management, product]
+        completed: 2020-12-31
       - title: "Проект «Феникс». Роман о том, как DevOps меняет бизнес к лучшему"
         author: Джин Ким
         link: https://www.litres.ru/dzhin-kim/proekt-feniks-roman-o-tom-kak-devops-menyaet-biznes-k-luchshemu/
         image: https://cv9.litres.ru/pub/c/elektronnaya-kniga/cover_415/11083697-dzhin-kim-proekt-feniks-roman-o-tom-kak-devops-menyaet-biznes-k-luchshemu.jpg
         description: "В легком и развлекательном стиле авторы рассказывают историю, которая знакома всем, кто когда-либо работал в IT. Читатели не только узнают, как использовать методологию DevOps в своих компаниях, они уже никогда не посмотрят на IT прежними глазами. Стоящая чтения книга. Ревью сделаю позже,"
         genre: [management, business]
-        completed: Читаю
+        completed: 2020-09-30
       - title: "Дизайн привычных вещей"
         author: Дональд Норман
         link: https://www.litres.ru/donald-norman/dizayn-privychnyh-veschey-2/
