@@ -11,3 +11,4 @@ _assets/yarn/
 *.sublime-project
 *.sublime-workspace
 _drafts/*
+Gemfile.lock
