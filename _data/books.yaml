@@ -13,7 +13,7 @@ list:
         author: "Roman Pichler"
         link: https://www.litres.ru/roman-pihler/upravlenie-produktom-v-scrum/
         image: https://images-na.ssl-images-amazon.com/images/I/41NCrarVPVL._SX328_BO1,204,203,200_.jpg
-        description: Толковый рассказ о роли владельцаа продукта в гибкой команде разработки.
+        description: Толковый рассказ о роли владельца продукта в гибкой команде разработки.
         genre: [management, product]
         completed: 2020-12-31
       - title: "Проект «Феникс». Роман о том, как DevOps меняет бизнес к лучшему"
