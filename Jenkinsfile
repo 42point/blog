@@ -29,14 +29,14 @@ pipeline {
                     sh ("""
                         set -e
                         # Set up Ruby dependencies via Bundler.
-                        gem install bundler --conservative
-                        bundle check || bundle install
+                        # gem install bundler --conservative
+                        # bundle check || bundle install
                         bundle update
-                        echo "Install yarn"
+                        # echo "Install yarn"
                         # Set up JS dependencies via Yarn.
-                        npm install -g yarn
-                        echo "install modules"
-                        yarn install --modules-folder ./_assets/yarn
+                        # npm install -g yarn
+                        # echo "install modules"
+                        # yarn install --modules-folder ./_assets/yarn
                     """)
                 }
             }
