@@ -1,4 +1,0 @@
----
-slug: playbook
-name: playbook
----

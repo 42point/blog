@@ -1,0 +1,1716 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://42point.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://42point.com/" rel="alternate" type="text/html" /><updated>2021-05-05T01:58:18+03:00</updated><id>https://42point.com/feed.xml</id><title type="html">42point</title><subtitle>Немного мыслей об IT, продуктивности и технологиях.</subtitle><author><name>Алексей С.</name></author><entry><title type="html">Что такое хорошая [продуктовая] задача.</title><link href="https://42point.com/posts/good-task" rel="alternate" type="text/html" title="Что такое хорошая [продуктовая] задача." /><published>2020-10-27T16:00:00+03:00</published><updated>2020-10-27T16:00:00+03:00</updated><id>https://42point.com/posts/good_task</id><content type="html" xml:base="https://42point.com/posts/good-task">&lt;p&gt;Небольшое лирическое вступление. Когда-то я играл в баскетбол и тренер беспрестанно вбивал нам в голову — “&lt;strong&gt;если твой пас не приняли в этом твоя вина&lt;/strong&gt;”, или если коротко — “&lt;a href=&quot;https://ru.wikipedia.org/wiki/Передача_(баскетбол)&quot;&gt;Виноват отдающий&lt;/a&gt;”. Как ни странно, спустя годы я часто вспоминаю это утверждение в работе с разработчиками, коллегами или топ-менеджментом.&lt;/p&gt;
+
+&lt;p&gt;Были у вас такие ситуации что разработчик раз за разом приходит к вам с вопросами по задаче? Или наоборот, что не приходит но к уже готовой задаче появляются все новые и новые дополнения? И в первом и во втором случае увеличивается &lt;a href=&quot;https://stefanroock.wordpress.com/2010/03/02/kanban-definition-of-lead-time-and-cycle-time/&quot;&gt;время цикла (cycle time)&lt;/a&gt; то есть, увеличивается время которое уходит на конкретную работу. Как правило такое увеличение времени влият не только на разработчика но и на соседние производственные участки.
+&lt;img src=&quot;/assets/images/uploads/2020/10/cycle-time.png&quot; alt=&quot;cycle time&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Как же сделать классную &lt;del&gt;передачу&lt;/del&gt; задачу что бы принимающий был счастлив и ставил их в пример?&lt;/p&gt;
+
+&lt;h3 id=&quot;блок-1-описание-функциональные-требования&quot;&gt;Блок 1: Описание (функциональные требования)&lt;/h3&gt;
+&lt;p&gt;Это вероятно самая обширная часть описания задачи . Как проще всего и логичнее составить такое описание?&lt;br /&gt;
+Описание может быть как в формате &lt;a href=&quot;https://en.wikipedia.org/wiki/User_story&quot;&gt;User stories&lt;/a&gt; так и другим описательным образом; Независимо от выбранного формата, будет здорово если будут сформулированы ответы на следущие вопросы:&lt;/p&gt;
+
+&lt;h4 id=&quot;в-чем-идея-иили-проблема&quot;&gt;В чем идея и/или проблема?&lt;/h4&gt;
+&lt;p&gt;Что хотим сделать или улучшить? Как должна работать система, и как должна реагировать на действия пользователя? Какие дейтсвия доступны пользователю? 
+Тут пишем всю логику работы, прикладываем диаграммы, списки и таблицы.&lt;/p&gt;
+
+&lt;h4 id=&quot;как-я-это-понял&quot;&gt;Как я это понял?&lt;/h4&gt;
+&lt;p&gt;Этот раздел поможет не только разработчику но и менеджеру. Так, например, можно встретить прямое или скрытое сопростивление со стороны разработки или руковдства по задаче, а корректно указав факты и цифры, будет много проще завоевать доверие и сотрудничество ото всех участников.&lt;/p&gt;
+
+&lt;h4 id=&quot;как-измерить-и-охват&quot;&gt;Как измерить и охват?&lt;/h4&gt;
+&lt;p&gt;Фактически это гипотеза, в которой указываем те метрики которые будут подвержены изменениям после релиза. Проработав этот раздел будет проще поставить приоритет для выполнения в backlog’е.&lt;/p&gt;
+
+&lt;h4 id=&quot;pr---рассказываем-о-фиче&quot;&gt;Pr - рассказываем о фиче&lt;/h4&gt;
+&lt;p&gt;Необязательный пункт. Но я верю, что умение рассказать о свое работе чрезвычайно важно как внутри организации так и снаружи.&lt;/p&gt;
+
+&lt;p&gt;Теперь закончив с описанием, нам нужно накачать разработчика менее объемными но важными деталями задачи.&lt;/p&gt;
+
+&lt;h3 id=&quot;блок-2-детали-нефункциональные-требования&quot;&gt;Блок 2: Детали (нефункциональные требования)&lt;/h3&gt;
+&lt;p&gt;Это простая и достаточно фомализованная часть, тут мы указываем весь контекст который необходим для выполнения задачи. В зависимости от типа команд и работ этот блок может меняться, например, вряд ли разработчику backend потребуются макеты интерфейса, хотя…&lt;/p&gt;
+
+&lt;h4 id=&quot;технические-требования-и-ограничения&quot;&gt;Технические требования и ограничения&lt;/h4&gt;
+&lt;p&gt;Для каких плтформ планируем релиз? Для каких браузеров? Регионов? Специальный фреймворк?&lt;/p&gt;
+
+&lt;h4 id=&quot;требования-к-аналитике&quot;&gt;Требования к аналитике&lt;/h4&gt;
+&lt;p&gt;Что отслеживаем как называем события, куда отправляем?&lt;/p&gt;
+
+&lt;h4 id=&quot;спецификации-дизайна&quot;&gt;Спецификации дизайна&lt;/h4&gt;
+&lt;p&gt;Макеты и руководства, ассеты.&lt;/p&gt;
+
+&lt;h4 id=&quot;обработка-ошибок&quot;&gt;Обработка ошибок&lt;/h4&gt;
+&lt;p&gt;Типы ошибок? Как на них должна реагировать система? Какие сообщения отображаются пользователю?&lt;/p&gt;
+
+&lt;h4 id=&quot;локализация&quot;&gt;Локализация&lt;/h4&gt;
+&lt;p&gt;Нужна? Если да то где взять, или какие строки использовать?&lt;/p&gt;
+
+&lt;h4 id=&quot;прочее&quot;&gt;Прочее&lt;/h4&gt;
+&lt;p&gt;Все что не попало в предыдущие пункты: тестовые аккаунты, dev. окружение, контакты стейкхолдера, тестовые кейсы (но это уже высший уровень).&lt;/p&gt;
+
+&lt;p&gt;На первый взгляд получился объемный чек-лист, который может просто отбить желание составлять задачи, но… Начните составлять классные задачи и ваша команда отблагодарит вас своей производительностью, а еще, разработчики будут хвастаться что у них есть классный менеджер.&lt;/p&gt;</content><author><name>Алексей С.</name></author><category term="playbook" /><summary type="html">Небольшое лирическое вступление. Когда-то я играл в баскетбол и тренер беспрестанно вбивал нам в голову — “если твой пас не приняли в этом твоя вина”, или если коротко — “Виноват отдающий”. Как ни странно, спустя годы я часто вспоминаю это утверждение в работе с разработчиками, коллегами или топ-менеджментом.</summary></entry><entry><title type="html">Уведомления Jenkins в Telegram</title><link href="https://42point.com/posts/telegram-notifications-jenkins" rel="alternate" type="text/html" title="Уведомления Jenkins в Telegram" /><published>2020-10-19T22:00:00+03:00</published><updated>2020-10-19T22:00:00+03:00</updated><id>https://42point.com/posts/telegram-notifications-jenkins</id><content type="html" xml:base="https://42point.com/posts/telegram-notifications-jenkins">&lt;p&gt;Одно из правил работы с CI — все должны видеть статус сборок, тоесть синхронизация. А что может быть лучше чем уведомление о неудачном, или напротив удачном, билде в чате.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/3cky/jenkins-telegram-uploader-plugin&quot;&gt;3cky/jenkins-telegram-uploader-plugin: Jenkins CI post-build action that uploads artifacts generated during build process to Telegram chats.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jenkinsci/telegram-notifications-plugin&quot;&gt;jenkinsci/telegram-notifications-plugin: This plugin allows you to send messages from Jenkins jobs to Telegram chat.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Использовать секцию пост-функций в пайплайне.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Третий вариант более универсален, ну и с первым плагином я потратил очень много времени но таки и не смог его запустить.&lt;/p&gt;
+
+&lt;h2 id=&quot;настраиваем-бот&quot;&gt;Настраиваем бот&lt;/h2&gt;
+&lt;h3 id=&quot;создаем-новый-бот-и-канал-для-уведомлоений&quot;&gt;Создаем новый бот и канал для уведомлоений.&lt;/h3&gt;
+&lt;p&gt;Находим @botfather и следуя инструкции создаем нового бота. Важно получить токен бота. Токен позволит любому управлять вашим ботом.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/uploads/2020/10/botfather.png&quot; alt=&quot;bot father&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Создаем новый канал и добавляем в него ново-созданного бота с правами админа, нужно для публикации новых сообщений.&lt;/p&gt;
+
+&lt;h3 id=&quot;получаем-id-чата-для-отправки-уведомлений&quot;&gt;Получаем iD чата для отправки уведомлений&lt;/h3&gt;
+&lt;p&gt;Через адресную строку браузера делаем запрос&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://api.telegram.org/bot&amp;lt;TOKEN&amp;gt;/getUpdates
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Где меняем &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;TOKEN&amp;gt;&lt;/code&gt; на значение из пункта создания бота.&lt;/p&gt;
+
+&lt;p&gt;Ответ на запрос:&lt;/p&gt;
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;ok&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;result&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;update_id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;151985646&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;channel_post&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;message_id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;chat&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;-1001459789606&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;title&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Leroy&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;channel&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;date&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1603123407&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/sub&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;entities&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;offset&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;length&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;bot_command&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Нужно сохранить chat.id и сохранить знак &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt; перед числом, это полный идентификатор.&lt;/p&gt;
+
+&lt;h2 id=&quot;готовим-jenkins&quot;&gt;Готовим Jenkins&lt;/h2&gt;
+&lt;h3 id=&quot;настраиваем-переменные-для-авторизации-api&quot;&gt;Настраиваем переменные для авторизации API&lt;/h3&gt;
+&lt;p&gt;Прежде всего добавляем в раздел credentials jenkins id чата, в который будем отсылать сообщения и token созданного бота.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Manage Jenkins -&amp;gt; Manage Credentials
+&lt;img src=&quot;/assets/images/uploads/2020/10/domain.png&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Для уведомлений в телеграмм создаем новый домен.
+&lt;img src=&quot;/assets/images/uploads/2020/10/cred.png&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Добавляем переменную для ID чата и отдельно переменную для токена созданного бота. Указываем пронятные ID для дальнейшей подстановки переменных.
+&lt;img src=&quot;/assets/images/uploads/2020/10/chatId.png&quot; alt=&quot;&quot; /&gt;
+    &lt;h3 id=&quot;настриваем-пайплайн&quot;&gt;Настриваем пайплайн&lt;/h3&gt;
+    &lt;p&gt;Предположим уже настроен pipeline через Jenkinsfile. Осталось добавить к нему &lt;a href=&quot;https://www.jenkins.io/doc/book/pipeline/syntax/#post&quot;&gt;post-секцию&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-groovy highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;pipeline&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;agent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;any&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;stages&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        
+        &lt;span class=&quot;n&quot;&gt;stage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Checkout&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;steps&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;Checkout..&apos;&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;checkout&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scm&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;stage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Build&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;steps&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;// script here&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;Done&apos;&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;stage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Publish&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;steps&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+			    &lt;span class=&quot;c1&quot;&gt;// script here&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Deployed Successfully!&quot;&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;success&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;            
+            &lt;span class=&quot;c1&quot;&gt;// script here&lt;/span&gt;
+			&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;aborted&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;             
+            &lt;span class=&quot;c1&quot;&gt;// script here&lt;/span&gt;
+			&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;failure&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;// script here&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+       &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;    
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Post-секция выполняется независимо от результата стадий основного пайплайна. И именно в нем будут действия для отправки уведомлений.&lt;/p&gt;
+
+&lt;p&gt;Все указанные условия должны содержат выполняемые скрипты:&lt;/p&gt;
+
+&lt;div class=&quot;language-groovy highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;n&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;n&quot;&gt;success&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+        &lt;span class=&quot;n&quot;&gt;withCredentials&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;credentialsId:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;botSecret&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;variable:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;TOKEN&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;credentialsId:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;chatId&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;variable:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;CHAT_ID&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;sh&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&quot;
+            curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d parse_mode=markdown -d text=&apos;*${env.JOB_NAME}* : POC *Branch*: ${env.GIT_BRANCH} *Build* : OK *Published* = YES&apos;
+        &quot;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+     &lt;span class=&quot;n&quot;&gt;aborted&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;withCredentials&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;credentialsId:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;botSecret&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;variable:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;TOKEN&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;credentialsId:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;chatId&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;variable:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;CHAT_ID&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;sh&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&quot;
+            curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d parse_mode=markdown -d text=&apos;*${env.JOB_NAME}* : POC *Branch*: ${env.GIT_BRANCH} *Build* : `Aborted` *Published* = `Aborted`&apos;
+        &quot;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+     
+     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+     &lt;span class=&quot;n&quot;&gt;failure&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;withCredentials&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;credentialsId:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;botSecret&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;variable:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;TOKEN&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;credentialsId:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;chatId&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;variable:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;CHAT_ID&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;sh&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&quot;
+            curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d parse_mode=markdown -d text=&apos;*${env.JOB_NAME}* : POC  *Branch*: ${env.GIT_BRANCH} *Build* : `not OK` *Published* = `no`&apos;
+        &quot;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+ &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Где:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;строка начинающаяся с &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;withCredentials&lt;/code&gt; декларирует переменные для подмены в запросе.&lt;/li&gt;
+  &lt;li&gt;текст отправляется в формате &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;markdown&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Запускаем билд и при успехе получаем уведомление:
+&lt;img src=&quot;/assets/images/uploads/2020/10/result.jpeg&quot; alt=&quot;result&quot; /&gt;&lt;/p&gt;</content><author><name>Алексей С.</name></author><category term="Jenkins" /><category term="manual" /><summary type="html">Одно из правил работы с CI — все должны видеть статус сборок, тоесть синхронизация. А что может быть лучше чем уведомление о неудачном, или напротив удачном, билде в чате.</summary></entry><entry><title type="html">Лицензии при разработке программных продуктов софта</title><link href="https://42point.com/posts/playbook-licenses" rel="alternate" type="text/html" title="Лицензии при разработке программных продуктов софта" /><published>2020-08-13T02:28:00+03:00</published><updated>2020-08-13T02:28:00+03:00</updated><id>https://42point.com/posts/playbook-licenses</id><content type="html" xml:base="https://42point.com/posts/playbook-licenses">&lt;p&gt;В разработке ПО часто является разумным использовать уже готовые фреймворки и библиотеки для решения тех или иных задач. Важно помнить, что несмотря на статус open source, использование чужого кода несет права и обязанности. Вы часто можете взять чужие исходники, использовать их но вы обязаны соблюдать требования которые они возлагают на разработчика.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Так недавняя история с использованием чужого кода в одном из проектов крупного интернет холдинга привела к маленькому, но неприятному скандалу&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Хотя с подобные инциденты случаются периодически у многих разработчиков.&lt;/p&gt;
+
+&lt;p&gt;Итак, лицензии делаться на два типа: разрешительные и copyleft (антоним copyright&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;) или вирусные .
+К разрешительному типу относятся:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ru.wikipedia.org/wiki/Лицензия_BSD&quot;&gt;Лицензия BSD&lt;/a&gt; (Berkeley Software Distribution(BSD)licenses)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D1%8F_MIT&quot;&gt;Лицензия MIT&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ru.wikipedia.org/wiki/Лицензия_Apache&quot;&gt;Лицензия Apache&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Лицензии этого типа позволяют изменять код, распространять, и даже продавать его. Можно внедрять, подключать программынй код под этими лицензиями без ограничений или явно выраженного разрешения. Единственное требование — указание авторства используемых библиотек в явном виде, как правило это можно вынести в отдельный раздел программы.&lt;/p&gt;
+
+&lt;p&gt;К лицензиям типа &lt;em&gt;копилефт&lt;/em&gt; относится в частности &lt;a href=&quot;https://ru.wikipedia.org/wiki/GNU_General_Public_License&quot;&gt;GPL лицензия&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Отличие &lt;em&gt;копилефт&lt;/em&gt; от разрешительных лицензий заключается в наличии “вирусного” эффекта — любое ПО которое использует исходники под &lt;em&gt;копилефт&lt;/em&gt; лицензией автоматически должно распространяться под той же самой лицензией. Изменение не допускается. То есть, любая программа которая содержит код распространяемый по GPL сама должна распространяться по этой же лицензии.&lt;/p&gt;
+
+&lt;p&gt;Не-вирусные лицензии не вынуждают производный код быть так open source.&lt;/p&gt;
+
+&lt;p&gt;Некоторый софт выходит под двойными лицензиями: одновременно разрешительными и &lt;em&gt;копилефт&lt;/em&gt;. Это позволяет выбрать нужную лицензию для вашего продукта.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://habr.com/ru/news/t/514168/&quot;&gt;Разработчики Mail.ru на протяжении 11 лет заимствуют код из открытых проектов, нарушая лицензию GPL / Хабр&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BF%D0%B8%D0%BB%D0%B5%D1%84%D1%82&quot;&gt;Копилефт — Википедия&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Алексей С.</name></author><category term="playbook" /><summary type="html">В разработке ПО часто является разумным использовать уже готовые фреймворки и библиотеки для решения тех или иных задач. Важно помнить, что несмотря на статус open source, использование чужого кода несет права и обязанности. Вы часто можете взять чужие исходники, использовать их но вы обязаны соблюдать требования которые они возлагают на разработчика.</summary></entry><entry><title type="html">Интернет термины</title><link href="https://42point.com/internet-definitions/" rel="alternate" type="text/html" title="Интернет термины" /><published>2020-06-06T01:27:53+03:00</published><updated>2020-06-06T01:27:53+03:00</updated><id>https://42point.com/internet-definitions</id><content type="html" xml:base="https://42point.com/internet-definitions/">&lt;p&gt;Часто бывает необходимо подобрать правильно определение для договора или элементарного соглашения, а иногда найти простые слова чтобы объяснить клиенту/партнеру о чем идет речь…&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;dl&gt;
+  
+  &lt;dt id=&quot;AR, Дополненная реальность (англ. augmented reality, AR)&quot;&gt; &lt;p&gt;AR, Дополненная реальность (англ. augmented reality, AR)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;Интеграция виртуальных объектов в реальную среду, воспроизводимую на электронных устройствах, предназначенных для визуального отображения информации(мониторах, экранах, дисплеях).&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Augmented reality (AR)&quot;&gt; &lt;p&gt;Augmented reality (AR)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;is a live, direct or indirect, view of a physical, real-world environment whose elements are augmented by computer-generated sensory input such as sound, video, graphics or GPS data.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;CMS (Content Management System)&quot;&gt; &lt;p&gt;CMS (Content Management System)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;система управления содержанием сайта. Представляет собой программные средства для подготовки, редактирования и публикации информации на сайте, а также средства для управления функциональностью сайта.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Cache&quot;&gt; &lt;p&gt;Cache&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;см. &lt;a href=&quot;#Кэш – (Cache — «тайный запас»)&quot;&gt;Кэш.&lt;/a&gt;&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;DNS (Domain Name Service)&quot;&gt; &lt;p&gt;DNS (Domain Name Service)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;&lt;strong&gt;Служба доменных имен&lt;/strong&gt;. Осуществляет преобразование символьного
+доменного имени в числовой IP-адрес. Построена на принципе 
+распределенного администрирования (делегирования полномочий), когда 
+каждый компьютер или сам “знает” ответ на вопрос, или “знает”, в каком 
+направлении передать данный запрос. Система замкнута и если запрошенная 
+информация имеется на каком-либо компьютере, она будет найдена и передана
+клиенту.&lt;/p&gt;
+
+&lt;p&gt;В случае, если вопрос не имеет ответа, клиент получает 
+сообщение о невозможности получения ответа на вопрос. 
+См. также DNS, DNS-сервер.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;DNS (Domain Name System)&quot;&gt; &lt;p&gt;DNS (Domain Name System)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;система доменных имен. Текстовая система адресации в Интернете, сопоставляющая имя домена и числовой IP-адрес.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;DNS-сервер (Domain Name Server)&quot;&gt; &lt;p&gt;DNS-сервер (Domain Name Server)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;сервер доменных имен, в задачу которого входит преобразование текстовых доменных имен в IP-адреса.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;E-mail –&quot;&gt; &lt;p&gt;E-mail –&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;см. Электронная почта.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;FTP (File Transfer Protocol)&quot;&gt; &lt;p&gt;FTP (File Transfer Protocol)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;протокол передачи файлов из семейства TCP/IP, обеспечивающий возможность найти, получить или отправить файлы через Интернет с одного компьютера на другой. Как правило, используется при передачи файлов большого объема.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;GIF (Graphic Interchange Format)&quot;&gt; &lt;p&gt;GIF (Graphic Interchange Format)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;формат представления графических изображений. Получил наибольшее распространение в Интернет, за счет возможности хранения изображений, имеющих до 256 цветов, поддерживания прозрачности, анимации и способности сохранения в одном файле нескольких изображений. GIF имеет хороший алгоритм сжатия, что крайне важно для создания компактных графических файлов.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;HTML (Hyper Text Markup Language)&quot;&gt; &lt;p&gt;HTML (Hyper Text Markup Language)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;язык разметки гипертекста, позволяющий с помощью управляющих меток (тэгов) определять структуру и внешний вид HTML-документа (web-страницы) при отображении в браузере, а также создавать ссылки на другие файлы.&lt;/p&gt;
+
+  &lt;p&gt;протокол, обеспечивающий взаимодействие пользователя, запрашивающего доступ к web-документам, с сервером, предоставляющим возможность такого доступа.&lt;/p&gt;
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Home page&quot;&gt; &lt;p&gt;Home page&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;см. Главная страница.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Hosting&quot;&gt; &lt;p&gt;Hosting&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;см. Хостинг&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Hyperlink&quot;&gt; &lt;p&gt;Hyperlink&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;см. Гиперссылка&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Hypertext&quot;&gt; &lt;p&gt;Hypertext&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;см. Гипертекст&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;IDSN (Integrated Service Digital Network)&quot;&gt; &lt;p&gt;IDSN (Integrated Service Digital Network)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;цифровая сеть с интеграцией услуг, позволяющая одновременно передавать по обычным медным телефонным проводам цифровые данные и голос со скоростью до 128 Кбит/с.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;IP (Internet Protoсol)&quot;&gt; &lt;p&gt;IP (Internet Protoсol)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;протокол, обеспечивающий доставку данных в виде пакетов, снабженных IP-адресом.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;IP-адрес&quot;&gt; &lt;p&gt;IP-адрес&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;числовой идентификатор, который присваивается каждому  компьютеру (хосту), подключенному к Интернету. IP-адрес состоит из адреса сети и адреса данного хоста в этой сети и представляет собой четыре десятичных числа (от 0 до 255), разделенных точкой. Например: 217.174.97.59.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;ISP (Internet Service Provider)&quot;&gt; &lt;p&gt;ISP (Internet Service Provider)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;поставщик доступа к Интернет. Провайдер является посредником между пользователями и телекоммуникационным оборудованием, необходимым для доступа к различным линиям связи (телефонные кабели, волоконно-оптические кабели, спутниковые каналы). При заключении договора, провайдер предоставляет доступ к различным сервисам Интернет. Услуги провайдера, как правило, являются платными.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Internet&quot;&gt; &lt;p&gt;Internet&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;см. Интернет.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Intranet&quot;&gt; &lt;p&gt;Intranet&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;сеть в масштабах организации (группы организаций), построенная по Интернет-технологии.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;JPEG (Joint Photographic Experts Group)&quot;&gt; &lt;p&gt;JPEG (Joint Photographic Experts Group)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;файлы растровых изображений с использованием до 16,7 миллионов цветов (24-битовый цвет), сжатие сопровождается потерей информации (отбрасываются мелкие детали). Популярный в Интернет графический формат. Для хранения изображения JEPG использует алгоритм сильного сжатия с потерей данных, не позволяет использовать анимацию и прозрачность. Как правило применяется для хранения высококачественных фотографий.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;JPG&quot;&gt; &lt;p&gt;JPG&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;см. JPEG&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;PHP (Personal Home Page)&quot;&gt; &lt;p&gt;PHP (Personal Home Page)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;средство создания интерактивных web-страниц, главным достоинством которого является возможность формирования страниц посредством интерактивного взаимодействия «клиент-сервер». Включает CGI-интерфейс, интерпретатор языка и набор функций для доступа к базам данных и различным объектам Всемирной паутины.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Portal&quot;&gt; &lt;p&gt;Portal&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;см. Портал.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Proxy&quot;&gt; &lt;p&gt;Proxy&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;см. Проски-сервер.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Router&quot;&gt; &lt;p&gt;Router&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;см. Маршрутизатор.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;SMS  (Short Message Service)&quot;&gt; &lt;p&gt;SMS  (Short Message Service)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;служба  коротких сообщений. Сервис, предоставляемый операторами сотовой связи, позволяющий обмениваться короткими сообщениями с помощью мобильных телефонов. SMS-сообщения могут быть посланы как с телефона на телефон, так и с телефона на адрес электронной почты и с помощью электронной почты на номер мобильного телефона.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Search engine&quot;&gt; &lt;p&gt;Search engine&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;см. Машина поисковая.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Site&quot;&gt; &lt;p&gt;Site&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;см. Сайт.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Spam&quot;&gt; &lt;p&gt;Spam&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;незапрашиваемые и нежелательные сообщения, приходящие по электронной почте. Как правило, рассылка производится одновременно по множеству адресов с целью рекламы товаров и услуг.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;TCP (Transmission Control Protocol)&quot;&gt; &lt;p&gt;TCP (Transmission Control Protocol)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;протокол, обеспечивающий доставку пакетов данных по назначению и их прием в том же порядке, в котором происходила их отправка.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;TCP / IP  (Transmission Control Protocol / Internet Protocol)&quot;&gt; &lt;p&gt;TCP / IP  (Transmission Control Protocol / Internet Protocol)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;набор протоколов для управления обменами данных между компьютерами, входящими в Интернет.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Telnet&quot;&gt; &lt;p&gt;Telnet&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;одно из первых приложений Интернет, использовавшихся для соединения с удаленными компьютерами. Применялось преимущественно для доступа к базам данных (например, электронным каталогам библиотек).&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;URL (Uniform Resource Locator)&quot;&gt; &lt;p&gt;URL (Uniform Resource Locator)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;Интернет-адрес, присвоенный каждой web-странице. Каждый URL в Интернет уникален.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Usenet (USENET, UseNet)&quot;&gt; &lt;p&gt;Usenet (USENET, UseNet)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;приложение Интернет для обмена сообщениями в пределах групп новостей по интересам, «всемирная доска объявлений». Одно из старейших приложений Интернет (существует с 1979 года).&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;WAP (Wireless Application Protocol)&quot;&gt; &lt;p&gt;WAP (Wireless Application Protocol)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;стандарт для приложений, использующих беспроводные сети. Фактически представляет собой протокол, обеспечивающий безопасный доступ беспроводных устройств (КПК и сотовых телефонов) к текстовой информации, включая web-страницы, чат-сессии и электронную почту.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;WWW  (World Wide Web)&quot;&gt; &lt;p&gt;WWW  (World Wide Web)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;см. Всемирная паутина.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;WYSIWYNG (What You See Is What You Get)&quot;&gt; &lt;p&gt;WYSIWYNG (What You See Is What You Get)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;«что вы видите, то и получаете». Обозначение типа HTML-редакторов, которые позволяют пользователю создавать страницы без знания HTML. Примеры: Front Page, Netscape Composer.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Web-браузер&quot;&gt; &lt;p&gt;Web-браузер&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;см. Браузер.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Web-сайт&quot;&gt; &lt;p&gt;Web-сайт&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;см. Сайт.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Web-сервер&quot;&gt; &lt;p&gt;Web-сервер&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;компьютер со специальным программным обеспечением, обеспечивающий доступ многих пользователей к расположенной на нем информации.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Web-страница (HTML-документ)&quot;&gt; &lt;p&gt;Web-страница (HTML-документ)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;логическая единица Интернет (точнее, Всемирной паутины), однозначно определяемая адресом (URL). Физически представляет собой HTML-файл. Может содержать текст, изображения, аудио-  и видеофрагменты, Java-апплеты и другие элементы. Web-cтраница может быть статической или динамически сгенерированной (примеры динамических страниц — перечни результатов, выдаваемые поисковыми машинами). В случае использования фреймов, каждый фрейм рассматривается в качестве отдельной страницы. Страницы загружаются и просматриваются пользователем на свой компьютер с помощью браузера. Логически связанная совокупность web-страниц образует сайт.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Web-узел&quot;&gt; &lt;p&gt;Web-узел&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;— см. Сайт.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Wi-Fi&quot;&gt; &lt;p&gt;Wi-Fi&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;стандарт высокоскоростной передачи данных по беспроводным сетям (от 11 до 20 Мегабит в секунду).&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;ruby&quot;&gt; &lt;p&gt;ruby&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;тест после установки&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Аккаунт (синоним: экаунт — от англ. account )&quot;&gt; &lt;p&gt;Аккаунт (синоним: экаунт — от англ. account )&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;учётная запись, личный счёт) — учётная запись, содержащая сведения, которые сообщает о себе пользователь при регистрации в определенном сервисе (сайте). Кроме учетных данных аккаунта содержит множество настроек и опций для работы с данным сервисом. Говоря простым языком, аккаунт — свой личный раздел (кабинет) в сервисе.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Акт сдачи-приемки работ&quot;&gt; &lt;p&gt;Акт сдачи-приемки работ&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;документ, заверенный подписями Сторон, свидетельствующий об отсутствии претензий и замечаний у Клиента к  Результату всех работ. Предоставляется вместе с Результатом всех работ. Сдача-приемка Результатов всех работ является основанием для выставления Исполнителем счета для окончательных расчетов между Клиентом и Исполнителем.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Апплет&quot;&gt; &lt;p&gt;Апплет&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;см. Applet.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;База данных&quot;&gt; &lt;p&gt;База данных&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;специальное программное обеспечение, предназначенное для организации хранения и доступа к данным (информации). Большинство современных сайтов хранятся именно в базах данных, расположенных на своих серверах.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Баннер&quot;&gt; &lt;p&gt;Баннер&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;статичное или динамичное изображение, размещаемое на страницах сайта с целью рекламы (продвижения) чего-либо. Стандартный размер баннера 468 на 60 пикселов.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Браузер (Browser)&quot;&gt; &lt;p&gt;Браузер (Browser)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;клиентская программа для работы вo Всемирной Паутине (WWW). Позволяет пользователю просматривать содержание web-страниц. Браузер обращается к web-серверу (сайту), запрашивает HTML-документ, интерпретирует полученную информацию и отображает документ на экране компьютера. Браузеры делятся на графические и текстовые. Последний вариант браузеров, примером которого является Lynx, в настоящее время практически полностью вышли из употребления. Примеры браузеров: Mosaic, Netscape Navigator, Internet Explorer, Opera, Mozilla.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Бриф&quot;&gt; &lt;p&gt;Бриф&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;документ, создаваемый Исполнителем в соответствии с 
+пожеланиями Клиента. После утверждения и подписания Сторонами Бриф 
+становится неотъемлемой частью настоящего Договора. В Брифе описываются:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;задача проекта (цель проекта),&lt;/li&gt;
+  &lt;li&gt;требования к Дизайну Сайта,&lt;/li&gt;
+  &lt;li&gt;содержание Сайта,&lt;/li&gt;
+  &lt;li&gt;технологические требования,&lt;/li&gt;
+  &lt;li&gt;требования к системе администрирования,&lt;/li&gt;
+  &lt;li&gt;Информационные материалы,&lt;/li&gt;
+  &lt;li&gt;документы и прочие сведения,&lt;/li&gt;
+  &lt;li&gt;необходимые Исполнителю для надлежащего исполнения обязательств по&lt;/li&gt;
+  &lt;li&gt;настоящему Договору, включая объем такой информации и сведений,&lt;/li&gt;
+  &lt;li&gt;порядок и срок их предоставления Клиентом”,&lt;/li&gt;
+  &lt;li&gt;этапы работы и сроки,&lt;/li&gt;
+  &lt;li&gt;иные данные, которые Стороны сочтут необходимым указать.&lt;/li&gt;
+&lt;/ol&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Всемирная паутина (World Wide Web — WWW)&quot;&gt; &lt;p&gt;Всемирная паутина (World Wide Web — WWW)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;приложение Интернет, в основе которого лежит гипертекст. Позволяет пользователю получить доступ к огромному массиву документов, расположенных на web-серверах по всему миру, и легко перемещаться между ними с помощью гиперссылок. Наполнение Всемирной паутины составляют текстовые материалы и все виды объектов мультимедиа (изображения, аудио- и видеофайлы, анимация и др.). В настоящее время Всемирная паутина представляет собой место, где все общественные институты и частные граждане размещают собственные электронные представительства, многие из которых выполняют традиционно присущие им функции в условиях цифровой среды.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Гигабайт&quot;&gt; &lt;p&gt;Гигабайт&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;единица измерения количества информации, равная 1024 мегабайтам. См. также Килобайт, Мегабайт.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Гиперссылка (Hyperlink)&quot;&gt; &lt;p&gt;Гиперссылка (Hyperlink)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;слово или изображение в электронном документе, содержащие ссылку на другие файлы, Щелчок «мышью», по гиперссылке позволяет перейти к другому файлу или фрагменту электронного документа. Как правило, гиперссылки выделяются цветом. При наезде на них «мышью», вместо стрелки появляется изображение руки с указательным пальцем.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Гипертекст (Hypertext)&quot;&gt; &lt;p&gt;Гипертекст (Hypertext)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;начальная (титульная) страница web-сайта. На главной странице размещаются общие сведения о сайте с указанием того, что представлено во всех его разделах. Внешние ссылки на ресурс, как правило, делаются именно на главную страницу, поэтому число ее посещений намного больше, чем любых других страниц сайта.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Дизайн (Дизайн-концепция) мобильного приложения&quot;&gt; &lt;p&gt;Дизайн (Дизайн-концепция) мобильного приложения&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;уникальное графическое оформление  мобильного приложения и способы представления информации.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Директория&quot;&gt; &lt;p&gt;Директория&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;см. Справочник.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Домен (Domain)&quot;&gt; &lt;p&gt;Домен (Domain)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;см. Доменное имя.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Доменное имя (доменный адрес)&quot;&gt; &lt;p&gt;Доменное имя (доменный адрес)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;уникальный текстовый идентификатор компьютера (хоста), подключенного к Интернет. Состоит из слов, написанных латинскими буквами и разделённых точками. Пробелов и других знаков препинания в доменных именах нет. Каждому доменному имени соответствует определенный IP-адрес или несколько IP-адресов. Например, доменному имени www.rbc.ru соответствует IP-адрес &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;194.186.36.150&lt;/code&gt;. Доменные имена являются составляющей частью URL, указывающих на конкретные web-страницы. Доменные имена преобразовываются в IP-адреса службой DNS. Система доменных имен создана для удобства пользователей, которым легче запомнить доменный адрес (например, www.harvard.edu, www.fbi.gov, www.louvre.fr или www.ddt.ru), чем числовые значения IP-адресов. Регистрацией доменных имен занимается InterNIC (представитель в России — РОСНИИРОС). Регистрация доменного адреса означает внесение его и соответствующего ему IP-адреса в базу данных DNS-сервера.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Закладки (Bookmarks)&quot;&gt; &lt;p&gt;Закладки (Bookmarks)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;сервисная функция браузеров, позволяющая пользователю создавать перечень примечательных Интернет-ресурсов. Щелчок “мышью” по закладке вызывает загрузку данной страницы на компьютере пользователя. В браузере Internet Explorer закладки именуются “Избранное” (Favorites).&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Зеркало (Mirror site)&quot;&gt; &lt;p&gt;Зеркало (Mirror site)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;копии целых сайтов или отдельных ресурсов на различных серверах. Служат для распределения нагрузки между основным сервером и локальными серверами, а также для обслуживания местных сетей.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Интернет (Internet)&quot;&gt; &lt;p&gt;Интернет (Internet)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;глобальная компьютерная сеть, объединяющая компьютерные сети, взаимодействующие посредством протоколов TCP / IP.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Информационная система (ИС)&quot;&gt; &lt;p&gt;Информационная система (ИС)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;совокупность содержащейся в базах данных информации и обеспечивающих ее обработку информационных технологий и технических средств&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Информационные материалы (контент)&quot;&gt; &lt;p&gt;Информационные материалы (контент)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;текстовые, графические, аудио-, видео-, фото-, а также иные материалы на различных носителях (электронных, бумажных и пр.), необходимые Исполнителю для разработки Дизайна и Сборки Сайта. Информационные материалы предоставляются Клиентом. Факт предоставления Информационных материалов фиксируется Актом приема-передачи Информационных материалов, подписываемым Сторонами. В случае создания Исполнителем материалов для Сайта, об этом указывается в настоящем Договоре и/или Брифе. Переводы Информационных материалов для языковых версий Сайта, если таковые предусмотрены настоящим Договором, осуществляются Клиентом самостоятельно и за свой счет.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Каталог&quot;&gt; &lt;p&gt;Каталог&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;см. Справочник.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Килобайт&quot;&gt; &lt;p&gt;Килобайт&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;единица измерения количества информации, равная 1024 байтам. Байт — основная единица измерения количества информации. Например, один символ русского алфавита занимает в памяти ЭВМ один байт.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Клиент&quot;&gt; &lt;p&gt;Клиент&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;компьютер, который потребляет ресурсы других компьютеров сети, прежде всего, серверов. Также — программа, вырабатывающая запросы на доступ к удаленным ресурсам и передающая их по сети на определенный компьютер.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Клиентская часть&quot;&gt; &lt;p&gt;Клиентская часть&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;та часть или модуль программы или комплекса программ, построенной по архитектуре «клиент-сервер», которая инициирует вызовы.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Клик — (Click).&quot;&gt; &lt;p&gt;Клик — (Click).&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;Щелчок кнопкой “мыши” по какому-либо элементу электронного документа, приводящий к загрузке определенной информации.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Кодировка (Encoding)&quot;&gt; &lt;p&gt;Кодировка (Encoding)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;соответствие между символами (язык людей) и числами (язык компьютеров). Одни и те же числа можно превратить в символы различных алфавитов. Чтобы изменить правило превращения цифры в буквы, выберите в меню Вид Internet Explorer пункт Вид кодировки. В Internet наиболее используемы следующие кодировки русского алфавита КОИ8-Р и Win1251.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Контекстное меню&quot;&gt; &lt;p&gt;Контекстное меню&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;список возможных действий, который появляется при нажатии на объект правой кнопкой “мыши”. Для каждого объекта список свой.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Контент — (Content) — содержание.&quot;&gt; &lt;p&gt;Контент — (Content) — содержание.&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;Под данным термином чаще всего понимается содержательное наполнение электронных ресурсов, например, web-сайтов.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Куки (Cookies)&quot;&gt; &lt;p&gt;Куки (Cookies)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;элемент данных, которыми web-сервер помечает конкретный браузер при его посещении. При следующем визите сервер уже “узнает” пользователя и может предложить ему информацию с учетом заявленных прежде пристрастий или, наоборот, не показывать клиенту те данные (например, рекламный баннер), которые он уже видел. Cookies не способны читать диск  компьютера пользователя. Некоторые их значения хранятся только в течение одного сеанса работы с сервером и удаляются после закрытия браузера. Другие записываются в файл и хранятся на жестком диске в специальных директориях.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Кэш – (Cache — «тайный запас»)&quot;&gt; &lt;p&gt;Кэш – (Cache — «тайный запас»)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;системная папка, в которую компьютер записывает все документы, полученные пользователем из Сети. При запросе документа вторично, показывается содержимое кэша. Наиболее эффективно кэширование, производимое прокси-сервером, который хранит документы, полученные из Интернет всеми сотрудниками организации. Обращение к кэшу в случае повторного запроса одного и того же документа позволяет не только снизить трафик, но и увеличивает скорость предоставления данных клиенту. Единственным недостатком кэширования является возможность получения старой версии документа в случае, если документ на удаленном сервере изменился, а кэш еще содержит старую версию. Прокси-сервер использует весьма сложный алгоритм определения степени устаревания документов, поэтому в большинстве случаев пользователь все же получает самую свежую версию документа. См. также Прокси-сервер.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Маршрутизатор (Router)&quot;&gt; &lt;p&gt;Маршрутизатор (Router)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;устройство, обеспечивающее оптимальную передачу коммутационных пакетов от сервера к серверу в конечный пункт назначения. Путешествуя от клиента до сервера и обратно, данные проходят через множество маршрутизаторов. Каждый из них просматривает заголовок пакета и определяет его оптимальный путь  и осуществляет его пересылку. Таким образом, маршрутизаторы выполняют в Интернет роль регулировщиков движения потоков данных.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Машина поисковая (Search engine) синонимы: поисковая система, поисковый сервер, “искалка”)&quot;&gt; &lt;p&gt;Машина поисковая (Search engine) синонимы: поисковая система, поисковый сервер, “искалка”)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;инструмент для поиска информации в Интернет. Поисковые машины состоят из двух основных частей: программы-робота и индексного файла (базы данных). Робот сканирует сайты Интернет, выгружая web-страницы на базовый компьютер, где производится их индексирование. Учитываются не только тексты, но и иллюстрации, а также аудио- и видеофайлы. Пользователь, вводя состоящий из ключевых слов запрос, обращается к индексному файлу и получает в ответ перечень страниц, содержащих искомые термины. По территориальному охвату поисковые машины различаются на глобальные и локальные (национальные или отраслевые).&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Мегабайт&quot;&gt; &lt;p&gt;Мегабайт&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;единица измерения количества информации, равная 1024 килобайтам. См. также &lt;a href=&quot;#Килобайт&quot;&gt;Килобайт&lt;/a&gt;.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Мобильное приложение&quot;&gt; &lt;p&gt;Мобильное приложение&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;программа ЭВМ разработанная для портативных устройств с использованием специальных средств и программных языков и предназначенные для запуска и работы на мобильных телефонах и планшетных ЭВМ.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Портал — (Portal)&quot;&gt; &lt;p&gt;Портал — (Portal)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;Интернет-сайт, предоставляющий максимально широкий спектр услуг, соответствующих потребностям среднестатистического пользователя Сети. В перечень предоставляемых сервисов, как правило, входят поиск информации, бесплатная электронная почта, новостная лента, прогноз погоды, сведения о курсах валют, перечень ссылок на сетевые ресурсы и др. В большинстве случаев у порталов есть также значительное собственное содержательное наполнение. Цель порталов – в создании места в Сети, с которого большое число пользователей регулярно начинает свою работу в Интернет и которые поэтому служат привлекательным местом для размещения рекламы. Порталами могут считаться сайты, имеющие стабильно высокую посещаемость. Большинство порталов сформировано вокруг поисковых машин и справочников Интернет-ресурсов. Помимо универсальных порталов, рассчитанных на всех пользователей без ограничения, существуют отраслевые (тематические) порталы, четко ориентированные на потребности определенной группы пользователей. Примеры: Yahoo!, Яндекс, КМ.RU, AUTO.RU.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Посещаемость&quot;&gt; &lt;p&gt;Посещаемость&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;количество посетителей web-сайта за определенную единицу времени. Является ключевой характеристикой при определении рейтинга сайта для участия в баннерных сетях и иных проектах по продвижению сайта. До настоящего времени единых подходов измерения посещаемости еще не выработано. Для оценки числа «уникальных посетителей» обычно используется анализ IP-адресов или функция Cookie. См. также &lt;a href=&quot;#Трафик (англ. — Traffic)&quot;&gt;Трафик&lt;/a&gt;.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Почтовый адрес&quot;&gt; &lt;p&gt;Почтовый адрес&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;идентификатор почтового ящика пользователя. Образуется из имени пользователя и доменного имени почтового сервера, разделенных символом @ (коммерческая “эт”). Например: stepanov@shpl.ru, ivanov@inbox.ru, info@inion.ru. В интранет-сетях организаций регистрация почтового адреса выполняется системным администратором, на бесплатных почтовых серверах — самими пользователями.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Почтовый сервер&quot;&gt; &lt;p&gt;Почтовый сервер&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;сервер, обеспечивающий прием-передачу и маршрутизацию персональных электронных писем пользователей. Организация почтового сервера требует установки на компьютер соответствующего программного обеспечения, например, Mdaemon. Электронная почта является основным средством общения в Интернет.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Провайдер&quot;&gt; &lt;p&gt;Провайдер&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;см. ISP.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Программа ЭВМ&quot;&gt; &lt;p&gt;Программа ЭВМ&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;представленная в объективной форме совокупность данных и команд, 
+предназначенных для функционирования ЭВМ и других компьютерных устройств 
+в целях получения определенного результата, включая подготовительные материалы, 
+полученные в ходе разработки программы для ЭВМ, и порождаемые ею 
+аудиовизуальные отображения;&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Программный интерфейс (application program interface или API)&quot;&gt; &lt;p&gt;Программный интерфейс (application program interface или API)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;совокупность средств и правил, обеспечивающих взаимодействие информационной системы заказчика (серверной части) и мобильного приложения (клиентской части).&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Прокси-сервер&quot;&gt; &lt;p&gt;Прокси-сервер&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;(от англ. Proxy — право действия от имени) — промежуточный web-сервер, используемый как посредник между браузером и конечным web-сервером. Прокси-сервер выполняет две основные функции: экономия объема трафика и увеличение скорости доступа к данным за счет кэширования данных на своем локальном диске и обеспечение защиты локальной сети корпорации, например, библиотеки. Использование прокси-сервера способно также привести к экономии IP-адресов, поскольку в этом случае необходим всего лишь один публичный IP-адрес. См. также Кэш.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Промежуточный Акт&quot;&gt; &lt;p&gt;Промежуточный Акт&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;документ, заверенный подписями Сторон, свидетельствующий об отсутствии претензий и замечаний у Клиента к Промежуточному результату работ. Предоставляется Клиенту вместе с Промежуточным результатом работ. По завершение работ по созданию Брифа единственным документом, подтверждающим отсутствие претензии и замечаний у Клиента к Брифу, является непосредственно сам подписанный Бриф.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Рубрикатор&quot;&gt; &lt;p&gt;Рубрикатор&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;см. Справочник.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Рунет&quot;&gt; &lt;p&gt;Рунет&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;российский сегмент Сети. Включает сайты, физически хостирующиеся на территории России, а также русскоязычные и содержательно относящиеся к России зарубежные сайты.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Сайт (Site)&quot;&gt; &lt;p&gt;Сайт (Site)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;совокупность логически связанных web-страниц, размещенных, как правило, на одном компьютере.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Сборка приложения&quot;&gt; &lt;p&gt;Сборка приложения&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;работы по созданию приложения на основе Брифа и утвержденного Дизайна. Сборка включает программирование,  обработку текстовых, графических и иных Информационных материалов  (предоставляемых Клиентом и/или специально создаваемых Исполнителем),  наполнение Сайта Информационными материалами, тестирование Сайта (с  целью проверки корректности его воспроизведения на различных мобильных устройствах), подготовку сопроводительной документации если необходимо.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Сервер&quot;&gt; &lt;p&gt;Сервер&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;компьютер, который предоставляет свои ресурсы другим компьютерам сети, либо программа, которая обслуживает запросы на доступ к ресурсам своего компьютера.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Серверная часть программы&quot;&gt; &lt;p&gt;Серверная часть программы&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;часть или модуль программы или комплекса программ или информационной системы, построенной по архитектуре «клиент-сервер», которая принимает вызовы со стороны клиентской части.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Спам&quot;&gt; &lt;p&gt;Спам&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;см.Spam.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Справочник (Web-directory, синонимы: Директория, Каталог, Рубрикатор)&quot;&gt; &lt;p&gt;Справочник (Web-directory, синонимы: Директория, Каталог, Рубрикатор)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;систематизированный перечень Интернет-ресурсов, имеющий иерархическую структуру и, фактически, представляющий собой систематический каталог Интернет-ресурсов. Объектом описания являются в большинстве случаев целые сайты или их большие разделы. Описания ресурсов включают название сайта, его адрес (URL) и аннотацию. Работа по классификации и аннотированию ресурсов производится вручную редакторами разделов. Каталоги делятся на универсальные и специализированные (отраслевые), а также на глобальные и национальные (региональные). С помощью справочников выполняется поиск ресурсов (сайтов), определенной тематики путем перехода от более общих его разделов, к более частным. Пример глобального справочника универсального характера: Yahoo!.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Трафик (англ. — Traffic)&quot;&gt; &lt;p&gt;Трафик (англ. — Traffic)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;поток (объем) информации, прошедший через канал связи или объем переданной/посланной информации. Измеряется в мегабайтах. Иногда в понятие трафик вкладывается число посещений web-сайта (или его конкретной страницы) за определенный промежуток времени. См. также Посещаемость.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Тэг — (Tag, синоним: метка)&quot;&gt; &lt;p&gt;Тэг — (Tag, синоним: метка)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;команда языка разметки гипертекста. Большинство тэгов заключенно в угловые скобки и употребляется в парах, то есть имеют открывающую и закрывающую метку, которые обозначают, соответственно, начало и конец области действия: например ,&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Хостинг (Hosting, Web-hosting, Collocation, синоним — web-хостинг)&quot;&gt; &lt;p&gt;Хостинг (Hosting, Web-hosting, Collocation, синоним — web-хостинг)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;размещение web-сайта на внешнем сервере, в отличие от размещения на собственном компьютере, физически расположенном внутри организации (например, библиотеки).&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+  &lt;dt id=&quot;Электронная почта (E-mail)&quot;&gt; &lt;p&gt;Электронная почта (E-mail)&lt;/p&gt;
+&lt;/dt&gt;
+  &lt;dd&gt;
+  &lt;p&gt;приложение Интернет, позволяющее обмениваться сообщениями в электронной форме с помощью компьютерных сетей. Наиболее распространенный способ общения в Интернет. В настоящее время по электронной почте можно пересылать не только текст, но и все другие виды данных приложениями к письмам. Сами письма ныне в состоянии поддерживать все операции со шрифтами, включать фон, таблицы и иллюстрации.&lt;/p&gt;
+
+  
+ 
+  &lt;!-- &lt;ol&gt;
+    
+  &lt;/ol&gt; --&gt;
+&lt;/dd&gt;
+  
+&lt;/dl&gt;</content><author><name>Алексей С.</name></author><summary type="html">Часто бывает необходимо подобрать правильно определение для договора или элементарного соглашения, а иногда найти простые слова чтобы объяснить клиенту/партнеру о чем идет речь…</summary></entry><entry><title type="html">Дизайн привычных вещей. Дональд Норман</title><link href="https://42point.com/posts/design-privichnih-vechey" rel="alternate" type="text/html" title="Дизайн привычных вещей. Дональд Норман" /><published>2020-05-30T22:00:00+03:00</published><updated>2020-05-30T22:00:00+03:00</updated><id>https://42point.com/posts/design-privichnih-vechey</id><content type="html" xml:base="https://42point.com/posts/design-privichnih-vechey">&lt;p&gt;С одной стороны, книгу нужно бы прочитать каждому дизайнеру интерфейсов и промышленному дизайнеру, что бы понять какую боль могут приносить их разработки будущим пользователям. С другой стороны — ни за что не порекомендую покупать именно это издание.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Во-первых, примеры безнадёжно устарели, лично я сдался когда в очередной раз прочитал:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Эксплуатация многих систем заметно улучшается после того, как незаметные детали становятся заметными. &lt;strong&gt;Рассмотрим видеомагнитофон&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Видеомагнитофон! Да, у меня все еще лежат пара кассет, которые я так и не оцифровал, но разбирать кейсы с улучшением видеомагнитофона? В 2020 году? Или погружаться в проблемы использования телефонного аппарата из середины 80-х, а что скажете про сложности управления диапроектором?&lt;/p&gt;
+
+&lt;p&gt;Вторая проблема, автор внезапно переключается от вопросов дизайна к вопросам психологии и нейробиологии, причем, к уровню знаний середины 80-х (опять же) а потом обратно. Такие резкие переходы тяжеловатые воспринимать когда вы читаете книгу о &lt;strong&gt;дизайне&lt;/strong&gt;, хотя автор и заявляет в предисловии что изначальное название было “Психология привычных вещей”.&lt;/p&gt;
+
+&lt;h3 id=&quot;почему-же-я-сделаю-третью-попытку-прочесть-эту-книгу&quot;&gt;Почему же я сделаю третью попытку прочесть эту книгу?&lt;/h3&gt;
+
+&lt;p&gt;Существует обновленное издание от 2013 года, в котором как заявляет автор учтены изменения и распространение технологий, новые концепции и изменение самого позиционирования автора — от ученого к руководителю.&lt;/p&gt;
+
+&lt;p&gt;Книга в первых главах передает всю боль которую испытывают пользователи физических и цифровых продуктов. По своему опыту знаю как тяжело бывает донести мысль до дизайнеру что решение которое предложено мягко говоря не самое лучшее, а иногда просто издевательское.&lt;/p&gt;
+
+&lt;p&gt;Книга обращает внимание на принципы хорошего дизайна которые стоит помнить каждому разработчику. Под разработчиком я подразумеваю дизайнера, менеджера и программисте. Концентрирует внимание на четырех его элементах:&lt;/p&gt;
+
+&lt;h5 id=&quot;назначение&quot;&gt;назначение&lt;/h5&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Хороший дизайнер делает приемлемые действия заметными, а неприемлемые — незаметными”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h5 id=&quot;ограничители&quot;&gt;ограничители&lt;/h5&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Чтобы сделать вещь простой в применении, нужно исключить все возможные неверные действия, то есть ограничить их выбор.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h5 id=&quot;соответствие&quot;&gt;соответствие&lt;/h5&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;означает связь между двумя вещами, в данном случае между органами управления и результатом их использования&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h5 id=&quot;обратная-связь&quot;&gt;обратная связь&lt;/h5&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;получаемая пользователем информация о действии и его результате. Очень важно, чтобы был виден результат действия. Отсутствие обратной связи порождает ненужные домыслы.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;А также на про фундаментальным принципы дизайна вещей:
+наличие ясной концептуальной модели:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Если в основе вещи лежит ясная концептуальная модель, мы можем предсказать результат действий с нею. Если такая модель скрыта от потребителя, он работает вслепую: выполняет действия по инструкции, но не знает, чего ждать от предмета и почему и что делать, если что-то выйдет из строя.”
+наглядность
+“отличный дизайн предполагает гармонию и баланс между эстетической красотой, надежностью и безопасностью, практичностью, ценой и функциональными возможностями.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;еще-несколько-мыслей-и-цитат&quot;&gt;Еще несколько мыслей и цитат:&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Технари смотрят только вперед, поэтому снова и снова повторяют ошибки прошлого.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Интересное замечание про разработку промышленного дизайна:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Обычно на разработку хорошего дизайна приходится пять-шесть попыток”… “Но если с самого начала эта продукция терпит крах, то ни вторая, ни даже третья презентация не смогут спасти ее репутацию.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Вопрос который часто встает при разработке новой функции:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Если ошибка возможна, кто-то обязательно ее допустит. Дизайнер должен предусмотреть все возможные ошибки и постараться свести к минимуму вероятность их появления. Ошибки должны быть легко распознаваемы и по возможности обратимы и не должны приводить к серьезным последствиям.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Явление, называемое приобретенной беспомощностью, помогает объяснить причину самообвинения. Оно относится к случаям, когда вследствие многочисленных безрезультатных попыток человек начинает думать, что задание для него непосильно, и считает себя беспомощным”… “Чаще всего причина появления этого чувства — обычные неприятности, которые нередко воспринимаются как предвестник затяжной депрессии.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;О подходе к знанию:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Существует два вида знаний: знания что и знания как. Знания что (психологи называют их декларативным знанием) — это факты и правила. «На красный свет проезда нет», «Нью-Йорк находится почти на одной широте с Мадридом», «Чтобы вынуть ключ из замка зажигания, нужно включить заднюю передачу». Декларативные знания легко записать и выучить. Знания как (психологи называют их процедурным знанием) — это знания, которые делают возможными игру на музыкальном инструменте, торможение автомобиля на скользкой дороге, ответ на подачу в теннисе или внятное проговаривание скороговорки «Карл у Клары украл кораллы». Процедурные знания сложно или даже невозможно записать и тем более выучить. Такие знания поддаются изучению только через демонстрацию и практику. Даже лучшие учителя не могут описать свои действия. Процедурные знания содержатся в подсознании.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;О подходах к запоминанию&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Механическое запоминание вызывает множество проблем. Во-первых, так как вся информация, которая вносится в память, случайна, возникают проблемы с ее запоминанием: на это требуется больше времени и сил. Во-вторых, если возникают сложности, механическое запоминание алгоритма действий не может подсказать, в чем ошибка и что нужно сделать для устранения проблемы.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ну и то с чем можно поспорить:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Если дизайн полагается на надписи, он может быть ошибочным. Надписи по-своему важны и часто необходимы, но естественное соответствие значительно снижает потребность в них. Если без надписей нельзя, меняйте дизайн.”&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>Алексей С.</name></author><category term="review" /><category term="books" /><summary type="html">С одной стороны, книгу нужно бы прочитать каждому дизайнеру интерфейсов и промышленному дизайнеру, что бы понять какую боль могут приносить их разработки будущим пользователям. С другой стороны — ни за что не порекомендую покупать именно это издание.</summary></entry><entry><title type="html">Как работать с мета-данными в appstore connect</title><link href="https://42point.com/posts/udobnyj-sposob-raboty-s-meta-v-app-store" rel="alternate" type="text/html" title="Как работать с мета-данными в appstore connect" /><published>2019-09-14T22:52:54+03:00</published><updated>2019-09-14T22:52:54+03:00</updated><id>https://42point.com/posts/udobnyj-sposob-raboty-s-meta-v-app-store</id><content type="html" xml:base="https://42point.com/posts/udobnyj-sposob-raboty-s-meta-v-app-store">&lt;p&gt;В отличии от Google Play Console, Appstore Connect крайне недружелюбен к менеджеру которому нужно подготовить материалы на нескольких языках для публикации новых версий приложения.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Поэтому спасением при большом количестве приложение и частых релизах может выступить &lt;a href=&quot;https://docs.fastlane.tools/actions/deliver/&quot;&gt;Fastlane Deliver&lt;/a&gt;. Инструмент позволит автоматизировать:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Загрузку, буквально, сотен скриншотов для разных языков и платформ.&lt;/li&gt;
+  &lt;li&gt;Обновление тесктовой мета-информации для каждого из языков отдельно: keywords, description, release_notes, name etc.&lt;/li&gt;
+  &lt;li&gt;Обновление данных in-app покупок&lt;/li&gt;
+  &lt;li&gt;Переиспользование текущих данных&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;как-работать-с-этим&quot;&gt;Как работать с этим?&lt;/h2&gt;
+
+&lt;p&gt;К сожалению какое-то понимание работы с командной строкой быть должно, хотя бы до уровня “&lt;em&gt;запустить вот эти вот команды&lt;/em&gt;”.&lt;/p&gt;
+
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Установить xcode. Да, это неизбежное зло.&lt;/li&gt;
+  &lt;li&gt;Установить fastlane: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;brew cask install fastlane&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Перейти в папку проекта&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mkdir PROJECT-meta
+cd PROJECT-meta
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Инициализируем проект fastlane: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fastlane init&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Скачиваем существующие метаданные: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Fastlane deliver &lt;/code&gt;. В процессе естественно нужно будет указать креденшиалс и Bundle ID вашего приложения.
+Команда успешно скачивает все данные и создает структуру папок под языки и скриншоты &lt;img src=&quot;/assets/images/uploads/2019/finder.png&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Вносим изменения, если нужно&lt;/li&gt;
+  &lt;li&gt;Создаем новую версию в Appstore (можно просто поменять значение &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;app_version&lt;/code&gt; в Deliverfile).&lt;/li&gt;
+  &lt;li&gt;Запускаем&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fastlane deliver&lt;/code&gt;. Команда уточнит от чьего имени и что именно вы загружаете а также предложит просмотреть превью всей мета информации.&lt;/li&gt;
+  &lt;li&gt;Подтверждайте превью, немного ожидания и PROFIT!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;В командной строке получите приятный отчет:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[20:54:07]: ✅  Passed: No negative  sentiment
+[20:54:07]: ✅  Passed: No placeholder text
+[20:54:07]: ✅  Passed: No mentioning  competitors
+[20:54:07]: ✅  Passed: No future functionality promises
+[20:54:07]: ✅  Passed: No words indicating test content
+[20:54:07]: ✅  Passed: No curse words
+[20:54:07]: ✅  Passed: No words indicating your IAP is free
+[20:54:07]: 😵  Failed: Incorrect, or missing copyright date→ using a copyright date that is any different from this current year, or missing a date
+[20:54:31]: ✅  Passed: No broken urls
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;В нашем случае при локализации на 8 языков экономия составит до 2 часов времени.&lt;/p&gt;
+
+&lt;h2 id=&quot;дополнительно&quot;&gt;Дополнительно&lt;/h2&gt;
+
+&lt;p&gt;Рекомендую также настроить:&lt;/p&gt;
+
+&lt;h3 id=&quot;appfile&quot;&gt;Appfile:&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;app_identifier(&quot;you app bundle id&quot;) # The bundle identifier of your app
+apple_id(&quot;your apple id&quot;) # Your Apple email address
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;deliverfile&quot;&gt;Deliverfile&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;app_version &quot;2.6.8&quot;
+submit_for_review true
+force true # Set to true to skip PDF verification
+phased_release true
+skip_screenshots false
+use_live_version false # use current meta
+automatic_release false
+
+precheck_include_in_app_purchases false # если не используете inapp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Алексей С.</name></author><category term="apple" /><category term="appstore" /><summary type="html">В отличии от Google Play Console, Appstore Connect крайне недружелюбен к менеджеру которому нужно подготовить материалы на нескольких языках для публикации новых версий приложения.</summary></entry><entry><title type="html">Как отобразить скрытые файлы в Finder</title><link href="https://42point.com/posts/hidden-files-finder" rel="alternate" type="text/html" title="Как отобразить скрытые файлы в Finder" /><published>2018-02-20T12:34:38+03:00</published><updated>2018-02-20T12:34:38+03:00</updated><id>https://42point.com/posts/hidden-files-finder</id><content type="html" xml:base="https://42point.com/posts/hidden-files-finder">&lt;p&gt;Внезапное открытие после 8 лет использования Macbook –&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;⌘+⇧+.&lt;/code&gt; отображает скрытые файлы в Finder.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/uploads/2018/02/hidden-files-in-finder.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Alexey S</name></author><category term="macos" /><summary type="html">Внезапное открытие после 8 лет использования Macbook – ⌘+⇧+. отображает скрытые файлы в Finder.</summary></entry><entry><title type="html">Как временно отключить заставку и сон вашего Macbook</title><link href="https://42point.com/posts/terminal-energy-and-display" rel="alternate" type="text/html" title="Как временно отключить заставку и сон вашего Macbook" /><published>2018-02-18T08:39:18+03:00</published><updated>2018-02-18T08:39:18+03:00</updated><id>https://42point.com/posts/terminal-energy-and-display</id><content type="html" xml:base="https://42point.com/posts/terminal-energy-and-display">&lt;p&gt;Представим, у вас важная презентация и нужно запретить mac’у отключать дисплей, или вы смотрите новую серию Игры престолов и не хочется все время дергать курсор, дабы дисплей не погас. Или выполняется важный расчет который остановиться если Macbook заснет. Может помочь маленькое бесплатное приложение &lt;a href=&quot;https://intelliscapesolutions.com/apps/caffeine&quot;&gt;Caffeine&lt;/a&gt; или можно воспользоваться стандартной командой &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;caffeinate&lt;/code&gt; в терминале, которая делает тоже самое но предоставляет больше гибкости.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Как у любой терминальной команды, у &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;caffeinate&lt;/code&gt; свои ключи:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# таймер в секундах&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# не отключать дисплей&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# не уводить в ситему в сон&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# запрет уводить диски в сон&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# запрет машине уходить в сон когда&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# имитирует дейтсвия текущего пользователя&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Как можно использовать?&lt;/p&gt;
+
+&lt;h4 id=&quot;запретить-уходить-в-сон-в-течении-часа&quot;&gt;Запретить уходить в сон в течении часа&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;caffeinate -t 3600 &amp;amp;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Амперсанд &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt; позволит выполнить команду в фоне и освободить командную строку для дальнейшего использования.
+Параметр &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-t 3600&lt;/code&gt; задает таймаут в 3600 секунд что равно 1-му часу.&lt;/p&gt;
+
+&lt;h4 id=&quot;не-отключать-дисплей-и-не-запускать-заставку&quot;&gt;Не отключать дисплей и не запускать заставку&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;caffeinate -d&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;не-засыпать-пока-выполняется-скрипт-или-процесс&quot;&gt;Не засыпать пока выполняется скрипт или процесс&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;caffeinate -i long_running_script.sh&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://mac-how-to.gadgethacks.com/how-to/take-control-your-macs-sleep-functions-with-these-commands-0168109/&quot;&gt;Take Control of Your Mac’s Sleep Functions with These Commands « Mac Tips :: Gadget Hacks&lt;/a&gt;&lt;/p&gt;</content><author><name>Алексей С.</name></author><category term="macos" /><category term="terminal" /><summary type="html">Представим, у вас важная презентация и нужно запретить mac’у отключать дисплей, или вы смотрите новую серию Игры престолов и не хочется все время дергать курсор, дабы дисплей не погас. Или выполняется важный расчет который остановиться если Macbook заснет. Может помочь маленькое бесплатное приложение Caffeine или можно воспользоваться стандартной командой caffeinate в терминале, которая делает тоже самое но предоставляет больше гибкости.</summary></entry><entry><title type="html">Как эффективно использовать массивы во Framer</title><link href="https://42point.com/posts/arrays-in-framer" rel="alternate" type="text/html" title="Как эффективно использовать массивы во Framer" /><published>2018-02-06T23:04:49+03:00</published><updated>2018-02-06T23:04:49+03:00</updated><id>https://42point.com/posts/arrays-in-framer</id><content type="html" xml:base="https://42point.com/posts/arrays-in-framer">&lt;p&gt;К сожалению, только на английском языке, но чуть позже вынесу сюда самые полезные приемы которые помогут в разработке прототипа.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;как добавить слои из Sketch в массив&lt;/li&gt;
+  &lt;li&gt;как правильно применить одно и тоже событие к нескольким одинаковым объектам&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+	&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/kJYI4oYrHik?rel=0&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;полезные-ссылки&quot;&gt;Полезные ссылки&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.framer.com/code-less-achieve-more-with-arrays-in-framer-c43594d13d59&quot;&gt;Code Less &amp;amp; Achieve More with Arrays in Framer – Framer&lt;/a&gt;&lt;/p&gt;</content><author><name>Alexey S</name></author><category term="framer" /><summary type="html">К сожалению, только на английском языке, но чуть позже вынесу сюда самые полезные приемы которые помогут в разработке прототипа.</summary></entry><entry><title type="html">Медиа-клавиши в iTunes.</title><link href="https://42point.com/posts/itunes-and-media-buttons" rel="alternate" type="text/html" title="Медиа-клавиши в iTunes." /><published>2018-02-05T14:40:39+03:00</published><updated>2018-02-05T14:40:39+03:00</updated><id>https://42point.com/posts/itunes-and-media-buttons</id><content type="html" xml:base="https://42point.com/posts/itunes-and-media-buttons">&lt;p&gt;“It’s not a bug; it’s a feature. (c)” У Apple есть потрясающая способность принимать решения в дизайне продуктов вопреки здравому смыслу и логике.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;iTunes это вероятно один из самых невидимых миром монстров который по идее должен делать только одну работу, но при этом оброс кучей других возможностей, при этом несколько последних апдейтов сделали его еще менее осмысленным. Что бесит лично меня:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Больше нельзя с помощью iTunes удаленно установить/купить приложение на iOS устройство (через браузер тоже, привет Google Play!).&lt;/li&gt;
+  &lt;li&gt;Медиа-клавиши Macbook больше не управляют iTunes по-умолчанию!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Подробнее о второй проблеме которую можно решить.
+Начиная с macOS 10.13 Apple изменили поведение медиа-клавиш, теперь они контролируют любое приложение для воспроизведения медиа в системе, например, видео-проигрыватель или youtube в браузере. Но в реальности, это всегда не то что нужно.
+Поиск и короткая (почему-то) &lt;a href=&quot;https://forums.developer.apple.com/thread/86221&quot;&gt;ветка&lt;/a&gt; обсуждения привели к нескольким решениям:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Попытка перезагрузиться в безопасном режиме - не работает, в какой-то момент кнопки ломаются опять.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://bekirserifoglu.wordpress.com/2017/10/01/solutionworkaround-for-mac-os-high-sierra-unified-media-buttons-playpause-next-and-previous-track-problem/&quot;&gt;Настройки с помощью Better Touch Tools&lt;/a&gt; — дорого и сложно, на мой взгляд.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://milgra.com/high-sierra-media-key-enabler.html&quot;&gt;Утилита &lt;strong&gt;highsierramediakeyenabler&lt;/strong&gt;&lt;/a&gt; которая возвращает поведение медиа-клавиш по-умолчанию.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Третий вариант оказался самым простым.&lt;/p&gt;</content><author><name>Alexey S</name></author><category term="apple" /><category term="itunes" /><summary type="html">“It’s not a bug; it’s a feature. (c)” У Apple есть потрясающая способность принимать решения в дизайне продуктов вопреки здравому смыслу и логике.</summary></entry></feed>

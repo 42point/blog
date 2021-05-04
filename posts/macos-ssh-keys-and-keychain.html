@@ -1,0 +1,672 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Хинт про работу с ключами SSH на mac os x - 42point</title>
+<meta name="description" content="Что такое SSH и для чего они нужны лучше чем уже сказано на Хабре рассказать не смогу. Потому лишь добавлю что внезапно а в версии 10.12.2 macOS обновилась библиотека OpenSSH 1 и логика работы с ключами. Что конечно же все сломало — ssh-ключи не загружаются после загрузки системы. Что очень неудобно при работе Sourcetree, Github, хостингами да и вообще. Так что подготовил инструкцию больше для себя как исправить включая все шаги.                 Technical Note TN2449OpenSSH updates in macOS 10.12.2 &#8617;">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="42point">
+<meta property="og:title" content="Хинт про работу с ключами SSH на mac os x">
+<meta property="og:url" content="https://42point.com/posts/macos-ssh-keys-and-keychain">
+
+
+  <meta property="og:description" content="Что такое SSH и для чего они нужны лучше чем уже сказано на Хабре рассказать не смогу. Потому лишь добавлю что внезапно а в версии 10.12.2 macOS обновилась библиотека OpenSSH 1 и логика работы с ключами. Что конечно же все сломало — ssh-ключи не загружаются после загрузки системы. Что очень неудобно при работе Sourcetree, Github, хостингами да и вообще. Так что подготовил инструкцию больше для себя как исправить включая все шаги.                 Technical Note TN2449OpenSSH updates in macOS 10.12.2 &#8617;">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2017-10-11T16:21:22+03:00">
+
+
+
+
+
+
+<link rel="canonical" href="https://42point.com/posts/macos-ssh-keys-and-keychain">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://42point.com/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="42point Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          42point
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/projects/">Проекты</a>
+            </li><li class="masthead__menu-item">
+              <a href="/books/">Книги</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tools/">Инструменты</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Выпадающее меню</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Хинт про работу с ключами SSH на mac os x">
+    <meta itemprop="description" content="Что такое SSH и для чего они нужны лучше чем уже сказано на Хабре рассказать не смогу. Потому лишь добавлю что внезапно а в версии 10.12.2 macOS обновилась библиотека OpenSSH 1 и логика работы с ключами. Что конечно же все сломало — ssh-ключи не загружаются после загрузки системы. Что очень неудобно при работе Sourcetree, Github, хостингами да и вообще. Так что подготовил инструкцию больше для себя как исправить включая все шаги.            Technical Note TN2449OpenSSH updates in macOS 10.12.2 &#8617;      ">
+    <meta itemprop="datePublished" content="2017-10-11T16:21:22+03:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Хинт про работу с ключами SSH на mac os x
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 мин на чтение
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>Что такое SSH и для чего они нужны лучше чем уже <a href="https://habrahabr.ru/post/122445/">сказано на Хабре</a> рассказать не смогу. Потому лишь добавлю что внезапно а в версии 10.12.2 macOS обновилась библиотека OpenSSH <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> и логика работы с ключами. Что конечно же все сломало — ssh-ключи не загружаются после загрузки системы. Что очень неудобно при работе Sourcetree, Github, хостингами да и вообще. Так что подготовил инструкцию больше для себя как исправить включая все шаги.</p>
+
+<!--more-->
+
+<ol>
+  <li>Создаем ключ если его еще нет. Инструкций с картинками в сети полно, например, на <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">Github</a>.</li>
+  <li>Добавляем его passphrase в системный Keychain <code class="language-plaintext highlighter-rouge">ssh-add -K FULL_PATH_to_PrivateKeyFile</code></li>
+  <li>Добавляем его в ssh-agent <code class="language-plaintext highlighter-rouge">ssh-add -A</code></li>
+  <li>Добавляем файл config где обязательно указываем следующие параметры:</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">   Host <span class="se">\*</span>
+   UseKeychain <span class="nb">yes
+   </span>AddKeysToAgent <span class="nb">yes</span>
+   </code></pre></figure>
+
+<ol start="5">
+  <li>Теперь нужно команду <code class="language-plaintext highlighter-rouge">ssh-add -A</code> автоматически на старте системы. Первый вариант один через скрипт в <code class="language-plaintext highlighter-rouge">~/.bash_profile</code>:</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">   ssh-add <span class="nt">-A</span> 2&gt;/dev/null<span class="p">;</span>
+   </code></pre></figure>
+
+<ol start="6">
+  <li>другой через файл загрузки в <code class="language-plaintext highlighter-rouge">~/Library/LaunchAgents/</code> <sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> Содержание файла с расширением .plist:</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml">   <span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+   <span class="cp">&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;</span>
+   <span class="nt">&lt;plist</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;dict&gt;</span>
+   <span class="nt">&lt;key&gt;</span>Label<span class="nt">&lt;/key&gt;</span>
+   <span class="nt">&lt;string&gt;</span>ssh-add-a<span class="nt">&lt;/string&gt;</span>
+   <span class="nt">&lt;key&gt;</span>ProgramArguments<span class="nt">&lt;/key&gt;</span>
+   <span class="nt">&lt;array&gt;</span>
+       <span class="nt">&lt;string&gt;</span>ssh-add<span class="nt">&lt;/string&gt;</span>
+       <span class="nt">&lt;string&gt;</span>-A<span class="nt">&lt;/string&gt;</span>
+   <span class="nt">&lt;/array&gt;</span>
+   <span class="nt">&lt;key&gt;</span>RunAtLoad<span class="nt">&lt;/key&gt;</span>
+   <span class="nt">&lt;true/&gt;</span>
+   <span class="nt">&lt;/dict&gt;</span>
+   <span class="nt">&lt;/plist&gt;</span>
+   </code></pre></figure>
+
+<ol start="7">
+  <li>Если не хотим каждый раз вводить пароль — в настройках “связки ключей” снимаем галочку об автоматической блокировке.</li>
+</ol>
+
+<figure class=" ">
+  
+    
+      <a href="/assets/images/uploads/2017/10/Screen-Shot-2017-10-11-at-10.51.12-1.png" title="Image 1 title caption">
+          <img src="/assets/images/uploads/2017/10/Screen-Shot-2017-10-11-at-10.51.12-1.png" alt="placeholder image 1" />
+      </a>
+    
+  
+  
+</figure>
+
+<ol>
+  <li>PS для того что бы посмотреть текущие ключи в в агенте <code class="language-plaintext highlighter-rouge">ssh-add -l</code>.</li>
+</ol>
+
+<p><a href="https://github.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain">Saving SSH keys in macOS Sierra keychain</a></p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p><a href="https://developer.apple.com/library/content/technotes/tn2449/_index.html">Technical Note TN2449OpenSSH updates in macOS 10.12.2</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p><a href="http://macdaily.me/howto/startup-applications-in-mac-os-x-launchagents-and-launchdaemons/">Методы автозагрузки приложений в Mac OS X. LaunchAgents и LaunchDaemons.</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Метки: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/macos" class="page__taxonomy-item" rel="tag">macos</a><span class="sep">, </span>
+    
+      <a href="/tags/manual" class="page__taxonomy-item" rel="tag">manual</a><span class="sep">, </span>
+    
+      <a href="/tags/ssh" class="page__taxonomy-item" rel="tag">ssh</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Дата изменения:</strong> <time datetime="2017-10-11T16:21:22+03:00">October 11, 2017</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Поделиться</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%D0%A5%D0%B8%D0%BD%D1%82+%D0%BF%D1%80%D0%BE+%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%83+%D1%81+%D0%BA%D0%BB%D1%8E%D1%87%D0%B0%D0%BC%D0%B8+SSH+%D0%BD%D0%B0+mac+os+x%20https%3A%2F%2F42point.com%2Fposts%2Fmacos-ssh-keys-and-keychain" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Поделиться Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F42point.com%2Fposts%2Fmacos-ssh-keys-and-keychain" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Поделиться Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2F42point.com%2Fposts%2Fmacos-ssh-keys-and-keychain" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Поделиться LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/posts/mapsicon" class="pagination--pager" title="Mapsicon
+">Предыдущая</a>
+    
+    
+      <a href="/posts/copy-titie-and-url-as-markdown" class="pagination--pager" title="Копируем заголовок и адрес WEB-страницы в формате Markdown
+">Следующая</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">Вам также может понравиться</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/good-task" rel="permalink">Что такое хорошая [продуктовая] задача.
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 мин на чтение
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Небольшое лирическое вступление. Когда-то я играл в баскетбол и тренер беспрестанно вбивал нам в голову — “если твой пас не приняли в этом твоя вина”, или ес...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/telegram-notifications-jenkins" rel="permalink">Уведомления Jenkins в Telegram
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 мин на чтение
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Одно из правил работы с CI — все должны видеть статус сборок, тоесть синхронизация. А что может быть лучше чем уведомление о неудачном, или напротив удачном,...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/playbook-licenses" rel="permalink">Лицензии при разработке программных продуктов софта
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 мин на чтение
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">В разработке ПО часто является разумным использовать уже готовые фреймворки и библиотеки для решения тех или иных задач. Важно помнить, что несмотря на стату...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/internet-definitions/" rel="permalink">Интернет термины
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          менее 1 мин на чтение
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Часто бывает необходимо подобрать правильно определение для договора или элементарного соглашения, а иногда найти простые слова чтобы объяснить клиенту/партн...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><div class="search-searchbar"></div>
+  <div class="search-hits"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Связаться со мной:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="http://twitter.com/d0_n0_evil" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="http://facebook.com/d0.n0.evil" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="http://instagram.com/d0_n0_evil/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> RSS-лента</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 42point. Сайт работает на <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+<!-- Including InstantSearch.js library and styling -->
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch-theme-algolia.min.css">
+
+<script>
+// Instanciating InstantSearch.js with Algolia credentials
+const search = instantsearch({
+  appId: 'XSQ0SZ38PH',
+  apiKey: '603d97debe9ccf4d9bc95d2ef012cbca',
+  indexName: '42point',
+  searchParameters: {
+    restrictSearchableAttributes: [
+      'title',
+      'content'
+    ]
+  }
+});
+
+const hitTemplate = function(hit) {
+  const url = hit.url;
+  const title = hit._highlightResult.title.value;
+  const content = hit._highlightResult.html.value;
+
+  return `
+    <div class="list__item">
+      <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="${url}">${title}</a></h2>
+        <div class="archive__item-excerpt" itemprop="description">${content}</div>
+      </article>
+    </div>
+  `;
+}
+
+// Adding searchbar and results widgets
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '.search-searchbar',
+    poweredBy: true,
+    placeholder: 'Введите поисковый запрос...'
+  })
+);
+search.addWidget(
+  instantsearch.widgets.hits({
+    container: '.search-hits',
+    templates: {
+      item: hitTemplate,
+      empty: 'No results',
+    }
+  })
+);
+
+// Starting the search only when toggle is clicked
+$(document).ready(function () {
+  $(".search__toggle").on("click", function() {
+    if(!search.started) {
+      search.start();
+    }
+  });
+});
+</script>
+
+
+
+
+
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+  (function (m, e, t, r, i, k, a) {
+    m[i] =
+      m[i] ||
+      function () {
+        (m[i].a = m[i].a || []).push(arguments);
+      };
+    m[i].l = 1 * new Date();
+    (k = e.createElement(t)),
+      (a = e.getElementsByTagName(t)[0]),
+      (k.async = 1),
+      (k.src = r),
+      a.parentNode.insertBefore(k, a);
+  })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(67038760, "init", {
+    clickmap: true,
+    trackLinks: true,
+    accurateTrackBounce: true,
+    webvisor: true,
+  });
+</script>
+<noscript></noscript>
+<div data-proofer-ignore>
+  <img src="https://mc.yandex.ru/watch/67038760" style="position: absolute; left: -9999px" alt="" /></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-WVR78RR');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+
+
+  </body>
+</html>

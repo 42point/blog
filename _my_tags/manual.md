@@ -1,4 +1,0 @@
----
-slug: manual
-name: manual
----

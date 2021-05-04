@@ -1,4 +1,0 @@
----
-slug: yaml
-name: yaml
----

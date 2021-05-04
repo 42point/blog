@@ -1,4 +1,0 @@
----
-slug: terminal
-name: terminal
----
