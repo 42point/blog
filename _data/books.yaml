@@ -7,6 +7,15 @@
 # completed: 
       
 list:
+  - year: 2021
+    books:
+      - title: "12 правил жизни. Противоядие от хаоса"
+        author: "Джордан Питерсон"
+        link: https://www.litres.ru/dzhordan-piterson/12-pravil-zhizni-protivoyadie-ot-haosa/
+        image: https://cv8.litres.ru/pub/c/elektronnaya-kniga/cover_415/40685787--.jpg
+        description: "Достаточно сложная книга с простым компасом для жизни"
+        genre: [Социальная психология]
+        completed: читаю
   - year: 2020
     books:
       - title: "Agile Product Management with Scrum: Creating Products that Customers Love"
