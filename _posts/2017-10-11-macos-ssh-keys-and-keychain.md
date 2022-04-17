@@ -20,13 +20,13 @@ tags:
 <!--more-->
 
 1. Создаем ключ если его еще нет. Инструкций с картинками в сети полно, например, на [Github](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/).
-2. Добавляем его passphrase в системный Keychain 
+2. Добавляем passphrase ключа в системный Keychain 
 
 {% highlight bash %}
 $ ssh-add -K /path/to/my/key.pem
 {% endhighlight %}
 
-для варианта когда ваша версия macos старше выше чем 12.0 то команда должна выглядеть как:[^5]
+для варианта когда ваша версия macos старше выше чем 12.0 то команда должна выглядеть как: [^5]
 
 {% highlight bash %}
 $ ssh-add --apple-use-keychain /path/to/my/key
@@ -53,7 +53,9 @@ $ sudo chmod 755 ~/.ssh
    AddKeysToAgent yes
    {% endhighlight %}
    {:start="5"}
-5. Теперь нужно команду `ssh-add -A` автоматически на старте системы. Первый вариант один через скрипт в `~/.bash_profile`:{% highlight bash %}
+5. Теперь нужно команду `ssh-add -A` автоматически на старте системы. Первый вариант один через скрипт в `~/.bash_profile`:
+
+{% highlight bash %}   
    ssh-add -A 2>/dev/null;
 {% endhighlight %}
    {:start="6"}
