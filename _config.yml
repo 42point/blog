@@ -110,12 +110,8 @@ footer:
     #   # url:
 
 search: true
-search_provider: algolia
-algolia:
-  application_id: "XSQ0SZ38PH" # YOUR_APPLICATION_ID
-  index_name: 42point # YOUR_INDEX_NAME
-  search_only_api_key: 603d97debe9ccf4d9bc95d2ef012cbca # YOUR_SEARCH_ONLY_API_KEY
-  powered_by: # true (default), false
+lunr:
+  search_within_pages: true
 
 category_archive:
   type: jekyll-archives
