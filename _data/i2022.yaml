@@ -1,168 +1,47 @@
+# list:
+#   - type: films
+#     titles:
+#       - title: Founder"
+#         desc: "Отличный "
+#         star: 5
+#         URL: "https"
+#         img: "https://"
+#   - type: "TV Shows"
+#     titles:
+#       - title: Devs
+#         desc: "Еще один сериал года."
+#         star: 5
+#         URL: "https"
+#         img: "https"
+
 list:
   - type: films
     titles:
-      - title: Founder
-        desc: "Отличный фильм про менеджемент предпринимательство и возраст."
-        star: 5
+      - title: ARQ/Арка
+        desc: "Еще один фильм про кольцо, лайк"
+        star: 4
         URL: "https://www.kinopoisk.ru/film/893245/"
-      - title: Freaks
-        desc: необычный взгляд на привычный мир
+        img: https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/f9bd6ea7-7fb3-4013-bf85-4088b356dee8/3840x
+      - title: Prey / Добыча / Хищник 5
+        desc: "Я соглашусь что это суперский фильм про хищника, с вопросами."
         star: 4
-        URL: https://www.kinopoisk.ru/film/1178683/
-      - title: Nightcrawler
-        desc: Про переговоры и следование к цели.
+        URL: "https://www.kinopoisk.ru/film/4324674/"
+        img: "https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/4be12e16-890c-4b6d-9d31-80794d7c742c/3840x"
+      - title: Tropic thunder / Солдаты неудачи
+        desc: "Комедия которых больших не снимают. Один только момент с блекфейсом чего сейчас стоит. Как и некоторые другие фильиы, пересматриваю раз в пару лет."
         star: 5
-        URL: https://www.kinopoisk.ru/film/760815/
-      - title: Wailing
-        desc: наверно хорошее кино которое не смог оценить и просомтрел на перемотке
-        URL: https://www.kinopoisk.ru/film/944958/
-        star: 2
-      - title: The Killing of a Sacred Deer
-        desc: Как же долго я шел к этому фильму, и как ожидаемо я получил загадку без ответов.
-        URL: https://www.kinopoisk.ru/film/984309/
-        star: 3
-      - title: The Invisible Man
-        star: 3
-        desc: На один раз
-        URL: https://www.kinopoisk.ru/film/420454/
-      - title: vivarium
-        star: 2
-        desc: Претензия на что-то большее чем есть на самом деле. вряд ли стоит пересмтривать.
-        URL: https://www.kinopoisk.ru/film/1118663/
-      - title: Elle
-        desc: Очень необычный фильм Верховена, интрига, отношения, желание.
-        star: 4
-        URL: https://www.kinopoisk.ru/film/842857/
-      - title: Demolition
-        URL: https://www.kinopoisk.ru/film/842493/
-        star: 4
-        desc: Фильм о том как справляться с происходящим.
-      - title: As The God Will
-        star: 4
-        URL:
-        desc: Тяжело воспринимать этот фильм, слишком много допущений.
-      - title: Spiderman
-        star: 5
-        desc: наконец посомтрел это чудо
-      - title: The Guest
-        star: 3
-      - title: The Lodge
-        star: 3
-        desc: "посмотреть на раз"
-      - title: Alita
-        star: 4
-      - title: Tenet
-        star: 5
-      - title: Underwater
-        star: 3
-        desc: так себе ужастик на один раз в стиле чужого и левиафана
-      - title: Time Renegades
-        star: 5
-        desc: отличный фильм
-      - title: The Lighthouse
-        desc: Очень классный но непонятный, и красивый
-      - title: Snowpiercer
-        star: 3
-        desc: так себе, сериал лучше
-      - title: Текст
-        desc: На удивление хороший русский фильм.
-        star: 4
-      - title: Night Hunter
-        desc: Дтектив на один раз с известными актерами.
-        star: 3
-      - title: 7 Reasons to Run Away (from society)
-        desc: претензия на смысл но не зашло
-        star: 2
-      - title: The Gentlemen
-        star: 5
-        desc: Гай Ричи вернулся
-      - title: Color Out of Space
-        desc: Немного безумия с Николасом Кейджем
-        star: 3
-      - title: Coherence
-        desc: Простой фильм с очень крутой идеей
-        star: 5
-      - title: Папа, сдохни (Why Don't You Just Die!)
-        desc: люблю такое безумие
-        star: 4
-      - title: It chapter two
-        desc: нет желания пересматривать, а некоторые сцены просто смешны и нелепы
-        star: 3
-      - title: The Predator
-        desc: на один раз
-        star: 3
-        URL:
-      - title: The Witch
-        desc: Атмосферно
-        star: 4
-      - title: sgklbnofgo
-      - title: The Infiltrator
-        desc: Хорошая идея, но снято как для школьного утренника.
-        star: 3
-      - title: Carriers
-      - title: Атомная блондинка
-        desc: Посомтрел с большим запозданием но это экшен года.
-      - title: Вскрытие Джейн До
-        desc: Хороший ужастик в замкнутом пространстве.
-        star: 4
-      - title: Бойфренд из будущего
-        desc: Не понимаю почему у фильма такой высокий рейтинг, очень слащавая драма.
-        star: 3
-      - title:
-        desc:
-        star:
-      - title:
-      - title: The hunt
-        desc: Давно не видел такого стеба над правым, левыми и все современным обществом.
-        star: 5
-      - title: No One Lives
-      - title: Dark Phoenix
-        desc: Норм.
-      - title: Red Sparrow
-        desc: Не понимаю почему так сагри лись на этот фильм.
-        star: 4
-      - title: Knives Out
-        desc: Очень добрый детектив наоборот7
-        star: 4
-      - title: Gone Baby Gone
-        desc: Хорошая история с наивным концом.
-        star: 4
-      - title: Scary Stories to Tell in The Dark
-      - title: "John Wick: Chapter 3"
-      - title: Ready or Not
-        desc: Фильм моего любимого жанра. Немного ужаса, немного безумия и черного юмора.
-        star: 4
-      - title: The Hole in the Ground
+        URL: "https://www.kinopoisk.ru/film/278208/"
+        img: "https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/751d21d5-c447-4c3f-9172-f2f64c3c822a/3840x"
 
-      - title: The Killing of a Sacred
   - type: "TV Shows"
     titles:
-      - title: Devs
-        desc: Еще один сериал года.
-        star: 5
-      - title: Watchmen сериал
-        desc: Ужасно все кроме сцен с
-        star: 2
-      - title: mandalorian (1 сезон)
-      - title: Outsider
-      - title: The Boys
-      - title: Fargo (4 сезон)
-        desc: Это Fargo. Ожидания оправдались.
+      - title: Jessica Jones / Джессика Джонс (1 сезон)
+        desc: По мне так это самый сильный сезон который персмотрел снова
         star: 4
-      - title: Ted Lasso
-        desc: Да, хорош, но по какой-то причине я так и не досмотрел две последние серии.
-        star: 3
-      - title: Ход королевы
-        desc: Отличный!
+        URL: https://www.kinopoisk.ru/series/817508/
+        img: https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/5dd9945d-e7cc-45b0-a269-216896b99d6a/3840x
+      - title: Lost film / Потерянная комната
+        desc: Персматриваю этот сериал раз в пару лет. 3 серии, смотрятся на одном дыхании, и сеттинг который просто неповторим. Это мой любимы сериал.
         star: 5
-      - title: Utopia (US) 1 сезон
-        desc: Потеря времени. Сериал закрыли ну а авторы не поняли саму фишку оригинала.
-        star: 2
-      - title: Utopia (UK)
-      - title: Dark
-        star: 5
-        desc: Сериал Года. Мне повезло что я посомтрел сразу все 3 сезона подряд.
-      - title: "Star Trek: Lower Decks"
-        desc: Слишком много отсылок к оригинальному
-      - title: 12 monkies (1,2 сезоны)
-        URL: 
+        URL: "https://www.kinopoisk.ru/series/276268/"
+        img: "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/ffc292e8-641c-45e7-a1f4-8b7c6ecd7c52/3840x"
