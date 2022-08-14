@@ -1,10 +1,7 @@
 ---
-id: 73
 title: Немного о прототипах
 date: 2017-11-15T13:21:53+00:00
-author: Alexey S
-layout: post
-guid: http://42point.com/?p=73
+layout: single
 image: /wp-content/uploads/2017/11/Screen-Shot-2017-11-15-at-13.00.56-520x309.png
 categories:
   - О прототипах
@@ -20,7 +17,7 @@ tags:
 
 Тут есть любопытное видео того как будут работать 5 прототипов одного и того же кейса сделанных с разными инструментами, описание плюсов и минусов каждого, подходы к работе и информация о возможности поделиться своим прототипом, а также попытка классифицировать программы по типу работы: Слои против Страниц.
 
-{% include image.html path="uploads/2017/11/1NCql4R4wLG24UoyG-YUy3w.png" path-detail="uploads/2017/11/1NCql4R4wLG24UoyG-YUy3w.png" alt="" %}
+![](/assets/images/uploads/2017/11/1NCql4R4wLG24UoyG-YUy3w.png)
 
 По-честному, эта статья все что вам нужно, а ниже заметки с мои опытом.
 
@@ -32,7 +29,7 @@ tags:
 
 Когда может пригодится? Наверно я бы использовал в случаях Когда нужно строить сложные условия на ввод и проверку данных, либо необходимо показать логику кнопки. В текущем случае я не рискнул уходить в него.
 
-{% include image.html path="uploads/2017/11/Screen-Shot-2017-11-15-at-12.49.34.png" path-detail="uploads/2017/11/Screen-Shot-2017-11-15-at-12.49.34.png" alt="" %}
+![Axure](/assets/images/uploads/2017/11/Screen-Shot-2017-11-15-at-12.49.34.png)
 
 
 ## Origami Studio
@@ -43,7 +40,7 @@ tags:
 
 Интерфейсможно создать в самом редакторе, либо просто скопировать нужные слои из Sketch.
 
-{% include image.html path="uploads/2017/11/Screen-Shot-2017-11-11-at-11.38.51.png" path-detail="uploads/2017/11/Screen-Shot-2017-11-11-at-11.38.51.png" alt="" %}
+![Origami Studio](/assets/images/uploads/2017/11/Screen-Shot-2017-11-11-at-11.38.51.png)
 
 
 Из главных минусов :
@@ -51,7 +48,7 @@ tags:
   * очень своеобразная логика работы с патчами и слоями когда нужно привязать множественные действия и условия к одному слою
   * периодически mac пытался взлететь, после того как Origami разгонял CPU до 100%
   * высокий порог вхождения, правда, для других серьезных инструментов так же
-  * в сети не так много ресурсов и рецептов по решению отдельных кейсов, вполне возможна ситуация что никто не выложил готовое решение по твоей задаче, и нужно потрать серьезное время
+  * в сети не так много ресурсов и рецептов по решению отдельных кейсов, вполне возможна ситуация что никто не выложил готовое решение по твоей задаче, и нужно потратить серьезное время
 
 Область применения мне показалась ограниченной, достаточно легко сделать прототип отдельного кейса но при попытке сделать что-то из 4-5 экранов, есть риск получить безумную лапшу из патчей и конекторов, в которой разобраться будет проблемно.
 
@@ -61,7 +58,7 @@ tags:
 
 Инструмент больше для дизайнеров. Подкупил возможностью строить прототипы прям в интерфейсе Sketch&#8217;а, достаточно просто соединяются отдельные элементы.
 
-{% include image.html path="uploads/2017/11/sketch-prototype-4.gif" path-detail="uploads/2017/11/sketch-prototype-4.gif" alt="" %}
+![craft](/assets/images/uploads/2017/11/sketch-prototype-4.gif)
 
 
 [How to build an interactive prototype in Sketch in minutes](https://www.invisionapp.com/blog/build-interactive-prototype-sketch/)
@@ -71,7 +68,7 @@ tags:
 Из плюсов — есть некое подобие канбан доски для идей и концептов.
 
 
-{% include image.html path="uploads/2017/11/mockup-workflow.png" path-detail="uploads/2017/11/mockup-workflow.png" alt="" %}
+![Mockup-workflow](/assets/images/uploads/2017/11/mockup-workflow.png)
 
 
 ## Form
@@ -85,10 +82,7 @@ tags:
   * очень лаконичный интерфейс, нет ничего лишнего но всего достаточно
   * все что возможно с JavaScript возможно и в прототипе! Например [подключить реальные интерактивные карты](https://www.mapbox.com/help/mobile-framer/) с несколькими строчками кода
 
-
-
-
-{% include image.html path="uploads/2017/11/comp_1_5-2.gif" path-detail="uploads/2017/11/comp_1_5-2.gif" alt="" %}
+![](/assets/images/uploads/2017/11/comp_1_5-2.gif)
 
 <p style="text-align: center;">
   <a href="https://dribbble.com/shots/3450593-Framer-Mapbox">Framer Mapbox by Bryant Jow &#8212; Dribbble</a>

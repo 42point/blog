@@ -7,134 +7,148 @@
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-# Mandatory settings
-
-
-title: RUkovodstvo
+title: 42point
 email: lexx@42point.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Немного мыслей об IT, продуктивности и технологиях
-url: 
-  http://42point.com # the base hostname & protocol for your site, e.g. http://example.com
-
-blog_theme: light # Or use dark
-name: RUkovodstvo
-excerpt_separator: <!--more-->
-paginate: 10
-include: ['.htaccess']
+  Немного мыслей об IT, продуктивности и технологиях.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://42point.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: d0_n0_evil
+github_username: 42point
+locale: "ru-RU"
 
 # Build settings
-markdown: kramdown
-# theme: chalk
+theme: minimal-mistakes-jekyll
+# remote_theme: "mmistakes/minimal-mistakes@4.20.2"
+minimal_mistakes_skin: "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise" "default"
+plugins:
+  - jekyll-feed
 
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+    sort_by: position
 
+defaults:
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: false
+      share: true
+      # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      comments: true
+      share: true
+      related: true
+
+include: ["_pages", ".htaccess"]
+
+author:
+  name: "Алексей С."
+  avatar: "/assets/images/bio.jpg"
+  bio: "Мобильные продукты и приложения"
+  location: "Где-то в Москве"
+
+permalink: posts/:slug
+
+# Analytics
+analytics:
+  # provider: "google-gtag" # "google" "google-gtag"
+  # google:
+  #   tracking_id: GTM-WVR78RR #UA-17407767-9
+  #   anonymize_ip: # true, false (default)
+  provider: custom
+
+# Site Footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: http://twitter.com/d0_n0_evil
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: http://facebook.com/d0.n0.evil
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: http://instagram.com/d0_n0_evil/
+    # - label: "GitHub"
+    #   icon: "fab fa-fw fa-github"
+    #   # url:
+    # - label: "GitLab"
+    #   icon: "fab fa-fw fa-gitlab"
+    #   # url:
+    # - label: "Bitbucket"
+    #   icon: "fab fa-fw fa-bitbucket"
+    #   # url:
+
+search: true
+search_provider: algolia
+algolia:
+  application_id: "XSQ0SZ38PH" # YOUR_APPLICATION_ID
+  index_name: 42point # YOUR_INDEX_NAME
+  search_only_api_key: 603d97debe9ccf4d9bc95d2ef012cbca # YOUR_SEARCH_ONLY_API_KEY
+  powered_by: # true (default), false
+
+category_archive:
+  type: jekyll-archives
+  path: /categories/
+tag_archive:
+  type: jekyll-archives
+  path: /tags/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 # Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
 # exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
 #   - Gemfile
 #   - Gemfile.lock
-#   - node_modules
+#   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-
-
-
-
-
-
-# Optional settings
-
-about_enabled: true # Change to true if you wish to show an icon in the navigation that redirects to the about page
-baseurl: # Set if blog doesn't sit at the root of the domain (format: /blog)
-discus_identifier: # Add your Disqus identifier
-ga_analytics: UA-17407767-9 # Add your GA Tracking Id
-local_fonts: false # Change to true if you wish to use local fonts
-rss_enabled: true # Change to false if not
-scrollappear_enabled: true # Change to false to disable
-social:
-  dribbble: # Add your Dribbble handle
-  facebook: d0.n0.evil # Add your Facebook handle
-  flickr: # Add your Flickr handle
-  github: # Add your GitHub handle
-  linkedin: # Add your LinkedIn handle
-  twitter: # Add your Twitter handle
-  email: lexx@42point.com # Add your Email address
-  bitcoin: # Add your Bitcoin link or address
-  ethereum: # Add your Ethereum link or address
-  gitlab: # Add your GitLab handle
-  youtube: # Add your Youtube handle
-  twitch: # Add your Twitch handle
-  discord: # Add you Discord server invitation ID
-  tumblr: # Add your Tumblr handle
-  bitbucket: # Add your Bitbucket handle
-  docker: # Add your Docker Hub handle
-  instagram: d0_n0_evil # Add your Instagram handle
-  keybase: # Add your Keybase handle
-  medium: # Add your Medium handle
-  spotify: # Add your Spotify handle
-  stackoverflow: # Add your Stack Overflow ID number
-  steam: # Add your Steam handle
-
-
-# Important settings (change at own risk)
-
-assets:
-  plugins:
-    css: { autoprefixer: {}}
-    img: { optim: {}}
-  source_maps: false
-  sources:
-    - _assets/icons
-    - _assets/javascripts
-    - _assets/stylesheets
-    - _assets/yarn
-  caching:
-    path: ".jekyll-cache/assets"
-    type: file # Possible values: memory, file
-    enabled: false
-
-collections:
-  my_tags:
-    output: true
-    permalink: /tag/:slug/
-defaults:
-  -
-    scope:
-      path: ""
-      type: my_tags
-    values:
-      layout: articles_by_tag
-  - scope: 
-      path: "assets/images"
-    values:
-      image: true  
-exclude:
-  - .travis.yml
-  - bin/*
-  - circle.yml
-  - Gemfile
-  - Gemfile.lock
-  - package.json
-  - README.md
-  - vendor/
-  - yarn.lock
-plugins:
-  - jekyll-assets
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jemoji
-  # - jekyll-feed
-  - jekyll-gist
-paginate_path: /posts/page/:num/
-permalink: posts/:slug

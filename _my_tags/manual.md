@@ -1,0 +1,4 @@
+---
+slug: manual
+name: manual
+---

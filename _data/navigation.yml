@@ -1,0 +1,14 @@
+# main links
+main:
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "Проекты"
+    url: /projects/
+  - title: "Книги"
+    url: /books/
+  - title: "Инструменты"
+    url: /tools/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
