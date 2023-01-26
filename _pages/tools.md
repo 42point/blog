@@ -18,7 +18,7 @@ permalink: /tools/
 {% for tool in item.tool %}
 
   <h4 id="{{ tool.title | slugify }}">
-    <a href="{{ tool.link }}">{{ tool.title }}</a>
+    <a href="{{ tool.link }}" target="_blank">{{ tool.title }}</a>
     <a href="{{ tools | relative_url }}#{{ tool.title | slugify }}">#</a>
   </h4>
   <p>{{ tool.desc | markdownify }}</p>
