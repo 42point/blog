@@ -1,0 +1,14 @@
+{
+  "clips" : [
+    {
+      "content" : "[${:Title}]($PASTEBOARD_TEXT){:target=\"_blank\"}",
+      "name" : "External link",
+      "trigger" : "[}("
+    },
+    {
+      "content" : "{% highlight ${:lang} %}\n$0\n{% endhighlight %}",
+      "name" : "code highlite",
+      "trigger" : "code"
+    }
+  ]
+}
