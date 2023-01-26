@@ -7,7 +7,6 @@ _site
 .DS_Store
 node_modules/
 _assets/yarn/
-.nova/*
 *.sublime-project
 *.sublime-workspace
 _drafts/*
