@@ -31,7 +31,7 @@ locale: "ru-RU"
 # Build settings
 theme: minimal-mistakes-jekyll
 # remote_theme: "mmistakes/minimal-mistakes@4.20.2"
-minimal_mistakes_skin: "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise" "default"
+minimal_mistakes_skin: "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise" "default"
 plugins:
   - jekyll-feed
 
@@ -130,6 +130,24 @@ jekyll-archives:
   permalinks:
     category: /categories/:name/
     tag: /tags/:name/
+
+jekyll-spaceship:
+  processors:
+    - table-processor
+    - mathjax-processor
+    - plantuml-processor
+    - mermaid-processor
+    - polyfill-processor
+    - media-processor
+    - emoji-processor
+    - element-processor
+  element-processor:
+    css:
+      - a: # Replace all `a` tags
+          props:
+            class: ["(^.*$)", '\0 ext-link'] # Add `ext-link` to class by regex pattern
+            target: _blank # Replace `target` value to `_blank`
+            rel: noopener noreferrer # Replace `rel` value to `noopener noreferrer`
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

@@ -25,6 +25,7 @@ group :jekyll_plugins do
   gem "jekyll-algolia"
   gem 'jekyll-gist', '~> 1.5'
   gem "jekyll-archives"
+  gem 'jekyll-spaceship'
 end
 
 gem "rake"
