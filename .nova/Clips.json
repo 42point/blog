@@ -9,6 +9,21 @@
       "content" : "{% highlight ${:lang} %}\n$0\n{% endhighlight %}",
       "name" : "code highlite",
       "trigger" : "code"
+    },
+    {
+      "children" : [
+        {
+          "content" : "gallery:\n  - url: ${:URL}\n\timage_path: ${:URL}\n\talt: \"$SELECTED_TEXT\"\n\ttitle: \"$SELECTED_TEXT\"\n  - url: ${:URL}\n\timage_path: ${:URL}\n\talt: \"$SELECTED_TEXT\"\n\ttitle: \"$SELECTED_TEXT\"\n  - url: ${:URL}\n\timage_path: ${:URL}\n\talt: \"$SELECTED_TEXT\"\n\ttitle: \"$SELECTED_TEXT\"\n",
+          "name" : "gallery front matter",
+          "trigger" : "gallery"
+        },
+        {
+          "content" : "{% include gallery id=\"${:ID}\" layout=\"half\" caption=\"This is a half gallery layout example.\" %}",
+          "name" : "gallery code",
+          "trigger" : "gi"
+        }
+      ],
+      "name" : "images"
     }
   ]
 }
