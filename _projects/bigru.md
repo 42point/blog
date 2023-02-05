@@ -1,14 +1,14 @@
 ---
-title: "Мессенджеры"
-excerpt: "ICQ и Agent Mail.Ru для iOS и Mac OS X"
-description: "ICQ и Agent Mail.Ru для iOS и Mac OS X"
-permalink: /messengers/
+title: "BIG.RU"
+excerpt: "Маркетплейс мебели, строительные материалов и товаров для дома"
+description: "Маркетплейс мебели, строительные материалов и товаров для дома"
+permalink: /big.ru/
 author_profile: false
-position: 70
+position: 18
 header:
-  teaser: /assets/images/icq.png
-  # overlay_image:  /assets/images/uploads/2020/grac_art.png
-  # overlay_filter: rgba(0, 0, 0, 0.3)
+  teaser: /assets/images/uploads/2020/grac_teaser.png
+  overlay_image: /assets/images/uploads/2020/grac_art.png
+  overlay_filter: rgba(0, 0, 0, 0.3)
 gallery:
   - url: /assets/images/uploads/2020/start.png
     image_path: /assets/images/uploads/2020/start.png
@@ -23,16 +23,11 @@ sidebar:
   - title: "Роль"
     # image: http://placehold.it/350x250
     # image_alt: "logo"
-    text: "Product Owner"
+    text: "CPO"
   - title: "Обязанности"
-    text: "Разработка концепции, разработка интерфейсов, управление командой"
+    text: "Главный по продукту"
   - title: "год"
+    text: 2022 - по настоящее время
   - title: "Ссылки"
-    text:
+    text: "[BIG.RU](https://big.ru)"
 ---
-
----
-
-# {{ page.title }}
-
-[Instant messaging – Mail.ru Group](https://corp.mail.ru/en/company/messengers/)

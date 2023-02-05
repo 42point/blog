@@ -6,7 +6,7 @@ permalink: /rif-kib-app/
 position: 100
 excerpt: "Приложение для мероприятия"
 author_profile: false
-position: 10
+position: 71
 header:
   teaser: /assets/images/rif_kib_03_thumb.png
   # overlay_image:  /assets/images/uploads/2020/grac_art.png
@@ -33,8 +33,6 @@ sidebar:
     text: 
 ---
 
-
 ## {{ page.description }}
-
 
 [Redmadrobot on Twitter: "#rif #rif2012 Мобильное приложение РИФ+КИБ 2012 позволяет добавлять лекции из расписания прямо в ваш календарь, удобно: http://t.co/qShSVcoi" / Twitter](https://twitter.com/redmadrobot/status/192559500383891456)

@@ -3,7 +3,7 @@ title: "GetTransfer Driver"
 excerpt: "Приложение для перевозчиков и для организации работы автопарков"
 description: "Приложение для перевозчиков и для организации работы автопарков"
 permalink: /gtr-driver/
-author_profile: false
+author_profile: true
 position: 40
 header:
   teaser: /assets/images/projects/gtrdriver/driver_teaser.png
@@ -33,4 +33,7 @@ sidebar:
     text: "[Скачать для вашего смартфона](http://onelink.to/9x7brq)"
 ---
 
-Профессиональное приложение для перевозчиков и для организации работы автопарков и обеспечения выполнения заказов на трансферы, управление водителями и расписанием. 
+Профессиональное приложение для перевозчиков и для организации работы автопарков и обеспечения выполнения заказов на трансферы, управление водителями и расписанием.
+
+<!-- //TODO: заменить картинки-->
+<!-- {% include gallery caption="This is a half gallery layout example." %} -->
