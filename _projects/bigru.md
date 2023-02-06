@@ -1,13 +1,13 @@
 ---
-title: "BIG.RU"
+title: "BIG.RU — маркет для дома"
 excerpt: "Маркетплейс мебели, строительные материалов и товаров для дома"
 description: "Маркетплейс мебели, строительные материалов и товаров для дома"
-permalink: /big.ru/
+permalink: /big_ru/
 author_profile: false
 position: 18
 header:
-  teaser: /assets/images/uploads/2020/grac_teaser.png
-  overlay_image: /assets/images/uploads/2020/grac_art.png
+  teaser: /assets/images/uploads/2022/bigru_teaser1.png
+  # overlay_image: /assets/images/uploads/2020/grac_art.png
   overlay_filter: rgba(0, 0, 0, 0.3)
 gallery:
   - url: /assets/images/uploads/2020/start.png
@@ -21,8 +21,8 @@ gallery:
     alt: "placeholder"
 sidebar:
   - title: "Роль"
-    # image: http://placehold.it/350x250
-    # image_alt: "logo"
+    image: /assets/images/uploads/2022/bigru_logo.png
+    image_alt: "BIG.RU logo"
     text: "CPO"
   - title: "Обязанности"
     text: "Главный по продукту"

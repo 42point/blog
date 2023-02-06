@@ -1,12 +1,12 @@
 ---
-title: "other"
-excerpt: "Приложение для аренды авто и мотоциклов у частных лиц"
-description: "Приложение для аренды авто и мотоциклов у частных лиц"
-permalink: /other/
+title: "CDEK.Market"
+excerpt: "Собственная ecommerce-площадка CDEK"
+description: "Собственная ecommerce-площадка CDEK"
+permalink: /cdek_market/
 author_profile: false
 position: 19
 header:
-  teaser: /assets/images/uploads/2020/grac_teaser.png
+  teaser: /assets/images/uploads/2022/cdek1.png
   overlay_image: /assets/images/uploads/2020/grac_art.png
   overlay_filter: rgba(0, 0, 0, 0.3)
 gallery:
