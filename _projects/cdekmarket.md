@@ -1,13 +1,11 @@
 ---
-title: "other"
-excerpt: "Приложение для аренды авто и мотоциклов у частных лиц"
-description: "Приложение для аренды авто и мотоциклов у частных лиц"
-permalink: /other/
-author_profile: false
-position: 1000
+title: "CDEK.Market"
+excerpt: "Собственная ecommerce-площадка CDEK"
+description: "Собственная ecommerce-площадка CDEK"
+position: 19
 header:
-  teaser: /assets/images/uploads/2020/grac_teaser.png
-  overlay_image:  /assets/images/uploads/2020/grac_art.png
+  teaser: /assets/images/uploads/2022/cdek1.png
+  overlay_image: /assets/images/uploads/2020/grac_art.png
   overlay_filter: rgba(0, 0, 0, 0.3)
 gallery:
   - url: /assets/images/uploads/2020/start.png
@@ -26,7 +24,8 @@ sidebar:
     text: "Product Owner"
   - title: "Обязанности"
     text: "Разработка концепции, разработка интерфейсов, управление командой"
-  - title: "год"
-  - title: "Ссылки" 
-    text: 
+  - title: "Период"
+    text: 2020 - 2021
+  - title: "Ссылки"
+    text:
 ---
