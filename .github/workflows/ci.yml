@@ -3,7 +3,7 @@ name: CI
 on: push
 
 jobs:
-  build_and_deploy:
+  install:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -15,9 +15,14 @@ jobs:
         run: ruby -v
       - name: install dependancies
         run: bundle install
+  build:
+    runs-on: ubuntu-latest
+    steps:
       - name: jekyll build
         run: bundle exec jekyll build
-      - name: files
+      - name: check file
+        run: cd /_site
+      - name: got to file
         run: ls
 #
 #       # Use GitHub Actions' cache to cache dependencies on servers
