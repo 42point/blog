@@ -15,11 +15,20 @@ jobs:
         run: ruby -v
       - name: install dependancies
         run: bundle install
+      # //TODO: чекаут gh-pages из текущей ветки
+      - name: gh-pages
+        run: git checkout -b gh-pages
+      # //TODO: склонироватьт репозиторий
+      # // TODO:билд в ветке gh-pages
+
       - name: jekyll build
         run: bundle exec jekyll build
       - name: got to file
         run: ls _site
-#
+# //TODO: скопировать артефакты
+
+#//TODO: сделать пуш в gh-pages
+
 #       # Use GitHub Actions' cache to cache dependencies on servers
 #       - uses: actions/cache@v3
 #         with:
