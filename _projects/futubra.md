@@ -2,8 +2,6 @@
 title: "Futubra Android App"
 excerpt: "Приложение Futubra.Ru — соц. сервиса от Mail.Ru"
 description: "Приложение для аренды авто и мотоциклов у частных лиц"
-permalink: /futubra-app/
-author_profile: false
 position: 110
 header:
   teaser: assets/images/futubra.png

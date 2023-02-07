@@ -2,7 +2,6 @@
 title: "GetTransfer Driver"
 excerpt: "Приложение для перевозчиков и для организации работы автопарков"
 description: "Приложение для перевозчиков и для организации работы автопарков"
-permalink: /gtr-driver/
 author_profile: true
 position: 40
 header:

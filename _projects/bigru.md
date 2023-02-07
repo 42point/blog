@@ -2,8 +2,6 @@
 title: "BIG.RU — маркет для дома"
 excerpt: "Маркетплейс мебели, строительные материалов и товаров для дома"
 description: "Маркетплейс мебели, строительные материалов и товаров для дома"
-permalink: /big_ru/
-author_profile: false
 position: 18
 header:
   teaser: /assets/images/uploads/2022/bigru_teaser1.png
@@ -29,5 +27,5 @@ sidebar:
   - title: "год"
     text: 2021 - по настоящее время
   - title: "Ссылки"
-    text: "[BIG.RU](https://big.ru)"
+    text: "[BIG.RU](https://big.ru){:target=\"\_blank\"}"
 ---

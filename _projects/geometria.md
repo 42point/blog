@@ -1,11 +1,9 @@
 ---
 title: "Geometria.Ru App"
 vimeoId: 47114254
-permalink: /geometria-app/
 position: 100
 excerpt: "Приложение для посетителей сайта о ночной жизни №1"
 description: "Приложение для посетителей сайта о ночной жизни №1"
-author_profile: false
 header:
   teaser: /assets/images/geometria_icon.png
   # overlay_image:  /assets/images/uploads/2020/grac_art.png

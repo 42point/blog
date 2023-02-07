@@ -2,8 +2,6 @@
 title: "Приложения Samsung Galaxy"
 excerpt: "Серия приложений в поддержку бренда Samsung Galaxy"
 description: ""
-permalink: /galaxy/
-author_profile: false
 position: 800
 header:
   teaser: /assets/images/samsung_gtab_cinema_05.jpeg
@@ -72,11 +70,11 @@ sidebar:
     text: 2011 год
   - title: "Ссылки"
     text: |
-      [Design Act 2011](https://archi.ru/events/5223/design-act-2011)
+      [Design Act 2011](https://archi.ru/events/5223/design-act-2011){:target="\_blank"}
 
-      [Фестиваль актуального научного кино 360° — Википедия](https://ru.wikipedia.org/wiki/%D0%A4%D0%B5%D1%81%D1%82%D0%B8%D0%B2%D0%B0%D0%BB%D1%8C_%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BA%D0%B8%D0%BD%D0%BE_360%C2%B0)
+      [Фестиваль актуального научного кино 360° — Википедия](https://ru.wikipedia.org/wiki/%D0%A4%D0%B5%D1%81%D1%82%D0%B8%D0%B2%D0%B0%D0%BB%D1%8C_%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BA%D0%B8%D0%BD%D0%BE_360%C2%B0){:target="\_blank"}
 
-      [Политех 360 — Фестиваль](http://360.polytech.one/about/)
+      [Политех 360 — Фестиваль](http://360.polytech.one/about/){:target="\_blank"}
 ---
 
 В 2011 году совместно с партнером "Cheil Russia", мы с командой RedMadRobot запустили несколько брендированных приложений приложений в поддержку маркетинга нового бренда Samsung Galaxy. Все приложения имели локальное распространение, обычно в рамках предустановленных образцов на устройствах.

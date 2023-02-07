@@ -1,9 +1,7 @@
 ---
 title: "Мишлен бизнес-бонус"
 description: "Программа лояльности для грузовых автопарков"
-permalink: /michelin-bonus/
 excerpt: "Программа лояльности для грузовых автопарков"
-author_profile: false
 position: 100
 header:
   teaser: /assets/images/michelin.jpg

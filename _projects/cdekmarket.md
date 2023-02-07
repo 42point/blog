@@ -2,8 +2,6 @@
 title: "CDEK.Market"
 excerpt: "Собственная ecommerce-площадка CDEK"
 description: "Собственная ecommerce-площадка CDEK"
-permalink: /cdek_market/
-author_profile: false
 position: 19
 header:
   teaser: /assets/images/uploads/2022/cdek1.png

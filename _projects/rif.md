@@ -2,10 +2,8 @@
 title: "Риф-киб"
 description: "Приложение для мероприятия"
 vimeoId: 141989484
-permalink: /rif-kib-app/
 position: 100
 excerpt: "Приложение для мероприятия"
-author_profile: false
 position: 71
 header:
   teaser: /assets/images/rif_kib_03_thumb.png
@@ -29,8 +27,8 @@ sidebar:
   - title: "Обязанности"
     text: "Разработка концепции, разработка интерфейсов, управление командой"
   - title: "год"
-  - title: "Ссылки" 
-    text: 
+  - title: "Ссылки"
+    text:
 ---
 
 ## {{ page.description }}

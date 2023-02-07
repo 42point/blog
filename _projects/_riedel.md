@@ -2,12 +2,10 @@
 title: "Riedel"
 excerpt: "Приложение для аренды авто и мотоциклов у частных лиц"
 description: "Приложение для аренды авто и мотоциклов у частных лиц"
-permalink: /riedel/
-author_profile: false
 position: 100
 header:
   teaser: /assets/images/riedel.jpg
-  overlay_image:  /assets/images/uploads/2020/grac_art.png
+  overlay_image: /assets/images/uploads/2020/grac_art.png
   overlay_filter: rgba(0, 0, 0, 0.3)
 gallery:
   - url: /assets/images/uploads/2020/start.png
@@ -27,6 +25,6 @@ sidebar:
   - title: "Обязанности"
     text: "Разработка концепции, разработка интерфейсов, управление командой"
   - title: "год"
-  - title: "Ссылки" 
-    text: 
+  - title: "Ссылки"
+    text:
 ---

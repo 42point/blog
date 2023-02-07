@@ -2,8 +2,6 @@
 title: "GetRentaCar App"
 excerpt: "Приложение для аренды авто и мотоциклов у частных лиц"
 description: "Приложение для аренды авто и мотоциклов у частных лиц"
-permalink: /get-rent-a-car-app/
-author_profile: false
 position: 21
 header:
   teaser: /assets/images/projects/grac/grac_teaser.png
