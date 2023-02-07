@@ -13,8 +13,8 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - name: run a script
         run: ruby -v
-#       - run: bundle exec rake
-#       - run: bundle install
+      - name: install dependancies
+        run: bundle install
 #
 #       # Use GitHub Actions' cache to cache dependencies on servers
 #       - uses: actions/cache@v3
