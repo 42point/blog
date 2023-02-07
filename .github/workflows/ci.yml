@@ -18,7 +18,7 @@ jobs:
       - name: jekyll build
         run: bundle exec jekyll build
       - name: check file
-        run: cd /_site
+        run: cd _site
       - name: got to file
         run: ls
 #
