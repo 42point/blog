@@ -14,7 +14,7 @@ permalink: /tools/
 
 <!-- start type-->
 
-<table>
+<!-- <table>
 <colgroup>
 <col width="30%" />
 <col width="70%" />
@@ -38,7 +38,7 @@ permalink: /tools/
 </tbody>
 </table>
 
- <h3>{{ item.type }}</h3>
+ <h3>{{ item.type }}</h3> -->
 
 {% for tool in item.tool %}
 
