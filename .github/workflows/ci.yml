@@ -3,7 +3,7 @@ name: CI
 on: push
 
 jobs:
-  install:
+  install_build_show:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -15,9 +15,6 @@ jobs:
         run: ruby -v
       - name: install dependancies
         run: bundle install
-  build:
-    runs-on: ubuntu-latest
-    steps:
       - name: jekyll build
         run: bundle exec jekyll build
       - name: check file
