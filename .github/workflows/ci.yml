@@ -17,6 +17,8 @@ jobs:
         run: bundle install
       - name: jekyll build
         run: bundle exec jekyll build
+      - name: files
+        run: ls
 #
 #       # Use GitHub Actions' cache to cache dependencies on servers
 #       - uses: actions/cache@v3
