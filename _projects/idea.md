@@ -2,7 +2,6 @@
 title: "Idea"
 excerpt: "Мобильные виджеты iDea Widgets"
 description: "Мобильные виджеты iDea Widgets"
-
 position: 900
 header:
   teaser: /assets/images/idea.jpg
