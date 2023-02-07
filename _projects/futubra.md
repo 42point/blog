@@ -2,8 +2,6 @@
 title: "Futubra Android App"
 excerpt: "Приложение Futubra.Ru — соц. сервиса от Mail.Ru"
 description: "Приложение для аренды авто и мотоциклов у частных лиц"
-permalink: /futubra-app/
-author_profile: false
 position: 110
 header:
   teaser: assets/images/futubra.png
@@ -28,12 +26,10 @@ sidebar:
     text: ""
   - title: "год"
     text: 2012
-  - title: "Ссылки" 
-    text: 
+  - title: "Ссылки"
+    text:
 ---
 
+Платформа для микроблогинга Futubra.Ru выделялась своими богатыми мультимедийными возможностями. Посетители делились свои фотографиями, видео, мыслями и любимыми цитатами.
 
-Платформа для микроблогинга Futubra.Ru выделялась своими богатими мультимедийными возможностями. Посетители делились свои фотографиями, видео, мыслями и любимыми цитатами.
-
-
-{ include image.html  }
+{ include image.html }

@@ -2,12 +2,10 @@
 title: "GetTransport Apps"
 excerpt: "Приложение для заказчиков и перевозчиков маркетплейса грузовых перевозок"
 description: "Приложение для заказчиков и перевозчиков маркетплейса грузовых перевозок"
-permalink: /gettrasnsport-app/
-author_profile: false
 position: 30
 header:
   teaser: https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/0d/f1/0d/0df10dd9-e011-0851-439c-5a5f6f119668/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/230x0w.png
-  overlay_image:  /assets/images/projects/gtt/matthew--_rCZkJ8hWw-unsplash.jpg
+  overlay_image: /assets/images/projects/gtt/matthew--_rCZkJ8hWw-unsplash.jpg
   # image: /assets/images/projects/gtt/matthew--_rCZkJ8hWw-unsplash.jpg
   caption: "Photo credit: [**Matthew**](https://unsplash.com/@Matthew)"
   # overlay_filter: rgba(0, 0, 0, 0.3)
@@ -44,18 +42,15 @@ sidebar:
 
 2. Грузоперевозчики получают заявки и предлогают свои цены на услуги.
 
-
-
-
 Универсальное мобильное приложение для ​iOS​ и Android позволяет клиентам и исполнителям выполнять свои задачи:
 Заказчикам:
 
 - оставить заявку на грузоперевозку
 - просматривать новые предложения
-- выбрать и оплатить услуги 
+- выбрать и оплатить услуги
 
-Исполнители могут: 
+Исполнители могут:
+
 - выставлять цены на новые заявки
 - следить за расписание перевозок в календаре
 - получать уведомления о новых и принятых заказах
-

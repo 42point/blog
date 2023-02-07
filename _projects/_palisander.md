@@ -1,12 +1,12 @@
 ---
-title: "Мессенджеры"
-excerpt: "ICQ и Agent Mail.Ru для iOS и Mac OS X"
-description: "ICQ и Agent Mail.Ru для iOS и Mac OS X"
-position: 70
+title: "palisander Gallery App"
+excerpt: "Приложение для аренды авто и мотоциклов у частных лиц"
+description: "Приложение для аренды авто и мотоциклов у частных лиц"
+position: 100
 header:
-  teaser: /assets/images/icq.png
-  # overlay_image:  /assets/images/uploads/2020/grac_art.png
-  # overlay_filter: rgba(0, 0, 0, 0.3)
+  teaser: /assets/images/uploads/2020/grac_teaser.png
+  overlay_image: /assets/images/uploads/2020/grac_art.png
+  overlay_filter: rgba(0, 0, 0, 0.3)
 gallery:
   - url: /assets/images/uploads/2020/start.png
     image_path: /assets/images/uploads/2020/start.png
@@ -28,5 +28,3 @@ sidebar:
   - title: "Ссылки"
     text:
 ---
-
-[Instant messaging – Mail.ru Group](https://corp.mail.ru/en/company/messengers/)

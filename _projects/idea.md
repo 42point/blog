@@ -2,8 +2,7 @@
 title: "Idea"
 excerpt: "Мобильные виджеты iDea Widgets"
 description: "Мобильные виджеты iDea Widgets"
-permalink: /idea/
-author_profile: false
+
 position: 900
 header:
   teaser: /assets/images/idea.jpg
@@ -27,9 +26,8 @@ sidebar:
   - title: "Обязанности"
     text: "Разработка концепции, разработка интерфейсов, управление командой"
   - title: "год"
-  - title: "Ссылки" 
-    text: 
+  - title: "Ссылки"
+    text:
 ---
-
 
 Мобильный виджет - это мини-программа по технологии j2me, предоставляющая онлайн доступ к информационному или развлекательному сервису в простом, удобном графическом виде на [feature-фонах](https://ru.wikipedia.org/wiki/Фичерфон)

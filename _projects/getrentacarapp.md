@@ -2,12 +2,10 @@
 title: "GetRentaCar App"
 excerpt: "Приложение для аренды авто и мотоциклов у частных лиц"
 description: "Приложение для аренды авто и мотоциклов у частных лиц"
-permalink: /get-rent-a-car-app/
-author_profile: false
-position: 10
+position: 21
 header:
   teaser: /assets/images/projects/grac/grac_teaser.png
-  overlay_image:  /assets/images/uploads/2020/grac_art.png
+  overlay_image: /assets/images/uploads/2020/grac_art.png
   overlay_filter: rgba(0, 0, 0, 0.3)
 gallery:
   - url: /assets/images/uploads/2020/start.png
@@ -28,8 +26,8 @@ sidebar:
     text: "Разработка концепции, разработка интерфейсов, управление командой"
   - title: "Год"
     text: "2018-2019"
-  - title: "Ссылки" 
-    text: 
+  - title: "Ссылки"
+    text:
 ---
 
 <!-- ## {{ page.description }} -->
@@ -41,6 +39,6 @@ sidebar:
 
 {% include video id="397988033" provider="vimeo" %}
 
-- С помощью **геопозиционирования** легко можно найти подходящие предложения. 
-- **Мультиязычность** позволит воспользоваться приложением клиенту практически из любой страны. 
+- С помощью **геопозиционирования** легко можно найти подходящие предложения.
+- **Мультиязычность** позволит воспользоваться приложением клиенту практически из любой страны.
 - **Авторизация через FB** облегчает процесс создания учетной записи - внутренний чат.
