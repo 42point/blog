@@ -15,16 +15,12 @@ jobs:
         run: ruby -v
       - name: install dependancies
         run: bundle install
-      # //TODO: склонироватьт репозиторий
-      # //TODO: чекаут gh-pages из текущей ветки
-      - name: gh-pages
+      - name: gh-pages checkout
         run: git checkout -b gh-pages
-      # // TODO:билд в ветке gh-pages
       - name: jekyll build
         run: bundle exec jekyll build
       - name: go to file
         run: ls _site
-      # //TODO: скопировать артефакты
       - name: moving artifacts
         run: |
           find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \;
@@ -34,10 +30,7 @@ jobs:
         run: |
           git config --global user.email "${GITHUB_ACTOR}@https://users.noreply.github.com/"
           git config --global user.name "${GITHUB_ACTOR}"
-
-      # // TODO: сделать пуш в gh-pages
-
-      - name: push files
+      - name: push files to gh-pages branch
         run: |
           git add -fA
           git commit --allow-empty -m "$(git log -1 --pretty=%B) [ci]"

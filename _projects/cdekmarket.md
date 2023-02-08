@@ -19,8 +19,8 @@ gallery:
     alt: "placeholder"
 sidebar:
   - title: "Роль"
-    # image: http://placehold.it/350x250
-    # image_alt: "logo"
+    image: /assets/images/uploads/2022/cm_logo.png
+    image_alt: "cdek market logo"
     text: "Product Owner"
   - title: "Обязанности"
     text: "Разработка концепции, разработка интерфейсов, управление командой"

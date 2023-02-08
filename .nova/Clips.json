@@ -24,6 +24,13 @@
         }
       ],
       "name" : "images"
+    },
+    {
+      "content" : "---\nlayout: single\ntitle: \"${:Title}\"\ndescription: \"${:описание}\"\ndate: $DATE\ncategories: \ntags: [${:tag1}, ${:tag2}]\n---",
+      "name" : "front matter",
+      "scope" : "editor",
+      "syntax" : "markdown",
+      "trigger" : "fm"
     }
   ]
 }
