@@ -36,7 +36,10 @@ jobs:
           git commit --allow-empty -m "$(git log -1 --pretty=%B) [ci]"
           git push -f -q origin gh-pages
       - name: success
-        run: echo "Deployed Successfully!"
+        run: |
+          echo "Deployed Successfully!"
+          curl -s -X POST https://api.telegram.org/bot${{ secrets.BOT_TOKEN }}/sendMessage -d chat_id=${CHAT_ID} -d parse_mode=markdown -d text='*Build* : OK *Published* = YES'
+
 #
 # Use GitHub Actions' cache to cache dependencies on servers
 #       - uses: actions/cache@v3
