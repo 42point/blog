@@ -6,9 +6,23 @@
       "trigger" : "[}("
     },
     {
+      "content" : "{:target=\"_blank\"}",
+      "name" : "blanl",
+      "scope" : "editor",
+      "syntax" : "markdown",
+      "trigger" : "blank"
+    },
+    {
       "content" : "{% highlight ${:lang} %}\n$0\n{% endhighlight %}",
       "name" : "code highlite",
       "trigger" : "code"
+    },
+    {
+      "content" : "---\nlayout: single\ntitle: \"${:Title}\"\ndescription: \"${:описание}\"\ndate: $DATE\ncategories: \ntags: [${:tag1}, ${:tag2}]\n---",
+      "name" : "front matter",
+      "scope" : "editor",
+      "syntax" : "markdown",
+      "trigger" : "fm"
     },
     {
       "children" : [
@@ -21,16 +35,29 @@
           "content" : "{% include gallery id=\"${:ID}\" layout=\"half\" caption=\"This is a half gallery layout example.\" %}",
           "name" : "gallery code",
           "trigger" : "gi"
+        },
+        {
+          "content" : "{% include video id=\"${:YT ID}\" provider=\"youtube\" %}",
+          "name" : "youtube",
+          "scope" : "editor",
+          "syntax" : "markdown",
+          "trigger" : "yt"
+        },
+        {
+          "content" : "{% include figure image_path=\"${:path}\" alt=\"${:text}\" caption=\"${:text}\" %}",
+          "name" : "img",
+          "scope" : "editor",
+          "syntax" : "markdown"
+        },
+        {
+          "content" : "[![${:text}](${:\/path-to-image\/small.jpg})](${:\/path-to-image\/large.jpg})",
+          "name" : "Lightbox",
+          "scope" : "editor",
+          "syntax" : "markdown",
+          "trigger" : "lb"
         }
       ],
-      "name" : "images"
-    },
-    {
-      "content" : "---\nlayout: single\ntitle: \"${:Title}\"\ndescription: \"${:описание}\"\ndate: $DATE\ncategories: \ntags: [${:tag1}, ${:tag2}]\n---",
-      "name" : "front matter",
-      "scope" : "editor",
-      "syntax" : "markdown",
-      "trigger" : "fm"
+      "name" : "Media"
     }
   ]
 }

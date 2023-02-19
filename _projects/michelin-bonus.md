@@ -42,16 +42,16 @@ sidebar:
 - Наладить канал коммуникации.
 - Предоставить дополнительные сервисы.
 
-![](/assets/images/projects/mbb/mbb.png)
+[![мишлен](/assets/images/projects/mbb/mbb.png)](/assets/images/projects/mbb/mbb.png)
 
 ## Как это работает
 
 1. Организаторы подготовили ваучеры с уникальными кодами, которые распростанялись среди диллеров Michelin через личные кабинеты на сайте.
-   ![coupon](/assets/images/projects/mbb/coupon.png)
+   [![coupon](/assets/images/projects/mbb/coupon.png)](/assets/images/projects/mbb/coupon.png)
 2. Дилеры передавали ваучеры покупателям после покупки.
 3. Покупатели регистрировали уникальные коды ваучеров в личном кабинете сайта.
 4. Каждый успешно зарегистрированный код зачислял на счет покупателя виртуальные баллы. В зависисмости от количества кодов, покупатель получал дополнительные баллы.
-   ![Личный кабинет](/assets/images/projects/mbb/fleet_profile.png)
+   [![Личный кабинет](/assets/images/projects/mbb/fleet_profile.png)](/assets/images/projects/mbb/fleet_profile.png)
 5. Покупатель мог обменять вирутальные баллы на призы прямо из своего личного кабинета и заказать доставку.
 
 {% include gallery caption="Сайт **Мишлен бизнес бонус**" %}
@@ -64,8 +64,8 @@ sidebar:
 
 Для продвижения продуктов, новостей и маркетинговых акции был разработан интерфейс email-рассылок "Директ-мейл".
 
-![Модуль директ-мейл](/assets/images/projects/mbb/directmail.png)
+[![Модуль директ-мейл](/assets/images/projects/mbb/directmail.png)](/assets/images/projects/mbb/directmail.png)
 
 Покупатель со второго года акции мог оформить расширенную гарантию для купленных по акции продукции.
 
-![Расширенная гарантия](/assets/images/projects/mbb/get_extended_warranty.png)
+[![Расширенная гарантия](/assets/images/projects/mbb/get_extended_warranty.png)](/assets/images/projects/mbb/get_extended_warranty.png)

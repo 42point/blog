@@ -7,7 +7,7 @@ author: Alexey S
 tags: [macos]
 ---
 
-Внезапное открытие после 8 лет использования Macbook --  
+Внезапное открытие после 8 лет использования Macbook --
 `⌘+⇧+.` отображает скрытые файлы в Finder.
 
-![](/assets/images/uploads/2018/02/hidden-files-in-finder.gif)
+[![finder](/assets/images/uploads/2018/02/hidden-files-in-finder.gif)](/assets/images/uploads/2018/02/hidden-files-in-finder.gif)

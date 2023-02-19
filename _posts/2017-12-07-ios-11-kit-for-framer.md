@@ -6,6 +6,7 @@ layout: single
 tags:
   - framer
 ---
+
 Неленивый человек [Brent Caswell](https://dribbble.com/brentcas/) подготовил визуальный фреймворк со стилями основных элементов iOS 11.
 
 <!--more-->
@@ -14,21 +15,17 @@ tags:
 
 ### Стили
 
-  * Colors.framer
-  * Fonts.framer
+- Colors.framer
+- Fonts.framer
 
-
-![](/assets/images/uploads/2017/12/framer-ios11-styles-.png)
-
+[![](/assets/images/uploads/2017/12/framer-ios11-styles-.png)](/assets/images/uploads/2017/12/framer-ios11-styles-.png)
 
 ### Элементы
 
-  * System.framer
-  * Bars.framer
-  * Controls.framer
-  * Views.framer
-  * Keyboards.framer
+- System.framer
+- Bars.framer
+- Controls.framer
+- Views.framer
+- Keyboards.framer
 
-
-
-![](/assets/images/uploads/2017/12/navbar-ios-11-framer.png)
+[![](/assets/images/uploads/2017/12/navbar-ios-11-framer.png)](/assets/images/uploads/2017/12/navbar-ios-11-framer.png)
