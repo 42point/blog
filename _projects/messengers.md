@@ -14,9 +14,9 @@ gallery:
   - url: assets/images/uploads/2022/1280-800_agent_appstore.jpg
     image_path: assets/images/uploads/2022/1280-800_agent_appstore.jpg
     alt:
-  - url: /assets/images/uploads/2020/grac_placeholder.png
-    image_path: /assets/images/uploads/2020/grac_placeholder.png
-    alt: "placeholder"
+  - url: assets/images/uploads/2022/icq-pic.jpg
+    image_path: assets/images/uploads/2022/icq-pic.jpg
+    alt:
 sidebar:
   - title: "Роль"
     # image: http://placehold.it/350x250
@@ -30,8 +30,10 @@ sidebar:
   # text:
 ---
 
+{{ page.description }}
+
 [Instant messaging – Mail.ru Group](https://corp.mail.ru/en/company/messengers/)
 
-{% include gallery layout="half" caption="Агент и ICQ для Mac" %}
+{% include gallery caption="Агент и ICQ для Mac" %}
 
 {% include video id="798037033" provider="vimeo" %}
