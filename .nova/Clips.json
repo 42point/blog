@@ -3,7 +3,7 @@
     {
       "content" : "[${:Title}]($PASTEBOARD_TEXT){:target=\"_blank\"}",
       "name" : "External link",
-      "trigger" : "[}("
+      "trigger" : "["
     },
     {
       "content" : "{:target=\"_blank\"}",
@@ -11,6 +11,11 @@
       "scope" : "editor",
       "syntax" : "markdown",
       "trigger" : "blank"
+    },
+    {
+      "content" : "<figure>\n\t<a href=\"${:\/assets\/images\/uploads\/...}\"><img src=\"${:\/assets\/images\/uploads\/...}\"><\/a>\n\t<figcaption><a href=\"${:URL to}\"  title=\"${:caption title}\"target=\"_blank\">${:URL TITLE}<\/a>${:caption}<\/figcaption>\n<\/figure>",
+      "name" : "крутое фото с сылкой в анотации",
+      "trigger" : "i"
     },
     {
       "content" : "{% highlight ${:lang} %}\n$0\n{% endhighlight %}",
