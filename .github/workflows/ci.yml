@@ -18,7 +18,7 @@ jobs:
       - name: gh-pages checkout
         run: git checkout -b gh-pages
       - name: jekyll build
-        run: JEKYLL_ENV=production jekyll build
+        run: JEKYLL_ENV=production bundle exec jekyll build
       - name: go to file
         run: ls _site
       - name: moving artifacts
