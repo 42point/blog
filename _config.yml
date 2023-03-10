@@ -37,11 +37,11 @@ plugins:
 
 # Analytics
 analytics:
-  # provider: "custom"
-  provider: "google-gtag" # "google" "google-gtag"
-  google:
-    tracking_id: GTM-WVR78RR #UA-17407767-9
-    anonymize_ip: false # true, false (default)
+  provider: "custom"
+  # provider: "google-gtag" # "google" "google-gtag"
+  # google:
+  #   tracking_id: GTM-WVR78RR #UA-17407767-9
+  #   anonymize_ip: false # true, false (default)
 
 collections:
   projects:
