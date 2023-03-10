@@ -35,11 +35,25 @@ minimal_mistakes_skin: "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "n
 plugins:
   - jekyll-feed
 
+# Analytics
+analytics:
+  # provider: "custom"
+  provider: "google-gtag" # "google" "google-gtag"
+  google:
+    tracking_id: GTM-WVR78RR #UA-17407767-9
+    anonymize_ip: false # true, false (default)
+
 collections:
   projects:
     output: true
     permalink: /:collection/:path/
     sort_by: position
+  # notes:
+  #   output: true
+  #   permalink: /:collection/:path/
+  # lists:
+  #   output: true
+  #   permalink: /:collection/:path/
 
 defaults:
   # _pages
@@ -78,14 +92,6 @@ author:
   location: "Где-то в Москве"
 
 permalink: posts/:slug
-
-# Analytics
-analytics:
-  # provider: "google-gtag" # "google" "google-gtag"
-  # google:
-  #   tracking_id: GTM-WVR78RR #UA-17407767-9
-  #   anonymize_ip: # true, false (default)
-  provider: custom
 
 # Site Footer
 footer:
