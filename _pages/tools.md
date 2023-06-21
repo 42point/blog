@@ -12,6 +12,8 @@ permalink: /tools/
 
 {% for item in site.data.tools.list %}
 
+  <h2>{{ item.type }}</h2>
+
 <!-- start type-->
 
 <!-- <table>
@@ -40,14 +42,16 @@ permalink: /tools/
 
  <h3>{{ item.type }}</h3> -->
 
-{% for tool in item.tool %}
-
+{% for tool in item.tool | sort: title %}
+<div>
   <h4 id="{{ tool.title | slugify }}">
-    <a href="{{ tool.link }}">{{ tool.title }}</a>
+    <!-- TODO: поставить лого продукта -->
+    <a href="{{ tool.link }}" target="_blank">{{ tool.title }}</a>
     <a href="{{ tools | relative_url }}#{{ tool.title | slugify }}">#</a>
   </h4>
   <p>{{ tool.desc | markdownify }}</p>
+  </div>
   {% endfor %}
-</div>
+
 <!-- end header -->
 {% endfor %}
