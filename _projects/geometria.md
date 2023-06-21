@@ -4,6 +4,7 @@ vimeoId: 47114254
 position: 100
 excerpt: "Приложение для посетителей сайта о ночной жизни №1"
 description: "Приложение для посетителей сайта о ночной жизни №1"
+date: 2021-03-10
 header:
   teaser: /assets/images/geometria_icon.png
   # overlay_image:  /assets/images/uploads/2020/grac_art.png
