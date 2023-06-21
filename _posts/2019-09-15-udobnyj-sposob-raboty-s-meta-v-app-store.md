@@ -3,8 +3,10 @@ layout: single
 title: "Как работать с мета-данными в appstore connect"
 description: "Немного магии на каждый день"
 date: 2019-09-14T22:52:54+03:00
+toc: true
+toc_sticky: true
 categories:
-tags: [apple, appstore]
+tags: [apple, appstore, автоматизация]
 ---
 
 В отличии от Google Play Console, Appstore Connect крайне недружелюбен к менеджеру которому нужно подготовить материалы на нескольких языках для публикации новых версий приложения.
@@ -25,25 +27,37 @@ tags: [apple, appstore]
 ## Setup
 
 1. Установить xcode. Да, это неизбежное зло.
-2. Установить fastlane: `brew cask install fastlane`
-3. Перейти в папку проекта
-
+2. Установить fastlane, самый простой способ через [Homebrew — The Missing Package Manager for macOS (or Linux)](https://brew.sh/)
+```bash
+brew cask install fastlane
 ```
+3. Перейти в папку проекта
+```bash
 mkdir PROJECT-meta
 cd PROJECT-meta
 ```
-
-4. Инициализируем проект fastlane: `fastlane init`
-5. Скачиваем существующие метаданные: `Fastlane deliver `. В процессе естественно нужно будет указать креденшиалс и Bundle ID вашего приложения.
+4. Инициализируем проект fastlane:
+```bash
+fastlane init
+```
+5. Скачиваем существующие метаданные:
+```bash
+Fastlane deliver
+```
+В процессе естественно нужно будет указать креденшиалс и Bundle ID вашего приложения.
    Команда успешно скачивает все данные и создает структуру папок под языки и скриншоты [![](/assets/images/uploads/2019/finder.png)](/assets/images/uploads/2019/finder.png)
 6. Вносим изменения, если нужно
 7. Создаем новую версию в Appstore (можно просто поменять значение `app_version` в Deliverfile).
-8. Запускаем`fastlane deliver`. Команда уточнит от чьего имени и что именно вы загружаете а также предложит просмотреть превью всей мета информации.
+8. Запускаем:
+```
+fastlane deliver
+```
+Команда уточнит от чьего имени и что именно вы загружаете а также предложит просмотреть превью всей мета информации.
 9. Подтверждайте превью, немного ожидания и PROFIT!
 
 В командной строке получите приятный отчет:
 
-```
+```bash
 [20:54:07]: ✅  Passed: No negative  sentiment
 [20:54:07]: ✅  Passed: No placeholder text
 [20:54:07]: ✅  Passed: No mentioning  competitors
@@ -61,16 +75,16 @@ cd PROJECT-meta
 
 Рекомендую также настроить:
 
-### Appfile:
+### Appfile
 
-```
+```ruby
 app_identifier("you app bundle id") # The bundle identifier of your app
 apple_id("your apple id") # Your Apple email address
 ```
 
 ### Deliverfile
 
-```
+```ruby
 app_version "2.6.8"
 submit_for_review true
 force true # Set to true to skip PDF verification
