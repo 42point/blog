@@ -3,6 +3,7 @@ title: "BIG.RU — маркет для дома"
 excerpt: "Маркетплейс мебели, строительные материалов и товаров для дома"
 description: "Маркетплейс мебели, строительные материалов и товаров для дома"
 position: 18
+date: 2023-01-10
 header:
   teaser: /assets/images/uploads/2022/bigru_teaser1.png
   # overlay_image: /assets/images/uploads/2020/grac_art.png

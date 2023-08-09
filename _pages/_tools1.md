@@ -13,7 +13,7 @@ permalink: /tools/
 <!-- start type-->
 
 <div class="{% if site.scrollappear_enabled %}scrollappear{% endif %}">
-  <h3>{{ item.type }}</h3>
+  <h2>{{ item.type }}</h2>
 
 {% for tool in item.tool %}
 

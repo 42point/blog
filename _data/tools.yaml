@@ -2,57 +2,59 @@ list:
   - type: WEB
     tool:
       - title: Airtable
-        desc: Сложно рассказать насколько может полезным оказаться этот сервис для создания своих баз данных. ![](https://images.ctfassets.net/wl95ljfippl8/1vhzK1HmeS0j3caGbJohBK/8a52ece7b32ba83c64802a1b5b730d3c/Project_planning_-_updated_061422.png?w=3840)
+        desc: Сложно рассказать насколько может полезным оказаться этот сервис для создания своих баз данных.
         link: https://airtable.com/
-        image:
+        image: https://images.ctfassets.net/wl95ljfippl8/1vhzK1HmeS0j3caGbJohBK/8a52ece7b32ba83c64802a1b5b730d3c/Project_planning_-_updated_061422.png
       - title: Notion
         desc: продукт столь комплексный и многообразный что сложно для каких вещей он не пригодится будь то работа с коллегами и проектами или с аудиторией. ![](https://www.notion.so/cdn-cgi/image/format=auto,width=3840,quality=90/front-static/pages/home/sidekick-desktop-app.png)
         link: https://airtable.com/
-        image:
+        image: https://www.notion.so/cdn-cgi/image/format=auto,width=3840,quality=90/front-static/pages/home/sidekick-desktop-app.png
       - title: Miro
-        desc: На текущий момент лучший онлайн-редактор диаграмм. ![](https://images.ctfassets.net/w6r2i5d8q73s/3oVsIrVgd9nO1i8sbVgv2k/6c2402461efd45bd90980ed8dd59bdfa/headerimage-without-text.png?fm=webp&q=65)
+        desc: На текущий момент лучший онлайн-редактор диаграмм.
         link: https://miro.com/
-        image:
+        image: https://images.ctfassets.net/w6r2i5d8q73s/3oVsIrVgd9nO1i8sbVgv2k/6c2402461efd45bd90980ed8dd59bdfa/headerimage-without-text.png
   - type: Desktop
     tool:
       - title: Cron Calendar
-        desc: Везапно это оказался один из самый приятных и нужных календарей. Реально интуитивный интерфейс, все более популярная и генерация ссылки которую можно отправить для того что бы на  той стороне выбрали втое свободное время и назначили встречу и все это бесплатно! ![](https://cron.com/images/product/cron-2023-02-28@2x.png)
+        desc: Везапно это оказался один из самый приятных и нужных календарей. Реально интуитивный интерфейс, все более популярная и генерация ссылки которую можно отправить для того что бы на  той стороне выбрали втое свободное время и назначили встречу и все это бесплатно!
         link: https://cron.com
-        image:
+        image: https://cron.com/images/product/cron-2023-02-28@2x.png
       - title: Spark Desktop
-        desc: "Я много провожу за дестопоми и удобный почтовик для меня это очень важно. Первая программа с которой я добился Inbox Zero. Много важных фишек: простой интерфейс, умный inbox, gatekeeper ![](https://cdn-rdstaticassets.readdle.com/spark/img/spark3/index/banner-device-2x.png?1661256907)"
+        desc: "Я много провожу за дестопоми и удобный почтовик для меня это очень важно. Первая программа с которой я добился Inbox Zero. Много важных фишек: инновационный простой интерфейс, - умный inbox, gatekeeper для новых контактов"
         link: https://sparkmailapp.com/
+        image: https://cdn-rdstaticassets.readdle.com/spark/img/spark3/index/banner-device-2x.png
       - title: Arc Browser
         desc: Абсолютно новый подход к серфингу в сети
         link:
         image:
       - title: Alfred
-        desc: "В MacOS встроен прекрасный поисковик по файлам Spotlight со своими недостатками (медленное обновление базы, мешанина в выдаче). Я пробовал его использовать для запуска приложений но очень медленно и не удобно,  Alfred лишен этих проблем, поиск в первую очередь по Applications, расширения через ключевые фразы, поиск в сети. Отдельно можно сказать про возможность запуска скриптов, или как их обозвали разработчики [Workflow](https://www.alfredapp.com/workflows/). Возможность запуска простых (или сложных) скриптов а так же разработка своих собственных. ![](https://www.alfredapp.com/media/pages/home-v5/alfred-results.png)"
+        desc: "В MacOS встроен прекрасный поисковик по файлам Spotlight со своими недостатками (медленное обновление базы, мешанина в выдаче). Я пробовал его использовать для запуска приложений но очень медленно и не удобно,  Alfred лишен этих проблем, поиск в первую очередь по Applications, расширения через ключевые фразы, поиск в сети. Отдельно можно сказать про возможность запуска скриптов, или как их обозвали разработчики [Workflow](https://www.alfredapp.com/workflows/). Возможность запуска простых (или сложных) скриптов а так же разработка своих собственных."
         link: https://www.alfredapp.com/
-        image:
+        image: https://www.alfredapp.com/media/pages/home-v5/alfred-results.png
       - title: Sublime Text
-        desc: "Лучший текстовый редактор который может пригодится для всего, стоит только его дополнить плагинами и выучить шорткаты![](https://www.sublimetext.com/screenshots/sublime_text_4.png)"
+        desc: "Лучший текстовый редактор который может пригодится для всего, стоит только его дополнить плагинами и выучить шорткаты"
         link: https://www.sublimetext.com/
-        image:
+        image: https://www.sublimetext.com/screenshots/sublime_text_4.png
       - title: Devonthink
-        desc: Замена Evernote без подписки и с возможностью интеллектуально сортировать материалы ![](https://www.devontechnologies.com/media/pages/apps/devonthink/2706592775-1612970307/packshot-devonthink-light.png)
+        desc: Замена Evernote без подписки и с возможностью интеллектуально сортировать материалы.
         link: https://www.devontechnologies.com/apps/devonthink
-        image:
+        image: https://www.devontechnologies.com/media/pages/apps/devonthink/2706592775-1612970307/packshot-devonthink-light.png
       - title: Pixave (RIP)
         desc: USed to be ... место хранения моих moodboard'ов
         link: http://www.littlehj.com/mac/
         image:
       - title: Forklift
-        desc: На текущий момент это лучший менеджер файлов с поддержкой безумного количества протоколов. Моя любимая функция - синхронизация измененных файлов в разных локациях, например, с SFTP площадки на диск S3 на DigitalOcean. ![](https://binarynights.com/images/screenshot@2x-min.png)
+        desc: На текущий момент это лучший менеджер файлов с поддержкой безумного количества протоколов. Моя любимая функция - синхронизация измененных файлов в разных локациях, например, с SFTP площадки на диск S3 на DigitalOcean.
         link: https://binarynights.com/
-        image:
+        image: https://binarynights.com/images/screenshot@2x-min.png
       - title: Obsidian
-        desc: Совершенно фантастическое приложения для заметок. App который авторы разработали во время карантина 2020 года. **Second brain for you forever**. Достойное отдельного обзора. ![](https://obsidian.md/images/screenshot-1.0-hero-combo.png)
+        desc: Совершенно фантастическое приложения для заметок. App который авторы разработали во время карантина 2020 года. **Second brain for you forever**. Достойное отдельного обзора.
         link: https://obsidian.md
-        image:
+        image: https://obsidian.md/images/screenshot-1.0-hero-combo.png
       - title: Things
-        desc: "Удивительным образом это первый и единственный TO-DO list который прижился. Вылизанный интерфейс. Простой workflow, без приборной панели боинга, как любят некоторые навороченные монстры. Клиент для Mac и iPhone. Синхронизация. Горячие клавиши на Mac для ввода новой задачи с контекстом открытого приложения. Например, можно сохранить ссылку на email что бы вернуться к нему позже, прям по джедайской технике пустого инбокса =) Из минусов: нельзя указать время для напоминаний, может и к лучшему, все таки это не пищащая напоминалка. **Важно**: в настройках нужно отключить группировку по проектам на экране текущих задач, так проще расставлять приоритеты и последовательность. ![](https://culturedcode.com/things/2017-03-25/images/whatsnew-collage2-io80.jpg)"
+        desc: "Удивительным образом это первый и единственный TO-DO list который прижился. Вылизанный интерфейс. Простой workflow, без приборной панели боинга, как любят некоторые навороченные монстры. Клиент для Mac и iPhone. Синхронизация. Горячие клавиши на Mac для ввода новой задачи с контекстом открытого приложения. Например, можно сохранить ссылку на email что бы вернуться к нему позже, прям по джедайской технике пустого инбокса =) Из минусов: нельзя указать время для напоминаний, может и к лучшему, все таки это не пищащая напоминалка. **Важно**: в настройках нужно отключить группировку по проектам на экране текущих задач, так проще расставлять приоритеты и последовательность."
         link: https://culturedcode.com/things/
+        image: https://culturedcode.com/things/2017-03-25/images/whatsnew-collage2-io80.jpg
       - title: Magnet
         desc: Утилита для организации окон программ на десктопе. Простая и полезная. ![](https://magnet.crowdcafe.com/imgs/design-4.svg)
         link: https://magnet.crowdcafe.com/index.html
@@ -63,8 +65,9 @@ list:
         desc: Для разных разработческих вещей можно было обойтись тем же [Sublime]() или VSCode. Но Nova меня покорила с первого взгляда. ![](https://nova.app/images/en/light/hero-10.png)
         link: https://nova.app
       - title: Warp
-        desc: Заменитель Terminal и iTerm, все что нужн было настраивать и поддерживать есть по-умолчанию и некоторые дополнительные фишки. ![](https://assets-global.website-files.com/6427349e1bf2f009f7f73071/64910f3cab5973759be624ea_Wapr_Themes_01%20(1).png)
+        desc: Заменитель Terminal и iTerm, все что нужн было настраивать и поддерживать есть по-умолчанию и некоторые дополнительные фишки. ![]()
         link: https://www.warp.dev
+        image: https://assets-global.website-files.com/6427349e1bf2f009f7f73071/64910f3cab5973759be624ea_Wapr_Themes_01%20(1).png
   - type: Hardware
     tool:
       - title: macbook pro 14" m1 1TB 16GB

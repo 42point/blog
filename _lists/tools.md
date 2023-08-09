@@ -1,18 +1,15 @@
 ---
 title: Инструменты
-date: 2023-06-21T23:43:21+00:00
+date: 2020-09-12T23:43:21+00:00
 layout: single
-permalink: /tools/
+permalink: /tools1/
 ---
 
-Иногда меня спрашивают какой софт использую для тех или иных задач. У меня есть
+Просто список моих ежедневных инструментов для работы. У меня есть
 странная тяга к нативным приложениям, и в моем списке наверняка будут те что
-можно заменить онлайновыми инструментами. Возможно что-то покажется вам
-интересным и полезным.
+можно заменить онлайновыми инструментами.
 
 {% for item in site.data.tools.list %}
-
-  <h2>{{ item.type }}</h2>
 
 <!-- start type-->
 
@@ -42,26 +39,14 @@ permalink: /tools/
 
  <h3>{{ item.type }}</h3> -->
 
-{% for tool in item.tool | sort: title %}
-<div>
+{% for tool in item.tool %}
+
   <h4 id="{{ tool.title | slugify }}">
-    <!-- TODO: поставить лого продукта -->
-    <a href="{{ tool.link }}" target="_blank">{{ tool.title }}</a>
+    <a href="{{ tool.link }}">{{ tool.title }}</a>
     <a href="{{ tools | relative_url }}#{{ tool.title | slugify }}">#</a>
   </h4>
   <p>{{ tool.desc | markdownify }}</p>
-
-  <figure>
-    <a href="{{ tool.image }}"><img src="{{ tool.image }}"></a>
-
-    <figcaption>
-      <a href="{{ tool.link }}"  title="{{ tool.title }}" target="_blank">{{ tool.title }}</a>
-    </figcaption>
-
-  </figure>
-
-  </div>
   {% endfor %}
-
+</div>
 <!-- end header -->
 {% endfor %}

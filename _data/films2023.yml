@@ -1,0 +1,12 @@
+list:
+  - type: films
+    titles:
+      - title: Nerve
+        desc: ""
+        star: 3
+        URL: "https://www.kinopoisk.ru/film/893245/"
+  - type: "TV Shows"
+    titles:
+      - title:
+        desc:
+        star:

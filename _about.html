@@ -72,7 +72,17 @@ description: "Портфолио Мобильных и WEB приложений"
     {% for entry in item.projects %}
     <!-- begin project -->
     <div
-      class="project inside effect1 {% if site.scrollappear_enabled %}scrollappear{% endif %}"
+      class="
+        project
+        inside
+        effect1
+        {%
+        if
+        site.scrollappear_enabled
+        %}scrollappear{%
+        endif
+        %}
+      "
     >
       <div class="project_description">
         <img

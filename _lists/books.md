@@ -1,0 +1,68 @@
+---
+layout: single
+title: "Список для чтения"
+permalink: /lists/books/
+sidebar:
+  nav: "lists"
+---
+
+<!-- <div class="about {% if site.scrollappear_enabled %}scrollappear{% endif %}"></div> -->
+
+<!-- <p>Я только начал вести это список прочтtненных книг и постепенно буду его расширять</p> -->
+
+{% for entry in site.data.books.list %}
+
+<div>
+  <div class="line-header">
+    {% assign bookSize = entry.books | size %}
+    {% if bookSize == 1 %}
+    <h2 id="{{entry.year}}-books">{{ entry.year }}</h2><span class="details">{{ bookSize }} book</span>
+    {% elsif bookSize > 1 %}
+    <h2 id="{{entry.year}}-books">{{ entry.year }}</h2><span class="details">{{ bookSize }} books</span>
+    {% else %}
+    <h2 id="{{entry.year}}-books">{{ entry.year }}</h2><span class="details">I haven't read any books this year. So
+      far.</span>
+    {% endif %}
+  </div>
+
+  <div>
+    <!--Book card for each year-->
+    <ul class="book-list" style="margin-left: 0; padding-left: 0;">
+      {% for book in entry.books %}
+      <li style="list-style-type: none;">
+        <div class="book-item">
+          <a href="{{ book.link }}">
+            <img class="cover align-left" src="{{ book.image }}" alt="{{ book.title }}" style="width: 150px;" />
+          </a>
+          <div class="book-info">
+            <h4><a class="book-title" href="{{ book.link }}">{{ book.title }}</a></h4>
+            <p class="book-author">{{ book.author }}</p>
+            <p>{{ book.description | markdownify }}</p>
+            <p class="post-meta">Статус:
+              {% if book.completed == 'Читаю' %}
+              <span style="color: #EB002B">📖 {{ book.completed }}</span>
+              {% elsif book.completed == 'Забросил' %}
+              <span style="color: #EB002B">{{ book.completed }} ¯\_(ツ)_/¯ </span>
+              {% elsif book.completed == 'Надо перечитать' %}
+              <span style="color: #EB002B">📚{{ book.completed }} </span>
+              {% else %}
+              <span>📗 {{ book.completed | date: "%F" }}</span>
+              {% endif %}
+              {% if book.audiobook == true %}
+              <span> 🎧</span>
+              {% endif %}
+            </p>
+            {% for tag in book.genre %}
+            <p> {{ tag }}</p>
+            {% endfor %}
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+{% endfor %}
+
+<!-- </div> -->

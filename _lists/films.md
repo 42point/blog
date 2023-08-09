@@ -2,61 +2,60 @@
 layout: single
 title: "Фильмы"
 description: ""
-permalink: /films/
-
+permalink: /lists/films/
+sidebar:
+  nav: "lists"
 ---
+
 <!-- <div class="about {% if site.scrollappear_enabled %}scrollappear{% endif %}"></div> -->
 
-
-<p>Я люблю фильмы. В детcтве у меня была специальная тетрадка куда я записывал все свои просомтренные фильмы, не говоря про книги со всеми фильмами голливуда</p>
-
-
+<p>Я люблю фильмы. В детcтве у меня была специальная тетрадка куда я записывал все свои просмотренные фильмы, не говоря про книги со всеми фильмами голливуда</p>
 
 {% for entry in site.data.films.list %}
+
 <div>
   <div class="line-header">
     {% assign filmssize = entry.movie | size %}
-    
+
     {% if filmssize == 1 %}
 
-      <h2 id="{{entry.year}}-books">{{ entry.year }}</h2><span class="details">{{ filmssize }} book</span>
-    
-    {% elsif filmssize > 1 %}
-    
-      <h2 id="{{entry.year}}-books">{{ entry.year }}</h2><span class="details">{{ filmssize }} фильмов</span>
-    
-      {% else %}
-    
-      <h2 id="{{entry.year}}-books">{{ entry.year }}</h2><span class="details">I haven't read any books this year. Пока.</span>
-    
-      {% endif %}
-  
-  </div>
+      <h2 id="{{entry.year}}-books">{{ entry.year }}</h2><span class="details">{{ filmssize }} фильм</span>
 
+    {% elsif filmssize > 1 %}
+
+      <h2 id="{{entry.year}}-books">{{ entry.year }}</h2><span class="details">{{ filmssize }} фильмов</span>
+
+      {% else %}
+
+      <h2 id="{{entry.year}}-books">{{ entry.year }}</h2><span class="details">I haven't read any books this year. Пока.</span>
+
+      {% endif %}
+
+  </div>
 
   <div>
     <!--Book card for each year-->
     <ul class="media-list" style="margin-left: 0; padding-left: 0;">
       {% for movie in entry.movie %}
-      
+
       <li style="list-style-type: none;">
       <div>
-      
+
         <div class="book-item">
-      
+
           <a href="{{ movie.link }}" target="_blank">
             <img class="cover align-left" src="{{ movie.img }}" alt="{{ movie.title }}" style="width: 150px;" /> </a>
 
         </div>
-      
+
         <div class="book-info">
-            
+
             <h4><a class="book-title" href="{{ movie.link }}" target="_blank">{{ movie.title }}</a></h4>
-            
+
             <!-- <p class="book-author">{{ book.author }}</p> -->
-            
+
             <p>{{ movie.desc | markdownify }}</p>
-            
+
             <!-- оенка -->
             <p class="post-meta">Моя оценка:
 
@@ -69,21 +68,21 @@ permalink: /films/
               <span style="color: #EB002B">★★★</span>
               {% elsif movie.star == 2 %}
               <span style="color: #EB002B">★★</span>
-              
+
               {% else %}
               <span style="color: #EB002B">★</span>
-              
+
               {% endif %}
-              
-            
+
+
             </p>
             <!-- конец оценки -->
 
             <!-- теги -->
             <!-- {% for tag in book.genre %}
-            
+
             <p> {{ tag }}</p>
-            
+
             {% endfor %} -->
             <!-- конец тегов -->
         </div>
@@ -91,6 +90,7 @@ permalink: /films/
       </li>
       {% endfor %}
     </ul>
+
   </div>
 </div>
 

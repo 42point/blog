@@ -19,6 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: "[42point]"
+subtitle: "Version 2.0"
 email: lexx@42point.com
 description: >- # this means to ignore newlines until "baseurl:"
   Немного мыслей об IT, продуктивности и технологиях.
@@ -26,7 +27,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://42point.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: d0_n0_evil
 github_username: 42point
-locale: "ru-RU"
+locale: "ru"
+date_format: "%Y-%m-%d"
 
 # Build settings
 theme: minimal-mistakes-jekyll
@@ -48,9 +50,12 @@ collections:
     output: true
     permalink: /:collection/:path/
     sort_by: position
-  # notes:
-  #   output: true
-  #   permalink: /:collection/:path/
+  notes:
+    output: true
+    permalink: /:collection/:path/
+  twenty-four:
+    output: true
+    permalink: /:collection/:path/
   # lists:
   #   output: true
   #   permalink: /:collection/:path/
@@ -90,6 +95,10 @@ author:
   avatar: "/assets/images/bio.jpg"
   bio: "Мобильные продукты и приложения"
   location: "Где-то в Москве"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/alexey-serpukhovitov-83160539/"
 
 permalink: posts/:slug
 
@@ -105,6 +114,9 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: http://instagram.com/d0_n0_evil/
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/alexey-serpukhovitov-83160539/"
     # - label: "GitHub"
     #   icon: "fab fa-fw fa-github"
     #   # url:

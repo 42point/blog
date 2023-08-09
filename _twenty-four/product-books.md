@@ -1,34 +1,33 @@
 ---
 layout: single
-title: "Список для чтения"
-description: ""
-permalink: /books/
-
+title: "Книги"
+description: "Список книг по теме продуктового менеджмента и его концепций"
+date: 2023-06-23
+categories:
+tags: [tag1, tag2]
+toc: true
+toc_sticky: true
+sidebar:
+  nav: "twenty-four"
 ---
-<!-- <div class="about {% if site.scrollappear_enabled %}scrollappear{% endif %}"></div> -->
 
+{% for entry in site.data.product-books.list %}
 
-<p>Я только начал вести это список прочтненных книг и постепенно буду его расширять</p>
-
-
-
-{% for entry in site.data.books.list %}
 <div>
   <div class="line-header">
     {% assign bookSize = entry.books | size %}
     {% if bookSize == 1 %}
-    <h2 id="{{entry.year}}-books">{{ entry.year }}</h2><span class="details">{{ bookSize }} book</span>
+    <h2 id="{{entry.type}}-books">{{ entry.type }}</h2><span class="details">{{ bookSize }} книга</span>
     {% elsif bookSize > 1 %}
-    <h2 id="{{entry.year}}-books">{{ entry.year }}</h2><span class="details">{{ bookSize }} books</span>
+    <h2 id="{{entry.type}}-books">{{ entry.type }}</h2><span class="details">{{ bookSize }} books</span>
     {% else %}
-    <h2 id="{{entry.year}}-books">{{ entry.year }}</h2><span class="details">I haven't read any books this year. So
+    <h2 id="{{entry.type}}-books">{{ entry.type }}</h2><span class="details">I haven't read any books this type. So
       far.</span>
     {% endif %}
   </div>
 
-
   <div>
-    <!--Book card for each year-->
+    <!--Book card for each type-->
     <ul class="book-list" style="margin-left: 0; padding-left: 0;">
       {% for book in entry.books %}
       <li style="list-style-type: none;">
@@ -66,5 +65,3 @@ permalink: /books/
 </div>
 
 {% endfor %}
-
-</div>

@@ -1,21 +1,24 @@
-# list:
-#   - type: films
-#     titles:
-#       - title: Founder"
-#         desc: "Отличный "
-#         star: 5
-#         link: "https"
-#         img: "https://"
-#   - type: "TV Shows"
-#     titles:
-#       - title: Devs
-#         desc: "Еще один сериал года."
-#         star: 5
-#         link: "https"
-#         img: "https"
+# - year: 2023
+# movie:
+# - title:
+# desc:
+# star:
+# link:
+# img:
 
 list:
-  # - year: 2023
+  - year: 2023
+    movie:
+      - title: M3GAN / М3ГАН
+        desc: "Не самый захватывающий но приятный ужастик на вечер, немного от чаки, и ооочень тупая главная героиня, я про изобретательницу. Количетсво фейспалмов которые я отбивал не пересчитать: не понимать как работает её изобретение, отдать его ребенку, игнорировать своего начальника…"
+        star: 3
+        link: https://www.kinopoisk.ru/film/4422814/
+        img: https://avatars.mds.yandex.net/get-kinopoisk-image/1898899/f1a6ce58-3e13-40cd-90b8-0ab2961b4686/orig
+      - title: UNSANE
+        desc: "Фильм который вызывает эмоции и все время задаает вопросы про главную героиню"
+        star: 4
+        link:
+        img:
   - year: 2022
     movie:
       - title: ARQ/Арка
@@ -33,7 +36,7 @@ list:
         star: 5
         link: "https://www.kinopoisk.ru/film/278208/"
         img: "https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/751d21d5-c447-4c3f-9172-f2f64c3c822a/3840x"
-      - title: Palm Springs / Зависнуть в Палм-Спрингс 
+      - title: Palm Springs / Зависнуть в Палм-Спрингс
         desc: "День сурка в новой реальности? Без соплей и розовых сердечек? Тогда добро пожаловать Зависнуть в Палм-Спрингс!"
         star: 4
         link: "https://www.kinopoisk.ru/film/1245524/"
@@ -43,14 +46,13 @@ list:
         star: 4
         link: "https://www.kinopoisk.ru/film/1101569/"
         img: "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/567ff4d5-5d99-4ea4-b099-6475ec40ee8c/3840x"
-    tvseries:
       - title: Jessica Jones / Джессика Джонс (1 сезон)
         desc: По мне так это самый сильный сезон который персмотрел снова
         star: 4
         link: https://www.kinopoisk.ru/series/817508/
         img: https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/5dd9945d-e7cc-45b0-a269-216896b99d6a/3840x
       - title: Lost film / Потерянная комната
-        desc: Персматриваю этот сериал раз в пару лет. 3 серии, смотрятся на одном дыхании, и сеттинг который просто неповторим. Это мой любимы сериал.
+        desc: Персматриваю этот сериал раз в пару лет. 3 серии, смотрятся на одном дыхании, и сеттинг который просто неповторим. Это мой любимый сериал.
         star: 5
         link: "https://www.kinopoisk.ru/series/276268/"
         img: "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/ffc292e8-641c-45e7-a1f4-8b7c6ecd7c52/3840x"
@@ -63,7 +65,7 @@ list:
         link: "https://www.kinopoisk.ru/film/893245/"
         img: https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/048b0469-2e2d-41e3-9527-58604caa922e/3840x
       - title: Freaks
-        desc: необычный взгляд на привычный мир
+        desc: необычный взгляд на привычный мир, и в ближайшее время я его планирую пересмотреть
         star: 4
         link: https://www.kinopoisk.ru/film/1178683/
         img: https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/376ba8ee-4d7b-499f-92ae-1cb5de22f506/3840x
@@ -195,7 +197,6 @@ list:
         star: 4
       - title: The Hole in the Ground
       - title: The Killing of a Sacred
-    tvseries:
       - title: Devs
         desc: Еще один сериал года.
         star: 5
@@ -222,6 +223,6 @@ list:
         star: 5
         desc: Сериал Года. Мне повезло что я посомтрел сразу все 3 сезона подряд.
       - title: "Star Trek: Lower Decks"
-        desc: Слишком много отсылок к оригинальному
+        desc: Слишком много отсылок к оригинальному стартреку
       - title: 12 monkies (1,2 сезоны)
-        link: 
+        link:
