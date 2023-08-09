@@ -1,4 +1,0 @@
----
-slug: video
-name: video
----

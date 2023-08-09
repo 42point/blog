@@ -1,0 +1,1858 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://42point.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://42point.com/" rel="alternate" type="text/html" /><updated>2023-08-09T10:37:37+00:00</updated><id>https://42point.com/feed.xml</id><title type="html">[42point]</title><subtitle>Немного мыслей об IT, продуктивности и технологиях.</subtitle><author><name>Алексей С.</name></author><entry><title type="html">Мысли про работу</title><link href="https://42point.com/posts/citaty" rel="alternate" type="text/html" title="Мысли про работу" /><published>2023-03-09T00:00:00+00:00</published><updated>2023-03-09T00:00:00+00:00</updated><id>https://42point.com/posts/citaty</id><content type="html" xml:base="https://42point.com/posts/citaty"><![CDATA[<p>Несколько цитат которые подзацепили когда писал статью про работу basecamp.</p>
+
+<blockquote>
+  <p>But crisis mode is reserved for true crisis.</p>
+</blockquote>
+
+<blockquote>
+  <p>What we have found to be true is Parkinson’s Law: “Work expands to fill the time available.” Give something 3 months and it’ll take 3 months. Give something 6 weeks and you’ll figure out how to get it done in 6 weeks.</p>
+</blockquote>
+
+<blockquote>
+  <p>No OKRs, no metrics. We build what we think the product needs based on our own ideas and the distillation of customer requests. We don’t measure individual features’ performance/success unless there’s a specific a/b test in mind, but things that are a/b’d are almost always tied to conversion or payment. We don’t a/b features that aren’t financial in nature.</p>
+</blockquote>]]></content><author><name>Алексей С.</name></author><category term="work" /><category term="цитаты" /><category term="принципы" /><summary type="html"><![CDATA[Чужой опыт в цитатах]]></summary></entry><entry><title type="html">Подход к работе в basecamp (37signals)</title><link href="https://42point.com/posts/how-basecamp-work" rel="alternate" type="text/html" title="Подход к работе в basecamp (37signals)" /><published>2023-02-21T00:00:00+00:00</published><updated>2023-02-21T00:00:00+00:00</updated><id>https://42point.com/posts/how-basecamp-work</id><content type="html" xml:base="https://42point.com/posts/how-basecamp-work"><![CDATA[<p>Довольно старый но очень познавательный пост в <a href="https://m.signalvnoise.com/how-we-set-up-our-work-cbce3d3d9cae" target="_blank">блоге SVN</a>, как они сами написали отвечающий на вопросы:</p>
+
+<blockquote>
+  <p>Как вы парни на самом деле работаете? Как выбираете какими вещами заниматься? Какие у вас команды по размеру? Как вы структурировали вашу работу?</p>
+</blockquote>
+
+<p>То есть в принципе те вопросы которые всегда интересовали их “последователей”. Как же они за счет такого скудного функционал могут разрабатывать свой продукт. Судя по всему процесс у Basecamp эволюционирует, и если на момент публикации поста в 2017, они по словам Джейсона Фрайда на версии <code class="language-plaintext highlighter-rouge">5.2</code> то сейчас, в 2023 версия должна быть близка к <code class="language-plaintext highlighter-rouge">7.0</code>. Что же можно вынести для себя из статьи?</p>
+
+<h2 id="6-недельные-итерации">6 недельные итерации</h2>
+
+<p>Команды в Basecamp работаю по 6-недельным итерациям, каждый цикл содержит проекты 2 типов (автор использует термин <em>batch</em>, переведу это как <em>пачка</em>).</p>
+
+<p><strong>Большая пачка</strong> — проекты которые целиком могут занять весь 6-недельный цикл, обычно они берут 1-2 таких проекта. Для каждого большого проекта существует свой собственный проект в Basecamp где ведется вся коммуникация и документация.</p>
+
+<p><strong>Маленькая пачка</strong> более мелкие проекты улучшения, исправления и понятные инициативы которые могут занять и день и пару недель. Обычно берут 4-8 таких проектов.</p>
+
+<p>После завершения цикла берут 1-2 недели на проекта за пределами расписания, исправления проблем, pet-projects и на подготовку нового цикла.</p>
+
+<p>Интересное замечание что это не спринты:</p>
+
+<blockquote>
+  <p>Note: These are not sprints. I despise the word sprints. Sprints and work don’t go together. This isn’t about running all out as fast as you can, it’s about working calmly, at a nice pace, and making smart calls along the way. No brute force here, no catching our collective breath at the end.</p>
+</blockquote>
+
+<p>Действительно, спринты и готовая работа часто не совпадают. Вернее нормальная работа обычно занимает больше стандартного спринта. Basecamp же ориентирован на результат.</p>
+
+<p>Что можно взять себе:</p>
+
+<ul>
+  <li>Есть время на незапланированную работу и на подготовку нового цикла. Эта Одна из причин почему я не очень верю в спринты по 1 неделе, просто безумные ресурсы уходят зря</li>
+  <li>Есть понимание что проекты могут занимать больше времени.</li>
+  <li>6 недель хватает на любую запланированную фичу, либо, в рамках перерыва между циклами можно понять как уместить в следующие 6 недель работающую фичу. то есть подход к планированию из ограничения.</li>
+</ul>
+
+<h2 id="экстремально-маленькие-команды-2-3-человека">Экстремально маленькие команды 2-3 человека</h2>
+
+<p>Один большой проект — одна команда. Команды собираются на лету и по желанию — кто чем хотел бы заняться. В команде 1-2 программиста и дизайнер (я так понимаю 1 бекэнд, 1 фронт).
+Руководит дизайнер!!! Вера что дизайнер должен уметь затащить разработку меня радует, хотя, далеко не всякому дизайнеру такое под силу.</p>
+
+<blockquote>
+  <p>We only hire designers who are capable of leading projects, but yes, small team sizes help reduce management requirements to begin with. So it’s sort of a 1–2 punch — designers who can lead, small teams.</p>
+</blockquote>
+
+<p>Мне нравится такой подход, и я понимаю почему Basecamp его продвигает — снизить нагрузку на административку, снизить количество менеджеров. И я могу только посоветовать всем бизнесам нанимать дизайнеров и QA-инженеров которые могут потянуть самостоятельную работу.</p>
+
+<h2 id="все-работаю-в-одной-среде">Все работаю в одной среде</h2>
+
+<p>Для “сигналов” это естественно basecamp, считается что разделение команд по инструментам это:</p>
+
+<ul>
+  <li>крайне неэффективно</li>
+  <li>не дает полную картину команде</li>
+</ul>
+
+<p>Что верно но к сожалению не всегда возможно. Если невозможно то что делать? Об этом ниже.</p>
+
+<p>В Basecamp не придерживаются трекинг времени так как считают что бесполезно оценивать запланированные и полученные результаты. Задача в том что есть фиксированный лимит времени — 6 недель. Точка. Можно двигаться внутри если команда успевает или наоборот опаздывает.</p>
+
+<h2 id="питчинг">Питчинг</h2>
+
+<p>Кажется это самая интересная часть процесса. Этот то момент когда идея, откуда бы она не пришла, обретает форму и готова быть представлена. Делается это в текстовом виде по ряду причин:</p>
+
+<ul>
+  <li>питчера не могу прервать, сбить, загнобить пока он не рассказал идею целиком</li>
+  <li>текст позволяет почувствовать <strong>поверхность под ногами</strong>, при написании текста автор лучше её продумает</li>
+  <li><strong>асинхронное взаимодействие</strong>, они не особо любят слеки и личные встречи для работы</li>
+  <li>есть возможность собрать все возможные все комментарии к питчу как единый источник истины</li>
+</ul>
+
+<figure>
+	<a href="/assets/images/uploads/2023/basecamp_pitch.png"><img src="/assets/images/uploads/2023/basecamp_pitch.png" /></a>
+	<figcaption><a href="https://public.3.basecamp.com/p/22KB2DCxpEQLZow8Vc2iJhEq" title="Пример питча большого проекта" target="_blank">Пример питча большого проекта</a>.</figcaption>
+</figure>
+
+<h2 id="запуск-цикла">Запуск цикла</h2>
+
+<p>После питчинга, сортировки проектов по пачкам, публикуется пост о запуске где структурирует все работы которые запланированы. Для себя они используют конечно basecamp, один из объединяющих проектов, мне видится что для этого подойдет база знаний (wiki, notion, confluence).</p>
+
+<figure>
+	<a href="/assets/images/uploads/2023/basecamp_cycle.png"><img src="/assets/images/uploads/2023/basecamp_cycle.png" /></a>
+	<figcaption>
+		<a href="https://public.3.basecamp.com/p/yCe87HJ5EX1Nx48N3R6fhfHX" title="Пример внутреннего документа" target="_blank"> Пример внутреннего документа</a> с описание больших и меленьких пачек на цикл, дабы было понятно как это выглядит для разработки.
+	</figcaption>
+</figure>
+
+<p>Нравится что это не письмо или сообщение в чате, всегда можно вернуться в прошлое и посмотреть на результат.</p>
+
+<h2 id="как-работает-qa">Как работает QA</h2>
+
+<p>На момент публикации у Basecamp два тестировщика которые переключаются между командами. При это автор озвучивает очевидную мысль — чем раньше подключен тестировщик, тем лучше. За эти годы ничего не изменилось.</p>
+
+<h2 id="вместо-заключения">Вместо заключения</h2>
+
+<p>Меня очень располагает данный процесс, если даже не получается полностью применить его у себя, то можно просто попытаться выбрать самые ключевые моменты и ответить для себя на вопросы:</p>
+
+<ol>
+  <li>Как вы структурируете вашу работу? Отличается ли подход к реализации</li>
+  <li>Как вы выделяете время</li>
+  <li>Как решаете что делать и что не делать?</li>
+  <li>Как доносите до команды новые идеи?</li>
+  <li>Как вы начинаете новый спринт?</li>
+  <li>Где вы общаетесь?</li>
+  <li>Как организована команда или команды? Насколько они оптимальны?</li>
+</ol>
+
+<p>Ну а после, попытаться найти точки для улучшения.</p>]]></content><author><name>Алексей С.</name></author><category term="work" /><category term="howto" /><category term="management" /><summary type="html"><![CDATA[Довольно старый но очень познавательный пост в [блоге SVN](https://m.signalvnoise.com/how-we-set-up-our-work-cbce3d3d9cae) от тогда еще 37signals]]></summary></entry><entry><title type="html">Что такое хорошая [продуктовая] задача.</title><link href="https://42point.com/posts/good-task" rel="alternate" type="text/html" title="Что такое хорошая [продуктовая] задача." /><published>2020-10-27T13:00:00+00:00</published><updated>2020-10-27T13:00:00+00:00</updated><id>https://42point.com/posts/good_task</id><content type="html" xml:base="https://42point.com/posts/good-task"><![CDATA[<p>Небольшое лирическое вступление. Когда-то я играл в баскетбол и тренер беспрестанно вбивал нам в голову — “<strong>если твой пас не приняли в этом твоя вина</strong>”, или если коротко — “<a href="https://ru.wikipedia.org/wiki/Передача_(баскетбол)">Виноват отдающий</a>”. Как ни странно, спустя годы я часто вспоминаю это утверждение в работе с разработчиками, коллегами или топ-менеджментом.</p>
+
+<p>Были у вас такие ситуации что разработчик раз за разом приходит к вам с вопросами по задаче? Или наоборот, что не приходит но к уже готовой задаче появляются все новые и новые дополнения? И в первом и во втором случае увеличивается <a href="https://stefanroock.wordpress.com/2010/03/02/kanban-definition-of-lead-time-and-cycle-time/">время цикла (cycle time)</a> то есть, увеличивается время которое уходит на конкретную работу. Как правило такое увеличение времени влияет не только на разработчика но и на соседние производственные участки.</p>
+
+<p><img src="/assets/images/uploads/2020/10/cycle-time.png" alt="cycle time" /></p>
+
+<p>Как же сделать классную <del>передачу</del> задачу что бы принимающий был счастлив и ставил их в пример? Ответ — потратить на это время и использовать шаблон.</p>
+
+<h1 id="блок-1-описание-функциональные-требования">Блок 1: Описание (функциональные требования)</h1>
+
+<p>Это вероятно самая обширная часть описания задачи.</p>
+
+<p>Как проще всего и логичнее составить такое описание?
+Описание может быть как в формате <a href="https://en.wikipedia.org/wiki/User_story">User stories</a> так и другим описательным образом; Независимо от выбранного формата, будет здорово если будут сформулированы ответы на следующие вопросы:</p>
+
+<h2 id="в-чем-идея-иили-проблема">В чем идея и/или проблема?</h2>
+
+<p>Что хотим сделать или улучшить?</p>
+
+<p>Как должна работать система, и как должна реагировать на действия пользователя?</p>
+
+<p>Какие действия доступны пользователю?</p>
+
+<p>Тут пишем всю логику работы, прикладываем диаграммы, списки и таблицы.</p>
+
+<h2 id="как-я-это-понял">Как я это понял?</h2>
+
+<p>Этот раздел поможет не только разработчику но и менеджеру. Так, например, можно встретить прямое или скрытое сопротивление со стороны разработки или руководства по задаче, а корректно указав факты и цифры, будет много проще завоевать доверие и сотрудничество всех участников.</p>
+
+<h2 id="как-измерить-и-охват">Как измерить и охват?</h2>
+
+<p>Фактически это гипотеза, в которой указываем те метрики которые будут подвержены изменениям после релиза. Проработав этот раздел будет проще поставить приоритет для выполнения в backlog’е.</p>
+
+<h2 id="pr---рассказываем-о-фиче">PR - рассказываем о фиче</h2>
+
+<p>Необязательный пункт. Но я верю, что умение рассказать о свое работе чрезвычайно важно как внутри организации так и снаружи.</p>
+
+<p>Теперь закончив с описанием, нам нужно накачать разработчика менее объемными но важными деталями задачи.</p>
+
+<h1 id="блок-2-детали-нефункциональные-требования">Блок 2: Детали (нефункциональные требования)</h1>
+
+<p>Это простая и достаточно фомализованная часть, тут мы указываем весь контекст который необходим для выполнения задачи. В зависимости от типа команд и работ этот блок может меняться, например, вряд ли разработчику backend потребуются макеты интерфейса, хотя…</p>
+
+<h2 id="технические-требования-и-ограничения">Технические требования и ограничения</h2>
+
+<p>Для каких платформ планируем релиз? Для каких браузеров? Регионов? Специальный фреймворк?</p>
+
+<h2 id="требования-к-аналитике">Требования к аналитике</h2>
+
+<p>Что отслеживаем как называем события, куда отправляем?</p>
+
+<h2 id="спецификации-дизайна">Спецификации дизайна</h2>
+
+<p>Макеты и руководства, ассеты.</p>
+
+<h2 id="обработка-ошибок">Обработка ошибок</h2>
+
+<ol>
+  <li>Типы ошибок?</li>
+  <li>Как на них должна реагировать система?</li>
+  <li>Какие сообщения отображаются пользователю?</li>
+</ol>
+
+<h2 id="локализация">Локализация</h2>
+
+<ol>
+  <li>Нужна?</li>
+  <li>Если да то где взять, или какие строки использовать?</li>
+</ol>
+
+<h2 id="прочее">Прочее</h2>
+
+<p>Все что не попало в предыдущие пункты:</p>
+
+<ul>
+  <li>тестовые аккаунты, dev. окружение,</li>
+  <li>контакты стейкхолдера,</li>
+  <li>тестовые кейсы (но это уже высший уровень).</li>
+</ul>
+
+<h1 id="как-с-этим-жить">Как с этим жить?</h1>
+
+<p>На первый взгляд получился объемный чек-лист, который может просто отбить желание составлять задачи, но… Начните составлять классные задачи и ваша команда отблагодарит вас своей производительностью, а еще, разработчики будут хвастаться что у них есть классный менеджер.</p>
+
+<h1 id="рекомендую-посмотреть">Рекомендую посмотреть:</h1>
+
+<p><a href="https://www.notion.so/7-2fbe0af2687a4cbe8ce3289b18ef4e10" target="\_blank">Чек-лист хорошей задачи</a></p>]]></content><author><name>Алексей С.</name></author><category term="work" /><category term="playbook" /><summary type="html"><![CDATA[Небольшое лирическое вступление. Когда-то я играл в баскетбол и тренер беспрестанно вбивал нам в голову — “если твой пас не приняли в этом твоя вина”, или если коротко — “Виноват отдающий”. Как ни странно, спустя годы я часто вспоминаю это утверждение в работе с разработчиками, коллегами или топ-менеджментом.]]></summary></entry><entry><title type="html">Уведомления Jenkins в Telegram</title><link href="https://42point.com/posts/telegram-notifications-jenkins" rel="alternate" type="text/html" title="Уведомления Jenkins в Telegram" /><published>2020-10-19T19:00:00+00:00</published><updated>2020-10-19T19:00:00+00:00</updated><id>https://42point.com/posts/telegram-notifications-jenkins</id><content type="html" xml:base="https://42point.com/posts/telegram-notifications-jenkins"><![CDATA[<p>Одно из правил работы с CI — все должны видеть статус сборок, тоесть синхронизация. А что может быть лучше чем уведомление о неудачном, или напротив удачном, билде в чате.</p>
+
+<ol>
+  <li><a href="https://github.com/3cky/jenkins-telegram-uploader-plugin">3cky/jenkins-telegram-uploader-plugin: Jenkins CI post-build action that uploads artifacts generated during build process to Telegram chats.</a></li>
+  <li><a href="https://github.com/jenkinsci/telegram-notifications-plugin">jenkinsci/telegram-notifications-plugin: This plugin allows you to send messages from Jenkins jobs to Telegram chat.</a></li>
+  <li>Использовать секцию пост-функций в пайплайне.</li>
+</ol>
+
+<p>Третий вариант более универсален, ну и с первым плагином я потратил очень много времени но таки и не смог его запустить.</p>
+
+<h2 id="настраиваем-бот">Настраиваем бот</h2>
+
+<h3 id="создаем-новый-бот-и-канал-для-уведомлоений">Создаем новый бот и канал для уведомлоений.</h3>
+
+<p>Находим <code class="language-plaintext highlighter-rouge">@botfather</code> и следуя инструкции создаем нового бота. Важно получить токен бота. Токен позволит любому управлять вашим ботом.</p>
+
+<p><a href="/assets/images/uploads/2020/10/botfather.png"><img src="/assets/images/uploads/2020/10/botfather.png" alt="small image" /></a></p>
+
+<p>Создаем новый канал и добавляем в него ново-созданного бота с правами админа, нужно для публикации новых сообщений.</p>
+
+<h3 id="получаем-id-чата-для-отправки-уведомлений">Получаем iD чата для отправки уведомлений</h3>
+
+<p>Через адресную строку браузера делаем запрос</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://api.telegram.org/bot&lt;TOKEN&gt;/getUpdates
+</code></pre></div></div>
+
+<p>Где меняем <code class="language-plaintext highlighter-rouge">&lt;TOKEN&gt;</code> на значение из пункта создания бота.</p>
+
+<p>Ответ на запрос:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"ok"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"result"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"update_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">151985646</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"channel_post"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"message_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"chat"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">-1001459789606</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Leroy"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"channel"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"date"</span><span class="p">:</span><span class="w"> </span><span class="mi">1603123407</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/sub"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"entities"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"offset"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"length"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bot_command"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Нужно сохранить chat.id и сохранить знак <code class="language-plaintext highlighter-rouge">-</code> перед числом, это полный идентификатор.</p>
+
+<h2 id="готовим-jenkins">Готовим Jenkins</h2>
+
+<h3 id="настраиваем-переменные-для-авторизации-api">Настраиваем переменные для авторизации API</h3>
+
+<p>Прежде всего добавляем в раздел credentials jenkins id чата, в который будем отсылать сообщения и token созданного бота.</p>
+
+<ol>
+  <li>Manage Jenkins -&gt; Manage Credentials
+<a href="/assets/images/uploads/2020/10/domain.png"><img src="/assets/images/uploads/2020/10/domain.png" alt="" /></a></li>
+  <li>Для уведомлений в телеграмм создаем новый домен.
+<a href="/assets/images/uploads/2020/10/cred.png"><img src="/assets/images/uploads/2020/10/cred.png" alt="cred" /></a></li>
+  <li>Добавляем переменную для ID чата и отдельно переменную для токена созданного бота. Указываем пронятные ID для дальнейшей подстановки переменных.
+<a href="/assets/images/uploads/2020/10/chatId.png"><img src="/assets/images/uploads/2020/10/chatId.png" alt="chatId" /></a></li>
+</ol>
+
+<h3 id="настриваем-пайплайн">Настриваем пайплайн</h3>
+
+<p>Предположим уже настроен pipeline через Jenkinsfile. Осталось добавить к нему <a href="https://www.jenkins.io/doc/book/pipeline/syntax/#post">post-секцию</a></p>
+
+<div class="language-groovy highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pipeline</span> <span class="o">{</span>
+    <span class="n">agent</span> <span class="n">any</span>
+    <span class="n">stages</span> <span class="o">{</span>
+
+        <span class="n">stage</span><span class="o">(</span><span class="s1">'Checkout'</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">steps</span> <span class="o">{</span>
+                <span class="n">echo</span> <span class="s1">'Checkout..'</span>
+                <span class="n">checkout</span> <span class="n">scm</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="n">stage</span><span class="o">(</span><span class="s1">'Build'</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">steps</span> <span class="o">{</span>
+            <span class="c1">// script here</span>
+            <span class="o">}</span>
+            <span class="n">echo</span> <span class="s1">'Done'</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="n">stage</span><span class="o">(</span><span class="s1">'Publish'</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">steps</span> <span class="o">{</span>
+			    <span class="c1">// script here</span>
+                <span class="n">echo</span> <span class="s2">"Deployed Successfully!"</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+        <span class="n">post</span> <span class="o">{</span>
+            <span class="n">success</span> <span class="o">{</span>
+            <span class="c1">// script here</span>
+			<span class="o">}</span>
+            <span class="n">aborted</span> <span class="o">{</span>
+            <span class="c1">// script here</span>
+			<span class="o">}</span>
+            <span class="n">failure</span> <span class="o">{</span>
+            <span class="c1">// script here</span>
+            <span class="o">}</span>
+       <span class="o">}</span>
+<span class="o">}</span>
+
+</code></pre></div></div>
+
+<p>Post-секция выполняется независимо от результата стадий основного пайплайна. И именно в нем будут действия для отправки уведомлений.</p>
+
+<p>Все указанные условия должны содержат выполняемые скрипты:</p>
+
+<div class="language-groovy highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">post</span> <span class="o">{</span>
+     <span class="n">success</span> <span class="o">{</span>
+        <span class="n">withCredentials</span><span class="o">([</span><span class="n">string</span><span class="o">(</span><span class="nl">credentialsId:</span> <span class="s1">'botSecret'</span><span class="o">,</span> <span class="nl">variable:</span> <span class="s1">'TOKEN'</span><span class="o">),</span> <span class="n">string</span><span class="o">(</span><span class="nl">credentialsId:</span> <span class="s1">'chatId'</span><span class="o">,</span> <span class="nl">variable:</span> <span class="s1">'CHAT_ID'</span><span class="o">)])</span> <span class="o">{</span>
+        <span class="n">sh</span>  <span class="o">(</span><span class="s2">"""
+            curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d parse_mode=markdown -d text='*${env.JOB_NAME}* : POC *Branch*: ${env.GIT_BRANCH} *Build* : OK *Published* = YES'
+        """</span><span class="o">)</span>
+        <span class="o">}</span>
+     <span class="o">}</span>
+
+     <span class="n">aborted</span> <span class="o">{</span>
+        <span class="n">withCredentials</span><span class="o">([</span><span class="n">string</span><span class="o">(</span><span class="nl">credentialsId:</span> <span class="s1">'botSecret'</span><span class="o">,</span> <span class="nl">variable:</span> <span class="s1">'TOKEN'</span><span class="o">),</span> <span class="n">string</span><span class="o">(</span><span class="nl">credentialsId:</span> <span class="s1">'chatId'</span><span class="o">,</span> <span class="nl">variable:</span> <span class="s1">'CHAT_ID'</span><span class="o">)])</span> <span class="o">{</span>
+        <span class="n">sh</span>  <span class="o">(</span><span class="s2">"""
+            curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d parse_mode=markdown -d text='*${env.JOB_NAME}* : POC *Branch*: ${env.GIT_BRANCH} *Build* : `Aborted` *Published* = `Aborted`'
+        """</span><span class="o">)</span>
+        <span class="o">}</span>
+
+     <span class="o">}</span>
+     <span class="n">failure</span> <span class="o">{</span>
+        <span class="n">withCredentials</span><span class="o">([</span><span class="n">string</span><span class="o">(</span><span class="nl">credentialsId:</span> <span class="s1">'botSecret'</span><span class="o">,</span> <span class="nl">variable:</span> <span class="s1">'TOKEN'</span><span class="o">),</span> <span class="n">string</span><span class="o">(</span><span class="nl">credentialsId:</span> <span class="s1">'chatId'</span><span class="o">,</span> <span class="nl">variable:</span> <span class="s1">'CHAT_ID'</span><span class="o">)])</span> <span class="o">{</span>
+        <span class="n">sh</span>  <span class="o">(</span><span class="s2">"""
+            curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d parse_mode=markdown -d text='*${env.JOB_NAME}* : POC  *Branch*: ${env.GIT_BRANCH} *Build* : `not OK` *Published* = `no`'
+        """</span><span class="o">)</span>
+        <span class="o">}</span>
+     <span class="o">}</span>
+
+ <span class="o">}</span>
+
+</code></pre></div></div>
+
+<p>Где:</p>
+
+<ul>
+  <li>строка начинающаяся с <code class="language-plaintext highlighter-rouge">withCredentials</code> декларирует переменные для подмены в запросе.</li>
+  <li>текст отправляется в формате <code class="language-plaintext highlighter-rouge">markdown</code>.</li>
+</ul>
+
+<p>Запускаем билд и при успехе получаем уведомление:
+<a href="/assets/images/uploads/2020/10/result.jpeg"><img src="/assets/images/uploads/2020/10/result.jpeg" alt="resul" /></a></p>]]></content><author><name>Алексей С.</name></author><category term="Jenkins" /><category term="manual" /><summary type="html"><![CDATA[Одно из правил работы с CI — все должны видеть статус сборок, тоесть синхронизация. А что может быть лучше чем уведомление о неудачном, или напротив удачном, билде в чате.]]></summary></entry><entry><title type="html">Лицензии при разработке программных продуктов софта</title><link href="https://42point.com/posts/playbook-licenses" rel="alternate" type="text/html" title="Лицензии при разработке программных продуктов софта" /><published>2020-08-12T23:28:00+00:00</published><updated>2020-08-12T23:28:00+00:00</updated><id>https://42point.com/posts/playbook-licenses</id><content type="html" xml:base="https://42point.com/posts/playbook-licenses"><![CDATA[<p>В разработке ПО часто является разумным использовать уже готовые фреймворки и библиотеки для решения тех или иных задач. Важно помнить, что несмотря на статус open source, использование чужого кода несет права и обязанности. Вы часто можете взять чужие исходники, использовать их но вы обязаны соблюдать требования которые они возлагают на разработчика.</p>
+
+<!--more-->
+
+<p>Так недавняя история с использованием чужого кода в одном из проектов крупного интернет холдинга привела к маленькому, но неприятному скандалу<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>. Хотя с подобные инциденты случаются периодически у многих разработчиков.</p>
+
+<p>Итак, лицензии делаться на два типа: разрешительные и copyleft (антоним copyright<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>) или вирусные .
+К разрешительному типу относятся:</p>
+
+<ul>
+  <li><a href="https://ru.wikipedia.org/wiki/Лицензия_BSD">Лицензия BSD</a> (Berkeley Software Distribution(BSD)licenses)</li>
+  <li><a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D1%8F_MIT">Лицензия MIT</a></li>
+  <li><a href="https://ru.wikipedia.org/wiki/Лицензия_Apache">Лицензия Apache</a></li>
+</ul>
+
+<p>Лицензии этого типа позволяют изменять код, распространять, и даже продавать его. Можно внедрять, подключать программынй код под этими лицензиями без ограничений или явно выраженного разрешения. Единственное требование — указание авторства используемых библиотек в явном виде, как правило это можно вынести в отдельный раздел программы.</p>
+
+<p>К лицензиям типа <em>копилефт</em> относится в частности <a href="https://ru.wikipedia.org/wiki/GNU_General_Public_License">GPL лицензия</a>.</p>
+
+<p>Отличие <em>копилефт</em> от разрешительных лицензий заключается в наличии “вирусного” эффекта — любое ПО которое использует исходники под <em>копилефт</em> лицензией автоматически должно распространяться под той же самой лицензией. Изменение не допускается. То есть, любая программа которая содержит код распространяемый по GPL сама должна распространяться по этой же лицензии.</p>
+
+<p>Не-вирусные лицензии не вынуждают производный код быть так open source.</p>
+
+<p>Некоторый софт выходит под двойными лицензиями: одновременно разрешительными и <em>копилефт</em>. Это позволяет выбрать нужную лицензию для вашего продукта.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p><a href="https://habr.com/ru/news/t/514168/">Разработчики Mail.ru на протяжении 11 лет заимствуют код из открытых проектов, нарушая лицензию GPL / Хабр</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BF%D0%B8%D0%BB%D0%B5%D1%84%D1%82">Копилефт — Википедия</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>Алексей С.</name></author><category term="playbook" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Интернет термины</title><link href="https://42point.com/internet-definitions/" rel="alternate" type="text/html" title="Интернет термины" /><published>2020-06-05T22:27:53+00:00</published><updated>2020-06-05T22:27:53+00:00</updated><id>https://42point.com/internet-definitions</id><content type="html" xml:base="https://42point.com/internet-definitions/"><![CDATA[<p>Часто бывает необходимо подобрать правильно определение для договора или элементарного соглашения, а иногда найти простые слова чтобы объяснить клиенту/партнеру о чем идет речь…</p>
+
+<hr />
+
+<dl>
+  
+  <dt id="AR, Дополненная реальность (англ. augmented reality, AR)"> <p>AR, Дополненная реальность (англ. augmented reality, AR)</p>
+</dt>
+  <dd>
+  <p>Интеграция виртуальных объектов в реальную среду, воспроизводимую на электронных устройствах, предназначенных для визуального отображения информации(мониторах, экранах, дисплеях).</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Augmented reality (AR)"> <p>Augmented reality (AR)</p>
+</dt>
+  <dd>
+  <p>is a live, direct or indirect, view of a physical, real-world environment whose elements are augmented by computer-generated sensory input such as sound, video, graphics or GPS data.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="CMS (Content Management System)"> <p>CMS (Content Management System)</p>
+</dt>
+  <dd>
+  <p>система управления содержанием сайта. Представляет собой программные средства для подготовки, редактирования и публикации информации на сайте, а также средства для управления функциональностью сайта.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Cache"> <p>Cache</p>
+</dt>
+  <dd>
+  <p>см. <a href="#Кэш – (Cache — «тайный запас»)">Кэш.</a></p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="DNS (Domain Name Service)"> <p>DNS (Domain Name Service)</p>
+</dt>
+  <dd>
+  <p><strong>Служба доменных имен</strong>. Осуществляет преобразование символьного
+доменного имени в числовой IP-адрес. Построена на принципе 
+распределенного администрирования (делегирования полномочий), когда 
+каждый компьютер или сам “знает” ответ на вопрос, или “знает”, в каком 
+направлении передать данный запрос. Система замкнута и если запрошенная 
+информация имеется на каком-либо компьютере, она будет найдена и передана
+клиенту.</p>
+
+<p>В случае, если вопрос не имеет ответа, клиент получает 
+сообщение о невозможности получения ответа на вопрос. 
+См. также DNS, DNS-сервер.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="DNS (Domain Name System)"> <p>DNS (Domain Name System)</p>
+</dt>
+  <dd>
+  <p>система доменных имен. Текстовая система адресации в Интернете, сопоставляющая имя домена и числовой IP-адрес.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="DNS-сервер (Domain Name Server)"> <p>DNS-сервер (Domain Name Server)</p>
+</dt>
+  <dd>
+  <p>сервер доменных имен, в задачу которого входит преобразование текстовых доменных имен в IP-адреса.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="E-mail –"> <p>E-mail –</p>
+</dt>
+  <dd>
+  <p>см. Электронная почта.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="FTP (File Transfer Protocol)"> <p>FTP (File Transfer Protocol)</p>
+</dt>
+  <dd>
+  <p>протокол передачи файлов из семейства TCP/IP, обеспечивающий возможность найти, получить или отправить файлы через Интернет с одного компьютера на другой. Как правило, используется при передачи файлов большого объема.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="GIF (Graphic Interchange Format)"> <p>GIF (Graphic Interchange Format)</p>
+</dt>
+  <dd>
+  <p>формат представления графических изображений. Получил наибольшее распространение в Интернет, за счет возможности хранения изображений, имеющих до 256 цветов, поддерживания прозрачности, анимации и способности сохранения в одном файле нескольких изображений. GIF имеет хороший алгоритм сжатия, что крайне важно для создания компактных графических файлов.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="HTML (Hyper Text Markup Language)"> <p>HTML (Hyper Text Markup Language)</p>
+</dt>
+  <dd>
+  <p>язык разметки гипертекста, позволяющий с помощью управляющих меток (тэгов) определять структуру и внешний вид HTML-документа (web-страницы) при отображении в браузере, а также создавать ссылки на другие файлы.</p>
+
+  <p>протокол, обеспечивающий взаимодействие пользователя, запрашивающего доступ к web-документам, с сервером, предоставляющим возможность такого доступа.</p>
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Home page"> <p>Home page</p>
+</dt>
+  <dd>
+  <p>см. Главная страница.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Hosting"> <p>Hosting</p>
+</dt>
+  <dd>
+  <p>см. Хостинг</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Hyperlink"> <p>Hyperlink</p>
+</dt>
+  <dd>
+  <p>см. Гиперссылка</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Hypertext"> <p>Hypertext</p>
+</dt>
+  <dd>
+  <p>см. Гипертекст</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="IDSN (Integrated Service Digital Network)"> <p>IDSN (Integrated Service Digital Network)</p>
+</dt>
+  <dd>
+  <p>цифровая сеть с интеграцией услуг, позволяющая одновременно передавать по обычным медным телефонным проводам цифровые данные и голос со скоростью до 128 Кбит/с.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="IP (Internet Protoсol)"> <p>IP (Internet Protoсol)</p>
+</dt>
+  <dd>
+  <p>протокол, обеспечивающий доставку данных в виде пакетов, снабженных IP-адресом.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="IP-адрес"> <p>IP-адрес</p>
+</dt>
+  <dd>
+  <p>числовой идентификатор, который присваивается каждому  компьютеру (хосту), подключенному к Интернету. IP-адрес состоит из адреса сети и адреса данного хоста в этой сети и представляет собой четыре десятичных числа (от 0 до 255), разделенных точкой. Например: 217.174.97.59.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="ISP (Internet Service Provider)"> <p>ISP (Internet Service Provider)</p>
+</dt>
+  <dd>
+  <p>поставщик доступа к Интернет. Провайдер является посредником между пользователями и телекоммуникационным оборудованием, необходимым для доступа к различным линиям связи (телефонные кабели, волоконно-оптические кабели, спутниковые каналы). При заключении договора, провайдер предоставляет доступ к различным сервисам Интернет. Услуги провайдера, как правило, являются платными.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Internet"> <p>Internet</p>
+</dt>
+  <dd>
+  <p>см. Интернет.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Intranet"> <p>Intranet</p>
+</dt>
+  <dd>
+  <p>сеть в масштабах организации (группы организаций), построенная по Интернет-технологии.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="JPEG (Joint Photographic Experts Group)"> <p>JPEG (Joint Photographic Experts Group)</p>
+</dt>
+  <dd>
+  <p>файлы растровых изображений с использованием до 16,7 миллионов цветов (24-битовый цвет), сжатие сопровождается потерей информации (отбрасываются мелкие детали). Популярный в Интернет графический формат. Для хранения изображения JEPG использует алгоритм сильного сжатия с потерей данных, не позволяет использовать анимацию и прозрачность. Как правило применяется для хранения высококачественных фотографий.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="JPG"> <p>JPG</p>
+</dt>
+  <dd>
+  <p>см. JPEG</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="PHP (Personal Home Page)"> <p>PHP (Personal Home Page)</p>
+</dt>
+  <dd>
+  <p>средство создания интерактивных web-страниц, главным достоинством которого является возможность формирования страниц посредством интерактивного взаимодействия «клиент-сервер». Включает CGI-интерфейс, интерпретатор языка и набор функций для доступа к базам данных и различным объектам Всемирной паутины.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Portal"> <p>Portal</p>
+</dt>
+  <dd>
+  <p>см. Портал.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Proxy"> <p>Proxy</p>
+</dt>
+  <dd>
+  <p>см. Проски-сервер.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Router"> <p>Router</p>
+</dt>
+  <dd>
+  <p>см. Маршрутизатор.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="SMS  (Short Message Service)"> <p>SMS  (Short Message Service)</p>
+</dt>
+  <dd>
+  <p>служба  коротких сообщений. Сервис, предоставляемый операторами сотовой связи, позволяющий обмениваться короткими сообщениями с помощью мобильных телефонов. SMS-сообщения могут быть посланы как с телефона на телефон, так и с телефона на адрес электронной почты и с помощью электронной почты на номер мобильного телефона.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Search engine"> <p>Search engine</p>
+</dt>
+  <dd>
+  <p>см. Машина поисковая.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Site"> <p>Site</p>
+</dt>
+  <dd>
+  <p>см. Сайт.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Spam"> <p>Spam</p>
+</dt>
+  <dd>
+  <p>незапрашиваемые и нежелательные сообщения, приходящие по электронной почте. Как правило, рассылка производится одновременно по множеству адресов с целью рекламы товаров и услуг.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="TCP (Transmission Control Protocol)"> <p>TCP (Transmission Control Protocol)</p>
+</dt>
+  <dd>
+  <p>протокол, обеспечивающий доставку пакетов данных по назначению и их прием в том же порядке, в котором происходила их отправка.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="TCP / IP  (Transmission Control Protocol / Internet Protocol)"> <p>TCP / IP  (Transmission Control Protocol / Internet Protocol)</p>
+</dt>
+  <dd>
+  <p>набор протоколов для управления обменами данных между компьютерами, входящими в Интернет.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Telnet"> <p>Telnet</p>
+</dt>
+  <dd>
+  <p>одно из первых приложений Интернет, использовавшихся для соединения с удаленными компьютерами. Применялось преимущественно для доступа к базам данных (например, электронным каталогам библиотек).</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="URL (Uniform Resource Locator)"> <p>URL (Uniform Resource Locator)</p>
+</dt>
+  <dd>
+  <p>Интернет-адрес, присвоенный каждой web-странице. Каждый URL в Интернет уникален.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Usenet (USENET, UseNet)"> <p>Usenet (USENET, UseNet)</p>
+</dt>
+  <dd>
+  <p>приложение Интернет для обмена сообщениями в пределах групп новостей по интересам, «всемирная доска объявлений». Одно из старейших приложений Интернет (существует с 1979 года).</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="WAP (Wireless Application Protocol)"> <p>WAP (Wireless Application Protocol)</p>
+</dt>
+  <dd>
+  <p>стандарт для приложений, использующих беспроводные сети. Фактически представляет собой протокол, обеспечивающий безопасный доступ беспроводных устройств (КПК и сотовых телефонов) к текстовой информации, включая web-страницы, чат-сессии и электронную почту.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="WWW  (World Wide Web)"> <p>WWW  (World Wide Web)</p>
+</dt>
+  <dd>
+  <p>см. Всемирная паутина.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="WYSIWYNG (What You See Is What You Get)"> <p>WYSIWYNG (What You See Is What You Get)</p>
+</dt>
+  <dd>
+  <p>«что вы видите, то и получаете». Обозначение типа HTML-редакторов, которые позволяют пользователю создавать страницы без знания HTML. Примеры: Front Page, Netscape Composer.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Web-браузер"> <p>Web-браузер</p>
+</dt>
+  <dd>
+  <p>см. Браузер.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Web-сайт"> <p>Web-сайт</p>
+</dt>
+  <dd>
+  <p>см. Сайт.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Web-сервер"> <p>Web-сервер</p>
+</dt>
+  <dd>
+  <p>компьютер со специальным программным обеспечением, обеспечивающий доступ многих пользователей к расположенной на нем информации.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Web-страница (HTML-документ)"> <p>Web-страница (HTML-документ)</p>
+</dt>
+  <dd>
+  <p>логическая единица Интернет (точнее, Всемирной паутины), однозначно определяемая адресом (URL). Физически представляет собой HTML-файл. Может содержать текст, изображения, аудио-  и видеофрагменты, Java-апплеты и другие элементы. Web-cтраница может быть статической или динамически сгенерированной (примеры динамических страниц — перечни результатов, выдаваемые поисковыми машинами). В случае использования фреймов, каждый фрейм рассматривается в качестве отдельной страницы. Страницы загружаются и просматриваются пользователем на свой компьютер с помощью браузера. Логически связанная совокупность web-страниц образует сайт.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Web-узел"> <p>Web-узел</p>
+</dt>
+  <dd>
+  <p>— см. Сайт.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Wi-Fi"> <p>Wi-Fi</p>
+</dt>
+  <dd>
+  <p>стандарт высокоскоростной передачи данных по беспроводным сетям (от 11 до 20 Мегабит в секунду).</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="ruby"> <p>ruby</p>
+</dt>
+  <dd>
+  <p>тест после установки</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Аккаунт (синоним: экаунт — от англ. account )"> <p>Аккаунт (синоним: экаунт — от англ. account )</p>
+</dt>
+  <dd>
+  <p>учётная запись, личный счёт) — учётная запись, содержащая сведения, которые сообщает о себе пользователь при регистрации в определенном сервисе (сайте). Кроме учетных данных аккаунта содержит множество настроек и опций для работы с данным сервисом. Говоря простым языком, аккаунт — свой личный раздел (кабинет) в сервисе.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Акт сдачи-приемки работ"> <p>Акт сдачи-приемки работ</p>
+</dt>
+  <dd>
+  <p>документ, заверенный подписями Сторон, свидетельствующий об отсутствии претензий и замечаний у Клиента к  Результату всех работ. Предоставляется вместе с Результатом всех работ. Сдача-приемка Результатов всех работ является основанием для выставления Исполнителем счета для окончательных расчетов между Клиентом и Исполнителем.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Апплет"> <p>Апплет</p>
+</dt>
+  <dd>
+  <p>см. Applet.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="База данных"> <p>База данных</p>
+</dt>
+  <dd>
+  <p>специальное программное обеспечение, предназначенное для организации хранения и доступа к данным (информации). Большинство современных сайтов хранятся именно в базах данных, расположенных на своих серверах.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Баннер"> <p>Баннер</p>
+</dt>
+  <dd>
+  <p>статичное или динамичное изображение, размещаемое на страницах сайта с целью рекламы (продвижения) чего-либо. Стандартный размер баннера 468 на 60 пикселов.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Браузер (Browser)"> <p>Браузер (Browser)</p>
+</dt>
+  <dd>
+  <p>клиентская программа для работы вo Всемирной Паутине (WWW). Позволяет пользователю просматривать содержание web-страниц. Браузер обращается к web-серверу (сайту), запрашивает HTML-документ, интерпретирует полученную информацию и отображает документ на экране компьютера. Браузеры делятся на графические и текстовые. Последний вариант браузеров, примером которого является Lynx, в настоящее время практически полностью вышли из употребления. Примеры браузеров: Mosaic, Netscape Navigator, Internet Explorer, Opera, Mozilla.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Бриф"> <p>Бриф</p>
+</dt>
+  <dd>
+  <p>документ, создаваемый Исполнителем в соответствии с 
+пожеланиями Клиента. После утверждения и подписания Сторонами Бриф 
+становится неотъемлемой частью настоящего Договора. В Брифе описываются:</p>
+<ol>
+  <li>задача проекта (цель проекта),</li>
+  <li>требования к Дизайну Сайта,</li>
+  <li>содержание Сайта,</li>
+  <li>технологические требования,</li>
+  <li>требования к системе администрирования,</li>
+  <li>Информационные материалы,</li>
+  <li>документы и прочие сведения,</li>
+  <li>необходимые Исполнителю для надлежащего исполнения обязательств по</li>
+  <li>настоящему Договору, включая объем такой информации и сведений,</li>
+  <li>порядок и срок их предоставления Клиентом”,</li>
+  <li>этапы работы и сроки,</li>
+  <li>иные данные, которые Стороны сочтут необходимым указать.</li>
+</ol>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Всемирная паутина (World Wide Web — WWW)"> <p>Всемирная паутина (World Wide Web — WWW)</p>
+</dt>
+  <dd>
+  <p>приложение Интернет, в основе которого лежит гипертекст. Позволяет пользователю получить доступ к огромному массиву документов, расположенных на web-серверах по всему миру, и легко перемещаться между ними с помощью гиперссылок. Наполнение Всемирной паутины составляют текстовые материалы и все виды объектов мультимедиа (изображения, аудио- и видеофайлы, анимация и др.). В настоящее время Всемирная паутина представляет собой место, где все общественные институты и частные граждане размещают собственные электронные представительства, многие из которых выполняют традиционно присущие им функции в условиях цифровой среды.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Гигабайт"> <p>Гигабайт</p>
+</dt>
+  <dd>
+  <p>единица измерения количества информации, равная 1024 мегабайтам. См. также Килобайт, Мегабайт.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Гиперссылка (Hyperlink)"> <p>Гиперссылка (Hyperlink)</p>
+</dt>
+  <dd>
+  <p>слово или изображение в электронном документе, содержащие ссылку на другие файлы, Щелчок «мышью», по гиперссылке позволяет перейти к другому файлу или фрагменту электронного документа. Как правило, гиперссылки выделяются цветом. При наезде на них «мышью», вместо стрелки появляется изображение руки с указательным пальцем.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Гипертекст (Hypertext)"> <p>Гипертекст (Hypertext)</p>
+</dt>
+  <dd>
+  <p>начальная (титульная) страница web-сайта. На главной странице размещаются общие сведения о сайте с указанием того, что представлено во всех его разделах. Внешние ссылки на ресурс, как правило, делаются именно на главную страницу, поэтому число ее посещений намного больше, чем любых других страниц сайта.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Дизайн (Дизайн-концепция) мобильного приложения"> <p>Дизайн (Дизайн-концепция) мобильного приложения</p>
+</dt>
+  <dd>
+  <p>уникальное графическое оформление  мобильного приложения и способы представления информации.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Директория"> <p>Директория</p>
+</dt>
+  <dd>
+  <p>см. Справочник.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Домен (Domain)"> <p>Домен (Domain)</p>
+</dt>
+  <dd>
+  <p>см. Доменное имя.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Доменное имя (доменный адрес)"> <p>Доменное имя (доменный адрес)</p>
+</dt>
+  <dd>
+  <p>уникальный текстовый идентификатор компьютера (хоста), подключенного к Интернет. Состоит из слов, написанных латинскими буквами и разделённых точками. Пробелов и других знаков препинания в доменных именах нет. Каждому доменному имени соответствует определенный IP-адрес или несколько IP-адресов. Например, доменному имени www.rbc.ru соответствует IP-адрес <code class="language-plaintext highlighter-rouge">194.186.36.150</code>. Доменные имена являются составляющей частью URL, указывающих на конкретные web-страницы. Доменные имена преобразовываются в IP-адреса службой DNS. Система доменных имен создана для удобства пользователей, которым легче запомнить доменный адрес (например, www.harvard.edu, www.fbi.gov, www.louvre.fr или www.ddt.ru), чем числовые значения IP-адресов. Регистрацией доменных имен занимается InterNIC (представитель в России — РОСНИИРОС). Регистрация доменного адреса означает внесение его и соответствующего ему IP-адреса в базу данных DNS-сервера.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Закладки (Bookmarks)"> <p>Закладки (Bookmarks)</p>
+</dt>
+  <dd>
+  <p>сервисная функция браузеров, позволяющая пользователю создавать перечень примечательных Интернет-ресурсов. Щелчок “мышью” по закладке вызывает загрузку данной страницы на компьютере пользователя. В браузере Internet Explorer закладки именуются “Избранное” (Favorites).</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Зеркало (Mirror site)"> <p>Зеркало (Mirror site)</p>
+</dt>
+  <dd>
+  <p>копии целых сайтов или отдельных ресурсов на различных серверах. Служат для распределения нагрузки между основным сервером и локальными серверами, а также для обслуживания местных сетей.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Интернет (Internet)"> <p>Интернет (Internet)</p>
+</dt>
+  <dd>
+  <p>глобальная компьютерная сеть, объединяющая компьютерные сети, взаимодействующие посредством протоколов TCP / IP.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Информационная система (ИС)"> <p>Информационная система (ИС)</p>
+</dt>
+  <dd>
+  <p>совокупность содержащейся в базах данных информации и обеспечивающих ее обработку информационных технологий и технических средств</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Информационные материалы (контент)"> <p>Информационные материалы (контент)</p>
+</dt>
+  <dd>
+  <p>текстовые, графические, аудио-, видео-, фото-, а также иные материалы на различных носителях (электронных, бумажных и пр.), необходимые Исполнителю для разработки Дизайна и Сборки Сайта. Информационные материалы предоставляются Клиентом. Факт предоставления Информационных материалов фиксируется Актом приема-передачи Информационных материалов, подписываемым Сторонами. В случае создания Исполнителем материалов для Сайта, об этом указывается в настоящем Договоре и/или Брифе. Переводы Информационных материалов для языковых версий Сайта, если таковые предусмотрены настоящим Договором, осуществляются Клиентом самостоятельно и за свой счет.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Каталог"> <p>Каталог</p>
+</dt>
+  <dd>
+  <p>см. Справочник.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Килобайт"> <p>Килобайт</p>
+</dt>
+  <dd>
+  <p>единица измерения количества информации, равная 1024 байтам. Байт — основная единица измерения количества информации. Например, один символ русского алфавита занимает в памяти ЭВМ один байт.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Клиент"> <p>Клиент</p>
+</dt>
+  <dd>
+  <p>компьютер, который потребляет ресурсы других компьютеров сети, прежде всего, серверов. Также — программа, вырабатывающая запросы на доступ к удаленным ресурсам и передающая их по сети на определенный компьютер.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Клиентская часть"> <p>Клиентская часть</p>
+</dt>
+  <dd>
+  <p>та часть или модуль программы или комплекса программ, построенной по архитектуре «клиент-сервер», которая инициирует вызовы.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Клик — (Click)."> <p>Клик — (Click).</p>
+</dt>
+  <dd>
+  <p>Щелчок кнопкой “мыши” по какому-либо элементу электронного документа, приводящий к загрузке определенной информации.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Кодировка (Encoding)"> <p>Кодировка (Encoding)</p>
+</dt>
+  <dd>
+  <p>соответствие между символами (язык людей) и числами (язык компьютеров). Одни и те же числа можно превратить в символы различных алфавитов. Чтобы изменить правило превращения цифры в буквы, выберите в меню Вид Internet Explorer пункт Вид кодировки. В Internet наиболее используемы следующие кодировки русского алфавита КОИ8-Р и Win1251.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Контекстное меню"> <p>Контекстное меню</p>
+</dt>
+  <dd>
+  <p>список возможных действий, который появляется при нажатии на объект правой кнопкой “мыши”. Для каждого объекта список свой.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Контент — (Content) — содержание."> <p>Контент — (Content) — содержание.</p>
+</dt>
+  <dd>
+  <p>Под данным термином чаще всего понимается содержательное наполнение электронных ресурсов, например, web-сайтов.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Куки (Cookies)"> <p>Куки (Cookies)</p>
+</dt>
+  <dd>
+  <p>элемент данных, которыми web-сервер помечает конкретный браузер при его посещении. При следующем визите сервер уже “узнает” пользователя и может предложить ему информацию с учетом заявленных прежде пристрастий или, наоборот, не показывать клиенту те данные (например, рекламный баннер), которые он уже видел. Cookies не способны читать диск  компьютера пользователя. Некоторые их значения хранятся только в течение одного сеанса работы с сервером и удаляются после закрытия браузера. Другие записываются в файл и хранятся на жестком диске в специальных директориях.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Кэш – (Cache — «тайный запас»)"> <p>Кэш – (Cache — «тайный запас»)</p>
+</dt>
+  <dd>
+  <p>системная папка, в которую компьютер записывает все документы, полученные пользователем из Сети. При запросе документа вторично, показывается содержимое кэша. Наиболее эффективно кэширование, производимое прокси-сервером, который хранит документы, полученные из Интернет всеми сотрудниками организации. Обращение к кэшу в случае повторного запроса одного и того же документа позволяет не только снизить трафик, но и увеличивает скорость предоставления данных клиенту. Единственным недостатком кэширования является возможность получения старой версии документа в случае, если документ на удаленном сервере изменился, а кэш еще содержит старую версию. Прокси-сервер использует весьма сложный алгоритм определения степени устаревания документов, поэтому в большинстве случаев пользователь все же получает самую свежую версию документа. См. также Прокси-сервер.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Маршрутизатор (Router)"> <p>Маршрутизатор (Router)</p>
+</dt>
+  <dd>
+  <p>устройство, обеспечивающее оптимальную передачу коммутационных пакетов от сервера к серверу в конечный пункт назначения. Путешествуя от клиента до сервера и обратно, данные проходят через множество маршрутизаторов. Каждый из них просматривает заголовок пакета и определяет его оптимальный путь  и осуществляет его пересылку. Таким образом, маршрутизаторы выполняют в Интернет роль регулировщиков движения потоков данных.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Машина поисковая (Search engine) синонимы: поисковая система, поисковый сервер, “искалка”)"> <p>Машина поисковая (Search engine) синонимы: поисковая система, поисковый сервер, “искалка”)</p>
+</dt>
+  <dd>
+  <p>инструмент для поиска информации в Интернет. Поисковые машины состоят из двух основных частей: программы-робота и индексного файла (базы данных). Робот сканирует сайты Интернет, выгружая web-страницы на базовый компьютер, где производится их индексирование. Учитываются не только тексты, но и иллюстрации, а также аудио- и видеофайлы. Пользователь, вводя состоящий из ключевых слов запрос, обращается к индексному файлу и получает в ответ перечень страниц, содержащих искомые термины. По территориальному охвату поисковые машины различаются на глобальные и локальные (национальные или отраслевые).</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Мегабайт"> <p>Мегабайт</p>
+</dt>
+  <dd>
+  <p>единица измерения количества информации, равная 1024 килобайтам. См. также <a href="#Килобайт">Килобайт</a>.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Мобильное приложение"> <p>Мобильное приложение</p>
+</dt>
+  <dd>
+  <p>программа ЭВМ разработанная для портативных устройств с использованием специальных средств и программных языков и предназначенные для запуска и работы на мобильных телефонах и планшетных ЭВМ.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Портал — (Portal)"> <p>Портал — (Portal)</p>
+</dt>
+  <dd>
+  <p>Интернет-сайт, предоставляющий максимально широкий спектр услуг, соответствующих потребностям среднестатистического пользователя Сети. В перечень предоставляемых сервисов, как правило, входят поиск информации, бесплатная электронная почта, новостная лента, прогноз погоды, сведения о курсах валют, перечень ссылок на сетевые ресурсы и др. В большинстве случаев у порталов есть также значительное собственное содержательное наполнение. Цель порталов – в создании места в Сети, с которого большое число пользователей регулярно начинает свою работу в Интернет и которые поэтому служат привлекательным местом для размещения рекламы. Порталами могут считаться сайты, имеющие стабильно высокую посещаемость. Большинство порталов сформировано вокруг поисковых машин и справочников Интернет-ресурсов. Помимо универсальных порталов, рассчитанных на всех пользователей без ограничения, существуют отраслевые (тематические) порталы, четко ориентированные на потребности определенной группы пользователей. Примеры: Yahoo!, Яндекс, КМ.RU, AUTO.RU.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Посещаемость"> <p>Посещаемость</p>
+</dt>
+  <dd>
+  <p>количество посетителей web-сайта за определенную единицу времени. Является ключевой характеристикой при определении рейтинга сайта для участия в баннерных сетях и иных проектах по продвижению сайта. До настоящего времени единых подходов измерения посещаемости еще не выработано. Для оценки числа «уникальных посетителей» обычно используется анализ IP-адресов или функция Cookie. См. также <a href="#Трафик (англ. — Traffic)">Трафик</a>.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Почтовый адрес"> <p>Почтовый адрес</p>
+</dt>
+  <dd>
+  <p>идентификатор почтового ящика пользователя. Образуется из имени пользователя и доменного имени почтового сервера, разделенных символом @ (коммерческая “эт”). Например: stepanov@shpl.ru, ivanov@inbox.ru, info@inion.ru. В интранет-сетях организаций регистрация почтового адреса выполняется системным администратором, на бесплатных почтовых серверах — самими пользователями.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Почтовый сервер"> <p>Почтовый сервер</p>
+</dt>
+  <dd>
+  <p>сервер, обеспечивающий прием-передачу и маршрутизацию персональных электронных писем пользователей. Организация почтового сервера требует установки на компьютер соответствующего программного обеспечения, например, Mdaemon. Электронная почта является основным средством общения в Интернет.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Провайдер"> <p>Провайдер</p>
+</dt>
+  <dd>
+  <p>см. ISP.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Программа ЭВМ"> <p>Программа ЭВМ</p>
+</dt>
+  <dd>
+  <p>представленная в объективной форме совокупность данных и команд, 
+предназначенных для функционирования ЭВМ и других компьютерных устройств 
+в целях получения определенного результата, включая подготовительные материалы, 
+полученные в ходе разработки программы для ЭВМ, и порождаемые ею 
+аудиовизуальные отображения;</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Программный интерфейс (application program interface или API)"> <p>Программный интерфейс (application program interface или API)</p>
+</dt>
+  <dd>
+  <p>совокупность средств и правил, обеспечивающих взаимодействие информационной системы заказчика (серверной части) и мобильного приложения (клиентской части).</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Прокси-сервер"> <p>Прокси-сервер</p>
+</dt>
+  <dd>
+  <p>(от англ. Proxy — право действия от имени) — промежуточный web-сервер, используемый как посредник между браузером и конечным web-сервером. Прокси-сервер выполняет две основные функции: экономия объема трафика и увеличение скорости доступа к данным за счет кэширования данных на своем локальном диске и обеспечение защиты локальной сети корпорации, например, библиотеки. Использование прокси-сервера способно также привести к экономии IP-адресов, поскольку в этом случае необходим всего лишь один публичный IP-адрес. См. также Кэш.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Промежуточный Акт"> <p>Промежуточный Акт</p>
+</dt>
+  <dd>
+  <p>документ, заверенный подписями Сторон, свидетельствующий об отсутствии претензий и замечаний у Клиента к Промежуточному результату работ. Предоставляется Клиенту вместе с Промежуточным результатом работ. По завершение работ по созданию Брифа единственным документом, подтверждающим отсутствие претензии и замечаний у Клиента к Брифу, является непосредственно сам подписанный Бриф.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Рубрикатор"> <p>Рубрикатор</p>
+</dt>
+  <dd>
+  <p>см. Справочник.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Рунет"> <p>Рунет</p>
+</dt>
+  <dd>
+  <p>российский сегмент Сети. Включает сайты, физически хостирующиеся на территории России, а также русскоязычные и содержательно относящиеся к России зарубежные сайты.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Сайт (Site)"> <p>Сайт (Site)</p>
+</dt>
+  <dd>
+  <p>совокупность логически связанных web-страниц, размещенных, как правило, на одном компьютере.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Сборка приложения"> <p>Сборка приложения</p>
+</dt>
+  <dd>
+  <p>работы по созданию приложения на основе Брифа и утвержденного Дизайна. Сборка включает программирование,  обработку текстовых, графических и иных Информационных материалов  (предоставляемых Клиентом и/или специально создаваемых Исполнителем),  наполнение Сайта Информационными материалами, тестирование Сайта (с  целью проверки корректности его воспроизведения на различных мобильных устройствах), подготовку сопроводительной документации если необходимо.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Сервер"> <p>Сервер</p>
+</dt>
+  <dd>
+  <p>компьютер, который предоставляет свои ресурсы другим компьютерам сети, либо программа, которая обслуживает запросы на доступ к ресурсам своего компьютера.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Серверная часть программы"> <p>Серверная часть программы</p>
+</dt>
+  <dd>
+  <p>часть или модуль программы или комплекса программ или информационной системы, построенной по архитектуре «клиент-сервер», которая принимает вызовы со стороны клиентской части.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Спам"> <p>Спам</p>
+</dt>
+  <dd>
+  <p>см.Spam.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Справочник (Web-directory, синонимы: Директория, Каталог, Рубрикатор)"> <p>Справочник (Web-directory, синонимы: Директория, Каталог, Рубрикатор)</p>
+</dt>
+  <dd>
+  <p>систематизированный перечень Интернет-ресурсов, имеющий иерархическую структуру и, фактически, представляющий собой систематический каталог Интернет-ресурсов. Объектом описания являются в большинстве случаев целые сайты или их большие разделы. Описания ресурсов включают название сайта, его адрес (URL) и аннотацию. Работа по классификации и аннотированию ресурсов производится вручную редакторами разделов. Каталоги делятся на универсальные и специализированные (отраслевые), а также на глобальные и национальные (региональные). С помощью справочников выполняется поиск ресурсов (сайтов), определенной тематики путем перехода от более общих его разделов, к более частным. Пример глобального справочника универсального характера: Yahoo!.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Трафик (англ. — Traffic)"> <p>Трафик (англ. — Traffic)</p>
+</dt>
+  <dd>
+  <p>поток (объем) информации, прошедший через канал связи или объем переданной/посланной информации. Измеряется в мегабайтах. Иногда в понятие трафик вкладывается число посещений web-сайта (или его конкретной страницы) за определенный промежуток времени. См. также Посещаемость.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Тэг — (Tag, синоним: метка)"> <p>Тэг — (Tag, синоним: метка)</p>
+</dt>
+  <dd>
+  <p>команда языка разметки гипертекста. Большинство тэгов заключенно в угловые скобки и употребляется в парах, то есть имеют открывающую и закрывающую метку, которые обозначают, соответственно, начало и конец области действия: например ,</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Хостинг (Hosting, Web-hosting, Collocation, синоним — web-хостинг)"> <p>Хостинг (Hosting, Web-hosting, Collocation, синоним — web-хостинг)</p>
+</dt>
+  <dd>
+  <p>размещение web-сайта на внешнем сервере, в отличие от размещения на собственном компьютере, физически расположенном внутри организации (например, библиотеки).</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+  <dt id="Электронная почта (E-mail)"> <p>Электронная почта (E-mail)</p>
+</dt>
+  <dd>
+  <p>приложение Интернет, позволяющее обмениваться сообщениями в электронной форме с помощью компьютерных сетей. Наиболее распространенный способ общения в Интернет. В настоящее время по электронной почте можно пересылать не только текст, но и все другие виды данных приложениями к письмам. Сами письма ныне в состоянии поддерживать все операции со шрифтами, включать фон, таблицы и иллюстрации.</p>
+
+  
+ 
+  <!-- <ol>
+    
+  </ol> -->
+</dd>
+  
+</dl>]]></content><author><name>Алексей С.</name></author><summary type="html"><![CDATA[Часто бывает необходимо подобрать правильно определение для договора или элементарного соглашения, а иногда найти простые слова чтобы объяснить клиенту/партнеру о чем идет речь…]]></summary></entry><entry><title type="html">Дизайн привычных вещей. Дональд Норман</title><link href="https://42point.com/posts/design-privichnih-vechey" rel="alternate" type="text/html" title="Дизайн привычных вещей. Дональд Норман" /><published>2020-05-30T19:00:00+00:00</published><updated>2020-05-30T19:00:00+00:00</updated><id>https://42point.com/posts/design-privichnih-vechey</id><content type="html" xml:base="https://42point.com/posts/design-privichnih-vechey"><![CDATA[<p>С одной стороны, книгу нужно бы прочитать каждому дизайнеру интерфейсов и промышленному дизайнеру, что бы понять какую боль могут приносить их разработки будущим пользователям. С другой стороны — ни за что не порекомендую покупать именно это издание.</p>
+
+<!--more-->
+
+<p>Во-первых, примеры безнадёжно устарели, лично я сдался когда в очередной раз прочитал:</p>
+
+<blockquote>
+  <p>Эксплуатация многих систем заметно улучшается после того, как незаметные детали становятся заметными. <strong>Рассмотрим видеомагнитофон</strong>.</p>
+</blockquote>
+
+<p>Видеомагнитофон! Да, у меня все еще лежат пара кассет, которые я так и не оцифровал, но разбирать кейсы с улучшением видеомагнитофона? В 2020 году? Или погружаться в проблемы использования телефонного аппарата из середины 80-х, а что скажете про сложности управления диапроектором?</p>
+
+<p>Вторая проблема, автор внезапно переключается от вопросов дизайна к вопросам психологии и нейробиологии, причем, к уровню знаний середины 80-х (опять же) а потом обратно. Такие резкие переходы тяжеловатые воспринимать когда вы читаете книгу о <strong>дизайне</strong>, хотя автор и заявляет в предисловии что изначальное название было “Психология привычных вещей”.</p>
+
+<h3 id="почему-же-я-сделаю-третью-попытку-прочесть-эту-книгу">Почему же я сделаю третью попытку прочесть эту книгу?</h3>
+
+<p>Существует обновленное издание от 2013 года, в котором как заявляет автор учтены изменения и распространение технологий, новые концепции и изменение самого позиционирования автора — от ученого к руководителю.</p>
+
+<p>Книга в первых главах передает всю боль которую испытывают пользователи физических и цифровых продуктов. По своему опыту знаю как тяжело бывает донести мысль до дизайнеру что решение которое предложено мягко говоря не самое лучшее, а иногда просто издевательское.</p>
+
+<p>Книга обращает внимание на принципы хорошего дизайна которые стоит помнить каждому разработчику. Под разработчиком я подразумеваю дизайнера, менеджера и программисте. Концентрирует внимание на четырех его элементах:</p>
+
+<h5 id="назначение">назначение</h5>
+
+<blockquote>
+  <p>Хороший дизайнер делает приемлемые действия заметными, а неприемлемые — незаметными”</p>
+</blockquote>
+
+<h5 id="ограничители">ограничители</h5>
+
+<blockquote>
+  <p>Чтобы сделать вещь простой в применении, нужно исключить все возможные неверные действия, то есть ограничить их выбор.</p>
+</blockquote>
+
+<h5 id="соответствие">соответствие</h5>
+
+<blockquote>
+  <p>означает связь между двумя вещами, в данном случае между органами управления и результатом их использования</p>
+</blockquote>
+
+<h5 id="обратная-связь">обратная связь</h5>
+
+<blockquote>
+  <p>получаемая пользователем информация о действии и его результате. Очень важно, чтобы был виден результат действия. Отсутствие обратной связи порождает ненужные домыслы.</p>
+</blockquote>
+
+<p>А также на про фундаментальным принципы дизайна вещей:
+наличие ясной концептуальной модели:</p>
+
+<blockquote>
+  <p>“Если в основе вещи лежит ясная концептуальная модель, мы можем предсказать результат действий с нею. Если такая модель скрыта от потребителя, он работает вслепую: выполняет действия по инструкции, но не знает, чего ждать от предмета и почему и что делать, если что-то выйдет из строя.”
+наглядность
+“отличный дизайн предполагает гармонию и баланс между эстетической красотой, надежностью и безопасностью, практичностью, ценой и функциональными возможностями.”</p>
+</blockquote>
+
+<h4 id="еще-несколько-мыслей-и-цитат">Еще несколько мыслей и цитат:</h4>
+
+<blockquote>
+  <p>“Технари смотрят только вперед, поэтому снова и снова повторяют ошибки прошлого.”</p>
+</blockquote>
+
+<p>Интересное замечание про разработку промышленного дизайна:</p>
+
+<blockquote>
+  <p>“Обычно на разработку хорошего дизайна приходится пять-шесть попыток”… “Но если с самого начала эта продукция терпит крах, то ни вторая, ни даже третья презентация не смогут спасти ее репутацию.”</p>
+</blockquote>
+
+<p>Вопрос который часто встает при разработке новой функции:</p>
+
+<blockquote>
+  <p>“Если ошибка возможна, кто-то обязательно ее допустит. Дизайнер должен предусмотреть все возможные ошибки и постараться свести к минимуму вероятность их появления. Ошибки должны быть легко распознаваемы и по возможности обратимы и не должны приводить к серьезным последствиям.”</p>
+</blockquote>
+
+<blockquote>
+  <p>“Явление, называемое приобретенной беспомощностью, помогает объяснить причину самообвинения. Оно относится к случаям, когда вследствие многочисленных безрезультатных попыток человек начинает думать, что задание для него непосильно, и считает себя беспомощным”… “Чаще всего причина появления этого чувства — обычные неприятности, которые нередко воспринимаются как предвестник затяжной депрессии.”</p>
+</blockquote>
+
+<p>О подходе к знанию:</p>
+
+<blockquote>
+  <p>“Существует два вида знаний: знания что и знания как. Знания что (психологи называют их декларативным знанием) — это факты и правила. «На красный свет проезда нет», «Нью-Йорк находится почти на одной широте с Мадридом», «Чтобы вынуть ключ из замка зажигания, нужно включить заднюю передачу». Декларативные знания легко записать и выучить. Знания как (психологи называют их процедурным знанием) — это знания, которые делают возможными игру на музыкальном инструменте, торможение автомобиля на скользкой дороге, ответ на подачу в теннисе или внятное проговаривание скороговорки «Карл у Клары украл кораллы». Процедурные знания сложно или даже невозможно записать и тем более выучить. Такие знания поддаются изучению только через демонстрацию и практику. Даже лучшие учителя не могут описать свои действия. Процедурные знания содержатся в подсознании.”</p>
+</blockquote>
+
+<p>О подходах к запоминанию</p>
+
+<blockquote>
+  <p>“Механическое запоминание вызывает множество проблем. Во-первых, так как вся информация, которая вносится в память, случайна, возникают проблемы с ее запоминанием: на это требуется больше времени и сил. Во-вторых, если возникают сложности, механическое запоминание алгоритма действий не может подсказать, в чем ошибка и что нужно сделать для устранения проблемы.”</p>
+</blockquote>
+
+<p>Ну и то с чем можно поспорить:</p>
+
+<blockquote>
+  <p>“Если дизайн полагается на надписи, он может быть ошибочным. Надписи по-своему важны и часто необходимы, но естественное соответствие значительно снижает потребность в них. Если без надписей нельзя, меняйте дизайн.”</p>
+</blockquote>]]></content><author><name>Алексей С.</name></author><category term="review" /><category term="books" /><summary type="html"><![CDATA[С одной стороны, книгу нужно бы прочитать каждому дизайнеру интерфейсов и промышленному дизайнеру, что бы понять какую боль могут приносить их разработки будущим пользователям. С другой стороны — ни за что не порекомендую покупать именно это издание.]]></summary></entry><entry><title type="html">Как работать с мета-данными в appstore connect</title><link href="https://42point.com/posts/udobnyj-sposob-raboty-s-meta-v-app-store" rel="alternate" type="text/html" title="Как работать с мета-данными в appstore connect" /><published>2019-09-14T19:52:54+00:00</published><updated>2019-09-14T19:52:54+00:00</updated><id>https://42point.com/posts/udobnyj-sposob-raboty-s-meta-v-app-store</id><content type="html" xml:base="https://42point.com/posts/udobnyj-sposob-raboty-s-meta-v-app-store"><![CDATA[<p>В отличии от Google Play Console, Appstore Connect крайне недружелюбен к менеджеру которому нужно подготовить материалы на нескольких языках для публикации новых версий приложения.</p>
+
+<!--more-->
+
+<p>Поэтому спасением при большом количестве приложение и частых релизах может выступить <a href="https://docs.fastlane.tools/actions/deliver/">Fastlane Deliver</a>. Инструмент позволит автоматизировать:</p>
+
+<ol>
+  <li>Загрузку, буквально, сотен скриншотов для разных языков и платформ.</li>
+  <li>Обновление текcтовой мета-информации для каждого из языков отдельно: keywords, description, release_notes, name etc.</li>
+  <li>Обновление данных in-app покупок</li>
+  <li>Переиспользование текущих данных</li>
+</ol>
+
+<h2 id="как-работать-с-этим">Как работать с этим?</h2>
+
+<p>К сожалению какое-то понимание работы с командной строкой быть должно, хотя бы до уровня “<em>запустить вот эти вот команды</em>”.</p>
+
+<h2 id="setup">Setup</h2>
+
+<ol>
+  <li>Установить xcode. Да, это неизбежное зло.</li>
+  <li>Установить fastlane, самый простой способ через <a href="https://brew.sh/">Homebrew — The Missing Package Manager for macOS (or Linux)</a>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew cask <span class="nb">install </span>fastlane
+</code></pre></div>    </div>
+  </li>
+  <li>Перейти в папку проекта
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>PROJECT-meta
+<span class="nb">cd </span>PROJECT-meta
+</code></pre></div>    </div>
+  </li>
+  <li>Инициализируем проект fastlane:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fastlane init
+</code></pre></div>    </div>
+  </li>
+  <li>Скачиваем существующие метаданные:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Fastlane deliver
+</code></pre></div>    </div>
+    <p>В процессе естественно нужно будет указать креденшиалс и Bundle ID вашего приложения.
+Команда успешно скачивает все данные и создает структуру папок под языки и скриншоты <a href="/assets/images/uploads/2019/finder.png"><img src="/assets/images/uploads/2019/finder.png" alt="" /></a></p>
+  </li>
+  <li>Вносим изменения, если нужно</li>
+  <li>Создаем новую версию в Appstore (можно просто поменять значение <code class="language-plaintext highlighter-rouge">app_version</code> в Deliverfile).</li>
+  <li>Запускаем:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fastlane deliver
+</code></pre></div>    </div>
+    <p>Команда уточнит от чьего имени и что именно вы загружаете а также предложит просмотреть превью всей мета информации.</p>
+  </li>
+  <li>Подтверждайте превью, немного ожидания и PROFIT!</li>
+</ol>
+
+<p>В командной строке получите приятный отчет:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>20:54:07]: ✅  Passed: No negative  sentiment
+<span class="o">[</span>20:54:07]: ✅  Passed: No placeholder text
+<span class="o">[</span>20:54:07]: ✅  Passed: No mentioning  competitors
+<span class="o">[</span>20:54:07]: ✅  Passed: No future functionality promises
+<span class="o">[</span>20:54:07]: ✅  Passed: No words indicating <span class="nb">test </span>content
+<span class="o">[</span>20:54:07]: ✅  Passed: No curse words
+<span class="o">[</span>20:54:07]: ✅  Passed: No words indicating your IAP is free
+<span class="o">[</span>20:54:07]: 😵  Failed: Incorrect, or missing copyright <span class="nb">date</span>→ using a copyright <span class="nb">date </span>that is any different from this current year, or missing a <span class="nb">date</span>
+<span class="o">[</span>20:54:31]: ✅  Passed: No broken urls
+</code></pre></div></div>
+
+<p>В нашем случае при локализации на 8 языков экономия составит до 2 часов времени.</p>
+
+<h2 id="дополнительно">Дополнительно</h2>
+
+<p>Рекомендую также настроить:</p>
+
+<h3 id="appfile">Appfile</h3>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">app_identifier</span><span class="p">(</span><span class="s2">"you app bundle id"</span><span class="p">)</span> <span class="c1"># The bundle identifier of your app</span>
+<span class="n">apple_id</span><span class="p">(</span><span class="s2">"your apple id"</span><span class="p">)</span> <span class="c1"># Your Apple email address</span>
+</code></pre></div></div>
+
+<h3 id="deliverfile">Deliverfile</h3>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">app_version</span> <span class="s2">"2.6.8"</span>
+<span class="n">submit_for_review</span> <span class="kp">true</span>
+<span class="n">force</span> <span class="kp">true</span> <span class="c1"># Set to true to skip PDF verification</span>
+<span class="n">phased_release</span> <span class="kp">true</span>
+<span class="n">skip_screenshots</span> <span class="kp">false</span>
+<span class="n">use_live_version</span> <span class="kp">false</span> <span class="c1"># use current meta</span>
+<span class="n">automatic_release</span> <span class="kp">false</span>
+
+<span class="n">precheck_include_in_app_purchases</span> <span class="kp">false</span> <span class="c1"># если не используете inapp</span>
+</code></pre></div></div>]]></content><author><name>Алексей С.</name></author><category term="apple" /><category term="appstore" /><category term="автоматизация" /><summary type="html"><![CDATA[Немного магии на каждый день]]></summary></entry><entry><title type="html">Как отобразить скрытые файлы в Finder</title><link href="https://42point.com/posts/hidden-files-finder" rel="alternate" type="text/html" title="Как отобразить скрытые файлы в Finder" /><published>2018-02-20T09:34:38+00:00</published><updated>2018-02-20T09:34:38+00:00</updated><id>https://42point.com/posts/hidden-files-finder</id><content type="html" xml:base="https://42point.com/posts/hidden-files-finder"><![CDATA[<p>Внезапное открытие после 8 лет использования Macbook –
+<code class="language-plaintext highlighter-rouge">⌘+⇧+.</code> отображает скрытые файлы в Finder.</p>
+
+<p><a href="/assets/images/uploads/2018/02/hidden-files-in-finder.gif"><img src="/assets/images/uploads/2018/02/hidden-files-in-finder.gif" alt="finder" /></a></p>]]></content><author><name>Alexey S</name></author><category term="macos" /><summary type="html"><![CDATA[Внезапное открытие после 8 лет использования Macbook – ⌘+⇧+. отображает скрытые файлы в Finder.]]></summary></entry><entry><title type="html">Как временно отключить заставку и сон вашего Macbook</title><link href="https://42point.com/posts/terminal-energy-and-display" rel="alternate" type="text/html" title="Как временно отключить заставку и сон вашего Macbook" /><published>2018-02-18T05:39:18+00:00</published><updated>2018-02-18T05:39:18+00:00</updated><id>https://42point.com/posts/terminal-energy-and-display</id><content type="html" xml:base="https://42point.com/posts/terminal-energy-and-display"><![CDATA[<p>Представим, у вас важная презентация и нужно запретить mac’у отключать дисплей, или вы смотрите новую серию Игры престолов и не хочется все время дергать курсор, дабы дисплей не погас. Или выполняется важный расчет который остановиться если Macbook заснет. Может помочь маленькое бесплатное приложение <a href="https://intelliscapesolutions.com/apps/caffeine">Caffeine</a> или можно воспользоваться стандартной командой <code class="language-plaintext highlighter-rouge">caffeinate</code> в терминале, которая делает тоже самое но предоставляет больше гибкости.</p>
+
+<!--more-->
+
+<p>Как у любой терминальной команды, у <code class="language-plaintext highlighter-rouge">caffeinate</code> свои ключи:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">-t</span> <span class="c"># таймер в секундах</span>
+<span class="nt">-d</span> <span class="c"># не отключать дисплей</span>
+<span class="nt">-i</span> <span class="c"># не уводить в ситему в сон</span>
+<span class="nt">-m</span> <span class="c"># запрет уводить диски в сон</span>
+<span class="nt">-s</span> <span class="c"># запрет машине уходить в сон когда</span>
+<span class="nt">-u</span> <span class="c"># имитирует дейтсвия текущего пользователя</span>
+</code></pre></div></div>
+
+<p>Как можно использовать?</p>
+
+<h4 id="запретить-уходить-в-сон-в-течении-часа">Запретить уходить в сон в течении часа</h4>
+
+<p><code class="language-plaintext highlighter-rouge">caffeinate -t 3600 &amp;</code></p>
+
+<p>Амперсанд <code class="language-plaintext highlighter-rouge">&amp;</code> позволит выполнить команду в фоне и освободить командную строку для дальнейшего использования.
+Параметр <code class="language-plaintext highlighter-rouge">-t 3600</code> задает таймаут в 3600 секунд что равно 1-му часу.</p>
+
+<h4 id="не-отключать-дисплей-и-не-запускать-заставку">Не отключать дисплей и не запускать заставку</h4>
+
+<p><code class="language-plaintext highlighter-rouge">caffeinate -d</code></p>
+
+<h4 id="не-засыпать-пока-выполняется-скрипт-или-процесс">Не засыпать пока выполняется скрипт или процесс</h4>
+
+<p><code class="language-plaintext highlighter-rouge">caffeinate -i long_running_script.sh</code></p>
+
+<p><a href="https://mac-how-to.gadgethacks.com/how-to/take-control-your-macs-sleep-functions-with-these-commands-0168109/">Take Control of Your Mac’s Sleep Functions with These Commands « Mac Tips :: Gadget Hacks</a></p>]]></content><author><name>Алексей С.</name></author><category term="macos" /><category term="terminal" /><summary type="html"><![CDATA[Управляем питанием и отключением дисплея macOS через terminal]]></summary></entry></feed>

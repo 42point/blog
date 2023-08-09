@@ -1,4 +1,0 @@
----
-slug: origami
-name: origami
----

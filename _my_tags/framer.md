@@ -1,4 +1,0 @@
----
-slug: framer
-name: Framer
----

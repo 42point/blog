@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+--><html lang="ru" class="no-js">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Подход к работе в basecamp (37signals) - [42point]</title>
+<meta name="description" content="Довольно старый но очень познавательный пост в блоге SVN от тогда еще 37signals">
+
+
+  <meta name="author" content="Алексей С.">
+  
+  <meta property="article:author" content="Алексей С.">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ru">
+<meta property="og:site_name" content="[42point]">
+<meta property="og:title" content="Подход к работе в basecamp (37signals)">
+<meta property="og:url" content="https://42point.com/posts/how-basecamp-work">
+
+
+  <meta property="og:description" content="Довольно старый но очень познавательный пост в блоге SVN от тогда еще 37signals">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2023-02-21T00:00:00+00:00">
+
+
+
+
+
+
+<link rel="canonical" href="https://42point.com/posts/how-basecamp-work">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://42point.com/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="[42point] Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          [42point]
+          <span class="site-subtitle">Version 2.0</span>
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/projects/">Проекты</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/lists/books/">Книги</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/tools/">Инструменты</a>
+            </li>
+</ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Выпадающее меню</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio.jpg" alt="Алексей С." itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Алексей С.</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Мобильные продукты и приложения</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Связаться со мной</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Где-то в Москве</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://www.linkedin.com/in/alexey-serpukhovitov-83160539/" rel="nofollow noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Подход к работе в basecamp (37signals)">
+    <meta itemprop="description" content="Довольно старый но очень познавательный пост в блоге SVN, как они сами написали отвечающий на вопросы:">
+    <meta itemprop="datePublished" content="2023-02-21T00:00:00+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Подход к работе в basecamp (37signals)
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 мин на чтение
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> Содержание</h4></header>
+              <ul class="toc__menu">
+<li><a href="#6-%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8">6 недельные итерации</a></li>
+<li><a href="#%D1%8D%D0%BA%D1%81%D1%82%D1%80%D0%B5%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE-%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD%D1%8C%D0%BA%D0%B8%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-2-3-%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0">Экстремально маленькие команды 2-3 человека</a></li>
+<li><a href="#%D0%B2%D1%81%D0%B5-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E-%D0%B2-%D0%BE%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%80%D0%B5%D0%B4%D0%B5">Все работаю в одной среде</a></li>
+<li><a href="#%D0%BF%D0%B8%D1%82%D1%87%D0%B8%D0%BD%D0%B3">Питчинг</a></li>
+<li><a href="#%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA-%D1%86%D0%B8%D0%BA%D0%BB%D0%B0">Запуск цикла</a></li>
+<li><a href="#%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-qa">Как работает QA</a></li>
+<li><a href="#%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BE-%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D1%8F">Вместо заключения</a></li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <p>Довольно старый но очень познавательный пост в <a href="https://m.signalvnoise.com/how-we-set-up-our-work-cbce3d3d9cae" target="_blank">блоге SVN</a>, как они сами написали отвечающий на вопросы:</p>
+
+<blockquote>
+  <p>Как вы парни на самом деле работаете? Как выбираете какими вещами заниматься? Какие у вас команды по размеру? Как вы структурировали вашу работу?</p>
+</blockquote>
+
+<p>То есть в принципе те вопросы которые всегда интересовали их “последователей”. Как же они за счет такого скудного функционал могут разрабатывать свой продукт. Судя по всему процесс у Basecamp эволюционирует, и если на момент публикации поста в 2017, они по словам Джейсона Фрайда на версии <code class="language-plaintext highlighter-rouge">5.2</code> то сейчас, в 2023 версия должна быть близка к <code class="language-plaintext highlighter-rouge">7.0</code>. Что же можно вынести для себя из статьи?</p>
+
+<h2 id="6-недельные-итерации">6 недельные итерации</h2>
+
+<p>Команды в Basecamp работаю по 6-недельным итерациям, каждый цикл содержит проекты 2 типов (автор использует термин <em>batch</em>, переведу это как <em>пачка</em>).</p>
+
+<p><strong>Большая пачка</strong> — проекты которые целиком могут занять весь 6-недельный цикл, обычно они берут 1-2 таких проекта. Для каждого большого проекта существует свой собственный проект в Basecamp где ведется вся коммуникация и документация.</p>
+
+<p><strong>Маленькая пачка</strong> более мелкие проекты улучшения, исправления и понятные инициативы которые могут занять и день и пару недель. Обычно берут 4-8 таких проектов.</p>
+
+<p>После завершения цикла берут 1-2 недели на проекта за пределами расписания, исправления проблем, pet-projects и на подготовку нового цикла.</p>
+
+<p>Интересное замечание что это не спринты:</p>
+
+<blockquote>
+  <p>Note: These are not sprints. I despise the word sprints. Sprints and work don’t go together. This isn’t about running all out as fast as you can, it’s about working calmly, at a nice pace, and making smart calls along the way. No brute force here, no catching our collective breath at the end.</p>
+</blockquote>
+
+<p>Действительно, спринты и готовая работа часто не совпадают. Вернее нормальная работа обычно занимает больше стандартного спринта. Basecamp же ориентирован на результат.</p>
+
+<p>Что можно взять себе:</p>
+
+<ul>
+  <li>Есть время на незапланированную работу и на подготовку нового цикла. Эта Одна из причин почему я не очень верю в спринты по 1 неделе, просто безумные ресурсы уходят зря</li>
+  <li>Есть понимание что проекты могут занимать больше времени.</li>
+  <li>6 недель хватает на любую запланированную фичу, либо, в рамках перерыва между циклами можно понять как уместить в следующие 6 недель работающую фичу. то есть подход к планированию из ограничения.</li>
+</ul>
+
+<h2 id="экстремально-маленькие-команды-2-3-человека">Экстремально маленькие команды 2-3 человека</h2>
+
+<p>Один большой проект — одна команда. Команды собираются на лету и по желанию — кто чем хотел бы заняться. В команде 1-2 программиста и дизайнер (я так понимаю 1 бекэнд, 1 фронт).
+Руководит дизайнер!!! Вера что дизайнер должен уметь затащить разработку меня радует, хотя, далеко не всякому дизайнеру такое под силу.</p>
+
+<blockquote>
+  <p>We only hire designers who are capable of leading projects, but yes, small team sizes help reduce management requirements to begin with. So it’s sort of a 1–2 punch — designers who can lead, small teams.</p>
+</blockquote>
+
+<p>Мне нравится такой подход, и я понимаю почему Basecamp его продвигает — снизить нагрузку на административку, снизить количество менеджеров. И я могу только посоветовать всем бизнесам нанимать дизайнеров и QA-инженеров которые могут потянуть самостоятельную работу.</p>
+
+<h2 id="все-работаю-в-одной-среде">Все работаю в одной среде</h2>
+
+<p>Для “сигналов” это естественно basecamp, считается что разделение команд по инструментам это:</p>
+
+<ul>
+  <li>крайне неэффективно</li>
+  <li>не дает полную картину команде</li>
+</ul>
+
+<p>Что верно но к сожалению не всегда возможно. Если невозможно то что делать? Об этом ниже.</p>
+
+<p>В Basecamp не придерживаются трекинг времени так как считают что бесполезно оценивать запланированные и полученные результаты. Задача в том что есть фиксированный лимит времени — 6 недель. Точка. Можно двигаться внутри если команда успевает или наоборот опаздывает.</p>
+
+<h2 id="питчинг">Питчинг</h2>
+
+<p>Кажется это самая интересная часть процесса. Этот то момент когда идея, откуда бы она не пришла, обретает форму и готова быть представлена. Делается это в текстовом виде по ряду причин:</p>
+
+<ul>
+  <li>питчера не могу прервать, сбить, загнобить пока он не рассказал идею целиком</li>
+  <li>текст позволяет почувствовать <strong>поверхность под ногами</strong>, при написании текста автор лучше её продумает</li>
+  <li>
+<strong>асинхронное взаимодействие</strong>, они не особо любят слеки и личные встречи для работы</li>
+  <li>есть возможность собрать все возможные все комментарии к питчу как единый источник истины</li>
+</ul>
+
+<figure>
+	<a href="/assets/images/uploads/2023/basecamp_pitch.png"><img src="/assets/images/uploads/2023/basecamp_pitch.png"></a>
+	<figcaption><a href="https://public.3.basecamp.com/p/22KB2DCxpEQLZow8Vc2iJhEq" title="Пример питча большого проекта" target="_blank">Пример питча большого проекта</a>.</figcaption>
+</figure>
+
+<h2 id="запуск-цикла">Запуск цикла</h2>
+
+<p>После питчинга, сортировки проектов по пачкам, публикуется пост о запуске где структурирует все работы которые запланированы. Для себя они используют конечно basecamp, один из объединяющих проектов, мне видится что для этого подойдет база знаний (wiki, notion, confluence).</p>
+
+<figure>
+	<a href="/assets/images/uploads/2023/basecamp_cycle.png"><img src="/assets/images/uploads/2023/basecamp_cycle.png"></a>
+	<figcaption>
+		<a href="https://public.3.basecamp.com/p/yCe87HJ5EX1Nx48N3R6fhfHX" title="Пример внутреннего документа" target="_blank"> Пример внутреннего документа</a> с описание больших и меленьких пачек на цикл, дабы было понятно как это выглядит для разработки.
+	</figcaption>
+</figure>
+
+<p>Нравится что это не письмо или сообщение в чате, всегда можно вернуться в прошлое и посмотреть на результат.</p>
+
+<h2 id="как-работает-qa">Как работает QA</h2>
+
+<p>На момент публикации у Basecamp два тестировщика которые переключаются между командами. При это автор озвучивает очевидную мысль — чем раньше подключен тестировщик, тем лучше. За эти годы ничего не изменилось.</p>
+
+<h2 id="вместо-заключения">Вместо заключения</h2>
+
+<p>Меня очень располагает данный процесс, если даже не получается полностью применить его у себя, то можно просто попытаться выбрать самые ключевые моменты и ответить для себя на вопросы:</p>
+
+<ol>
+  <li>Как вы структурируете вашу работу? Отличается ли подход к реализации</li>
+  <li>Как вы выделяете время</li>
+  <li>Как решаете что делать и что не делать?</li>
+  <li>Как доносите до команды новые идеи?</li>
+  <li>Как вы начинаете новый спринт?</li>
+  <li>Где вы общаетесь?</li>
+  <li>Как организована команда или команды? Насколько они оптимальны?</li>
+</ol>
+
+<p>Ну а после, попытаться найти точки для улучшения.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Метки: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/howto" class="page__taxonomy-item" rel="tag">howto</a><span class="sep">, </span>
+    
+      <a href="/tags/management" class="page__taxonomy-item" rel="tag">management</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Разделы: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/work" class="page__taxonomy-item" rel="tag">work</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Дата изменения:</strong> <time datetime="2023-02-21T00:00:00+00:00">2023-02-21</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Поделиться</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%D0%9F%D0%BE%D0%B4%D1%85%D0%BE%D0%B4+%D0%BA+%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B5+%D0%B2+basecamp+%2837signals%29%20https%3A%2F%2F42point.com%2Fposts%2Fhow-basecamp-work" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Поделиться Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F42point.com%2Fposts%2Fhow-basecamp-work" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Поделиться Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2F42point.com%2Fposts%2Fhow-basecamp-work" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Поделиться LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/posts/good-task" class="pagination--pager" title="Что такое хорошая [продуктовая] задача.
+">Предыдущая</a>
+    
+    
+      <a href="/posts/citaty" class="pagination--pager" title="Мысли про работу
+">Следующая</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">Вам также может понравиться</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/citaty" rel="permalink">Мысли про работу
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          менее 1 мин на чтение
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Несколько цитат которые подзацепили когда писал статью про работу basecamp.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/good-task" rel="permalink">Что такое хорошая [продуктовая] задача.
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 мин на чтение
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Небольшое лирическое вступление. Когда-то я играл в баскетбол и тренер беспрестанно вбивал нам в голову — “если твой пас не приняли в этом твоя вина”, или ес...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/telegram-notifications-jenkins" rel="permalink">Уведомления Jenkins в Telegram
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 мин на чтение
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Одно из правил работы с CI — все должны видеть статус сборок, тоесть синхронизация. А что может быть лучше чем уведомление о неудачном, или напротив удачном,...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/playbook-licenses" rel="permalink">Лицензии при разработке программных продуктов софта
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 мин на чтение
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">В разработке ПО часто является разумным использовать уже готовые фреймворки и библиотеки для решения тех или иных задач. Важно помнить, что несмотря на стату...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap">
+<form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Введите поисковый запрос...">
+  </form>
+  <div id="results" class="results"></div>
+</div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Связаться со мной:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="http://twitter.com/d0_n0_evil" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="http://facebook.com/d0.n0.evil" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="http://instagram.com/d0_n0_evil/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/alexey-serpukhovitov-83160539/" rel="nofollow noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> RSS-лента</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">© 2023 [42point]. Сайт работает на <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+  (function (m, e, t, r, i, k, a) {
+    m[i] =
+      m[i] ||
+      function () {
+        (m[i].a = m[i].a || []).push(arguments);
+      };
+    m[i].l = 1 * new Date();
+    (k = e.createElement(t)),
+      (a = e.getElementsByTagName(t)[0]),
+      (k.async = 1),
+      (k.src = r),
+      a.parentNode.insertBefore(k, a);
+  })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(67038760, "init", {
+    clickmap: true,
+    trackLinks: true,
+    accurateTrackBounce: true,
+    webvisor: true,
+  });
+</script>
+<noscript>
+  <div data-proofer-ignore>
+    <img src="https://mc.yandex.ru/watch/67038760" style="position: absolute; left: -9999px" alt="">
+  </div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+      "gtm.start": new Date().getTime(),
+      event: "gtm.js",
+    });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-WVR78RR");
+</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

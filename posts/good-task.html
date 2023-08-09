@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+--><html lang="ru" class="no-js">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Что такое хорошая [продуктовая] задача. - [42point]</title>
+<meta name="description" content="Небольшое лирическое вступление. Когда-то я играл в баскетбол и тренер беспрестанно вбивал нам в голову — “если твой пас не приняли в этом твоя вина”, или если коротко — “Виноват отдающий”. Как ни странно, спустя годы я часто вспоминаю это утверждение в работе с разработчиками, коллегами или топ-менеджментом.">
+
+
+  <meta name="author" content="Алексей С.">
+  
+  <meta property="article:author" content="Алексей С.">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ru">
+<meta property="og:site_name" content="[42point]">
+<meta property="og:title" content="Что такое хорошая [продуктовая] задача.">
+<meta property="og:url" content="https://42point.com/posts/good-task">
+
+
+  <meta property="og:description" content="Небольшое лирическое вступление. Когда-то я играл в баскетбол и тренер беспрестанно вбивал нам в голову — “если твой пас не приняли в этом твоя вина”, или если коротко — “Виноват отдающий”. Как ни странно, спустя годы я часто вспоминаю это утверждение в работе с разработчиками, коллегами или топ-менеджментом.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2020-10-27T13:00:00+00:00">
+
+
+
+
+
+
+<link rel="canonical" href="https://42point.com/posts/good-task">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://42point.com/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="[42point] Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          [42point]
+          <span class="site-subtitle">Version 2.0</span>
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/projects/">Проекты</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/lists/books/">Книги</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/tools/">Инструменты</a>
+            </li>
+</ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Выпадающее меню</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio.jpg" alt="Алексей С." itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Алексей С.</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Мобильные продукты и приложения</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Связаться со мной</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Где-то в Москве</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://www.linkedin.com/in/alexey-serpukhovitov-83160539/" rel="nofollow noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Что такое хорошая [продуктовая] задача.">
+    <meta itemprop="description" content="Небольшое лирическое вступление. Когда-то я играл в баскетбол и тренер беспрестанно вбивал нам в голову — “если твой пас не приняли в этом твоя вина”, или если коротко — “Виноват отдающий”. Как ни странно, спустя годы я часто вспоминаю это утверждение в работе с разработчиками, коллегами или топ-менеджментом.">
+    <meta itemprop="datePublished" content="2020-10-27T13:00:00+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Что такое хорошая [продуктовая] задача.
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 мин на чтение
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> Содержание</h4></header>
+              <ul class="toc__menu">
+<li>
+<a href="#%D0%B1%D0%BB%D0%BE%D0%BA-1-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D1%82%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F">Блок 1: Описание (функциональные требования)</a><ul>
+<li><a href="#%D0%B2-%D1%87%D0%B5%D0%BC-%D0%B8%D0%B4%D0%B5%D1%8F-%D0%B8%D0%B8%D0%BB%D0%B8-%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC%D0%B0">В чем идея и/или проблема?</a></li>
+<li><a href="#%D0%BA%D0%B0%D0%BA-%D1%8F-%D1%8D%D1%82%D0%BE-%D0%BF%D0%BE%D0%BD%D1%8F%D0%BB">Как я это понял?</a></li>
+<li><a href="#%D0%BA%D0%B0%D0%BA-%D0%B8%D0%B7%D0%BC%D0%B5%D1%80%D0%B8%D1%82%D1%8C-%D0%B8-%D0%BE%D1%85%D0%B2%D0%B0%D1%82">Как измерить и охват?</a></li>
+<li><a href="#pr---%D1%80%D0%B0%D1%81%D1%81%D0%BA%D0%B0%D0%B7%D1%8B%D0%B2%D0%B0%D0%B5%D0%BC-%D0%BE-%D1%84%D0%B8%D1%87%D0%B5">PR - рассказываем о фиче</a></li>
+</ul>
+</li>
+<li>
+<a href="#%D0%B1%D0%BB%D0%BE%D0%BA-2-%D0%B4%D0%B5%D1%82%D0%B0%D0%BB%D0%B8-%D0%BD%D0%B5%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D1%82%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F">Блок 2: Детали (нефункциональные требования)</a><ul>
+<li><a href="#%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D1%82%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B8-%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D1%8F">Технические требования и ограничения</a></li>
+<li><a href="#%D1%82%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BA-%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B5">Требования к аналитике</a></li>
+<li><a href="#%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8-%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B0">Спецификации дизайна</a></li>
+<li><a href="#%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA">Обработка ошибок</a></li>
+<li><a href="#%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F">Локализация</a></li>
+<li><a href="#%D0%BF%D1%80%D0%BE%D1%87%D0%B5%D0%B5">Прочее</a></li>
+</ul>
+</li>
+<li><a href="#%D0%BA%D0%B0%D0%BA-%D1%81-%D1%8D%D1%82%D0%B8%D0%BC-%D0%B6%D0%B8%D1%82%D1%8C">Как с этим жить?</a></li>
+<li><a href="#%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D1%83%D1%8E-%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C">Рекомендую посмотреть:</a></li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <p>Небольшое лирическое вступление. Когда-то я играл в баскетбол и тренер беспрестанно вбивал нам в голову — “<strong>если твой пас не приняли в этом твоя вина</strong>”, или если коротко — “<a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B0_(%D0%B1%D0%B0%D1%81%D0%BA%D0%B5%D1%82%D0%B1%D0%BE%D0%BB)">Виноват отдающий</a>”. Как ни странно, спустя годы я часто вспоминаю это утверждение в работе с разработчиками, коллегами или топ-менеджментом.</p>
+
+<p>Были у вас такие ситуации что разработчик раз за разом приходит к вам с вопросами по задаче? Или наоборот, что не приходит но к уже готовой задаче появляются все новые и новые дополнения? И в первом и во втором случае увеличивается <a href="https://stefanroock.wordpress.com/2010/03/02/kanban-definition-of-lead-time-and-cycle-time/">время цикла (cycle time)</a> то есть, увеличивается время которое уходит на конкретную работу. Как правило такое увеличение времени влияет не только на разработчика но и на соседние производственные участки.</p>
+
+<p><img src="/assets/images/uploads/2020/10/cycle-time.png" alt="cycle time"></p>
+
+<p>Как же сделать классную <del>передачу</del> задачу что бы принимающий был счастлив и ставил их в пример? Ответ — потратить на это время и использовать шаблон.</p>
+
+<h1 id="блок-1-описание-функциональные-требования">Блок 1: Описание (функциональные требования)</h1>
+
+<p>Это вероятно самая обширная часть описания задачи.</p>
+
+<p>Как проще всего и логичнее составить такое описание?
+Описание может быть как в формате <a href="https://en.wikipedia.org/wiki/User_story">User stories</a> так и другим описательным образом; Независимо от выбранного формата, будет здорово если будут сформулированы ответы на следующие вопросы:</p>
+
+<h2 id="в-чем-идея-иили-проблема">В чем идея и/или проблема?</h2>
+
+<p>Что хотим сделать или улучшить?</p>
+
+<p>Как должна работать система, и как должна реагировать на действия пользователя?</p>
+
+<p>Какие действия доступны пользователю?</p>
+
+<p>Тут пишем всю логику работы, прикладываем диаграммы, списки и таблицы.</p>
+
+<h2 id="как-я-это-понял">Как я это понял?</h2>
+
+<p>Этот раздел поможет не только разработчику но и менеджеру. Так, например, можно встретить прямое или скрытое сопротивление со стороны разработки или руководства по задаче, а корректно указав факты и цифры, будет много проще завоевать доверие и сотрудничество всех участников.</p>
+
+<h2 id="как-измерить-и-охват">Как измерить и охват?</h2>
+
+<p>Фактически это гипотеза, в которой указываем те метрики которые будут подвержены изменениям после релиза. Проработав этот раздел будет проще поставить приоритет для выполнения в backlog’е.</p>
+
+<h2 id="pr---рассказываем-о-фиче">PR - рассказываем о фиче</h2>
+
+<p>Необязательный пункт. Но я верю, что умение рассказать о свое работе чрезвычайно важно как внутри организации так и снаружи.</p>
+
+<p>Теперь закончив с описанием, нам нужно накачать разработчика менее объемными но важными деталями задачи.</p>
+
+<h1 id="блок-2-детали-нефункциональные-требования">Блок 2: Детали (нефункциональные требования)</h1>
+
+<p>Это простая и достаточно фомализованная часть, тут мы указываем весь контекст который необходим для выполнения задачи. В зависимости от типа команд и работ этот блок может меняться, например, вряд ли разработчику backend потребуются макеты интерфейса, хотя…</p>
+
+<h2 id="технические-требования-и-ограничения">Технические требования и ограничения</h2>
+
+<p>Для каких платформ планируем релиз? Для каких браузеров? Регионов? Специальный фреймворк?</p>
+
+<h2 id="требования-к-аналитике">Требования к аналитике</h2>
+
+<p>Что отслеживаем как называем события, куда отправляем?</p>
+
+<h2 id="спецификации-дизайна">Спецификации дизайна</h2>
+
+<p>Макеты и руководства, ассеты.</p>
+
+<h2 id="обработка-ошибок">Обработка ошибок</h2>
+
+<ol>
+  <li>Типы ошибок?</li>
+  <li>Как на них должна реагировать система?</li>
+  <li>Какие сообщения отображаются пользователю?</li>
+</ol>
+
+<h2 id="локализация">Локализация</h2>
+
+<ol>
+  <li>Нужна?</li>
+  <li>Если да то где взять, или какие строки использовать?</li>
+</ol>
+
+<h2 id="прочее">Прочее</h2>
+
+<p>Все что не попало в предыдущие пункты:</p>
+
+<ul>
+  <li>тестовые аккаунты, dev. окружение,</li>
+  <li>контакты стейкхолдера,</li>
+  <li>тестовые кейсы (но это уже высший уровень).</li>
+</ul>
+
+<h1 id="как-с-этим-жить">Как с этим жить?</h1>
+
+<p>На первый взгляд получился объемный чек-лист, который может просто отбить желание составлять задачи, но… Начните составлять классные задачи и ваша команда отблагодарит вас своей производительностью, а еще, разработчики будут хвастаться что у них есть классный менеджер.</p>
+
+<h1 id="рекомендую-посмотреть">Рекомендую посмотреть:</h1>
+
+<p><a href="https://www.notion.so/7-2fbe0af2687a4cbe8ce3289b18ef4e10" target="\_blank">Чек-лист хорошей задачи</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Метки: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/playbook" class="page__taxonomy-item" rel="tag">playbook</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Разделы: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/work" class="page__taxonomy-item" rel="tag">work</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Дата изменения:</strong> <time datetime="2020-10-27T13:00:00+00:00">2020-10-27</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Поделиться</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%D0%A7%D1%82%D0%BE+%D1%82%D0%B0%D0%BA%D0%BE%D0%B5+%D1%85%D0%BE%D1%80%D0%BE%D1%88%D0%B0%D1%8F+%5B%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%BE%D0%B2%D0%B0%D1%8F%5D+%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0.%20https%3A%2F%2F42point.com%2Fposts%2Fgood-task" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Поделиться Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F42point.com%2Fposts%2Fgood-task" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Поделиться Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2F42point.com%2Fposts%2Fgood-task" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Поделиться LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/posts/telegram-notifications-jenkins" class="pagination--pager" title="Уведомления Jenkins в Telegram
+">Предыдущая</a>
+    
+    
+      <a href="/posts/how-basecamp-work" class="pagination--pager" title="Подход к работе в basecamp (37signals)
+">Следующая</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">Вам также может понравиться</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/citaty" rel="permalink">Мысли про работу
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          менее 1 мин на чтение
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Несколько цитат которые подзацепили когда писал статью про работу basecamp.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/how-basecamp-work" rel="permalink">Подход к работе в basecamp (37signals)
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 мин на чтение
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Довольно старый но очень познавательный пост в блоге SVN, как они сами написали отвечающий на вопросы:
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/telegram-notifications-jenkins" rel="permalink">Уведомления Jenkins в Telegram
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 мин на чтение
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Одно из правил работы с CI — все должны видеть статус сборок, тоесть синхронизация. А что может быть лучше чем уведомление о неудачном, или напротив удачном,...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/playbook-licenses" rel="permalink">Лицензии при разработке программных продуктов софта
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 мин на чтение
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">В разработке ПО часто является разумным использовать уже готовые фреймворки и библиотеки для решения тех или иных задач. Важно помнить, что несмотря на стату...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap">
+<form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Введите поисковый запрос...">
+  </form>
+  <div id="results" class="results"></div>
+</div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Связаться со мной:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="http://twitter.com/d0_n0_evil" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="http://facebook.com/d0.n0.evil" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="http://instagram.com/d0_n0_evil/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/alexey-serpukhovitov-83160539/" rel="nofollow noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> RSS-лента</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">© 2023 [42point]. Сайт работает на <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+  (function (m, e, t, r, i, k, a) {
+    m[i] =
+      m[i] ||
+      function () {
+        (m[i].a = m[i].a || []).push(arguments);
+      };
+    m[i].l = 1 * new Date();
+    (k = e.createElement(t)),
+      (a = e.getElementsByTagName(t)[0]),
+      (k.async = 1),
+      (k.src = r),
+      a.parentNode.insertBefore(k, a);
+  })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(67038760, "init", {
+    clickmap: true,
+    trackLinks: true,
+    accurateTrackBounce: true,
+    webvisor: true,
+  });
+</script>
+<noscript>
+  <div data-proofer-ignore>
+    <img src="https://mc.yandex.ru/watch/67038760" style="position: absolute; left: -9999px" alt="">
+  </div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+      "gtm.start": new Date().getTime(),
+      event: "gtm.js",
+    });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-WVR78RR");
+</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

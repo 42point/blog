@@ -1,4 +1,0 @@
----
-slug: prototype
-name: прототипы
----
